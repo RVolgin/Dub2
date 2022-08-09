@@ -929,12 +929,12 @@ label dct_replacement:
     
     show dct_int_corridor2:
         yzoom 3.0 xalign 0.5 yalign 0.0 blur 20 alpha 0
-        pause 0.8
+        pause 0.9
         linear 0.3 yalign 0.5 alpha 0.4
         linear 0.3 yalign 1.0 alpha 0
     show dct_int_tonnel:
         yzoom 3.0 xalign 0.5 yalign 0.0 blur 20 alpha 0
-        pause 1.5
+        pause 1.6
         linear 0.3 yalign 0.5 alpha 0.7
         linear 0.3 yalign 1.0 alpha 0
     
@@ -946,7 +946,7 @@ label dct_replacement:
     stop music fadeout 5
     show dct_int_datacenter:
         pause 1
-        linear 1 alpha 0
+        linear 2.5 alpha 0
         
     $ day_time()                        # Прописано, чтобы при обратной перемотке цвета не сбивались.
     $ persistent.sprite_time = "day"
