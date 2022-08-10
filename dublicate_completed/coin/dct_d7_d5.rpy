@@ -791,20 +791,25 @@ label dct_d7_d5:
     play sound_loop ambience_camp_center_day fadein 1
     scene black
     show dct_int_coaching_room3:
-        zoom 5 anchor (.72, .5) pos (.5, .5)
+        zoom 8.0 anchor (.72, .5) pos (.5, .5)
     show dct_int_coaching_room3_zoom_OSB:
         zoom 2 anchor (.44, .484) pos (.5, .5)
     show dct_mz_and_el_go_to_library_sketch:
-        zoom 0.8 anchor (.5, .46) pos (.5, .5)
+        anchor (.5, .4) pos (.5, .5)
     show dct_mz_and_el_go_to_library:
         anchor (.5, .4) pos (.5, .5)
     with blinds
     "Лагерная аллея, по которой идут двое, те же Сыроежкин и Женя."
+    show dct_mz_and_el_go_to_library_sketch:
+        linear 1.5 zoom 0.8 anchor (.5, .46)
     show dct_mz_and_el_go_to_library:
         linear 1.5 zoom 0.8 anchor (.5, .46)
     "Идут от площади, за спинами у них Генда угадывается, в сторону библиотеки. Идут каждый по своей стороне и старательно не смотрят друг на друга."
     stop sound_loop fadeout 1
     play sound_loop2 ambience_int_cabin_day fadein 1
+    show dct_int_coaching_room3:
+        linear 1 zoom 6.5
+        linear 1 zoom 5.0
     show dct_int_coaching_room3_zoom_OSB:       # Апскейл в 4 раза задней стенки шкафа, чтоб не так шакально смотрелось. Нет, ну шакально конечно. Но не так.
         linear 1 zoom 1.625 anchor (.44, .492)
         linear 1 zoom 1.25 anchor (.44, .5)
@@ -813,6 +818,7 @@ label dct_d7_d5:
         linear 1 zoom 0.5 anchor (.5, .5)
     show dct_mz_and_el_go_to_library:
         linear 1 zoom 0.65 anchor (.5, .48) alpha 0
+        linear 1 zoom 0.5 anchor (.5, .5)
     "У Жени на лице растерянная полуулыбка, а Сергей наоборот сосредоточен: брови нахмурены, глаза прищурены, как будто целится куда-то, губы плотно сжаты, а в руке у него этот самый портфель, кстати."
     show dct_int_coaching_room3:
         linear 3 zoom 1 pos (.72, .5)
@@ -820,6 +826,8 @@ label dct_d7_d5:
         linear 3 zoom 0.25 pos (.72, .5) alpha 0
     show dct_mz_and_el_go_to_library_sketch:
         linear 3 zoom 0.1 pos (.72, .5)
+    show dct_mz_and_el_go_to_library:
+        linear 3 zoom 0.1 pos (.72, .5) alpha 0
     "И идут эти мальчик с девочкой вроде бы каждый сам по себе, но по тому, как они чуть склонились друг к другу, как они старательно при этом отводят друг от друга глаза, как они идут в ногу, видно, что уже связаны они, хотя еще и сами об этом не подозревают."
     stop sound_loop2 fadeout 1
 
