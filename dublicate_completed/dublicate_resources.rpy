@@ -1187,6 +1187,7 @@ init :
     
     ##### Персонажи (coin)
     
+    $ ggname = ""    # Переменная для выбора имени главного героя
     $ d_gg = Character("[ggname]", color="#8ffad5", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Имя главного героя в заключительной главе последней книги
     $ d_gm = Character(u"Малявка", color="#f3974d", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Глафира: мелкая
     $ d_us_nvl = Character(u"Ульяна: ", kind=nvl, color="#ff3200", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Ульяна в режиме NVL
@@ -1203,18 +1204,8 @@ init :
     $ d_maj = Character(u"Майор", color="#658554", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Майор из третьего сна Шурика
     $ d_voice_me = Character(u"Голос", color="#e1dd7d", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") # ГОЛОС цветом как у Семёна
     
-    # $ d_voice_color = "#ffffff"   # Переменная для смены цвета персонажа "Доносящийся голос". Почему-то отказывается работать, параметр color не хочет её понимать.
-    # $ d_vocal_noise = Character(u"Доносящийся голос", color="[d_voice_color]", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") # Голосовой шум, обрывки фраз на переферии
-    $ d_vocal_noise = Character(u"Доносящийся голос", color="#ffdd7d", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") # Голосовой шум, обрывки фраз на переферии
-    
-    $ d_vocal_noise_d_ma = Character(u"Доносящийся голос", color="#79cdf7", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") # Обрывок фразы цветом Максима
-    $ d_vocal_noise_me = Character(u"Доносящийся голос", color="#e1dd7d", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") # Обрывок фразы цветом Семёна
-    $ d_vocal_noise_dv = Character(u"Доносящийся голос", color="#ffaa00", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") # Обрывок фразы цветом Алисы
-    $ d_vocal_noise_mi = Character(u"Доносящийся голос", color="#00b4cf", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") # Обрывок фразы цветом Мику
-    $ d_vocal_noise_sh = Character(u"Доносящийся голос", color="#fff226", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") # Обрывок фразы цветом Шурика
-    $ d_vocal_noise_d_vi = Character(u"Доносящийся голос", color="#b7b7b7", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") # Обрывок фразы цветом Витьки
-    $ d_vocal_noise_d_oz = Character(u"Доносящийся голос", color="#4de2f3", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") # Обрывок фразы цветом Оксаны
-    $ d_vocal_noise_us = Character(u"Доносящийся голос", color="#ff3200", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") # Обрывок фразы цветом Ульяны
+    $ d_voice_color = ""    # Переменная для смены цвета персонажа "Доносящийся голос"
+    $ d_vocal_noise = Character(u"{color=[d_voice_color]}Доносящийся голос{/color}", color="#ffffff", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") # Голосовой шум, обрывки фраз на переферии
     
     
 
