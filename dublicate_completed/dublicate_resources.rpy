@@ -260,6 +260,7 @@ init :
     
     image dct_ext_forest_dark_night = "mods/dublicate_completed/images/bg/coin07/dct_ext_forest_dark_night.jpg" # "Дремучий лес" (Шурик пробирается по лагерю)
     image dct_int_musclub_night_light = "mods/dublicate_completed/images/bg/coin07/dct_int_musclub_night_light.jpg" # Музклуб внутри (ночь, свет включён)
+    image dct_int_musclub_night_nolight = "mods/dublicate_completed/images/bg/coin07/dct_int_musclub_night_nolight.jpg" # Музклуб внутри (ночь, свет выключён)
     image dct_ext_music_club_verandah_night = "mods/dublicate_completed/images/bg/coin07/dct_ext_music_club_verandah_night.jpg" # Музклуб, веранда (ночь, свет не горит)
     
     
