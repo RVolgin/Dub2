@@ -258,6 +258,11 @@ init :
     
     
     
+    image dct_ext_forest_dark_night = "mods/dublicate_completed/images/bg/coin07/dct_ext_forest_dark_night.jpg" # "Дремучий лес" (Шурик пробирается по лагерю)
+    image dct_int_musclub_sunset = "mods/dublicate_completed/images/bg/coin07/dct_int_musclub_sunset.jpg" # Музклуб внутри (закат)
+    
+    
+    
     image dct_ext_aidpost_after_rain = "mods/dublicate_completed/images/bg/coin08/dct_ext_aidpost_after_rain.jpg" # Медпункт после дождя
     image dct_ext_dining_hall_away_after_rain = "mods/dublicate_completed/images/bg/coin08/dct_ext_dining_hall_away_after_rain.jpg" # Столовая вдали после дождя
     image dct_ext_square_after_rain = "mods/dublicate_completed/images/bg/coin08/dct_ext_square_after_rain.jpg" # Площадь после дождя
