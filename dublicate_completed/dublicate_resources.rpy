@@ -1100,7 +1100,8 @@ init :
     $ dct_sfx_horn_dinner_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_dinner_through_loudspeaker.ogg" # Горн на обед через репродктор
     $ dct_sfx_horn_rise_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_rise_through_loudspeaker.ogg" # Горн-подъём через репродктор
     $ dct_sfx_robot_run_club_attic = "<to 2.6>mods/dublicate_completed/sounds/coin/sfx/dct_sfx_robot_run_club_attic.ogg" # Яна пробегает по чердаку клуба
-    $ dct_sveta_falls_in_gym = "mods/dublicate_completed/sounds/coin/sfx/dct_sveta_falls_in_gym.ogg" # Света падает в спортзале и вскрикивает
+    $ dct_sfx_record_crackling = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_record_crackling.ogg" # Потрескивание старой пластинки
+    $ dct_sfx_sveta_falls_in_gym = "mods/dublicate_completed/sounds/coin/sfx/dct_sveta_falls_in_gym.ogg" # Света падает в спортзале и вскрикивает
     $ dct_sfx_uv_call = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_uv_call.ogg" # Ты пойдёшь со мной? Пойдёшь? Пойдёшь? Ты со мной... Пойдёшь?
     
    
