@@ -800,7 +800,7 @@ label dct_replacement:
     hide black with squares
     sa "Может дать ему время подумать?"
     show 3500_sh normal2 noglasses pioneer glasses at fright with dissolve:
-        ycenter 0.833
+        ycenter 0.856
     show sl surprise pioneer close:
         pause 1.2
         linear 1 alpha 0
