@@ -263,6 +263,7 @@ init :
     image dct_int_musclub_night_nolight = "mods/dublicate_completed/images/bg/coin07/dct_int_musclub_night_nolight.jpg" # Музклуб внутри (ночь, свет выключён)
     image dct_ext_music_club_verandah_night = "mods/dublicate_completed/images/bg/coin07/dct_ext_music_club_verandah_night.jpg" # Музклуб, веранда (ночь, свет не горит)
     image dct_ext_musclub_night_lantern_light = "mods/dublicate_completed/images/bg/coin07/dct_ext_musclub_night_lantern_light.jpg" # Музклуб снаружи (ночь, свет от фонаря)
+    image dct_ext_houses_night_lantern_light = "mods/dublicate_completed/images/bg/coin07/dct_ext_houses_night_lantern_light.jpg" # Аллея ночью с подсветкой
     
     
     
