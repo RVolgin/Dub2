@@ -567,6 +567,15 @@ init :
         linear 0.6 xcenter 0.86 alpha 0
         pause 0.2
         repeat
+        
+        
+        
+    image dct_sl_sport_running_surprise:                  # Славя (Саша) пробегает мимо домика кибернетиков и удивляется
+        "3500_sl serious sport"
+        xzoom -1.0
+        pause 1.6
+        "3500_sl surprise sport"
+        xzoom 1.0
     
     
     
