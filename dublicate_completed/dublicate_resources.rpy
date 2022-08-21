@@ -1100,8 +1100,9 @@ init :
     $ dct_sfx_loop_bus_moves_slow = "<from 18.27 to 51.79>mods/dublicate_completed/sounds/coin/sfx/dct_sfx_bus_moves_between_stops.ogg" #звук автобуса, едущего медлено
     $ dct_sfx_UAZ_engine = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_UAZ_engine.ogg" # Заведённый УАЗ во сне Шурика
     $ dct_sfx_horn_dinner = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_dinner.ogg" # Горн на обед
-    $ dct_sfx_horn_dinner_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_dinner_through_loudspeaker.ogg" # Горн на обед через репродктор
+    $ dct_sfx_horn_dinner_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_dinner_through_loudspeaker.ogg" # Горн на обед через репродуктор
     $ dct_sfx_horn_rise_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_rise_through_loudspeaker.ogg" # Горн-подъём через репродктор
+    $ dct_sfx_horn_assembly_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_assembly_through_loudspeaker.ogg" # Горн на линейку через репродуктор
     $ dct_sfx_robot_run_club_attic = "<to 2.6>mods/dublicate_completed/sounds/coin/sfx/dct_sfx_robot_run_club_attic.ogg" # Яна пробегает по чердаку клуба
     $ dct_sfx_record_crackling = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_record_crackling.ogg" # Потрескивание старой пластинки
     $ dct_sfx_sveta_falls_in_gym = "mods/dublicate_completed/sounds/coin/sfx/dct_sveta_falls_in_gym.ogg" # Света падает в спортзале и вскрикивает
