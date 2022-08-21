@@ -1353,6 +1353,7 @@ init :
     image dct_int_bus_stern_un = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_bus_stern_un.png"
     # Ульяна
     image us_in_bush = "mods/dublicate_completed/images/sprites/d_unformat/us_in_bush.png"
+    image d_us_sport_mirror = "mods/dublicate_completed/images/sprites/d_unformat/d_us_sport_mirror.png"    # Надстройка для спортивной формы взрослой Ульяны при зеркальном отражении
     # Юля
     image uv_wild_in_forest_small = "mods/dublicate_completed/images/sprites/d_unformat/uv_wild_in_forest_small.png"
     image uv_wild_in_forest_medium = "mods/dublicate_completed/images/sprites/d_unformat/uv_wild_in_forest_medium.png"
