@@ -434,9 +434,9 @@ init :
     
     #Трусы
     image d_el laugh nude far = ConditionSwitch(
-    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/dublicate_completed/images/sprites/d_el/d_el_3_nude_far.png",(0,0), "images/sprites/far/el/el_3_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
-    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/dublicate_completed/images/sprites/d_el/d_el_3_nude_far.png",(0,0), "images/sprites/far/el/el_3_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
-    True,im.Composite((900,1080), (0,0), "mods/dublicate_completed/images/sprites/d_el/d_el_3_nude_far.png",(0,0), "images/sprites/far/el/el_3_laugh.png") )
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((630,1080), (0,0), "mods/dublicate_completed/images/sprites/d_el/d_el_3_nude_far.png",(0,0), "images/sprites/far/el/el_3_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((630,1080), (0,0), "mods/dublicate_completed/images/sprites/d_el/d_el_3_nude_far.png",(0,0), "images/sprites/far/el/el_3_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
+    True,im.Composite((630,1080), (0,0), "mods/dublicate_completed/images/sprites/d_el/d_el_3_nude_far.png",(0,0), "images/sprites/far/el/el_3_laugh.png") )
     
     image d_el laugh nude = ConditionSwitch(
     "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/dublicate_completed/images/sprites/d_el/d_el_3_nude.png",(0,0), "images/sprites/normal/el/el_3_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
