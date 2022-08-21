@@ -751,7 +751,7 @@ label dct_d7_d5:
     
 
     play ambience ambience_dining_hall_full fadein 1
-    scene bg int_dining_hall_people_day
+    scene bg int_dining_hall_people_day with dissolve
     "В обед пионеров кормили щами и свиной поджаркой с рожками."
     "Персонал кухни действительно научился готовить, и щи не были пересоленными, и макароны не склеились, и мясо не подгорело, и чай не отдавал тряпкой.{w} Все бы хорошо, но брызги томатного жира от поджарки оставляли оранжевые пятна на рубашках неаккуратных пионеров."
     show mt sad pioneer close at left with dissolve
