@@ -570,12 +570,14 @@ init :
         
         
         
-    image dct_sl_sport_running_surprise:                  # Славя (Саша) пробегает мимо домика кибернетиков и удивляется
+    image dct_sl_sport_running_serious:                  # Славя (Саша) с эмоцией serious развёрнута зеркально. Это нужно, чтобы следом идущая трансформация 'dct_sl_sport_running_surprise' в момент применения перехода 'dissolve_fast' не вращала изображение туда-сюда
         "3500_sl serious sport"
         xzoom -1.0
-        pause 1.6
-        "3500_sl surprise sport"
-        xzoom 1.0
+    
+    image dct_sl_sport_running_surprise:                  # Славя (Саша) пробегает мимо домика кибернетиков и удивляется
+        "dct_sl_sport_running_serious"
+        pause 1.5
+        "3500_sl surprise sport" with dissolve_fast
     
     
     
