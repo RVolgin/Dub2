@@ -264,6 +264,12 @@ init :
     image dct_ext_music_club_verandah_night = "mods/dublicate_completed/images/bg/coin07/dct_ext_music_club_verandah_night.jpg" # Музклуб, веранда (ночь, свет не горит)
     image dct_ext_musclub_night_lantern_light = "mods/dublicate_completed/images/bg/coin07/dct_ext_musclub_night_lantern_light.jpg" # Музклуб снаружи (ночь, свет от фонаря)
     image dct_ext_houses_night_lantern_light = "mods/dublicate_completed/images/bg/coin07/dct_ext_houses_night_lantern_light.jpg" # Аллея ночью с подсветкой
+    image dct_ext_houses_rain = "mods/dublicate_completed/images/bg/coin07/dct_ext_houses_rain.jpg" # Аллея днём в дождь
+    image dct_ext_library_rain = "mods/dublicate_completed/images/bg/coin07/dct_ext_library_rain.jpg" # Бибилиотека снаружи днём в дождь
+    image dct_int_library_rain = "mods/dublicate_completed/images/bg/coin07/dct_int_library_rain.jpg" # Бибилиотека внутри днём в дождь
+    image dct_int_library_rain_lamp = "mods/dublicate_completed/images/bg/coin07/dct_int_library_rain_lamp.png" # Бибилиотека: включённая лампа
+    image dct_ext_dining_hall_near_rain = "mods/dublicate_completed/images/bg/coin07/dct_ext_dining_hall_near_rain.jpg" # Столовая близко днём в дождь
+    image dct_int_dining_hall_people_rain = "mods/dublicate_completed/images/bg/coin07/dct_int_dining_hall_people_rain.jpg" # Столовая внутри днём в дождь
     
     
     
