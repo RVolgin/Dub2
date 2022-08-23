@@ -399,12 +399,14 @@ init :
     image dct_cg_el_kick_ball = "mods/dublicate_completed/images/cg/coin02/dct_cg_el_kick_ball.jpg"
     
     image dct_mi_piano1 = "mods/dublicate_completed/images/cg/coin06/dct_mi_piano1.jpg" # Мику играет на пианино
-    image dct_sh_in_cage = "mods/dublicate_completed/images/cg/coin06/dct_sh_in_cage.jpg" # Шурик тестит машину для чтения воспоминаний
+    image dct_el_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_el_in_cage.png') # Электроник в клетке для чтения воспоминаний
+    image dct_mi_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_mi_in_cage.png') # Мику в клетке для чтения воспоминаний
+    image dct_sh_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_sh_in_cage.png') # Шурик в клетке для чтения воспоминаний
+    image dct_sh_in_cage_with_pushbutton = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_sh_in_cage_with_pushbutton.png') # Шурик в клетке для чтения воспоминаний (с кнопкой и проводом)
     image dct_sky_over_flowerbed_behind_library = "mods/dublicate_completed/images/cg/coin06/dct_sky_over_flowerbed_behind_library.jpg" # Небо над головой в обраблении крон
     image dct_mz_and_el_sitting_on_bench_near_flowerbed = "mods/dublicate_completed/images/cg/coin06/dct_mz_and_el_sitting_on_bench_near_flowerbed.jpg" # Эл и Женя сидят на лавочке
     
     image dct_mz_and_el_sitting_on_grass = "mods/dublicate_completed/images/cg/coin07/dct_mz_and_el_sitting_on_grass.jpg" # Эл и Женя сидят на траве под деревьями
-    image dct_mi_in_cage = "mods/dublicate_completed/images/cg/coin07/dct_mi_in_cage.jpg" # Мику испытывает машину для чтения воспоминаний
         
     image dct_dv_two_pieces_bg_dark = "mods/dublicate_completed/images/cg/coin10/dct_dv_two_pieces_bg_dark.jpg"
     image dct_dv_two_pieces_bg_square = "mods/dublicate_completed/images/cg/coin10/dct_dv_two_pieces_bg_square.jpg"
