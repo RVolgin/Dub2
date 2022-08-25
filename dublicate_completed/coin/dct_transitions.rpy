@@ -1214,22 +1214,20 @@ label dct_transitions:
     play music music_list['i_want_to_play'] fadein 1
     
     scene dct_int_coaching_room2
-    show us laugh pioneer close at center:
+    show us laugh sport close at center:
         zoom 1.25 anchor(0.52, 1.0) pos (0.5, 1.15)
     with vpunch
     "Он потянул дверь и чуть не упал от внезапной тяжести повисшей на плечах Ульянки-младшей. Ульянки из его родного лагеря."
-    show us surp1 pioneer close at center with dissolve_fast:
+    show us surp1 sport close at center with dissolve_fast:
         zoom 1.0 anchor(0.5, 0.5) pos (0.5, 0.5)
     us "Я соскучилась, братишка!"
     "Бесцеремонно и одновременно чуть смущенно заявила через минуту отстранившаяся Ульянка."
     scene dct_int_coaching_room3
     show d_sf laugh sport:
         zoom 0.75 xcenter 0.37 ycenter 0.56
-    # show d_us smile sport at fright:
-        # ycenter 0.95
     show d_us smile sport:
         xcenter 0.75 ycenter 1.15 rotate 30
-    show us grin pioneer:
+    show us grin sport:
         xcenter 0.48
     with dissolve
     # "Ульяна-большая валялась на кровати, закинув ноги на спинку, и с улыбкой наблюдала за этой картиной."   # По канону
@@ -1237,40 +1235,40 @@ label dct_transitions:
     us_old "Представляешь, прохожу мимо кустов, а меня за руку хватают и в кусты тянут."
     show d_sf smile sport with dspr
     us_old "А в кустах эта мелкая. Соскучилась, говорит, и пришла проведать."
-    show us smile pioneer with dspr
+    show us smile sport with dspr
     us "Ага, пришла. Вам привет от Алисы и Слави, и Мику! А вы же придете в среду? А то они тоже соскучились."
     show d_sf normal sport with dspr
     me "Ульянка, а назад ты как же? Мы-то только в среду собираемся."
-    show us normal pioneer
+    show us normal sport
     show d_us normal sport
     with dspr
     "Семен глянул на жену, та утвердительно кивнула."
     me "Тебя в вашем лагере не хватятся?"
-    show us laugh2 pioneer with dspr
+    show us laugh2 sport with dspr
     us "А я теперь могу в любое время приходить туда и назад, вот."
-    show us shy pioneer with dissolve_fast
+    show us shy sport with dissolve_fast
     us "Я{w=0.5}, мне…{w=0.7} Я научилась."
-    show us upset pioneer with dissolve_fast
+    show us upset sport with dissolve_fast
     us "Только у других девочек не получается. Жалко."
     show d_sf serious sport
     show d_us smile sport
     with dspr
-    show us normal pioneer with dissolve_fast
+    show us normal sport with dissolve_fast
     us_old "Она и меня пыталась научить."
     show d_us normal sport with dspr
     us_old "Какая-то трава должна расти на поляне, какие-то жуки особые должны водиться, а потом просто захотеть, представить того, к кому хочешь попасть, закрыть глаза и шагнуть."
     show d_us shy sport
-    show us sad pioneer
+    show us sad sport
     with dspr
     us_old "Всего-то."
     us "Да, всего-то!"
-    show us smile pioneer with dspr
+    show us smile sport with dspr
     us "А ты, сестренка, не грусти. Все у тебя получится."
     show d_us smile sport with dspr
     us "А я еще погуляю у вас по лагерю, посмотрю, как вы живете, а потом назад, к себе. Чтобы к ужину успеть."
     show d_sf normal sport
     show d_us normal sport
-    show us grin pioneer
+    show us grin sport
     with dspr
     us "Всё, пока! В среду увидимся, буду ждать!"
     show d_sf smile sport
@@ -1370,7 +1368,7 @@ label dct_transitions:
     scene dct_ext_washstand_sunset
     show mt angry panama pioneer far:
         xcenter 0.45 ycenter 0.50
-    show us shy pioneer far:
+    show us shy sport far:
         xcenter 0.56 ycenter 0.50
     with fade
     "Ульянка-младшая все-таки не успела уйти до ужина, не попавшись на глаза вожатой."
@@ -1380,11 +1378,11 @@ label dct_transitions:
         zoom .75 xcenter 0.7 ycenter .76
     with dissolve
     show d_mt shocked panama pioneer far as mt
-    show us surp1 pioneer far
+    show us surp1 sport far
     with dspr
     "Пришлось физрукам врать Ольге Дмитриевне и выручать гостью, пришлось выдавать ее за сестренку, прибежавшую погостить."
     show mt surprise panama pioneer far
-    show us laugh2 pioneer far
+    show us laugh2 sport far
     with dissolve_fast
     "Пришлось сказать, что родители тут недалеко, ниже по течению, стоят с палаткой."
     scene dct_int_dining_hall_people_sunset with wipeleft
@@ -1407,11 +1405,11 @@ label dct_transitions:
     scene dct_int_coaching_room2 with wipeleft
     stop music fadeout 2.5
     play ambience ambience_int_cabin_evening fadein 2.5
-    show us smile pioneer with dissolve
+    show us smile sport with dissolve
     "В заключение Ульянка-младшая вынесла вердикт:"
     us "А вы неплохо устроились! Я еще немного побегаю сама по себе, и тоже пойду в физруки!"
     us "Будем матчи футбольные между лагерями проводить!"
-    show us grin pioneer with dspr
+    show us grin sport with dspr
     
     $ sunset_time()                     # Прописано, чтобы при обратной перемотке цвета не сбивались.
     $ persistent.sprite_time = "day"
@@ -1435,12 +1433,12 @@ label dct_transitions:
     "На площади свернули направо, в сторону домика вожатой."
     scene dct_ext_houses_night with pushleft
     "Где-то со стороны клубов слышались голоса кибернетиков, тянущих последние метры кабеля к радиорубке. И еще слышалась музыка."
-    show us sad pioneer at cleft with dissolve
+    show us sad sport at cleft with dissolve
     us "Там музыка, на сцене."
     show d_us normal sport at cright with dissolve:
         ypos -0.05
     us_old "Да, Саша танцует. Хочешь посмотреть?"
-    show us normal pioneer with dspr
+    show us normal sport with dspr
     us "Хочу."
     show d_us smile sport with dspr
     us_old "Только прячься, а то она стесняется жутко."
@@ -1458,7 +1456,7 @@ label dct_transitions:
     scene dct_ext_musclub_backside_night_brightwindows
     show dct_ext_musclub_backside_night_ma_mi
     with pushright
-    show us normal pioneer:
+    show us normal sport:
         xcenter 0.32
     show d_us normal sport:
         xcenter 0.78 ypos -0.05
@@ -1466,27 +1464,27 @@ label dct_transitions:
     "По тропе вышли к музыкальному кружку и остановились."
     us "Это здесь."
     us "Видишь, вот трава, а вон жучки эти ползают. Они всегда в местах перехода обитают."
-    show us sad pioneer with dspr
+    show us sad sport with dspr
     us "Жалко, что я провести вас не смогу, это вам самим научиться нужно."
     "Света, падающего из окон музыкального кружка, хватало, чтобы рассмотреть и траву, и жучков."
-    show us normal pioneer with dspr
+    show us normal sport with dspr
     "В кружке Мику, сидя за роялем, объясняла что-то Максиму, держащему в руках горн? Нет, не горн, а другой инструмент. Похожий на трубу, но покороче и с более широким раструбом."
     show d_us smile sport with dspr
     us_old "\~ Пропал Макс. \~"
-    show us grin pioneer with dspr
+    show us grin sport with dspr
     us "Ну пока, сестренка, до послезавтра. Все вас очень ждут."
     show d_us normal sport with dspr
     us_old "Пока."
-    show us smile pioneer with dspr
+    show us smile sport with dspr
     us "Значит, смотри, показываю."
     us "Вот трава, вот жучки эти. Это значит место перехода здесь."
-    show us normal pioneer with dspr
+    show us normal sport with dspr
     us "Потом ты закрываешь глаза и представляешь себе человека, к которому хочешь попасть. И всё."
     us "Нужно только очень сильно хотеть. Делаешь шаг вперед и ты на месте."
     window hide
-    show us normal pioneer:
+    show us normal sport:
         ease 0.6 xpos 0.5
-    show 3500_us back1 pioneer as us with dissolve_fast:
+    show 3500_us back1 sport as us with dissolve_fast:
         anchor (0.5, 0.617) pos(0.32, 1.06)
         ease 0.6 xpos 0.5
         easeout 0.7 zoom 0.34 ypos 0.63
