@@ -1439,7 +1439,7 @@ init :
     image dct_mz_and_el_go_to_library_sketch = im.Composite((3840,2160), (1135,0), "mods/dublicate_completed/images/sprites/oth/coin06/dct_mz_and_el_go_to_library_sketch.jpg")
     
     image dct_clubs_male_comp_al = "mods/dublicate_completed/images/sprites/oth/coin07/dct_clubs_male_comp_al.png"          # Компьютер в клубе: монитор с изображением Александра (выводить на экран в позиции xcenter 0.5 ycenter 0.45)
-    image dct_dormitory_at_range_Ural_BTR = "mods/dublicate_completed/images/sprites/oth/coin07/dct_dormitory_ at_ range_Ural_BTR.png"          # Урал и БТР на фоне общежития у полигона
+    image dct_dormitory_at_range_Ural_BTR = "mods/dublicate_completed/images/sprites/oth/coin07/dct_dormitory_at_range_Ural_BTR.png"          # Урал и БТР на фоне общежития у полигона
     
     image dct_int_aidpost_day_curtain = "mods/dublicate_completed/images/sprites/oth/coin08/dct_int_aidpost_day_curtain.png"    # Занавеска в медпункте задёрнута
     image dct_int_aidpost_day_curtain ajar = "mods/dublicate_completed/images/sprites/oth/coin08/dct_int_aidpost_day_curtain_ajar.png"  # Занавеска в медпункте слегка приоткрыта
