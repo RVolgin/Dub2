@@ -270,6 +270,7 @@ init :
     image dct_int_library_rain_lamp = "mods/dublicate_completed/images/bg/coin07/dct_int_library_rain_lamp.png" # Бибилиотека: включённая лампа
     image dct_ext_dining_hall_near_rain = "mods/dublicate_completed/images/bg/coin07/dct_ext_dining_hall_near_rain.jpg" # Столовая близко днём в дождь
     image dct_int_dining_hall_people_rain = "mods/dublicate_completed/images/bg/coin07/dct_int_dining_hall_people_rain.jpg" # Столовая внутри днём в дождь
+    image dct_dormitory_at_range = "mods/dublicate_completed/images/bg/coin07/dct_dormitory_at_range.jpg" # Общежитие у полигона из воспоминаний Александра
     
     
     
