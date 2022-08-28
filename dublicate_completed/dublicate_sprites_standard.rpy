@@ -1301,6 +1301,7 @@ init :
     image dct_int_library_day_el = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_library_day_el.png"
     image dct_ext_clubs_day_el_look_at_roof = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_unformat/dct_ext_clubs_day_el_look_at_roof.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_unformat/dct_ext_clubs_day_el_look_at_roof.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_unformat/dct_ext_clubs_day_el_look_at_roof.png')
     image dct_library_door_window_el = "mods/dublicate_completed/images/sprites/d_unformat/dct_library_door_window_el.png"
+    image dct_ext_clubs_rain_el_in_window = "mods/dublicate_completed/images/sprites/d_unformat/dct_ext_clubs_rain_el_in_window.png"    # Электроник в окошке за дверью клубов в дождь
     # Групповые
     image dct_int_bus_people_sl_mi back = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_bus_people_sl_mi_back.png"
     image dct_int_bus_people_sl_mi front = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_bus_people_sl_mi_front.png"
@@ -1338,7 +1339,6 @@ init :
     image d_sf_carrying_d_sv sad = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_unformat/d_sf_carrying_d_sv_sad.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_unformat/d_sf_carrying_d_sv_sad.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_unformat/d_sf_carrying_d_sv_sad.png')
     image d_sf_carrying_d_sv shy = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_unformat/d_sf_carrying_d_sv_shy.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_unformat/d_sf_carrying_d_sv_shy.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_unformat/d_sf_carrying_d_sv_shy.png')
     image d_sf_carrying_d_sv smile = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_unformat/d_sf_carrying_d_sv_smile.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_unformat/d_sf_carrying_d_sv_smile.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_unformat/d_sf_carrying_d_sv_smile.png')
-    
     # Шурик
     image dct_int_bus_middle_sh_body = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_bus_middle_sh_body.png"
     image dct_int_bus_middle_sh normal = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_bus_middle_sh_normal.png"
@@ -1439,6 +1439,7 @@ init :
     image dct_mz_and_el_go_to_library_sketch = im.Composite((3840,2160), (1135,0), "mods/dublicate_completed/images/sprites/oth/coin06/dct_mz_and_el_go_to_library_sketch.jpg")
     
     image dct_clubs_male_comp_al = "mods/dublicate_completed/images/sprites/oth/coin07/dct_clubs_male_comp_al.png"          # Компьютер в клубе: монитор с изображением Александра (выводить на экран в позиции xcenter 0.5 ycenter 0.45)
+    image dct_dormitory_at_range_Ural_BTR = "mods/dublicate_completed/images/sprites/oth/coin07/dct_dormitory_ at_ range_Ural_BTR.png"          # Урал и БТР на фоне общежития у полигона
     
     image dct_int_aidpost_day_curtain = "mods/dublicate_completed/images/sprites/oth/coin08/dct_int_aidpost_day_curtain.png"    # Занавеска в медпункте задёрнута
     image dct_int_aidpost_day_curtain ajar = "mods/dublicate_completed/images/sprites/oth/coin08/dct_int_aidpost_day_curtain_ajar.png"  # Занавеска в медпункте слегка приоткрыта
