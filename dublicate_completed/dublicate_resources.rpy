@@ -408,6 +408,8 @@ init :
     image dct_mz_and_el_sitting_on_bench_near_flowerbed = "mods/dublicate_completed/images/cg/coin06/dct_mz_and_el_sitting_on_bench_near_flowerbed.jpg" # Эл и Женя сидят на лавочке
     
     image dct_mz_and_el_sitting_on_grass = "mods/dublicate_completed/images/cg/coin07/dct_mz_and_el_sitting_on_grass.jpg" # Эл и Женя сидят на траве под деревьями
+    image dct_convoy_of_trucks = "mods/dublicate_completed/images/cg/coin07/dct_convoy_of_trucks.jpg" # Колонна Уралов
+    image dct_road_bus_BTR = "mods/dublicate_completed/images/cg/coin07/dct_road_bus_BTR.jpg" # Автобус в кювете и подбитый БТР
         
     image dct_dv_two_pieces_bg_dark = "mods/dublicate_completed/images/cg/coin10/dct_dv_two_pieces_bg_dark.jpg"
     image dct_dv_two_pieces_bg_square = "mods/dublicate_completed/images/cg/coin10/dct_dv_two_pieces_bg_square.jpg"
