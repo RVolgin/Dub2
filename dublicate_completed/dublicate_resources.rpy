@@ -404,12 +404,14 @@ init :
     image dct_mi_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_mi_in_cage.png') # Мику в клетке для чтения воспоминаний
     image dct_sh_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_sh_in_cage.png') # Шурик в клетке для чтения воспоминаний
     image dct_sh_in_cage_with_pushbutton = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_sh_in_cage_with_pushbutton.png') # Шурик в клетке для чтения воспоминаний (с кнопкой и проводом)
+    image dct_empty_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin06/dct_empty_in_cage.png') # Пустая клетка для чтения воспоминаний
     image dct_sky_over_flowerbed_behind_library = "mods/dublicate_completed/images/cg/coin06/dct_sky_over_flowerbed_behind_library.jpg" # Небо над головой в обраблении крон
     image dct_mz_and_el_sitting_on_bench_near_flowerbed = "mods/dublicate_completed/images/cg/coin06/dct_mz_and_el_sitting_on_bench_near_flowerbed.jpg" # Эл и Женя сидят на лавочке
     
     image dct_mz_and_el_sitting_on_grass = "mods/dublicate_completed/images/cg/coin07/dct_mz_and_el_sitting_on_grass.jpg" # Эл и Женя сидят на траве под деревьями
     image dct_convoy_of_trucks = "mods/dublicate_completed/images/cg/coin07/dct_convoy_of_trucks.jpg" # Колонна Уралов
     image dct_road_bus_BTR = "mods/dublicate_completed/images/cg/coin07/dct_road_bus_BTR.jpg" # Автобус в кювете и подбитый БТР
+    image dct_mi_morning_house = "mods/dublicate_completed/images/cg/coin07/dct_mi_morning_house.jpg" # Мику проснувшаяся с утра
         
     image dct_dv_two_pieces_bg_dark = "mods/dublicate_completed/images/cg/coin10/dct_dv_two_pieces_bg_dark.jpg"
     image dct_dv_two_pieces_bg_square = "mods/dublicate_completed/images/cg/coin10/dct_dv_two_pieces_bg_square.jpg"
