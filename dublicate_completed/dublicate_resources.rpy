@@ -412,6 +412,7 @@ init :
     image dct_convoy_of_trucks = "mods/dublicate_completed/images/cg/coin07/dct_convoy_of_trucks.jpg" # Колонна Уралов
     image dct_road_bus_BTR = "mods/dublicate_completed/images/cg/coin07/dct_road_bus_BTR.jpg" # Автобус в кювете и подбитый БТР
     image dct_mi_morning_house = "mods/dublicate_completed/images/cg/coin07/dct_mi_morning_house.jpg" # Мику проснувшаяся с утра
+    image dct_ext_laboratory_of_d_sh = "mods/dublicate_completed/images/cg/coin07/dct_ext_laboratory_of_d_sh.jpg" # Лаборатория Александра, вид снаружи на окна
         
     image dct_dv_two_pieces_bg_dark = "mods/dublicate_completed/images/cg/coin10/dct_dv_two_pieces_bg_dark.jpg"
     image dct_dv_two_pieces_bg_square = "mods/dublicate_completed/images/cg/coin10/dct_dv_two_pieces_bg_square.jpg"
