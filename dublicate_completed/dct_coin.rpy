@@ -19,7 +19,7 @@ label dct_coin:       #вступительный лейбл
     
     call dct_d7_d5
     
-    #call dct_foreign_land
+    call dct_foreign_land
     
     call dct_replacement
     
