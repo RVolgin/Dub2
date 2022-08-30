@@ -1344,6 +1344,7 @@ init :
     image dct_int_bus_middle_sh normal = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_bus_middle_sh_normal.png"
     image dct_int_bus_middle_sh serious = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_bus_middle_sh_serious.png"
     image dct_int_bus_middle_sh surprise = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_bus_middle_sh_surprise.png"
+    image dct_d_sh_in_lab_window = "mods/dublicate_completed/images/sprites/d_unformat/dct_d_sh_in_lab_window.png"  # Александр а окне лаборатории
     # Славя (Саша)
     image dct_ext_stage_big_night_sl_sitting = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_unformat/dct_ext_stage_big_night_sl_sitting.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_unformat/dct_ext_stage_big_night_sl_sitting.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_unformat/dct_ext_stage_big_night_sl_sitting.png')
     image d_sl_casual = "mods/dublicate_completed/images/sprites/d_unformat/d_sl_casual.png"
