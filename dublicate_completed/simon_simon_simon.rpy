@@ -7,9 +7,9 @@ label dct_simon:
     play sound sfx_knock_door7_polite
     $ renpy.pause (2)
     me "Открыто!"
-    show dv normal pioneer with moveinleft
+    show dv normal pioneer with MoveTransition(1.5, enter=_moveleft, enter_time_warp=_ease_time_warp)
     me "Алиса…"
-    show un normal pioneer at cleft with moveinleft
+    show un normal pioneer at cleft with MoveTransition(1.2, enter=_moveleft, enter_time_warp=_ease_time_warp)
     me "И Лена."
     th "Господи, только бы они не поссорились."
     me "Что-то случилось, девчонки?"
