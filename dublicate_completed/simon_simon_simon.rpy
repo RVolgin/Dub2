@@ -1631,6 +1631,8 @@ label dct_edge:
     "Состав, наконец, трогается. Сейчас надо поспать, а то вообще из Узла не выберемся. Если не поспать, то хотя бы, прикрыть глаза и замолчать минут на десять."
     show blink
     stop ambience
+    $ renpy.pause(1.5,hard=True)
+    
 
     scene ext_dining_hall_away_sunset with squares
     $ sunset_time ()
