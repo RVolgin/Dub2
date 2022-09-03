@@ -1090,20 +1090,25 @@ label other_peoples_letters:
     
     show effector_letter_1 at truecenter with dspr
     $ renpy.pause (2)
+    show black with dissolve:
+        alpha 0.4
     show credits effector_letter_1_credits:
         xalign 0.5
         ypos 1.0
         linear 55.0 ypos -0.4
     $ renpy.pause(60)
     hide credits with dissolve2
+    hide black with dissolve
     pause
     
     hide effector_letter_1
     show effector_letter_2_1 at truecenter
     with dissolve
     $ renpy.pause (2)
+    show black with dissolve:
+        alpha 0.4
     play music twisterium_eternal_love fadein 1
-    show  credits effector_letter_2_1_credits:
+    show credits effector_letter_2_1_credits:
         xalign 0.5
         ypos 1.0
         linear 60.0 ypos -0.5
@@ -1117,23 +1122,27 @@ label other_peoples_letters:
     $ renpy.pause (2)
     show  credits effector_letter_2_2_credits:
         xalign 0.5
-        ypos 0.85
-        linear 60.0 ypos -0.75
-    $ renpy.pause(65)
+        ypos 1.0
+        linear 75.0 ypos -0.85
+    $ renpy.pause(80)
     stop music fadeout 1
     hide credits with dissolve2
+    hide black with dissolve
     pause
     
     hide effector_letter_2_1
     show effector_letter_3 at truecenter
     with dissolve
     $ renpy.pause (2)
+    show black with dissolve:
+        alpha 0.4
     show  credits effector_letter_3_credits:
         xalign 0.5
         ypos 1.0
         linear 55.0 ypos -0.3
     $ renpy.pause(60)
     hide credits with dissolve2
+    hide black with dissolve
     pause
     
     hide effector_letter_3 with dissolve
