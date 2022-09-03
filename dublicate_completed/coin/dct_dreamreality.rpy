@@ -16,32 +16,32 @@ label dct_dreamreality:
     play ambience ambience_int_cabin_night fadein 1.5
     scene bg int_house_of_dv_night with dissolve
     dv "Ну, в последний раз на старом месте. Отвяжись жених от невесты!"
-    show 3500_dv smile night 0pt at center with dissolve_fast:
+        show 3500_dv smile night2 0pt at center with dissolve_fast:
         ypos -0.15
     "Алиса хмыкнула и, глядя в потолок, произнесла переиначенную бабушкину поговорку."
     th "Что бы еще сказать, соответствующее моменту?"
-    show 3500_dv grin night 0pt with dissolve_fast
+    show 3500_dv grin night2 0pt with dissolve_fast
     th "Завтра надо будет пнуть Рыжую, пусть забирает остатки своего барахла. А то одно сплошное расстройство."
-    show 3500_dv laugh night 0pt with dissolve_fast
+    show 3500_dv laugh night2 0pt with dissolve_fast
     th "А флаг себе оставлю и на новом месте вывешу."
     th "А если меня Ольга к себе в домик определит? Приедет Второй, спросит где вожатая, а его в домик с пиратским флагом отправят. Пионерский лагерь, ага. Дурдом «Совенок»."
-    show 3500_dv guilty night 0pt with dissolve_fast
+    show 3500_dv guilty night2 0pt with dissolve_fast
     th "Это все Сенька виноват, до него все чинно и благородно было. Может, ночью на флагштоке пиратский флаг поднять?"
-    show 3500_dv smile night 0pt with dissolve_fast
+    show 3500_dv smile night2 0pt with dissolve_fast
     th "{i}Я подниму черно-белый флаг, закончится этот угар. Я уплыву и это будет знак, того что Земля есть шар.{/i}"
-    show 3500_dv sad night 0pt with dissolve_fast
+    show 3500_dv sad night2 0pt with dissolve_fast
     th "Только флаг тогда сразу Ольга конфискует, выцарапывай его потом"
-    show 3500_dv guilty night 0pt with dspr
+    show 3500_dv guilty night2 0pt with dspr
     "Где-то в домике, в какой то щели, надрывался сверчок. Когда он уставал и делал перерыв становилось слышно, как звенит спираль в лампочке."
     "Спать не хотелось, давили какие-то не додуманные мысли, не сказанные слова, не совершенные поступки, которые надо было в своё время додумать, досказать, доделать, а сейчас уже поздно."
     th "Пойти погулять? Или поиграть на эстраде? Тут где-то Сенька с Рыжей шатались, пойти их поискать?"
-    show 3500_dv sad night 0pt with dspr
+    show 3500_dv sad night2 0pt with dspr
     th "Я, кажется, наконец-то простила себе тот выстрел из арбалета. Надо будет сказать об этом Семену, это очень важно."
-    show 3500_dv normal night 0pt with dissolve_fast
+    show 3500_dv normal night2 0pt with dissolve_fast
     th "Но это можно и завтра."
-    show 3500_dv grin night 0pt with dissolve
+    show 3500_dv grin night2 0pt with dissolve
     th "Пойду поиграю"
-    show 3500_dv grin night 0pt:
+    show 3500_dv grin night2 0pt:
         ease 1 xcenter .16
     "Уже было раздевшаяся Алиса достала из сумки черные джинсы и футболку, в которых приехала сюда."
     th "Надену. А то все в форме да в форме"
