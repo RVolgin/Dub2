@@ -840,7 +840,7 @@ label shelter:
     "Я делаю еще шаг назад, прищуриваюсь, и пальцем обвожу в воздухе контур груди Алисы."
     
     scene dct_ext_switchman_house_night
-    show 3500_dv angry night 0pt:
+    show 3500_dv angry body 0pt:
         zoom 1.25 xcenter 0.5 ypos -0.2
     # show dv angry body close 
     with dspr
