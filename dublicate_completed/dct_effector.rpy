@@ -840,11 +840,14 @@ label shelter:
     "Я делаю еще шаг назад, прищуриваюсь, и пальцем обвожу в воздухе контур груди Алисы."
     
     scene dct_ext_switchman_house_night
-    show dv angry body close 
+    show 3500_dv angry night 0pt:
+        zoom 1.25 xcenter 0.5 ypos -0.2
+    # show dv angry body close 
     with dspr
     play music music_list["doomed_to_be_defeated"]
     dv "Ленка, не вздумай! Я же пошутила!"
-    hide dv with moveoutbottom
+    hide 3500_dv with moveoutbottom
+    # hide dv with moveoutbottom
     stop music fadeout 2
     th "Ну хорошо, Алиса пошутила."
     "Но какая-то зарубка в голове остается. Не сейчас, не завтра, но может, когда-нибудь…"
