@@ -977,17 +977,22 @@ label other_peoples_letters:
     "Значит, будем завтракать рисом с остатками колбасы, это лучше, чем жевать ее просто так."
     "Когда я дополнительно подкидываю дрова в печку, в спальне начинает возиться Алиса."
     play sound sfx_wood_floor_squeak
-    show dv normal body close with moveinbottom
+    show 3500_dv normal body 0pt with moveinbottom:
+        zoom 1.25 xcenter 0.5 ypos -0.2
+    # show dv normal body close with moveinbottom
     $ renpy.pause (0.5)
-    show dv shy body close with dspr
+    show 3500_dv shy body 0pt with dspr
+    # show dv shy body close with dspr
     $ renpy.pause (0.5)
-    hide dv with moveoutbottom
+    hide 3500_dv with moveoutbottom
+    # hide dv with moveoutbottom
     dv "Ой!"
     dv "Доброе утро."
     play music music_list["lets_be_friends"] fadein 2
     un "Доброе утро, Алиса. На кровати все вещи."
     dv "Да, я уже вижу. Спасибо, Ленка."
-    show 3500_dv normal night at center with dspr:
+    # show 3500_dv normal night at center with dspr:
+    show 3500_dv normal night 0pt at center with dspr:
         ypos -0.15
     $ renpy.pause (1)
     hide 3500_dv with moveoutright
