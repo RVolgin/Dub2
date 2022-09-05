@@ -1235,8 +1235,6 @@ init :
     $ ggname = ""    # Переменная для выбора имени главного героя
     $ d_gg = Character("[ggname]", color="#8ffad5", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Имя главного героя в заключительной главе последней книги
     $ d_gm = Character(u"Малявка", color="#f3974d", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Глафира: мелкая
-    $ d_us_nvl = Character(u"Ульяна: ", kind=nvl, color="#ff3200", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Ульяна в режиме NVL
-    $ d_dv_nvl = Character(u"Алиса: ", kind=nvl, color="#ffaa00", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Алиса в режиме NVL
     $ d_ma_dv = Character(u"{color=#79cdf7}Максим{/color} | {color=#ffaa00}Алиса{/color}",what_color = "#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Максим | Алиса
     $ d_ma = Character(u"Максим", color="#79cdf7", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Максим
     $ d_ka = Character(u"Катя", color="#894f91", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Катя
