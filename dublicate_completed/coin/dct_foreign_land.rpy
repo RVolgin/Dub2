@@ -1193,7 +1193,7 @@ label dct_foreign_land:
     scene bg ext_clubs_day:
         zoom 3.0 xcenter 0.5 ycenter 0.6
     show sh serious pioneer far:
-        zoom 0.8 xcenter 0.75 ycenter 0.85
+        zoom 0.8 xcenter 0.75 ycenter 0.87
     with squares
     window auto
     "Шурик сидел на крыльце клубов и курил. Маловероятно, что сейчас его кто-то поймает с сигаретой, да и наплевать ему было на всё."
@@ -1229,7 +1229,7 @@ label dct_foreign_land:
     show mi upset pioneer far with dissolve_fast
     sh "Ты тоже вспомнила то, что нельзя было вспоминать?"
     show sh normal pioneer far:
-        linear 0.5 xcenter 0.59 ycenter 0.85
+        linear 0.5 xcenter 0.59 ycenter 0.87
     show mi upset pioneer far:
         linear 0.5 xcenter 0.49 ycenter 0.85
     "Они осторожно присели на верхнюю ступеньку крыльца."
@@ -1325,11 +1325,21 @@ label dct_foreign_land:
     "Предстояло самое трудное, усидеть десять минут, не думая о Жене. Вообще ни о чем не думая, но, главное, о Жене."
     scene white with dissolve
     "Электроник прикрыл глаза и представил перед собой белую, слабо светящуюся стену, за которой остался весь внешний мир."
+    show mz normal pioneer close:
+        zoom 1.2 xcenter 0.48 yalign 1.0 alpha 0
+        linear 0.5 alpha 0.2
     th "Женя…"
+    show mz normal pioneer close:
+        alpha 0.2
+        linear 0.5 alpha 0.0
     extend " Нет, прости, Женя, но наука иногда требует самоотречения."
+    show mz smile pioneer close:
+        alpha 0
+        linear 0.5 alpha 0.2
     extend " Женя…"
     stop music fadeout 1
     show black with dissolve
+    hide mz
     
     pause 0.5
     
