@@ -284,6 +284,11 @@ init :
     image dct_ext_camp_entrance_day = "mods/dublicate_completed/images/bg/coin/dct_ext_camp_entrance_day.jpg" #  # Вид на клуб и на ворота лагеря днём
 
     
+    
+    image dct_ext_island_glance_south_day = "mods/dublicate_completed/images/bg/coin/dct_ext_island_glance_south_day.jpg" # Остров, вид на ж/д мост, день
+    image dct_diana_mod_meadow1 = "mods/dublicate_completed/images/bg/coin/dct_diana_mod_meadow1.jpg" # Остров с видом на берег через протоку
+    
+    
 
     image dct_bank_from_water_side_zoom = "mods/dublicate_completed/images/bg/coin/dct_bank_from_water_side_zoom.jpg"
     image dct_ext_square_night_darker = "mods/dublicate_completed/images/bg/coin/dct_ext_square_night_darker.jpg"
