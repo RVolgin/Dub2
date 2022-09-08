@@ -286,7 +286,6 @@ init :
     
     
     image dct_ext_island_glance_south_day = "mods/dublicate_completed/images/bg/coin/dct_ext_island_glance_south_day.jpg" # Остров, вид на ж/д мост, день
-    image dct_diana_mod_meadow1 = "mods/dublicate_completed/images/bg/coin/dct_diana_mod_meadow1.jpg" # Остров с видом на берег через протоку
     
     
 
