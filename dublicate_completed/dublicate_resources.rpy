@@ -286,6 +286,10 @@ init :
     
     
     image dct_ext_island_glance_south_day = "mods/dublicate_completed/images/bg/coin/dct_ext_island_glance_south_day.jpg" # Остров, вид на ж/д мост, день
+    image dct_ext_square_profile_view_sunset = "mods/dublicate_completed/images/bg/coin/dct_ext_square_profile_view_sunset.jpg" # Площадь с боку вечером, вид на Генду и админ. корпус
+    image dct_ext_alley_from_shore_to_clubs_night = "mods/dublicate_completed/images/bg/coin/dct_ext_alley_from_shore_to_clubs_night.jpg" # Аллея от набережной к клубам ночью.
+    image dct_ext_shore_behind_boathouse_night_1 = "mods/dublicate_completed/images/bg/coin/dct_ext_shore_behind_boathouse_night_1.jpg" # Участок за лодочной станцией, взгляд в сторону воды, ночью.
+    image dct_ext_shore_behind_boathouse_night_2 = "mods/dublicate_completed/images/bg/coin/dct_ext_shore_behind_boathouse_night_2.jpg" # Участок за лодочной станцией, взгляд в сторону берега, ночью.
     
     
 
@@ -417,6 +421,8 @@ init :
     image dct_road_bus_BTR = "mods/dublicate_completed/images/cg/coin/dct_road_bus_BTR.jpg" # Автобус в кювете и подбитый БТР
     image dct_mi_morning_house = "mods/dublicate_completed/images/cg/coin/dct_mi_morning_house.jpg" # Мику проснувшаяся с утра
     image dct_ext_laboratory_of_d_sh = "mods/dublicate_completed/images/cg/coin/dct_ext_laboratory_of_d_sh.jpg" # Лаборатория Александра, вид снаружи на окна
+    
+    image dct_coin_dv_sits_on_porch = "mods/dublicate_completed/images/cg/coin/dct_coin_dv_sits_on_porch.jpg" # Алиса на крыльце домика с тетрадкой
         
     image dct_dv_two_pieces_bg_dark = "mods/dublicate_completed/images/cg/coin/dct_dv_two_pieces_bg_dark.jpg"
     image dct_dv_two_pieces_bg_square = "mods/dublicate_completed/images/cg/coin/dct_dv_two_pieces_bg_square.jpg"
