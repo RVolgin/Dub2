@@ -1243,6 +1243,7 @@ init :
     $ d_ma_dv = Character(u"{color=#79cdf7}Максим{/color} | {color=#ffaa00}Алиса{/color}",what_color = "#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Максим | Алиса
     $ d_ma = Character(u"Максим", color="#79cdf7", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Максим
     $ d_ka = Character(u"Катя", color="#894f91", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Катя
+    $ d_vi = Character(u"Витька", color="#b7b7b7", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Витька
     $ d_va = Character(u"Вася", color="#ac613a", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Вася
     $ d_sv = Character(u"Света", color="#55a022", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Света
     $ d_civ = Character(u"Тип в штатском", color="#9e414d", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Гражданский из первого сна Шурика
