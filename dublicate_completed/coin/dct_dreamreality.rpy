@@ -118,7 +118,7 @@ label dct_dreamreality:
     play ambience ambience_camp_center_night fadein 1
     hide black with dissolve
     window auto
-    show d_us normal sport:
+    show d_us normal sport_windbreaker:
         zoom .75 xcenter 1.2
         easein 2  xcenter .62
     "Через десять минут после ее ухода, в домик к Алисе заглянула Ульяна."
