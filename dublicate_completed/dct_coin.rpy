@@ -23,7 +23,7 @@ label dct_coin:       #вступительный лейбл
     
     call dct_replacement
     
-    #call dct_system_errors
+    call dct_system_errors
     
     call dct_dreamreality
     
