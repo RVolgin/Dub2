@@ -532,9 +532,7 @@ label dct_replacement:
     "Витька, вообще, последнее время, изменился. Дерганный какой-то стал, как-будто Максим ему чем-то не нравится."
     show d_ma angry pioneer with dissolve:
         zoom .75 xcenter 0.36 yalign 1.01 alpha 1
-    
-    # show d_ma angry pioneer with dissolve:
-        # xcenter 0.5 yalign 0.02 alpha 1
+
     "Вчера, поздно вечером, вообще чуть не подрались по непонятному поводу: Катерину Максим у Витьки уводит."
     show d_ma serious pioneer with dspr
     "Максим пожал плечами.{w} То что лагерь маленький и Катя все время на глаза попадается, разве Максим в этом виноват."
@@ -543,14 +541,9 @@ label dct_replacement:
     show dv grin pioneer2 close at fright:
         alpha 0
         linear 1.5 alpha 1
-        # pause 0.5
-        # linear 1.5 alpha 0
     show d_ma shy pioneer with dspr
     "В-третьих, из-за самой Алисы, конечно."
     show dv grin pioneer2 close at fright:
-        # alpha 0
-        # linear 1.5 alpha 1
-        # pause 0.5
         linear 1.5 alpha 0
     extend " Особенно, когда разглядел за насмешками и подколками живую девушку."
     hide d_ma with dissolve
