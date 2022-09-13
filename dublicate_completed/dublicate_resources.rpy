@@ -517,13 +517,13 @@ init :
 
 
     image dct_camp_stroll_to_the_right:                  # Смена локаций лагеря
-        "bg ext_musclub_day" with pushright
+        "dct_ext_music_club_sunset" with pushright
         pause 2.5
-        "bg ext_washstand_day" with pushright
+        "dct_ext_washstand_sunset" with pushright
         pause 2.5
         "dct_ext_stage_big_sunset" with pushright
         pause 2.5
-        "bg ext_library_day" with pushright
+        "dct_ext_library_sunset" with pushright
         pause 2.5
         "bg ext_aidpost_day" with pushright
         pause 2.5
@@ -536,31 +536,8 @@ init :
         "d_ext_dv_hideout_sunset" with pushright
         pause 2.5
         repeat
-        
-        
-        
-    # image dct_camp_stroll_to_the_right:                  # То же самое, но крутится без перерыва
-        # "bg ext_musclub_day" with pushright
-        # pause 1
-        # "bg ext_washstand_day" with pushright
-        # pause 1
-        # "dct_ext_stage_big_sunset" with pushright
-        # pause 1
-        # "bg ext_library_day" with pushright
-        # pause 1
-        # "bg ext_aidpost_day" with pushright
-        # pause 1
-        # "dct_ext_bathhouse_day" with pushright
-        # pause 1
-        # "dct_ext_beach_sunset_not_train" with pushright
-        # pause 1
-        # "dct_ext_boathouse_sunset" with pushright
-        # pause 1
-        # "d_ext_dv_hideout_sunset" with pushright
-        # pause 1
-        # repeat
-        
-        
+
+
         
     image dct_el_shuttles_back_and_forth:                  # Электроник курсирует туда-сюда (мимо бибилиотеки)
         "el normal pioneer far"
