@@ -287,6 +287,7 @@ init :
     
     image dct_ext_island_glance_south_day = "mods/dublicate_completed/images/bg/coin/dct_ext_island_glance_south_day.jpg" # Остров, вид на ж/д мост, день
     image dct_ext_square_profile_view_sunset = "mods/dublicate_completed/images/bg/coin/dct_ext_square_profile_view_sunset.jpg" # Площадь с боку вечером, вид на Генду и админ. корпус
+    image dct_ext_pier_night = "mods/dublicate_completed/images/bg/coin/dct_ext_pier_night.jpg" # Палуба лодочной станции, ночь
     image dct_ext_alley_from_shore_to_clubs_night = "mods/dublicate_completed/images/bg/coin/dct_ext_alley_from_shore_to_clubs_night.jpg" # Аллея от набережной к клубам ночью.
     image dct_ext_shore_behind_boathouse_night_1 = "mods/dublicate_completed/images/bg/coin/dct_ext_shore_behind_boathouse_night_1.jpg" # Участок за лодочной станцией, взгляд в сторону воды, ночью.
     image dct_ext_shore_behind_boathouse_night_2 = "mods/dublicate_completed/images/bg/coin/dct_ext_shore_behind_boathouse_night_2.jpg" # Участок за лодочной станцией, взгляд в сторону берега, ночью.
