@@ -737,7 +737,7 @@ label dct_system_errors:
     show d_jn:
         zoom 0.125 anchor (0.5, 1.0) pos (0.39, 0.685)
     show 3500_sh smile pioneer:
-        zoom 0.125 anchor (0.5, 1.0) pos (0.416, 0.685)
+        zoom 0.125 anchor (0.5, 1.0) pos (0.416, 0.682)
     with fade
     "Они стояли на перекрестке у клубов и смотрели, как от ворот идет Шурик, держа Яну за  руку."
     show d_jn:
