@@ -249,9 +249,9 @@ init :
     
     image dct_ext_between_beach_and_boathouse_day = "mods/dublicate_completed/images/bg/coin/dct_ext_between_beach_and_boathouse_day.jpg"   # Берег между пляжем и лодочной станцией, ДЕНЬ
     image dct_ext_between_beach_and_boathouse_sunset = "mods/dublicate_completed/images/bg/coin/dct_ext_between_beach_and_boathouse_sunset.jpg"   # Берег между пляжем и лодочной станцией, ЗАКАТ
-    image dct_ext_glade_behind_clubs_day = "mods/dublicate_completed/images/bg/coin/dct_ext_between_beach_and_boathouse_day.jpg"   # Полянка за зданием кружка кибернетики, ДЕНЬ
-    image dct_ext_glade_behind_clubs_night = "mods/dublicate_completed/images/bg/coin/dct_ext_between_beach_and_boathouse_night.jpg"   # Полянка за зданием кружка кибернетики, НОЧЬ
-    image dct_ext_glade_behind_clubs_sunset = "mods/dublicate_completed/images/bg/coin/dct_ext_between_beach_and_boathouse_sunset.jpg"   # Полянка за зданием кружка кибернетики, ЗАКАТ
+    image dct_ext_glade_behind_clubs_day = "mods/dublicate_completed/images/bg/coin/dct_ext_glade_behind_clubs_day.jpg"   # Полянка за зданием кружка кибернетики, ДЕНЬ
+    image dct_ext_glade_behind_clubs_night = "mods/dublicate_completed/images/bg/coin/dct_ext_glade_behind_clubs_night.jpg"   # Полянка за зданием кружка кибернетики, НОЧЬ
+    image dct_ext_glade_behind_clubs_sunset = "mods/dublicate_completed/images/bg/coin/dct_ext_glade_behind_clubs_sunset.jpg"   # Полянка за зданием кружка кибернетики, ЗАКАТ
     
     
     
