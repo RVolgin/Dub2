@@ -1386,8 +1386,8 @@ init :
     # Яна
     image dct_jn_near_gate = "mods/dublicate_completed/images/sprites/d_unformat/dct_jn_near_gate.png"
     # Катя
-    image dct_int_dining_hall_d_ka sharp = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_dining_hall_d_ka_sharp.png"  # Катя в столовой (xcenter 0.35 ycenter 0.35)
-    image dct_int_dining_hall_d_ka blur = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_dining_hall_d_ka_blur.png"  # Катя в столовой размытая
+    image dct_int_dining_hall_d_ka sharp = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_dining_hall_d_ka_sharp.jpg"  # Катя в столовой (xcenter 0.35 ycenter 0.35)
+    image dct_int_dining_hall_d_ka blur = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_dining_hall_d_ka_blur.jpg"  # Катя в столовой размытая
 
   
     #Черные
