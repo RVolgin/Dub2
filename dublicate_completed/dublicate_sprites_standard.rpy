@@ -1365,6 +1365,7 @@ init :
     image dct_mz_1_binder = "mods/dublicate_completed/images/sprites/d_unformat/dct_mz_1_binder.png"
     image dct_mz_1_binder_far = "mods/dublicate_completed/images/sprites/d_unformat/dct_mz_1_binder_far.png"
     # Мику
+    image dct_ext_houses_day_mi_goes_away = "mods/dublicate_completed/images/sprites/d_unformat/dct_ext_houses_day_mi_goes_away.png" # Мику идёт от нас по аллее
     image dct_mi_3_binder = "mods/dublicate_completed/images/sprites/d_unformat/dct_mi_3_binder.png"
     image dct_mi_3_binder_far = "mods/dublicate_completed/images/sprites/d_unformat/dct_mi_3_binder_far.png"
     image dct_int_aidpost_day_mi_behind_curtain = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_aidpost_day_mi_behind_curtain.png"    # Мику в медпункте за занавеской
