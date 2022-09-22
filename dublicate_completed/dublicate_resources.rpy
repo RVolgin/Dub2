@@ -197,6 +197,7 @@ init :
     image dct_landscape_forest3_overcast_1 = "mods/dublicate_completed/images/bg/dct_landscape_forest3_overcast_1.jpg"
     image dct_landscape_forest3_overcast_2 = "mods/dublicate_completed/images/bg/dct_landscape_forest3_overcast_2.jpg"
     image dct_int_vivariy = "mods/dublicate_completed/images/bg/dct_int_vivariy.jpg"    # Виварий
+    image dct_mt_monkey = "mods/dublicate_completed/images/bg/dct_mt_monkey.jpg"    # Обезьяна в клетке
     image dct_poligon_1 = "mods/dublicate_completed/images/bg/dct_poligon_1.jpg"
     image dct_poligon_2 = "mods/dublicate_completed/images/bg/dct_poligon_2.jpg"
     image dct_poligon_3 = "mods/dublicate_completed/images/bg/dct_poligon_3.jpg"
