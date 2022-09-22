@@ -204,6 +204,7 @@ init :
     image dct_poligon_6 = "mods/dublicate_completed/images/bg/dct_poligon_6.jpg"
     
     
+    image dct_ext_bus_sunrise = "mods/dublicate_completed/images/bg/dct_ext_bus_sunrise.jpg"    # Остановка с Икарусом, утро
     image dct_bank_from_water_side = "mods/dublicate_completed/images/bg/dct_bank_from_water_side.jpg"    # Вид на лодочную станцию и берег со стороны воды
     image dct_railway_embankment_day = "mods/dublicate_completed/images/bg/dct_railway_embankment_day.jpg"  # Берег возле железнодорожной насыпи ДЕНЬ
     image dct_railway_embankment_overcast = "mods/dublicate_completed/images/bg/dct_railway_embankment_overcast.jpg"    # Берег возле железнодорожной насыпи ПАСМУРНО
