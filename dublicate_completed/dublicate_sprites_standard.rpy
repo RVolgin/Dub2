@@ -692,11 +692,11 @@ init :
 
     #"Куклы" для Ольги
 
-    image sl doll pioneer = "mods/dublicate_completed/images/sprites/dolls/sl_doll.png"
-    image dv doll pioneer = "mods/dublicate_completed/images/sprites/dolls/dv_doll.png"
-    image el doll pioneer = "mods/dublicate_completed/images/sprites/dolls/el_doll.png"
-    image mi doll pioneer = "mods/dublicate_completed/images/sprites/dolls/mi_doll.png"
-    image mz doll pioneer = "mods/dublicate_completed/images/sprites/dolls/mz_doll.png"
+    image sl doll pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor("mods/dublicate_completed/images/sprites/dolls/sl_doll.png", im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor("mods/dublicate_completed/images/sprites/dolls/sl_doll.png", im.matrix.tint(0.63, 0.78, 0.82)), True, "mods/dublicate_completed/images/sprites/dolls/sl_doll.png")
+    image dv doll pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor("mods/dublicate_completed/images/sprites/dolls/dv_doll.png", im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor("mods/dublicate_completed/images/sprites/dolls/dv_doll.png", im.matrix.tint(0.63, 0.78, 0.82)), True, "mods/dublicate_completed/images/sprites/dolls/dv_doll.png")
+    image el doll pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor("mods/dublicate_completed/images/sprites/dolls/el_doll.png", im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor("mods/dublicate_completed/images/sprites/dolls/el_doll.png", im.matrix.tint(0.63, 0.78, 0.82)), True, "mods/dublicate_completed/images/sprites/dolls/el_doll.png")
+    image mi doll pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor("mods/dublicate_completed/images/sprites/dolls/mi_doll.png", im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor("mods/dublicate_completed/images/sprites/dolls/mi_doll.png", im.matrix.tint(0.63, 0.78, 0.82)), True, "mods/dublicate_completed/images/sprites/dolls/mi_doll.png")
+    image mz doll pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor("mods/dublicate_completed/images/sprites/dolls/mz_doll.png", im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor("mods/dublicate_completed/images/sprites/dolls/mz_doll.png", im.matrix.tint(0.63, 0.78, 0.82)), True, "mods/dublicate_completed/images/sprites/dolls/mz_doll.png")
     
     #Семен и его клоны
     
@@ -1055,6 +1055,31 @@ init :
     image d_to moron pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1300), (0, 0), 'mods/dublicate_completed/images/sprites/d_to/d_to_body.png', (0, 0), 'mods/dublicate_completed/images/sprites/d_to/d_to_pioneer.png', (0, 0), 'mods/dublicate_completed/images/sprites/d_to/d_to_moron.png'), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1300), (0, 0), 'mods/dublicate_completed/images/sprites/d_to/d_to_body.png', (0, 0), 'mods/dublicate_completed/images/sprites/d_to/d_to_pioneer.png',(0, 0), 'mods/dublicate_completed/images/sprites/d_to/d_to_moron.png'), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((900, 1300), (0, 0), 'mods/dublicate_completed/images/sprites/d_to/d_to_body.png', (0, 0), 'mods/dublicate_completed/images/sprites/d_to/d_to_pioneer.png', (0, 0), 'mods/dublicate_completed/images/sprites/d_to/d_to_moron.png'))
     image to_hunter = "mods/dublicate_completed/images/sprites/oth/to_hunter.png"
     
+    
+    #Библиотекарь (в посёлке Шлюз)
+    
+    image d_libr normal = "mods/dublicate_completed/images/sprites/d_libr/d_libr_normal.png"
+    image d_libr happy = "mods/dublicate_completed/images/sprites/d_libr/d_libr_happy.png"
+    image d_libr smile = "mods/dublicate_completed/images/sprites/d_libr/d_libr_smile.png"
+    image d_libr surprise = "mods/dublicate_completed/images/sprites/d_libr/d_libr_surprise.png"
+    
+    
+    #Лаборантка Олеся
+    
+    image d_ol normal far = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/far/d_ol_normal.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/far/d_ol_normal.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_ol/far/d_ol_normal.png')
+    image d_ol normal = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/normal/d_ol_normal.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/normal/d_ol_normal.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_ol/normal/d_ol_normal.png')
+    image d_ol normal close = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/close/d_ol_normal.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/close/d_ol_normal.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_ol/close/d_ol_normal.png')
+    image d_ol grin far = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/far/d_ol_grin.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/far/d_ol_grin.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_ol/far/d_ol_grin.png')
+    image d_ol grin = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/normal/d_ol_grin.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/normal/d_ol_grin.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_ol/normal/d_ol_grin.png')
+    image d_ol grin close = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/close/d_ol_grin.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/close/d_ol_grin.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_ol/close/d_ol_grin.png')
+    image d_ol smile far = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/far/d_ol_smile.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/far/d_ol_smile.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_ol/far/d_ol_smile.png')
+    image d_ol smile = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/normal/d_ol_smile.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/normal/d_ol_smile.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_ol/normal/d_ol_smile.png')
+    image d_ol smile close = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/close/d_ol_smile.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/close/d_ol_smile.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_ol/close/d_ol_smile.png')
+    image d_ol shy far = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/far/d_ol_shy.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/far/d_ol_shy.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_ol/far/d_ol_shy.png')
+    image d_ol shy = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/normal/d_ol_shy.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/normal/d_ol_shy.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_ol/normal/d_ol_shy.png')
+    image d_ol shy close = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/close/d_ol_shy.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_ol/close/d_ol_shy.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_ol/close/d_ol_shy.png')
+    
+    
     #Юльки
     
     image cat_uv washing small = ConditionSwitch ("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/cat_uv/small/cat_uv_washing_small.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/cat_uv/small/cat_uv_washing_small.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/cat_uv/small/cat_uv_washing_small.png')
@@ -1267,7 +1292,7 @@ init :
     image d_oz laugh pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz_l.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz_l.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz_l.png')
     image d_oz n pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz_n.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz_n.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz_n.png')
     image d_oz smile pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz_s.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz_s.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz_s.png')
-    
+
     #Артём
     image d_ar normal pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_ar/d_ar_normal_pioneer.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_ar/d_ar_normal_pioneer.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_deti/d_ar/d_ar_normal_pioneer.png')
     image d_ar smile pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_ar/d_ar_smile_pioneer.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_ar/d_ar_smile_pioneer.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_deti/d_ar/d_ar_smile_pioneer.png')
@@ -1401,6 +1426,7 @@ init :
     image semulal_day = "mods/dublicate_completed/images/sprites/oth/semulal_day.png"
     image semulal_night = "mods/dublicate_completed/images/sprites/oth/semulal_night.png"
     image dct_fog = "mods/dublicate_completed/images/sprites/oth/dct_fog.png"
+    image fog_face_mask = "mods/dublicate_completed/images/sprites/oth/fog_face_mask.png"
     image dct_ext_houses_fog = "mods/dublicate_completed/images/sprites/oth/dct_ext_houses_fog.png"
     image dct_ext_house_of_kids_day_fog = "mods/dublicate_completed/images/sprites/oth/dct_ext_house_of_kids_day_fog.png"
     image dct_ext_cliff_day_boat_bow = "mods/dublicate_completed/images/sprites/oth/dct_ext_cliff_day_boat_bow.png"
@@ -1433,6 +1459,8 @@ init :
     image dct_overcast_rain_1 = "mods/dublicate_completed/images/sprites/oth/dct_overcast_rain_1.png"
     image dct_overcast_rain_2 = "mods/dublicate_completed/images/sprites/oth/dct_overcast_rain_2.png"
     image dct_overcast_rain_3 = "mods/dublicate_completed/images/sprites/oth/dct_overcast_rain_3.png"
+    image dct_cassete = "mods/dublicate_completed/images/sprites/oth/dct_cassete.png"
+    image dct_breaker = "mods/dublicate_completed/images/sprites/oth/dct_breaker.png"
     image dct_sht = "mods/dublicate_completed/images/sprites/oth/dct_sht.png" #СХТ40 - прозрачный спрайт вместо cg
     
     ##### Декорариум (coin)

@@ -8,7 +8,9 @@ init :
     image headline_text = ParameterizedText(color="#14ab14", font="mods/dublicate_completed/fonts/TrixieProHeavy_Regular.otf", size=192)
     image headline_text2 = ParameterizedText(color="#14ab14", font="mods/dublicate_completed/fonts/TrixieProHeavy_Regular.otf", size=96)
     
-    image poem_text = ParameterizedText(color="#ffffff", drop_shadow = [ (-1, -1), (1, -1), (-1, 1), (1, 1) ], drop_shadow_color = "#000000", size=48)
+    image wish_text = ParameterizedText (color="#3e2e89", font="mods/dublicate_completed/fonts/EskalFont4you.ttf", size=96)
+    
+    image poem_text = ParameterizedText(color="#ffffff", drop_shadow = [(2,2)], drop_shadow_color = "#000000", size=48)
     
     image promo_text = ParameterizedText (color="#4c4c4c", font="mods/dublicate_completed/fonts/bezpr.ttf", size=48)
     image promo_text2 = ParameterizedText (color ="#ff0000", font="mods/dublicate_completed/fonts/bezpr.ttf", size=128)
@@ -44,6 +46,7 @@ init :
     image dct_ext_bulletin_board = "mods/dublicate_completed/images/bg/dct_ext_bulletin_board.jpg"
     image dct_ext_camp_entrance_sunset = "mods/dublicate_completed/images/bg/dct_ext_camp_entrance_sunset.jpg"
     image dct_ext_city_scuare_sunset = "mods/dublicate_completed/images/bg/dct_ext_city_scuare_sunset.jpg"
+    image dct_ext_clubs_night_cham = "mods/dublicate_completed/images/bg/dct_ext_clubs_night_cham.jpg"
     image dct_ext_clubs_sunset = "mods/dublicate_completed/images/bg/dct_ext_clubs_sunset.jpg"
     image dct_ext_cliff_day = "mods/dublicate_completed/images/bg/dct_ext_cliff_day.jpg"
     image dct_ext_cliff_day_zoom = "mods/dublicate_completed/images/bg/dct_ext_cliff_day_zoom.jpg"
@@ -83,6 +86,7 @@ init :
     image dct_ext_module_smoking_place2 = "mods/dublicate_completed/images/bg/dct_ext_module_smoking_place2.jpg"
     image dct_ext_module_smoking_place2_sunset = "mods/dublicate_completed/images/bg/dct_ext_module_smoking_place2_sunset.jpg"
     image dct_ext_musclub_night = "mods/dublicate_completed/images/bg/dct_ext_musclub_night.jpg"
+    image dct_ext_musclub_night_light = "mods/dublicate_completed/images/bg/dct_ext_musclub_night_light.jpg"
     image dct_ext_no_bus_night = "mods/dublicate_completed/images/bg/dct_ext_no_bus_night.jpg"
     image dct_ext_no_bus_white_fog_night = "mods/dublicate_completed/images/bg/dct_ext_no_bus_white_fog_night.jpg"
     image dct_ext_no_bus_pink_fog_night = "mods/dublicate_completed/images/bg/dct_ext_no_bus_pink_fog_night.jpg"
@@ -99,6 +103,7 @@ init :
     image dct_ext_residential_block_day = "mods/dublicate_completed/images/bg/dct_ext_residential_block_day.jpg"
     image dct_ext_residential_block_night = "mods/dublicate_completed/images/bg/dct_ext_residential_block_night.jpg"
     image dct_ext_residential_block_sunset = "mods/dublicate_completed/images/bg/dct_ext_residential_block_sunset.jpg"
+    image dct_ext_road_day_city = "mods/dublicate_completed/images/bg/dct_ext_road_day_city.jpg"
     image dct_ext_square_day = "mods/dublicate_completed/images/bg/dct_ext_square_day.jpg" #Площадь в 4й смене
     image dct_ext_warehouse2_day_7 = "mods/dublicate_completed/images/bg/dct_ext_warehouse2_day_7.jpg"
     image dct_ext_washstand_sunset = "mods/dublicate_completed/images/bg/dct_ext_washstand_sunset.jpg"
@@ -146,7 +151,9 @@ init :
     image dct_int_house_of_sl_night = "mods/dublicate_completed/images/bg/dct_int_house_of_sl_night.jpg"
     image dct_int_house_of_sl_sunset = "mods/dublicate_completed/images/bg/dct_int_house_of_sl_sunset.jpg"
     image dct_int_house_of_un_sunset = "mods/dublicate_completed/images/bg/dct_int_house_of_un_sunset.jpg"
+    image dct_int_library_sunset = "mods/dublicate_completed/images/bg/dct_int_library_sunset.jpg"
     image dct_int_mine_coalface_dark = "mods/dublicate_completed/images/bg/dct_int_mine_coalface_dark.jpg"
+    image dct_int_musclub_night_light = "mods/dublicate_completed/images/bg/dct_int_musclub_night_light.jpg"
     image dct_int_residential_block_day = "mods/dublicate_completed/images/bg/dct_int_residential_block_day.jpg"
     image dct_int_residential_block_night = "mods/dublicate_completed/images/bg/dct_int_residential_block_night.jpg"
     image dct_int_residential_block2_sunset = "mods/dublicate_completed/images/bg/dct_int_residential_block2_sunset.jpg"
@@ -163,6 +170,8 @@ init :
     image dct_int_switchman_house_sunset = "mods/dublicate_completed/images/bg/dct_int_switchman_house_sunset.jpg"
     image dct_intro_xx = "mods/dublicate_completed/images/bg/dct_intro_xx.jpg"
     image dct_int_chief_corridor_night = "mods/dublicate_completed/images/bg/dct_int_chief_corridor_night.jpg"
+    image dct_int_laboratory = "mods/dublicate_completed/images/bg/dct_int_laboratory.jpg"  # Лаборатория
+    image dct_int_laboratory_mt = "mods/dublicate_completed/images/bg/dct_int_laboratory_mt.jpg"  # Лаборатория с Ольгой на экране
     image dct_int_library_cellar = "mods/dublicate_completed/images/bg/dct_int_library_cellar.jpg"
     image dct_int_liaz_day_rain = "mods/dublicate_completed/images/bg/dct_int_liaz_day_rain.jpg"
     image dct_int_loft_day = "mods/dublicate_completed/images/bg/dct_int_loft_day.jpg"
@@ -187,6 +196,11 @@ init :
     image dct_landscape_forest3 = "mods/dublicate_completed/images/bg/dct_landscape_forest3.jpg"
     image dct_landscape_forest3_overcast_1 = "mods/dublicate_completed/images/bg/dct_landscape_forest3_overcast_1.jpg"
     image dct_landscape_forest3_overcast_2 = "mods/dublicate_completed/images/bg/dct_landscape_forest3_overcast_2.jpg"
+    image dct_int_vivariy = "mods/dublicate_completed/images/bg/dct_int_vivariy.jpg"    # Виварий
+    image dct_poligon_1 = "mods/dublicate_completed/images/bg/dct_poligon_1.jpg"
+    image dct_poligon_2 = "mods/dublicate_completed/images/bg/dct_poligon_2.jpg"
+    image dct_poligon_3 = "mods/dublicate_completed/images/bg/dct_poligon_3.jpg"
+    image dct_poligon_6 = "mods/dublicate_completed/images/bg/dct_poligon_6.jpg"
     
     
     image dct_bank_from_water_side = "mods/dublicate_completed/images/bg/dct_bank_from_water_side.jpg"    # Вид на лодочную станцию и берег со стороны воды
@@ -400,12 +414,15 @@ init :
     image dct_to_in_bog_2 = "mods/dublicate_completed/images/cg/dct_to_in_bog_2.jpg"
     image dct_dancing_uv = "mods/dublicate_completed/images/cg/dct_dancing_uv.jpg"
     image dct_olga_road = "mods/dublicate_completed/images/cg/dct_olga_road.jpg" #Просто, вырезаная дорога из Аним_16
+    image dct_mt_mirror = "mods/dublicate_completed/images/cg/dct_mt_mirror.jpg" #Ольга перед зеркалом
+    image dct_mt_with_broom = "mods/dublicate_completed/images/cg/dct_mt_with_broom.jpg" #Ольга с метлой
     image dct_lineup = "mods/dublicate_completed/images/cg/dct_lineup.jpg"
     image dct_lineup_mi_not_us = "mods/dublicate_completed/images/cg/dct_lineup_mi_not_us.jpg"
     image dct_lineup_mt_mi_not_us = "mods/dublicate_completed/images/cg/dct_lineup_mt_mi_not_us.jpg"
     image dct_lineup_sh_not_dv = "mods/dublicate_completed/images/cg/dct_lineup_sh_not_dv.jpg"
     image dct_lineup_us_sport = "mods/dublicate_completed/images/cg/dct_lineup_us_sport.jpg"
     image dct_lineup_two_lines = "mods/dublicate_completed/images/cg/dct_lineup_two_lines.jpg"
+    
     
     ##### cg (coin)
     
@@ -544,8 +561,31 @@ init :
         "d_ext_dv_hideout_sunset" with pushright
         pause 2.5
         repeat
-
-
+        
+        
+        
+    # image dct_camp_stroll_to_the_right:                  # То же самое, но крутится без перерыва
+        # "bg ext_musclub_day" with pushright
+        # pause 1
+        # "bg ext_washstand_day" with pushright
+        # pause 1
+        # "dct_ext_stage_big_sunset" with pushright
+        # pause 1
+        # "bg ext_library_day" with pushright
+        # pause 1
+        # "bg ext_aidpost_day" with pushright
+        # pause 1
+        # "dct_ext_bathhouse_day" with pushright
+        # pause 1
+        # "dct_ext_beach_sunset_not_train" with pushright
+        # pause 1
+        # "dct_ext_boathouse_sunset" with pushright
+        # pause 1
+        # "d_ext_dv_hideout_sunset" with pushright
+        # pause 1
+        # repeat
+        
+        
         
     image dct_el_shuttles_back_and_forth:                  # Электроник курсирует туда-сюда (мимо бибилиотеки)
         "el normal pioneer far"
@@ -979,6 +1019,7 @@ init :
     $ dct_ambience_cafe = "mods/dublicate_completed/sounds/ambience/dct_ambience_cafe.ogg"
     $ dct_ambience_swamp = "mods/dublicate_completed/sounds/ambience/dct_ambience_swamp.ogg"
     $ dct_ambience_swamp_night = "mods/dublicate_completed/sounds/ambience/dct_ambience_swamp_night.ogg"
+    $ dct_ambience_vivero = "mods/dublicate_completed/sounds/ambience/dct_ambience_vivero.ogg" #виварий
     
     ##### ambience (coin)
     
@@ -1102,6 +1143,12 @@ init :
     $ dct_sfx_jump_in_swamp = "mods/dublicate_completed/sounds/sfx/dct_sfx_jump_in_swamp.ogg"
     $ dct_sfx_steps_in_swamp = "mods/dublicate_completed/sounds/sfx/dct_sfx_steps_in_swamp.ogg"
     $ dct_sfx_splash_in_swamp = "mods/dublicate_completed/sounds/sfx/dct_sfx_splash_in_swamp.ogg"
+    $ dct_sfx_monkey_cry = "mods/dublicate_completed/sounds/sfx/dct_sfx_monkey_cry.ogg"
+    $ dct_sfx_mirabilis_futurum = "mods/dublicate_completed/sounds/sfx/dct_sfx_mirabilis_futurum.ogg"
+    #Стук в дверь разной агрессивности
+    $ dct_sfx_knock_door1 = "mods/dublicate_completed/sounds/sfx/dct_sfx_knock_door1.ogg"
+    $ dct_sfx_knock_door2 = "mods/dublicate_completed/sounds/sfx/dct_sfx_knock_door2.ogg"
+    $ dct_sfx_knock_door3 = "mods/dublicate_completed/sounds/sfx/dct_sfx_knock_door3.ogg"
     #Кошка
     $ dct_sfx_cat_hiss1 = "mods/dublicate_completed/sounds/sfx/dct_sfx_cat_hiss1.ogg"
     $ dct_sfx_meow1 = "mods/dublicate_completed/sounds/sfx/dct_sfx_meow1.ogg"
@@ -1125,7 +1172,7 @@ init :
     $ dct_sfx_horn_dinner = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_dinner.ogg" # Горн на обед
     $ dct_sfx_horn_dinner_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_dinner_through_loudspeaker.ogg" # Горн на обед через репродуктор
     $ dct_sfx_horn_rise_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_rise_through_loudspeaker.ogg" # Горн-подъём через репродктор
-    $ dct_sfx_horn_rebound_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_rebound_through_loudspeaker.ogg" # Горн-отбой через репродктор через репродуктор
+    $ dct_sfx_horn_rebound_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_rebound_through_loudspeaker.ogg" # Горн-отбой через репродктор
     $ dct_sfx_robot_run_club_attic = "<to 2.6>mods/dublicate_completed/sounds/coin/sfx/dct_sfx_robot_run_club_attic.ogg" # Яна пробегает по чердаку клуба
     $ dct_sfx_record_crackling = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_record_crackling.ogg" # Потрескивание старой пластинки
     $ dct_sfx_sveta_falls_in_gym = "mods/dublicate_completed/sounds/coin/sfx/dct_sveta_falls_in_gym.ogg" # Света падает в спортзале и вскрикивает
@@ -1206,7 +1253,9 @@ init :
     
     $ d_tie = Character (u'Галстук', color="#00ff00", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Замдиректора "Вакуоли"
     
-    $ d_vo_2 = Character (u'Первый голос', color="#00ff00", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Собеседник Артёма"
+    $ d_vo_1 = Character (u'Второй голос', color="#00ff00", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") #Техник-лаборант 2
+    $ d_vo_2 = Character (u'Первый голос', color="#00ff00", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") #Собеседник Артёма, техник-лаборант 1
+    $ d_tech_2 = Character (u'Техник', color="#00ff00", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") #Техник-лаборант 2
     
     $ whisper = Character(u"Шёпот", color="#4de227", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
     
@@ -1219,6 +1268,15 @@ init :
     
     $ adl_sh1 = Character(u"Александр Сергеевич", color="#faed25", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Шурик-оригинал
     $ adl_sh2 = Character(u"\"Шурик\"", color="#faed25", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Шурик-оригинал
+    $ adl_sh3 = Character(u"Трофимов", color="#faed25", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") #Шурик-оригинал
+    $ adl_sh4 = Character(u"Александр", color="#faed25", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") #Шурик-дубликат
+    
+    $ d_el = Character(u"Лохматый", color="#faed25", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") #Электроник
+    
+    
+    $ libr = Character(u"Библиотекарь", color="#4a86ff", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") # Женя из посёлка Шлюз
+    $ d_ol = Character(u"Олеся", color="#d3a900", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") #Олеся из арки Ольги
+    
     
 
     
