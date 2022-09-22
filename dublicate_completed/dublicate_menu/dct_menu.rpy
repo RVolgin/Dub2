@@ -172,9 +172,7 @@ screen dct_menu:
         if (persistent.d_nam > 0) and (persistent.d_sim > 0) and (persistent.d_prolog > 0) and (persistent.d_ana > 0) and (persistent.d_dra > 0) and (persistent.d_shif > 0) and (persistent.d_lin > 0) and (persistent.d_miuki > 0) and (persistent.d_eff > 0):
             style "dct_menu_button"
             text_style "dct_menu_button"
-            #action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_olga")]
-            #action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_exit")]
-            action [Hide("dct_menu", transition=Dissolve(0.2)), Call("dct_olga")]
+            action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_olga")]
             hovered ShowTransient("dct_menu_olga_sep", transition=Dissolve(0.2))
             unhovered Hide("dct_menu_olga_sep", transition=Dissolve(0.2))
         else:
