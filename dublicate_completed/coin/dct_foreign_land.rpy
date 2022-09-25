@@ -760,7 +760,7 @@ label dct_foreign_land:
     hide d_el with dissolve
     # "Сыроежкин убежал, едва протрубили подъем и даже чуть раньше."  # По канону
     "Сыроежкин убежал, едва протрубили подъем."
-    show sh normal_smile pioneer with dissolve
+    show sh normal_serious pioneer dct with dissolve
     "Шурик встал, вспомнил о договоренности с Мику."
     show sh smile pioneer close with dissolve_fast
     "Порадовался тому, что не придется ничего говорить соседу."
