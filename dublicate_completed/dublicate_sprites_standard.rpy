@@ -1384,6 +1384,9 @@ init :
     image dct_int_bus_middle_sh normal = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_bus_middle_sh_normal.png"
     image dct_int_bus_middle_sh serious = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_bus_middle_sh_serious.png"
     image dct_int_bus_middle_sh surprise = "mods/dublicate_completed/images/sprites/d_unformat/dct_int_bus_middle_sh_surprise.png"
+    image sh normal_serious pioneer dct = im.Composite((900,1080), (0,0), "images/sprites/normal/sh/sh_2_body.png", (0,0), "mods/dublicate_completed/images/sprites/d_unformat/sh_2_normal_serious_dct.png")  # Шурик поправляет очки, строгий взгляд
+    image sh normal_serious pioneer close dct = im.Composite((1050,1080), (0,0), "images/sprites/close/sh/sh_2_body.png", (0,0), "mods/dublicate_completed/images/sprites/d_unformat/sh_2_normal_serious_close_dct.png")  # Шурик поправляет очки, строгий взгляд, близко
+    image sh normal_serious pioneer far dct = im.Composite((630,1080), (0,0), "images/sprites/far/sh/sh_2_body.png", (0,0), "mods/dublicate_completed/images/sprites/d_unformat/sh_2_normal_serious_far_dct.png")  # Шурик поправляет очки, строгий взгляд, далеко
     image dct_d_sh_in_lab_window = "mods/dublicate_completed/images/sprites/d_unformat/dct_d_sh_in_lab_window.png"  # Александр а окне лаборатории
     # Славя (Саша)
     image dct_ext_stage_big_night_sl_sitting = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_unformat/dct_ext_stage_big_night_sl_sitting.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_unformat/dct_ext_stage_big_night_sl_sitting.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_unformat/dct_ext_stage_big_night_sl_sitting.png')
