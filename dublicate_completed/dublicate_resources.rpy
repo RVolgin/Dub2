@@ -197,7 +197,6 @@ init :
     image dct_landscape_forest3_overcast_1 = "mods/dublicate_completed/images/bg/dct_landscape_forest3_overcast_1.jpg"
     image dct_landscape_forest3_overcast_2 = "mods/dublicate_completed/images/bg/dct_landscape_forest3_overcast_2.jpg"
     image dct_int_vivariy = "mods/dublicate_completed/images/bg/dct_int_vivariy.jpg"    # Виварий
-    image dct_mt_monkey = "mods/dublicate_completed/images/bg/dct_mt_monkey.jpg"    # Обезьяна в клетке
     image dct_poligon_1 = "mods/dublicate_completed/images/bg/dct_poligon_1.jpg"
     image dct_poligon_2 = "mods/dublicate_completed/images/bg/dct_poligon_2.jpg"
     image dct_poligon_3 = "mods/dublicate_completed/images/bg/dct_poligon_3.jpg"
@@ -419,6 +418,7 @@ init :
     image dct_olga_road = "mods/dublicate_completed/images/cg/dct_olga_road.jpg" #Просто, вырезаная дорога из Аним_16
     image dct_mt_mirror = "mods/dublicate_completed/images/cg/dct_mt_mirror.jpg" #Ольга перед зеркалом
     image dct_mt_with_broom = "mods/dublicate_completed/images/cg/dct_mt_with_broom.jpg" #Ольга с метлой
+    image dct_mt_monkey = "mods/dublicate_completed/images/cg/dct_mt_monkey.jpg"    # Обезьяна в клетке
     image dct_lineup = "mods/dublicate_completed/images/cg/dct_lineup.jpg"
     image dct_lineup_mi_not_us = "mods/dublicate_completed/images/cg/dct_lineup_mi_not_us.jpg"
     image dct_lineup_mt_mi_not_us = "mods/dublicate_completed/images/cg/dct_lineup_mt_mi_not_us.jpg"
@@ -1095,7 +1095,8 @@ init :
     $ dct_sfx_badger = "mods/dublicate_completed/sounds/sfx/dct_sfx_badger.ogg" #барсук недоволен
     $ dct_sfx_radio = "mods/dublicate_completed/sounds/sfx/dct_sfx_radio.ogg" #рация шипит
     $ dct_sfx_robot_run_away = "mods/dublicate_completed/sounds/sfx/dct_sfx_robot_run_away.ogg"
-    $ dct_sfx_horn_rise = "mods/dublicate_completed/sounds/sfx/dct_sfx_horn_rise.ogg" #горн-подъём
+    $ dct_sfx_horn_rise_tape = "mods/dublicate_completed/sounds/sfx/dct_sfx_horn_rise_tape.ogg" #горн-подъём (запись на кассете)
+    $ dct_sfx_horn_rebound_tape = "mods/dublicate_completed/sounds/sfx/dct_sfx_horn_rebound_tape.ogg" #горн-отбой (запись на кассете)
     $ dct_sfx_alarm = "mods/dublicate_completed/sounds/sfx/dct_sfx_alarm.ogg" #будильник
     $ dct_sfx_slammed_book = "mods/dublicate_completed/sounds/sfx/dct_sfx_slammed_book.ogg"
     $ dct_sfx_match = "mods/dublicate_completed/sounds/sfx/dct_sfx_match.ogg" #спичка
@@ -1174,6 +1175,7 @@ init :
     $ dct_sfx_horn_assembly_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_assembly_through_loudspeaker.ogg" # Горн на линейку через репродуктор
     $ dct_sfx_horn_dinner = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_dinner.ogg" # Горн на обед
     $ dct_sfx_horn_dinner_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_dinner_through_loudspeaker.ogg" # Горн на обед через репродуктор
+    $ dct_sfx_horn_rise = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_rise.ogg" # Горн-подъём
     $ dct_sfx_horn_rise_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_rise_through_loudspeaker.ogg" # Горн-подъём через репродктор
     $ dct_sfx_horn_rebound_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_rebound_through_loudspeaker.ogg" # Горн-отбой через репродктор
     $ dct_sfx_robot_run_club_attic = "<to 2.6>mods/dublicate_completed/sounds/coin/sfx/dct_sfx_robot_run_club_attic.ogg" # Яна пробегает по чердаку клуба
@@ -1277,7 +1279,7 @@ init :
     $ d_el = Character(u"Лохматый", color="#faed25", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") #Электроник
     
     
-    $ libr = Character(u"Библиотекарь", color="#4a86ff", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") # Женя из посёлка Шлюз
+    $ d_libr = Character(u"Библиотекарь", color="#4a86ff", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") # Библиотекарь
     $ d_ol = Character(u"Олеся", color="#d3a900", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") #Олеся из арки Ольги
     
     
