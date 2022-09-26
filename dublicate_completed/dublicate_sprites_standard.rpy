@@ -1280,8 +1280,11 @@ init :
     image d_to m serious = "mods/dublicate_completed/images/sprites/d_deti/d_an/d_an_mini_serious.png" # Толик маленький серьёзный
     image d_to m smile = "mods/dublicate_completed/images/sprites/d_deti/d_an/d_an_mini_smile.png"     # Толик маленький улыбающийся
     
-    image d_ge = "mods/dublicate_completed/images/sprites/d_deti/d_ge/d_ge.png" # Геля
-    image d_gr = "mods/dublicate_completed/images/sprites/d_deti/d_gr/d_gr.png" # Гриша
+    #Геля
+    image d_ge = "mods/dublicate_completed/images/sprites/d_deti/d_ge/d_ge.png"
+    
+    #Гриша
+    image d_gr = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_gr/d_gr.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_gr/d_gr.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_deti/d_gr/d_gr.png')
     
     #Сергей Зайцев
     image d_sz normal pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_sz/d_sz.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_sz/d_sz.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_deti/d_sz/d_sz.png')
