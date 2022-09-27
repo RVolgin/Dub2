@@ -429,12 +429,14 @@ init :
     
     ##### cg (coin)
     
-    image dct_int_bus_window_view = "mods/dublicate_completed/images/cg/coin/dct_int_bus_window_view.jpg"
+    image dct_int_bus_window_view = "mods/dublicate_completed/images/cg/coin/dct_int_bus_window_view.jpg"   # Два сиденья и окно в автобусе
     
-    image dct_int_mirror_in_library = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_mirror_wall_library.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_mirror_with_shadow.png', (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_mirror_bookshelves.png', (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_mirror_frame.png')
-    image dct_disassembled_catrobot = "mods/dublicate_completed/images/cg/coin/dct_disassembled_catrobot.jpg"
-    image dct_cg_foots_and_ball = "mods/dublicate_completed/images/cg/coin/dct_cg_foots_and_ball.jpg"
-    image dct_cg_el_kick_ball = "mods/dublicate_completed/images/cg/coin/dct_cg_el_kick_ball.jpg"
+    image dct_int_mirror_in_library = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_mirror_wall_library.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_mirror_with_shadow.png', (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_mirror_bookshelves.png', (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_mirror_frame.png') # Зеркало в бибилотеке
+    image dct_disassembled_catrobot = "mods/dublicate_completed/images/cg/coin/dct_disassembled_catrobot.jpg"   # Остатки кошкоробота на столе
+    image dct_cg_foots_and_ball = "mods/dublicate_completed/images/cg/coin/dct_cg_foots_and_ball.jpg"   # Ботинки и мяч на траве
+    image dct_cg_el_kick_ball = "mods/dublicate_completed/images/cg/coin/dct_cg_el_kick_ball.jpg"   # Электроник пинает мяч
+    
+    image dct_cg_coin_volleyball = "mods/dublicate_completed/images/cg/coin/dct_cg_coin_volleyball.jpg" # Воллейбол на пляже
     
     image dct_mi_piano1 = "mods/dublicate_completed/images/cg/coin/dct_mi_piano1.jpg" # Мику играет на пианино
     image dct_el_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_el_in_cage.png') # Электроник в клетке для чтения воспоминаний
