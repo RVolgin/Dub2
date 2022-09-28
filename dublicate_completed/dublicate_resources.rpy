@@ -271,6 +271,10 @@ init :
     
     
     
+    image dct_ext_water_islands_buoys_day = "mods/dublicate_completed/images/bg/coin/dct_ext_glade_behind_clubs_sunset.jpg"   # Речка, буйки и острава
+    
+    
+    
     image dct_ext_beach_night_view_from_gym = "mods/dublicate_completed/images/bg/coin/dct_ext_beach_night_view_from_gym.jpg" # Пляж ночью, вид с крыльца спортзала
     image dct_ext_stage_close_day = "mods/dublicate_completed/images/bg/coin/dct_ext_stage_close_day.jpg" # Сцена днём, приближенная
     image dct_ext_stage_edge_day = "mods/dublicate_completed/images/bg/coin/dct_ext_stage_edge_day.jpg" # Сцена, самый край возле колонки
@@ -437,6 +441,7 @@ init :
     image dct_cg_el_kick_ball = "mods/dublicate_completed/images/cg/coin/dct_cg_el_kick_ball.jpg"   # Электроник пинает мяч
     
     image dct_cg_coin_volleyball = "mods/dublicate_completed/images/cg/coin/dct_cg_coin_volleyball.jpg" # Воллейбол на пляже
+    image dct_cg_coin_dv_on_beach = "mods/dublicate_completed/images/cg/coin/dct_cg_coin_dv_on_beach.jpg" # Алиса на пляже с полотенцем
     
     image dct_mi_piano1 = "mods/dublicate_completed/images/cg/coin/dct_mi_piano1.jpg" # Мику играет на пианино
     image dct_el_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_el_in_cage.png') # Электроник в клетке для чтения воспоминаний
