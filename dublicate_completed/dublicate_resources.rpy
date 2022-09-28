@@ -271,7 +271,7 @@ init :
     
     
     
-    image dct_ext_water_islands_buoys_day = "mods/dublicate_completed/images/bg/coin/dct_ext_glade_behind_clubs_sunset.jpg"   # Речка, буйки и острава
+    image dct_ext_water_islands_buoys_day = "mods/dublicate_completed/images/bg/coin/dct_ext_water_islands_buoys_day.jpg"   # Речка, буйки и острава
     
     
     
