@@ -15,7 +15,7 @@ label dct_coin:       #вступительный лейбл
     
     #call dct_disposition
     
-    #call dct_debut
+    call dct_debut
     
     call dct_d7_d5
     
