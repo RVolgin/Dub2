@@ -208,6 +208,8 @@ init :
     image dct_bank_from_water_side = "mods/dublicate_completed/images/bg/dct_bank_from_water_side.jpg"    # Вид на лодочную станцию и берег со стороны воды
     image dct_railway_embankment_day = "mods/dublicate_completed/images/bg/dct_railway_embankment_day.jpg"  # Берег возле железнодорожной насыпи ДЕНЬ
     image dct_railway_embankment_overcast = "mods/dublicate_completed/images/bg/dct_railway_embankment_overcast.jpg"    # Берег возле железнодорожной насыпи ПАСМУРНО
+    image dct_int_radioroom_light = "mods/dublicate_completed/images/bg/dct_int_radioroom_light.jpg"    # Радиорубка в клубе, свет включён
+    image dct_int_radioroom_nolight = "mods/dublicate_completed/images/bg/dct_int_radioroom_nolight.jpg"    # Радиорубка в клубе, свет выключён
     
         
     ##### bg (coin)
