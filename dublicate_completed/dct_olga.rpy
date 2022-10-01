@@ -952,7 +952,7 @@ label dct_olga_p3:
     stop ambience
     
     scene dct_ext_dining_bench_day
-    show mt normal pioneer panama:
+    show mt sad pioneer panama:
         zoom 0.85 xcenter 0.6 ycenter 0.74
     with dissolve
     $ day_time ()
