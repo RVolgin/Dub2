@@ -580,6 +580,8 @@ label dct_olga_p3:
     play ambience ambience_camp_entrance_day
     play sound sfx_bus_stop
     dreamgirl "Ольга проснулась, когда автобус начал разворачиваться на площадке перед воротами. Вот он чуть сдал назад, дернулся и заглох."
+    $ renpy.sound.set_volume(1.5, delay=0, channel='sound2')
+    play sound2 sfx_ikarus_open_doors
     dreamgirl "С шипением отошла в сторону дверь." 
     dreamgirl "Было страшно, вот так, одной, без поддержки, начинать самостоятельную жизнь. Поэтому и открывать-то глаза не хотелось, но пришлось." 
     dreamgirl "Ольга обвела глазами пустой салон — никого. Правда, никого и не ожидалось. И водитель, похоже, уже успел куда-то уйти."
@@ -588,6 +590,7 @@ label dct_olga_p3:
     dreamgirl "Ольга подтянула к себе чемодан, подтянула подаренный вещмешок, судя по весу, по округлому и твердому на ощупь содержимому, набитый консервными банками."
     th "Не могу на них злиться, не могу над ними смеяться. Как там брат писал, что тушенка — самое дорогое, что есть у солдата."
     th "Но могли бы и подумать о том, каково таскать такую тяжесть хрупкой мне."
+    $ renpy.sound.set_volume(1.0, delay=0, channel='sound2')
     stop ambience
     
     scene int_bus with dissolve:
@@ -639,21 +642,25 @@ label dct_olga_p3:
     scene int_clubs_male_day with dissolve
     $ day_time ()
     $ persistent.sprite_time = "day"
-    play ambience ambience_clubs_inside_day
+    play ambience ambience_int_cabin_day
     play sound sfx_close_cabinet
     th "Всё как и говорили: кружки по интересам и радиорубка."
-    stop ambience
-    
-    scene int_clubs_male2_night with dissolve
-    $ day_time ()
-    $ persistent.sprite_time = "day"
-    play ambience ambience_clubs_inside_day
     th "Господи, только бы получилось."
     dreamgirl "Ольгу, от предстоящей встречи с аборигенами, то бросало в дрожь, то, наоборот, охлаждало до бесчувствия."
     th "Мне так никто толком и не объяснил, кто они и откуда взялись: роботы, искусственные организмы, люди?"
     th "Мама, моя мамочка, и спрятаться не за кого."
     th "Черт, ну и беспорядок! Где же аппаратура?"
-    th "А, вот же она. Ну, Ольга Дмитриевна, отступать некуда." 
+    stop ambience
+    
+
+    scene dct_int_radioroom_nolight with dissolve
+    $ day_time ()
+    $ persistent.sprite_time = "day"
+    play ambience ambience_int_cabin_day
+    th "А, вот же она. Ну, Ольга Дмитриевна, отступать некуда."
+    play sound sfx_clench2
+    pause 0.2
+    show dct_int_radioroom_light with dspr
     dreamgirl "К счастью, кто-то, когда-то повесил на стене тетрадный листок, где был расписан алгоритм включения трансляции."
     queue sound [sfx_click_2 , sfx_click_1 , sfx_click_3 , dct_sfx_horn_rise_tape ]
     dreamgirl "И, в восемь часов ноль-четыре минуты, сигнал «Подъем» разбудил обитателей узла номер двадцать два, или, как они сами считали, пионерского лагеря «Совенок»."
@@ -664,20 +671,23 @@ label dct_olga_p3:
     $ day_time ()
     $ persistent.sprite_time = "day"
     play ambience ambience_camp_center_day
-    play sound sfx_slavya_run
+    play sound2 sfx_slavya_run
     play music adaytoremember
     $ renpy.pause (2)
     dreamgirl "Звонкий девичий голос прозвучал из-за спины."
     voice "Привет, ты только что приехала?"
     scene ext_clubs_day with vpunch
     dreamgirl "Ольгу опять затрясло. Ольга медленно, стараясь не подать вида, спрятала связку с ключами в сумочку и так же медленно обернулась к спрашивающей."
-    show sl normal sport with moveinleft
+    show 3500_sl smile3 sport as sl at center with MoveTransition(1.2, enter=_moveleft, enter_time_warp=_ease_time_warp):
+        ycenter 0.833
+    # show sl normal sport with moveinleft
     th "Кто это? Не могу вспомнить."
     th "Анатолий на инструктаже записывать запретил, сослался на секретность."
     th "Как же её зовут? С{w}… С{w}… Нет, не Светлана."
     th "Ну же, Оля! Не могу вспомнить, как зовут, вот позорище-то."
     d_mt2 "Здравствуй, только, знаешь, я все-таки ваша вожатая, так что, давай на Вы. Меня Ольга Дмитриевна зовут."
-    show sl happy sport with dspr
+    show sl happy sport with dspr:
+        ycenter 0.5
     slg "Вожатая? Здорово как!"
     show sl normal sport with dspr
     slg "А то мы поздно вечером приехали и нас никто не встречает."
@@ -685,18 +695,27 @@ label dct_olga_p3:
     slg "Я уже думала, что мы и не нужны никому."
     show sl smile sport with dspr
     "Я побегу, остальным расскажу!"
-    hide sl with moveoutright
+    show 3500_sl smile3 sport as sl:
+        ycenter 0.833
+    hide sl with MoveTransition(1.2, leave=_moveright, leave_time_warp=_ease_time_warp)
+    # hide sl with moveoutright
     $ renpy.pause (1)
-    show sl surprise sport at cright with moveinright
+    show sl normal sport at cright with MoveTransition(1.1, enter=_moveright, enter_time_warp=_ease_time_warp):
+        ycenter 0.5
     slg "Простите, Ольга Дмитриевна, меня Славяна зовут. Можно — Славя. Я быстро, обегу все домики и назад."
-    hide sl with moveoutright
+    show 3500_sl smile3 sport as sl:
+        ycenter 0.833
+    hide sl with MoveTransition(1.1, leave=_moveright, leave_time_warp=_ease_time_warp)
     play sound sfx_slavya_gets_out
     th "Ну Славяна же!"
     mt "Стой, Славя!"
-    show sl normal sport at fright with moveinright
+    show sl normal sport at fright with easeinright:
+        ycenter 0.5
     mt "Раз уж бежишь, сообщи всем, что линейка на площади, в девять. Там и встретимся."
     sl "Поняла!"
-    hide sl with moveoutright
+    show 3500_sl smile3 sport as sl:
+        ycenter 0.833
+    hide sl with easeoutright
     sl "Линейка в девять!"
     th "А я пока в свой домик номер, кажется, семнадцать."
     th "Куда тут я спрятала чемодан?"
@@ -1120,7 +1139,7 @@ label dct_olga_p3:
     hide el with dspr
     stop ambience
     
-    scene int_clubs_male2_night with dissolve
+    scene dct_int_radioroom_nolight with dissolve
     $ prolog_time ()
     $ persistent.sprite_time = "night"
     play ambience ambience_clubs_inside_day
@@ -2664,7 +2683,7 @@ label dct_olga_p8:
     th "Этим двоим, Лене с Алисой, я уделяла слишком мало внимания, это тоже запишем мне в пассив. И теперь одна прячется ото всех в книги, а вторая демонстративно ниспровергает мой авторитет."
     stop ambience
     
-    scene dct_ext_musclub_night with dissolve
+    scene dct_ext_musclub_night_lantern_light with dissolve
     $ night_time ()
     $ persistent.sprite_time = "night"
     play ambience ambience_camp_center_night
@@ -2684,7 +2703,7 @@ label dct_olga_p8:
     hide mi with dspr
     show blinking
     $ renpy.pause (1)
-    show mi shy pioneer with dspr
+    show mi shy pioneer behind blinking with dspr
     mi "Вот, возьмите, это для вас."
     show dct_cassete with dspr
     $ renpy.pause (1)
@@ -2787,11 +2806,11 @@ label dct_olga_p8:
     mt "Нет, Славя, открывай ты."
     stop ambience
     
-    scene int_clubs_male2_night with squares
-    $ night_time ()
-    $ persistent.sprite_time = "night"
+    scene dct_int_radioroom_light with squares
+    $ day_time ()
+    $ persistent.sprite_time = "day"
     play ambience ambience_int_cabin_night
-    show sl sad pioneer close at fright with dspr
+    show sl sad pioneer close at center with dspr
     sl "Отбой, Ольга Дмитриевна?"
     mt "Да, отбой."
     play sound dct_sfx_horn_rebound_tape
