@@ -3609,10 +3609,14 @@ label dct_test:
     "Чтобы ее прорвало, она должна испытать какие-то сверхсильные эмоции."
     "Это я давно понял на практике, но уж больно болезненные для меня, для окружающих и для самой Лены выходят эти удары."
     th "Боюсь, я тут ничем ей помочь не смогу."
-    scene dct_ext_island_reverse_day with vpunch
-    show un shocked pioneer close with moveinbottom
+    # scene dct_ext_island_reverse_day with vpunch
+    # show un shocked pioneer close with moveinbottom
+    hide un with vpunch
+    show dct_un_on_birch:
+        alpha 0
+        linear 1 alpha 1
     "Боюсь. Но спрыгиваю со ствола и встаю напротив Лены, максимально к ней приблизившись и понимая, что рискую."
-    show un serious pioneer close
+    # show un serious pioneer close
     "При невысоком росте Лены получается, практически, глаза в глаза."
     "Ловлю взгляд и пробую, опять же, мягко и настойчиво, как сама Лена недавно обращалась к Саше, достучаться до нее."
     me "Ленушка, если тебе что-то нужно от меня, пожалуйста, попробуй попросить об этом прямо."
