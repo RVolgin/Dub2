@@ -3614,7 +3614,7 @@ label dct_test:
     hide un with vpunch
     show dct_un_on_birch:
         alpha 0
-        linear 1 alpha 1
+        linear 0.5 alpha 1
     "Боюсь. Но спрыгиваю со ствола и встаю напротив Лены, максимально к ней приблизившись и понимая, что рискую."
     # show un serious pioneer close
     "При невысоком росте Лены получается, практически, глаза в глаза."
