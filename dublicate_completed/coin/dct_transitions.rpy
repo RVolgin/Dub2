@@ -52,11 +52,6 @@ label dct_transitions:
     stop sound
     stop sound2 fadeout 1
     
-    
-    # play music music_list['goodbye_home_shores'] fadein 3
-    # play music music_list['into_the_unknown'] fadein 3
-    # play music music_list['just_think'] fadein 3
-    # play music music_list['meet_me_there'] fadein 3
 
     $ renpy.music.set_volume(0.6)
     play music music_list['orchid'] fadein 2
