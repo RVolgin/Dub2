@@ -337,8 +337,12 @@ init :
     image dct_ext_stage_close_night = "mods/dublicate_completed/images/bg/coin/dct_ext_stage_close_night.jpg"
     image dct_ext_stage_close_night_darker = "mods/dublicate_completed/images/bg/coin/dct_ext_stage_close_night_darker.jpg"
     image dct_ext_stage_normal_night_darker = "mods/dublicate_completed/images/bg/coin/dct_ext_stage_normal_night_darker.jpg"
+    
         
         
+    image dct_ext_music_club_verandah_opendoor_day = "mods/dublicate_completed/images/bg/coin/dct_ext_music_club_verandah_opendoor_day.jpg" # Музклуб, веранда (день, дверь открыта)
+    
+    
     
     image dct_int_bus_rightwindow_day = "mods/dublicate_completed/images/bg/coin/dct_int_bus_rightwindow_day.jpg"
     image dct_int_bus_leftwindow_day = "mods/dublicate_completed/images/bg/coin/dct_int_bus_leftwindow_day.jpg"
@@ -431,6 +435,8 @@ init :
     image dct_lineup_sh_not_dv = "mods/dublicate_completed/images/cg/dct_lineup_sh_not_dv.jpg"
     image dct_lineup_us_sport = "mods/dublicate_completed/images/cg/dct_lineup_us_sport.jpg"
     image dct_lineup_two_lines = "mods/dublicate_completed/images/cg/dct_lineup_two_lines.jpg"
+    
+    image dct_un_on_birch = "mods/dublicate_completed/images/cg/dct_un_on_birch.jpg"    # Лена сидит на берёзе
     
     
     ##### cg (coin)
