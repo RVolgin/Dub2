@@ -561,13 +561,15 @@ label dct_coin_final:
         xcenter 1.3
     show us normal sport far:
         xcenter 1.3
-    show sh serious pioneer far at left with dissolve
+    show sh serious pioneer far at left with dissolve:
+        ycenter 0.75
     "Сидит и несколько рассеянно смотрит по сторонам."
-    show sh serious at cleft with dissolve_fast
+    show sh serious pioneer at cleft with dissolve_fast:
+        ycenter 0.7
     d_gg "Привет. И кто ты сейчас?"
-    show sh surprise at cleft with dspr
+    show sh surprise pioneer with dspr
     sh "Добрый день. Я?"
-    show sh normal with dspr
+    show sh normal pioneer with dspr
     show d_mt normal dress sombrero far:
         zoom 0.8 xcenter 0.92 ycenter 0.60 alpha 0.0
         pause 1
@@ -576,28 +578,28 @@ label dct_coin_final:
         zoom 0.8 xcenter 0.69 ycenter 0.60 alpha 0.0
         pause 1
         linear 1.5 alpha 1.0
-    sh "А… ты имеешь в виду… Я как Ольга, стал целым, и знаешь, я больше Шурик. Александр, он… Он растворился во мне."
+    sh "А… ты имеешь в виду…{w=0.4} Я как Ольга, стал целым, и знаешь, я больше Шурик.{w} Александр, он…{w=0.3} Он растворился во мне."
     show us normal sport far:
         zoom 0.8 xcenter -0.2 ycenter 0.60
         ease 2 xcenter 0.8
-    show sh serious with dspr
+    show sh serious pioneer with dspr
     sh "Я знаю и помню все, что знал он. Но я — Шурик, который никогда не был знаком с его Янами, только заочно."
     sh "Ни полигон, ни тот автобус, ни то что было потом, — меня не коснулось. Даже пожар на маяке."
     show us normal sport far:
         zoom 0.8 xcenter 0.8 ycenter 0.60
         ease 2 xcenter 1.8
     "Еще один вопрос меня мучает."
-    show sh normal with dspr
+    show sh normal pioneer with dspr
     d_gg "А скажи, я понимаю — робот. Могу догадаться, почему робот-девочка. Но кошка тут причем?"
     show 3500_sh smile noglasses pioneer glasses as sh with dissolve_fast:
-        ycenter 0.856
+        ycenter 1.056
     show mt grin panama pioneer far:
         zoom 0.8 xcenter 1.2 ycenter 0.60
         ease 2.5 xcenter 0.79
     "Не знаю.{w=0.3}.{w=0.3}.{w=0.4} Наверное подсознательно вспомнил ту историю с кошкой-мутантом."
     d_gg "Юля. Ее зовут Юля. И она человек."
     show sh normal_smile pioneer with dissolve_fast:
-        ycenter 0.5
+        ycenter 0.7
     show sh normal_smile pioneer:
         linear 4 alpha 0.0
     stop music fadeout 5
