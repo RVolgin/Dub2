@@ -587,15 +587,17 @@ label dct_coin_final:
         zoom 0.8 xcenter 0.8 ycenter 0.60
         ease 2 xcenter 1.8
     "Еще один вопрос меня мучает."
-    d_gg "А скажи, я понимаю — робот. Могу догадаться, почему робот-девочка. Но кошка тут причем?"
     show sh normal with dspr
+    d_gg "А скажи, я понимаю — робот. Могу догадаться, почему робот-девочка. Но кошка тут причем?"
+    show 3500_sh smile noglasses pioneer glasses as sh with dissolve_fast:
+        ycenter 0.856
     show mt grin panama pioneer far:
         zoom 0.8 xcenter 1.2 ycenter 0.60
         ease 2.5 xcenter 0.79
     "Не знаю.{w=0.3}.{w=0.3}.{w=0.4} Наверное подсознательно вспомнил ту историю с кошкой-мутантом."
     d_gg "Юля. Ее зовут Юля. И она человек."
-    show sh normal_smile pioneer with dissolve_fast
-    sh "Я запомню."
+    show sh normal_smile pioneer with dissolve_fast:
+        ycenter 0.5
     show sh normal_smile pioneer:
         linear 4 alpha 0.0
     stop music fadeout 5
