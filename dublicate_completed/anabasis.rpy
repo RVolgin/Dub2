@@ -3378,7 +3378,8 @@ label dct_test:
     show dct_dream_veil:
         shiver
     play ambience ambience_int_cabin_day
-    play sound dct_sfx_horn_rise
+    $ renpy.sound.set_volume(0.5, delay=0)
+    play sound dct_sfx_horn_rise_tape
     $ renpy.pause (1)
     us "Народ, а мы на линейку идем?"
     dv "Ты что, мать, с дуба рухнула?"
@@ -3389,6 +3390,7 @@ label dct_test:
     "Без сновидений и угрызений совести."
     hide blink
     show unblink
+    $ renpy.sound.set_volume(1.0, delay=0)
     play sound sfx_dinner_horn_processed
     $ renpy.pause (1)
     show dv smile pioneer at fleft
