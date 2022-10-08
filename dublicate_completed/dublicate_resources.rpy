@@ -341,6 +341,7 @@ init :
         
         
     image dct_ext_music_club_verandah_opendoor_day = "mods/dublicate_completed/images/bg/coin/dct_ext_music_club_verandah_opendoor_day.jpg" # Музклуб, веранда (день, дверь открыта)
+    image dct_ext_houses2_day = "mods/dublicate_completed/images/bg/coin/dct_ext_houses2_day.jpg" # Дорожка среди домиков, день
     
     
     
@@ -483,6 +484,9 @@ init :
     image dct_sl_clean_square_7 = "mods/dublicate_completed/images/cg/coin/dct_sl_clean_square_7.jpg"
     image dct_dsl_in_shop = im.Alpha("mods/dublicate_completed/images/cg/coin/dct_dsl_in_shop.jpg",0.7)
     image arseniy_chebynkin_izbad = im.Scale("mods/dublicate_completed/images/cg/coin/arseniy_chebynkin_izbad.jpg",1920,1080) #Изба из Травницы (https://arsenixc.artstation.com/projects/PeEE1)
+    
+    image dct_dv_mirror = "mods/dublicate_completed/images/cg/coin/dct_dv_mirror.jpg"   # Алиса в зеркале шкафа
+    image dct_closet_with_dresses = "mods/dublicate_completed/images/cg/coin/dct_closet_with_dresses.jpg"   # Шкаф с платьями
     
     image dct_int_bus_blue = "mods/dublicate_completed/images/cg/coin/dct_int_bus_blue.jpg"
     image dct_int_bus_pink = "mods/dublicate_completed/images/cg/coin/dct_int_bus_pink.jpg"
