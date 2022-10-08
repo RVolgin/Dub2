@@ -1312,7 +1312,7 @@ init :
     #Сергей Зайцев
     image d_sz normal pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_sz/d_sz.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_sz/d_sz.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_deti/d_sz/d_sz.png')
     
-    #Оксана Зайцева (возможно, придётся переопределять эмоцию normal, ну или фиг с ним?)
+    #Оксана Зайцева
     image d_oz normal pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz.png')
     image d_oz d pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz_d.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz_d.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz_d.png')
     image d_oz laugh pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz_l.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz_l.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate_completed/images/sprites/d_deti/d_oz/d_oz_l.png')
@@ -1438,6 +1438,7 @@ init :
     image dct_uv_newdress_edging = "mods/dublicate_completed/images/sprites/d_unformat/dct_uv_newdress_edging(630x1080).png"
     image dct_uv_newdress_laugh_shy = "mods/dublicate_completed/images/sprites/d_unformat/dct_uv_newdress_laugh_shy(630x1080).png"
     image dct_uv_newdress_face = "mods/dublicate_completed/images/sprites/d_unformat/dct_uv_newdress_face(630x1080).png"
+    image dct_uv_peeping = "mods/dublicate_completed/images/sprites/d_unformat/dct_uv_peeping.png"  # Юля подглядывает за автобусом из-за статуи пионера
     # Яна
     image dct_jn_near_gate = "mods/dublicate_completed/images/sprites/d_unformat/dct_jn_near_gate.png"
     # Катя
@@ -1519,6 +1520,8 @@ init :
     
     image dct_int_aidpost_day_curtain = "mods/dublicate_completed/images/sprites/oth/coin/dct_int_aidpost_day_curtain.png"    # Занавеска в медпункте задёрнута
     image dct_int_aidpost_day_curtain ajar = "mods/dublicate_completed/images/sprites/oth/coin/dct_int_aidpost_day_curtain_ajar.png"  # Занавеска в медпункте слегка приоткрыта
+    
+    image dct_ext_bus_alone_passenger = "mods/dublicate_completed/images/sprites/oth/coin/dct_ext_bus_alone_passenger.png"  # Пассажир на задней площадке Икаруса
     
     image dct_wave_left_to_up = "mods/dublicate_completed/images/sprites/oth/coin/dct_wave_left_to_up.png"
     image dct_wave_right_to_down = "mods/dublicate_completed/images/sprites/oth/coin/dct_wave_right_to_down.png"
