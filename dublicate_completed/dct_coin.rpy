@@ -27,7 +27,7 @@ label dct_coin:       #вступительный лейбл
     
     call dct_dreamreality
     
-    #call dct_horizontal_transport
+    call dct_horizontal_transport
     
     call dct_coin_final
     
