@@ -72,13 +72,11 @@ label dct_coin_final:
     show uv smile close with dissolve
     my "Животным, знаешь по барабану. Так что смирись с тем, что ты человек."
     $ renpy.music.set_volume(0.25, delay=2)
-    hide uv smile close with dissolve
-    show dct_uv_coin_bus_asked with dissolve
-    "Наклонилась надо мной, загораживая весь обзор и глядя мне прямо в глаза. Зрачки расширились, сейчас гипнотизировать будет. А я делаю рывок и целую Юлю в нос."
+    show dct_uv_coin_bus_asked as uv with dissolve
+    # "Наклонилась надо мной, загораживая весь обзор и глядя мне прямо в глаза. Зрачки расширились, сейчас гипнотизировать будет. А я делаю рывок и целую Юлю в нос."   # По канону
+    "Наклонилась надо мной, загораживая весь обзор и глядя мне прямо в глаза. Зрачки расширились, готовится все свои чары выпустить. А я делаю рывок и целую Юлю в нос."
     stop music fadeout 1
-    hide dct_uv_coin_bus_asked
-    show uv sad close
-    with dissolve_fast
+    show uv sad close with dissolve_fast
     extend " Хотел в губы, но она дернулась и получилось в нос. Ну, тоже неплохо."
     $ renpy.music.set_volume(1.0, delay=2)
     show uv smile close with dspr
@@ -102,10 +100,23 @@ label dct_coin_final:
     "А так…"
     scene dct_int_bus_rightwindow_day with pushleft
     "Пригибая шею смотрю в окна автобуса, снаружи все как положено: приоткрытые ворота с прорезанной звездой, надпись «Пионерлагерь Совенок», два гипсовых пионера, кирпичный забор, лес по обе стороны забора, автобусная остановка."
-    scene bg int_bus with pushright
-    scene dct_int_bus_leftwindow_day
-    show dct_int_bus_leftwindow_day_wheat_Maya
-    with pushright
+    window hide
+    show dct_int_bus_rightwindow_day:
+        linear 1 xcenter 1.5
+    show int_bus:
+        xcenter -0.5
+        linear 1 xcenter 0.5
+        linear 1 xcenter 1.5
+    show dct_int_bus_leftwindow_day:
+        xcenter -0.5
+        pause 1
+        linear 1 xcenter 0.5
+    show dct_int_bus_leftwindow_day_wheat_Maya:
+        xcenter -0.5
+        pause 1
+        linear 1 xcenter 0.5
+    pause 2
+    window auto
     "Оглядываюсь назад: дорога убегающая в холмы, ЛЭП, то ли поля, то ли луга, непонятно."
     
     
