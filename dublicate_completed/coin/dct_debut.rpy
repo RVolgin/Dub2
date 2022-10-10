@@ -197,7 +197,11 @@ label dct_debut:
     show d_us smile swim
     with dspr
     mt "Забирайте себе средний отряд и отпустите уже Алису купаться!"
-    scene dct_ext_beach_day_with_pass_train
+    scene dct_ext_beach_barhan                      # Заранее посовываем сцену с грибком и Женей.
+    show mz bukal glasses pioneer far at right:
+        ycenter 0.73
+    
+    show dct_ext_beach_day_with_pass_train
     show mt rage panama swim close
     with dissolve
     mt "Младший отряд! Стоять!"
@@ -209,11 +213,10 @@ label dct_debut:
     th "С таким голосом можно охотиться без ружья. Птицы сами падать будут."
     th "Или деревья таким голосом можно валить."
     extend " Как там героиню сказки звали?"
-    scene dct_ext_beach_barhan
-    show mz bukal glasses pioneer far at right:
-        ycenter 0.73
-    with dissolve
-    extend " Перепилиха, кажется."
+    show dct_ext_beach_day_with_pass_train:
+        linear 1 alpha 0
+    
+    extend "{w=1} Перепилиха, кажется."
     "Женя сидела на опушке рощицы, отделяющей пляж от лодочной станции, и страдальчески морщилась."
     th "Зачем звали, спрашивается?"
     extend " Слушать эти вопли?"
@@ -264,7 +267,7 @@ label dct_debut:
     with dissolve
     window auto
     "Физруки отправили в воду средний отряд и воздух заполнился криками и девчоночьим визгом."
-    show mz bukal glasses pioneer far 
+    show mz bukal glasses pioneer far with dspr
     th "Что за люди? Зачем так кричать?"
     #опять недовольно поморщилась Женя.     # Опускаем
     "Официальная часть открытия купального сезона завершилась. Вожатая, окунув младший отряд, уже увела октябрят на спортплощадку. Средний отряд оказался предоставленным самому себе и устроил кучу-малу где-то на границе воды и суши."
