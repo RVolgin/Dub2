@@ -634,7 +634,6 @@ label dct_debut:
 
     play ambience ambience_camp_center_evening fadein 1
     scene bg ext_square_sunset:
-        xzoom -1
     show un normal pioneer at cright:
         ycenter 0.65
     with dissolve
