@@ -3090,11 +3090,13 @@ label dct_olga_p9:
     stop ambience
     
     scene black with blinds
-    $ persistent.d_olga = d_olga + 1
-    
-menu:
-    "Конец восьмой части"
-    "Продолжить":
-        jump dct_coin
-    "В меню":
-        jump dct_mnu2
+    if dct_ending_var == True:
+        return
+    else:
+        $ persistent.d_olga = d_olga + 1
+        menu:
+            "Конец восьмой части"
+            "Продолжить":
+                jump dct_coin
+            "В меню":
+                jump dct_mnu2  
