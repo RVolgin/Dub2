@@ -16,7 +16,7 @@ label dct_dreamreality:
     play ambience ambience_int_cabin_night fadein 1.5
     scene bg int_house_of_dv_night with dissolve
     dv "Ну, в последний раз на старом месте. Отвяжись жених от невесты!"
-        show 3500_dv smile night2 0pt at center with dissolve_fast:
+    show 3500_dv smile night2 0pt at center with dissolve_fast:
         ypos -0.15
     "Алиса хмыкнула и, глядя в потолок, произнесла переиначенную бабушкину поговорку."
     th "Что бы еще сказать, соответствующее моменту?"
