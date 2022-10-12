@@ -4586,6 +4586,8 @@ label dct_mirror:
     me "На дискотеку-то идешь? Или за гитару спрячешься?"
     hide dv with moveoutleft
     "Ага, щасс, ответила она мне – ко мне является делегация, в лице Гришки и обоих зайцев."
+    show d_gr:
+        zoom 0.8 xalign 0.2 yalign 1.4
     show d_sz normal pioneer:
         xalign .43 yalign .12
     show d_oz normal pioneer:
