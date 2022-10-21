@@ -171,7 +171,7 @@ init :
     image dct_intro_xx = "mods/dublicate_completed/images/bg/dct_intro_xx.jpg"
     image dct_int_chief_corridor_night = "mods/dublicate_completed/images/bg/dct_int_chief_corridor_night.jpg"
     image dct_int_laboratory = "mods/dublicate_completed/images/bg/dct_int_laboratory.jpg"  # Лаборатория
-    image dct_int_laboratory_mt = "mods/dublicate_completed/images/bg/dct_int_laboratory_mt.jpg"  # Лаборатория с Ольгой на экране
+    image dct_int_laboratory_mt = im.Composite((3840,2160), (0,0), 'mods/dublicate_completed/images/bg/dct_int_laboratory.jpg', (0, 0), 'mods/dublicate_completed/images/bg/dct_int_laboratory_mt.png') # Лаборатория с Ольгой на экране
     image dct_int_library_cellar = "mods/dublicate_completed/images/bg/dct_int_library_cellar.jpg"
     image dct_int_liaz_day_rain = "mods/dublicate_completed/images/bg/dct_int_liaz_day_rain.jpg"
     image dct_int_loft_day = "mods/dublicate_completed/images/bg/dct_int_loft_day.jpg"
