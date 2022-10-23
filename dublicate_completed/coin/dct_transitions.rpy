@@ -397,7 +397,7 @@ label dct_transitions:
     hide sl
     hide un
     with dissolve
-    th "Максим будет с нами в отряде"
+    th "Максим будет с нами в отряде."
     hide d_sf
     hide d_us
     hide dv
