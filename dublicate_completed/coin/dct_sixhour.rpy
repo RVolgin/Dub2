@@ -35,7 +35,7 @@ label dct_sixhour:
         xcenter 1.5
     show dct_el_1_sleep:
         xcenter 1.5
-    show dct_fantasy_in_mind
+    show dct_dream_veil at shiver
     with dissolve
     
     "Хотя, что к ней присматриваться? Все те же и там же."
@@ -51,20 +51,20 @@ label dct_sixhour:
     show dct_int_bus_people_sl_mi front:
         zoom 0.625
     show dct_int_bus_people_vi sitdown
-    show dct_fantasy_in_mind
+    show dct_dream_veil at shiver
     with pushleft
     "Где-то впереди Мику и Саша."
     scene dct_int_bus_another_middle
     show dct_int_bus_another_middle_mz_body
     show dct_int_bus_another_middle_mz_head smile
     show dct_int_bus_another_middle_un
-    show dct_fantasy_in_mind
+    show dct_dream_veil at shiver
     with pushleft
     "Через проход от нас — Женя и Лена."
     scene dct_int_bus_stern
     show dct_int_bus_stern_dv_us:
         zoom 0.5
-    show dct_fantasy_in_mind
+    show dct_dream_veil at shiver
     with pushleft
     "Позади, в конце салона, — Ульяна и Алиса.{w} Вроде и всё, с остальными я не успеваю познакомиться, остальные меня не интересуют."
 
@@ -110,15 +110,10 @@ label dct_sixhour:
         linear 1.0 alpha 0
     "И, ничего не говоря, поднялся с кресла и пошел в хвост автобуса, где с последнего ряда уже раздавались голоса проснувшихся Алисы и Ульяны."
     scene dct_int_bus_stern
-    # show dct_int_bus_stern_un:
-        # zoom 0.5 alpha 0.0
     show dct_int_bus_stern_dv_us:
         zoom 0.5
-    show dct_fantasy_in_mind
+    show dct_dream_veil at shiver
     with fade
-    # show dct_int_bus_stern_un:
-        # pause 1
-        # linear 1 alpha 1.0
     th "Проснулись уже. Значит, тоже активированные."
     show dct_int_bus_stern_un behind dct_int_bus_stern_dv_us with dissolve:
         zoom 0.5
@@ -148,10 +143,10 @@ label dct_sixhour:
         zoom 0.5
     show dct_int_bus_stern_dv_us:
         zoom 0.5
-    show dct_fantasy_in_mind
+    show dct_dream_veil at shiver
     with fade
     pause 0.5
-    show dct_int_bus_stern_sf behind dct_fantasy_in_mind with dissolve:
+    show dct_int_bus_stern_sf behind dct_dream_veil at shiver with dissolve:
         zoom 0.5
     "Как будто кто-то потеснился на сиденье, чтобы посадить еще одного человека."
     "Разговор за спиной продолжился, но разговаривали в четверть голоса, так что слов было не разобрать за шумом автобуса. Улавливался только сам факт разговора."
