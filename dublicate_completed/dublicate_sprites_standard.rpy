@@ -1550,7 +1550,6 @@ init :
     image dct_clubs_male_comp_sh = "mods/dublicate_completed/images/sprites/oth/coin/dct_clubs_male_comp_sh.png"          # Компьютер в клубе: монитор с изображением Шурика (выводить на экран в позиции xcenter 0.5 ycenter 0.45)
     image dct_clubs_male_comp_table = "mods/dublicate_completed/images/sprites/oth/coin/dct_clubs_male_comp_table.png"    # Компьютер в клубе: монитор c классической жёлто-фиолетовой таблицей (выводить на экран в позиции xcenter 0.5 ycenter 0.45)
     image dct_int_bus_another_middle_close_seats = "mods/dublicate_completed/images/sprites/oth/coin/dct_int_bus_another_middle_close_seats.png"
-    image dct_fantasy_in_mind = "mods/dublicate_completed/images/sprites/oth/coin/dct_fantasy_in_mind.png"
     
     image dct_dream_sh_first_civilian = "mods/dublicate_completed/images/sprites/oth/coin/dct_dream_sh_first_civilian.png"
     image dct_dream_sh_first_smoke 1 = "mods/dublicate_completed/images/sprites/oth/coin/dct_dream_sh_first_smoke_1.png"
