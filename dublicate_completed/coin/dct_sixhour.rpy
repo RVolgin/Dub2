@@ -249,7 +249,7 @@ label dct_sixhour:
     "Пришлось открывать глаза и изображать только что проснувшегося, благо, без очков это было не трудно."
     scene dct_int_bus_another_middle behind blink
     show d_mz shyangry pioneer far behind blink:
-        xcenter 0.65
+        xcenter 0.64
     show unblink
     mz "Как тебя там? Который в очках. Прости, я не хотела."
     show d_mz angry pioneer far with dspr
