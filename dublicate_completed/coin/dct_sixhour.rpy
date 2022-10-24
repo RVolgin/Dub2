@@ -135,7 +135,7 @@ label dct_sixhour:
     show dct_int_bus_middle_sh surprise
     with fade
     th "Сейчас они проснутся и случится скандал. Обычно скандал за ужином случается, а тут случится в автобусе. Флуктуация-с."
-    show dct_int_bus_middle_sh normal
+    show dct_int_bus_middle_sh normal with dspr
     usp "Сёмка…"
     "Сзади послышался голос. Александр подождал продолжения, но ничего, просто «Сёмка», и дальше шуршание, пыхтение и скрипнуло пару раз."
     scene dct_int_bus_stern
