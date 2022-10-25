@@ -564,23 +564,23 @@ init :
 
 
     image dct_camp_stroll_to_the_right:                  # Смена локаций лагеря
-        "dct_ext_music_club_sunset" with pushright
+        "dct_ext_music_club_sunset" with pushleft
         pause 2.5
-        "dct_ext_washstand_sunset" with pushright
+        "dct_ext_washstand_sunset" with pushleft
         pause 2.5
-        "dct_ext_stage_big_sunset" with pushright
+        "dct_ext_stage_big_sunset" with pushleft
         pause 2.5
-        "dct_ext_library_sunset" with pushright
+        "dct_ext_library_sunset" with pushleft
         pause 2.5
-        "bg ext_aidpost_day" with pushright
+        "bg ext_aidpost_day" with pushleft
         pause 2.5
-        "dct_ext_bathhouse_day" with pushright
+        "dct_ext_bathhouse_day" with pushleft
         pause 2.5
-        "dct_ext_beach_sunset_not_train" with pushright
+        "dct_ext_beach_sunset_not_train" with pushleft
         pause 2.5
-        "dct_ext_boathouse_sunset" with pushright
+        "dct_ext_boathouse_sunset" with pushleft
         pause 2.5
-        "d_ext_dv_hideout_sunset" with pushright
+        "d_ext_dv_hideout_sunset" with pushleft
         pause 2.5
         repeat
         
