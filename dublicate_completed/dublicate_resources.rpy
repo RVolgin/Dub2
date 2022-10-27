@@ -438,6 +438,7 @@ init :
     image dct_lineup_two_lines = "mods/dublicate_completed/images/cg/dct_lineup_two_lines.jpg"
     
     image dct_un_on_birch = "mods/dublicate_completed/images/cg/dct_un_on_birch.jpg"    # Лена сидит на берёзе
+    image dct_cg_beach_volleyball = "mods/dublicate_completed/images/cg/dct_cg_beach_volleyball.jpg"    # Воллейбол на пляже
     
     
     ##### cg (coin)
@@ -449,7 +450,7 @@ init :
     image dct_cg_foots_and_ball = "mods/dublicate_completed/images/cg/coin/dct_cg_foots_and_ball.jpg"   # Ботинки и мяч на траве
     image dct_cg_el_kick_ball = "mods/dublicate_completed/images/cg/coin/dct_cg_el_kick_ball.jpg"   # Электроник пинает мяч
     
-    image dct_cg_coin_volleyball = "mods/dublicate_completed/images/cg/coin/dct_cg_coin_volleyball.jpg" # Воллейбол на пляже
+    image dct_cg_coin_volleyball = "mods/dublicate_completed/images/cg/coin/dct_cg_coin_volleyball.jpg" # # Воллейбол на пляже (с Семёном)
     image dct_cg_coin_dv_on_beach = "mods/dublicate_completed/images/cg/coin/dct_cg_coin_dv_on_beach.jpg" # Алиса на пляже с полотенцем
     
     image dct_mi_piano1 = "mods/dublicate_completed/images/cg/coin/dct_mi_piano1.jpg" # Мику играет на пианино
