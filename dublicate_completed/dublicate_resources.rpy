@@ -402,7 +402,8 @@ init :
     image dct_story_one_pioneer = "mods/dublicate_completed/images/cg/dct_story_one_pioneer.jpg"
     image dct_story_one_pioneer2 = "mods/dublicate_completed/images/cg/dct_story_one_pioneer2.jpg"
     image dct_story_one_pioneer3 = "mods/dublicate_completed/images/cg/dct_story_one_pioneer3.jpg"
-    image dct_d1_un_book = "mods/dublicate_completed/images/cg/dct_d1_un_book.jpg"
+    image dct_d1_un_book_1 = "mods/dublicate_completed/images/cg/dct_d1_un_book_1.jpg"
+    image dct_d1_un_book_2 = "mods/dublicate_completed/images/cg/dct_d1_un_book_2.jpg"
     #image dct_sht = "mods/dublicate_completed/images/cg/dct_sht.jpg" #СХТ40 - переделано в прозрачный спрайт и перехало в sprites/oth/
     image dct_un_effector_1 = "mods/dublicate_completed/images/cg/dct_un_effector_1.jpg"
     image dct_un_effector_2 = "mods/dublicate_completed/images/cg/dct_un_effector_2.jpg"
