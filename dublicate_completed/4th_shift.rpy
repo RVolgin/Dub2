@@ -284,7 +284,7 @@ label d_duo:
     
     scene ext_aidpost_day
     show us_in_bush
-    show cs normal glasses at left
+    show cs normal at left
     show d_sf normal pioneer at fright
     show d_us shy sport at right:
         ypos -0.05
@@ -304,7 +304,7 @@ label d_duo:
     hide d_us
     with moveoutleft
     play sound sfx_dinner_jingle_speaker
-    show cs normal glasses with dspr
+    show cs normal with dspr
     dreamgirl "И, уже обращаясь к Ульянкиному кусту, добавила."
     cs "Пионерка, предупреди, пожалуйста, на кухне, что мы задержимся, и попроси, пусть обед на четверых оставят."
     hide cs with moveoutleft
@@ -450,17 +450,17 @@ label d_comission:
     dreamgirl "Толик опять изображал дурачка, только веры ему теперь не было."
     dreamgirl "А гости внимательно слушали."
     show us surp2 sport at left with move
-    show cs normal glasses far at right with dspr
+    show cs normal far at right with dspr
     cs "Не люблю домашних животных. Вроде бы и должна, а не люблю."
     cs "Но если ты притащил на объект собаку или кошку, да даже хомячка, нарушив все правила, то будь добр заботиться о нём."
     cs "Диким-то все равно, дикие живут и плюют на наши циклы…"
-    show cs smile glasses far with dspr
+    show cs smile far with dspr
     cs "…а эти, п-пушистики. Они же себя членами нашей стаи считают, такими же, как мы, и то, что мы на двух ногах, а они на четырёх лапах, это такая мелочь с их точки зрения."
     cs "А управляющие центры здешние считывают сигнал из их мозга: «Я человек!» — и начинают работать."
     cs "Посёлок-то, он экранированный был, но кошка она же гуляет сама по себе."
     cs "Вышла за территорию и получила нейтринное кольцо в мозг, ещё раз вышла, и на тебе цикловую программу на это кольцо…" 
     show us normal sport far at right with move
-    show cs normal glasses at left with move
+    show cs normal at left with move
     dreamgirl "Грязные столы кончились, Ульянка сбегала за шваброй и начала елозить тряпкой по полу, оставаясь в пределах слышимости."
     cs "…тело выросло, начало резко изменяться на человеческое, и, что печально, проснулся разум."
     show cs shy glasses with dspr
@@ -676,10 +676,10 @@ label d_comission:
         ypos -0.05
     us_old "Виола, мы на озеро, то что ближе к Старому корпусу. Скажете Сёмке, чтоб не терял."
     hide d_us
-    show cs normal
+    show cs glasses normal
     with dspr
     cs "Идите, не бойтесь. Твой Сёмка сейчас ностальгирует и до ужина ностальгировать будет. А после ужина приходи — лечить его будем."
-    show cs shy with dspr
+    show cs glasses shy with dspr
     cs "И… Ульяны, я не хотела вас обидеть."
     stop music fadeout 1
     stop ambience
@@ -1013,7 +1013,7 @@ label d_lake:
     play ambience ambience_medstation_inside_day
     play music music_list["silhouette_in_sunset"]
     dreamgirl "А у Виолы у той тоже знаменательный день был, в кои-то веки ей в руки больной попался, да ещё и собеседник."
-    show cs normal at left with moveinleft
+    show cs normal glasses at left with moveinleft
     cs "Мы же тут такие, какими себя ощущаем. Пионеры, те по программе живут, вожатые — по своей программе, а мы, получается, по своей."
     show d_sf normal pioneer at right with moveinright
     cs "Ты вон взял и повзрослел с семнадцати до двадцати пяти, и Ульяна твоя до девятнадцати, и так и застряли. Или неполные \"воспоминания о будущем\" твои, и глаз мой карий, кстати. Пометили меня, а зачем? Я не знаю."
@@ -1023,7 +1023,7 @@ label d_lake:
     cs "Надо обладать личностью Глафиры Денисовны, чтобы наплевать на программу и жить собственной жизнью, это во-первых, и быть рождённой мамой с папой, это во-вторых."
     me "А Толя, он что, ощущает себя идиотом? Прости, Толя."
     cs "С Толей сложнее, он ещё и на систему частично завязан, вот ему и навязывается эта роль, когда он не сопротивляется и если вокруг посторонние — маскировка."
-    show cs smile with dspr
+    show cs smile glasses with dspr
     cs "Он сам выбрал, но, Толь, мне надоело с олигофреном жить, слышишь."
     me "Маскировка? А, я понял."
     hide cs with moveoutleft
@@ -1036,11 +1036,11 @@ label d_lake:
         ypos -0.05
     us_old "Виола, я у вас Семку забираю."
     hide d_to with moveoutleft
-    show cs normal at left with moveinleft
+    show cs normal glasses at left with moveinleft
     cs "Забирай."
     cs "Семён, тяжести не поднимать пока, и вообще не нагружаться, а если поднимать, то беречься. Но лучше не поднимать."
     cs "Следи за ним, Ульяна. И, завтра после ужина жду, обоих… на сеанс."
-    show cs smile with dspr
+    show cs smile glasses with dspr
     hide d_us
     hide d_sf
     with moveoutright
@@ -1607,14 +1607,14 @@ label insomnia:
     
     scene int_aidpost_night
     show d_to normal pioneer at left
-    show cs normal at right
+    show cs normal glasses at right
     with dspr
     play ambience ambience_medstation_inside_night
     d_to  "Давай спать, старушка, головы должны быть свежими. Сейчас мы все равно ничего не решим."
     show cs normal glasses with dspr
     cs "Семён?"
     d_to "Поговорю. Он не помнит почти ничего, но поговорю. Или ты поговори. Может, он что-то со стороны в этой ситуации увидит."
-    show cs normal with dspr
+    show cs normal glasses with dspr
     cs "Да уж — человек-загадка какой-то… Он должен был вспомнить все, либо давно уже отключиться, а он половины не помнит. У него в узле только пятеро в активной фазе, а он не спит. И похоже, пока он не спит, он и другим вокруг себя спать не даст. Ладно, оставим ему его проблемы. А нам спать, действительно, пора."
     play sound sfx_click_1
     show blink
@@ -2875,7 +2875,7 @@ label cracks_:
     $ sunset_time ()
     $ persistent.sprite_time = "sunset"
     play ambience ambience_medstation_inside_day
-    show cs normal stethoscope with moveinright
+    show cs normal glasses stethoscope with moveinright
     cs "Так, хорошо. А следующую куда?"
     cs "Нет-нет-нет. Смотри внимательней. Все же на картинках есть."
     cs "Правильно. Ну, бери иглу и уже сама. Стой! Вот так иглу держат."
@@ -2993,7 +2993,7 @@ label cracks_:
     show d_us hurt dress at right with moveinright:
         ypos -0.05
     us_old "Виола. У вас в узле двое на подходе. Выключатель… Вы же не будете? Им?.."
-    show cs normal with move:
+    show cs normal glasses with move:
         xpos 0.1
     show d_to normal pioneer at left with moveinleft
     d_to "Не будем Уля, не бойся. Я тоже против."
@@ -3008,7 +3008,7 @@ label cracks_:
         pos (0.9, -0.05)
     show d_sf normal hike at right with move
     me "А что там случилось двадцать лет назад с Шуриком? Или нам лучше не знать?"
-    show cs normal with move:
+    show cs normal glasses with move:
         xpos 0.1
     show d_to normal pioneer at left with move
     d_to "Наверное лучше знать. Чтобы не навредить ему ненароком. Тем более, что тогда ты был в курсе. Все мы были в курсе."
@@ -3376,6 +3376,7 @@ label artists_:
     me "Ни в коем случае, Мику. Никого не надо убирать. Я только пришёл сказать, что у тебя все замечательно получилось. И вожатая пообещала вам помочь, если вы до обеда успеете набрать труппу."
     show mi shy pioneer with dspr
     mi "Ну что ты, Сенечка, не я же одна работала. Вот, мне девочки помогли очень."
+    show un normal pioneer with dspr
     show mi shy pioneer with move:
         xpos 0.05
     show mz normal glasses pioneer with move:
@@ -3452,7 +3453,7 @@ label unclaimed_revelation:
     show d_sf normal pioneer at right with moveinright
     show un normal pioneer at left with moveinleft
     me "Ну как успехи? Много записалось?"
-    show un shocked pioneer with dspr
+    show un surprise pioneer with dspr
     un "Не очень.{w} Но достаточно."
     me "Понятно всё. Когда репетиция?"
     show un shy pioneer with dspr
@@ -3560,7 +3561,7 @@ label unclaimed_revelation:
     show sl normal pioneer with move:
         xpos 0.55
     show d_sz normal pioneer at left with moveinright:
-        ypos -0.1
+        yalign 0.27
     d_sz "А он не гость, Славя. Он же здесь жил! Я только спросил его, почему он сразу же, в первый день, не подошёл и не поздоровался?"
     sl "А вы разве знакомы были?"
     dreamgirl "Серёжа вздохнул и повторил ещё раз, медленно и терпеливо, как умственно-отсталой."
@@ -3574,7 +3575,7 @@ label unclaimed_revelation:
     th "Уф-ф-ф. Я ждала, какой-то истины устами младенца, но кажется обошлось. Кажется, вместо истины мне подали простые детские фантазии. Но это лучше, чем «Чёрная вожатая». Это что-то новое, свежее и не страшное."
     show sl smile pioneer at right
     show d_sz normal pioneer at left:
-        ypos -0.1
+        yalign 0.27
     with pixellate
     sl "И что же я забыла?"
     d_sz "Да всё. Ты встречала его каждую смену, когда он приезжал, а когда он уплыл от нас, ты плакала. А потом каждое воскресенье ходила к пустому автобусу."
@@ -3588,22 +3589,22 @@ label unclaimed_revelation:
     sl "А этот Семён, он тоже всё забудет?"
     dreamgirl "Славя и октябрята отошли к ближайшей скамье. Малыши, кажется, обрадовались, что у них появился слушатель и фантазировали наперебой."
     show d_sz normal pioneer with move:
-        xpos 0.05 ypos -0.1
+        xpos 0.12  yalign 0.27
     show d_oz normal pioneer at left with moveinleft:
-        ypos -0.1
+        xpos 0.4  yalign 0.27
     d_oz "Семён ничего не забудет! Он в том своём лагере, где он сейчас физрук, должен был всё забыть, но ничего не забыл! Значит, уже не забудет."
     show sl normal pioneer with dspr
     sl "Оксана, а откуда ты знаешь, что он должен был все забыть в том лагере?"
     d_oz "А мы, младшие, иногда меняемся лагерями и новости рассказываем. Переходим из лагеря в лагерь. Вот Артём, тот как раз из того самого лагеря, а наш Артём, тот сейчас там."
     show d_oz normal pioneer with move:
-        xpos 0.05 ypos -0.1
+        xpos 0.12  yalign 0.27
     show d_sz normal pioneer at left with move:
-        ypos -0.1
+        xpos 0.4  yalign 0.27
     d_sz "Вы, старшие, тоже иногда меняетесь лагерями, но ничего не помните. Для вас все лагеря одинаковыми кажутся."
     show d_sz normal pioneer with move:
-        xpos 0.05 ypos -0.1
-    show d_oz normal pioneer at left with move:
-        ypos -0.1
+        xpos 0.12  yalign 0.27
+    show d_oz normal pioneer at left with moveinleft:
+        xpos 0.4  yalign 0.27
     d_oz "Серёжа, не мешай, дай я ещё расскажу. Жалко, что этот Семён уплыл от нас, потому что Артём рассказывал, какая у них там футбольная команда. И какой праздник Нептуна там устраивают."
     show sl smile pioneer with dspr
     dreamgirl "Славя улыбнулась про себя, стараясь, чтоб малыши не заметили. Обижать их совсем не хотелось — малыши были очень славные. Они стояли напротив Слави, и на лицах у них горела жажда поделиться знанием."
@@ -3836,7 +3837,7 @@ label shear_deformations:
     show d_sf normal hike at right with moveinright
     me "Виола, Анатолий. Мы накопали. Ульяна и я, каждый по отдельности. Можно завтра, после спектакля? Просто пока не все проверили. Скажу только, что вы двое тут тоже не просто так, и всё, кажется, завязано на вас. И вы тут… В общем, вас тут не должно быть. Так или иначе."
     show d_sf normal hike with move:
-        xpos 0.95
+        xpos 0.90
     show d_us normal dress at right with move:
         ypos -0.05
     us_old "Сёмка прав. Я пока не знаю, что будет, ещё не проверила, но до завтра доделаю."
@@ -4461,7 +4462,7 @@ label anticipation_:
     cs "Заходите… {w=1}молодожёны. Устраивайтесь… {w=1}на кушеточке."
     show d_sf smile pioneer with dspr
     me "Виола-Виола… Жаль, что я вас с Анатолием почти не помню."
-    show cs normal glasses
+    show cs normal
     cs "Семён, вы же не за этим пришли…"
     stop music fadeout 1
     stop ambience
@@ -4620,12 +4621,12 @@ label anticipation_:
     cs "А когда все устаканилось, вдруг заявил, что пионером был и пионером останется. И, оказалось, что был прав."
     show cs shy with dspr
     cs "Теперь он остаётся, а мы уходим."
-    show cs normal glasses with dspr
+    show cs normal with dspr
     cs "Деление это, на оригиналов, подлинников и так далее, это, кстати, его оригинал придумал. Потому что миксы — это его лаборатории дело…"
     show d_us smile sport with dspr
     us_old "Тётя Виола, это вы с кем сейчас разговаривали?"
     stop music fadeout 1
-    show cs smile glasses with dspr
+    show cs smile with dspr
     cs "Да что это такое? Один Церновной обзывается, другая тётей дразнит. Совсем меня в старуху превратить хотите?"
     stop ambience
     
@@ -4710,7 +4711,7 @@ label anticipation_:
     show mt smile pioneer with dspr
     th "Кажется у Алисы и правда всё хорошо. И она снова смотрит на меня весело и нахально."
     show d_sf normal pioneer at right
-    show un serious pioneer at cright
+    show un serious pioneer at center
     show mi normal pioneer at fright
     with moveinright
     mi "Сенечка, что за отдача? Как она работает? Здравствуйте, Олечка Дмитриевна."
@@ -4889,7 +4890,7 @@ label strange_memory:
     sl "…мне очень нужно с вами поговорить!"
     $ set_mode_nvl ()
     dreamgirl "Ульяна вспомнила, как Семён, когда он с больной спиной только вернулся из посёлка Шлюз и отлёживался в тренерской, выползая лишь в столовую, сказал ей, уже на равных: «Будь готова к тому, что пионеры, те, кто ещё не проснулся, будут бегать к тебе со своими проблемами, как к подруге или как к психологу. Может чувствуют они, в таких как мы, что-то?»"
-    dreamgirl "Но дома как-то так вышло, что если бегали, то бегали больше к Семёну (Ну как больше? Далеко не каждый цикл бегали даже. Всего-то и было раз пять или шесть. Сёмка после всегда ворчал, но, никогда никого прогонял и никогда о чужих проблемах не рассказывал). А остальные три проснувшиеся девочки были избавлены от этого."
+    dreamgirl "Но дома как-то так вышло, что если бегали, то бегали больше к Семёну (Ну как больше? Далеко не каждый цикл бегали даже. Всего-то и было раз пять или шесть. Сёмка после всегда ворчал, но, никогда никого не прогонял и никогда о чужих проблемах не рассказывал). А остальные три проснувшиеся девочки были избавлены от этого."
     dreamgirl "Один такой «пациент» сказал потом: «Ну, понимаешь, Семён, можно конечно и к вожатой, но это как наябедничать получается. Если она что узнала, она не будет разбираться, она будет меры принимать и наказывать кого попало. А ещё будет кричать. А ты, хоть и начальник, а свой. Даже если накажешь, то не обидно. И никогда не кричишь»."
     dreamgirl "А тут Славя пришла с бедой к Ульяне."
     $ set_mode_adv ()
@@ -5296,8 +5297,7 @@ label dots_over_yo:
     d_to "Устали мы, Семёныч. Потому и сбегаем так легко."
     me "По Виоле видно, как это легко. Если это легко, Толь, то что же тогда тяжело?"
     me "Лучше скажите. Как вы думаете, что будет после вашего ухода?"
-    show d_sf normal pioneer with move:
-        xpos 0.7
+    show d_sf normal pioneer at center with move
     show d_us sad sport at right with moveinright:
         ypos -0.05
     us_old "Я скажу, Сём. Закроется этот ваш переход через теплообменник. Потому что он держался только на убеждении Виолы, Анатолия и, раньше ещё, бабы Глаши, что всё происходит именно так."
@@ -5344,7 +5344,7 @@ label dots_over_yo:
     with dspr
     dreamgirl "У клубов четвёрка уперлась в обоих кибернетиков."
     dreamgirl "Шурик и Электроник как раз опустили на землю конструкцию из направленного вертикально вверх бытового вентилятора и четырёх лампочек, смонтированных на деревянной раме."
-    show cs normal glasses with dspr
+    show cs normal with dspr
     show sh upset pioneer far
     show el upset pioneer far
     with dspr
@@ -5381,7 +5381,7 @@ label dots_over_yo:
     play ambience ambience_camp_center_day
     show d_us normal sport at center with moveinleft:
         ypos -0.05
-    show d_sf normal sport behind d_us with dspr:
+    show d_sf normal pioneer behind d_us with dspr:
         xpos 0.6
     show d_to normal pioneer at fleft with dspr
     show cs normal with dspr:
@@ -5596,7 +5596,7 @@ label the_day_after_tomorrow_bomb:
     hide mt with moveoutleft
     stop sound_loop fadeout 1
     dreamgirl "Зрители потянулись по домикам."
-    dreamgirl "Славя подбежала к Мику. Ульяна большая услыхала их разговор, что-то там про пирог, столовую и артистов."
+    dreamgirl "Славя подбежала к Мику. Ульяна-большая услыхала их разговор, что-то там про пирог, столовую и артистов."
     show d_us sad dress at center with moveinbottom:
         ypos -0.05
     th "Пойду спать. Сёмка пускай чаи гоняет, если бы не он — ничего бы и не было. Заслужил."
@@ -5808,9 +5808,9 @@ label return_bus:
     me "Вот теперь действительно все. Пошли, Ульяныч. К ночи дома будем."
     show d_sf smile pioneer with dspr
     me "Скоро двое новых октябрят появятся, да ещё с двойниками. Ума не приложу, как эту парочку вычислить и вместе собрать."
-    us_old "Пошли, Сёмк. И расскажи мне про Мику. Ты обещал."
     show d_us normal sport at right with moveinbottom:
         ypos -0.05
+    us_old "Пошли, Сёмк. И расскажи мне про Мику. Ты обещал."
     $ renpy.pause (1)
     hide d_sf
     hide d_us
