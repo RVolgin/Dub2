@@ -1188,9 +1188,6 @@ init :
     ##### sfx (coin)
     
     $ dct_sfx_bus_braking = "<from 8.1 to 12.5>mods/dublicate_completed/sounds/sfx/dct_sfx_bus_arrival.ogg" #притормаживание автобуса
-    # $ dct_sfx_loop_engine_noise_fast = "<from 1.43 to 10.8>mods/dublicate_completed/sounds/sfx/dct_sfx_bus_departure.ogg" #шум двигателя автобуса быстрый
-    # $ dct_sfx_loop_engine_noise_slow = "<from 11.15 to 28.25>mods/dublicate_completed/sounds/sfx/dct_sfx_bus_arrival.ogg" #шум двигателя автобуса медленный
-    # $ dct_sfx_bus_moves_between_stops = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_bus_moves_between_stops.ogg"
     $ dct_sfx_loop_bus_moves_slow = "<from 18.27 to 51.79>mods/dublicate_completed/sounds/coin/sfx/dct_sfx_bus_moves_between_stops.ogg" #звук автобуса, едущего медлено
     $ dct_sfx_UAZ_engine = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_UAZ_engine.ogg" # Заведённый УАЗ во сне Шурика
     $ dct_sfx_horn_assembly_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_assembly_through_loudspeaker.ogg" # Горн на линейку через репродуктор
