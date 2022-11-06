@@ -273,7 +273,9 @@ init :
     
     
     
-    image dct_ext_water_islands_buoys_day = "mods/dublicate_completed/images/bg/coin/dct_ext_water_islands_buoys_day.jpg"   # Речка, буйки и острава
+    image dct_ext_water_islands_buoys_day = "mods/dublicate_completed/images/bg/coin/dct_ext_water_islands_buoys_day.jpg"   # Речка, буйки и острова
+    
+    image dct_ext_square_extended_day = "mods/dublicate_completed/images/bg/coin/dct_ext_square_extended_day.jpg"   # Расширенная площадь, день (очень некачественный вариант)
     
     
     
@@ -451,7 +453,15 @@ init :
     image dct_cg_foots_and_ball = "mods/dublicate_completed/images/cg/coin/dct_cg_foots_and_ball.jpg"   # Ботинки и мяч на траве
     image dct_cg_el_kick_ball = "mods/dublicate_completed/images/cg/coin/dct_cg_el_kick_ball.jpg"   # Электроник пинает мяч
     
-    image dct_cg_coin_volleyball = "mods/dublicate_completed/images/cg/coin/dct_cg_coin_volleyball.jpg" # # Воллейбол на пляже (с Семёном)
+    image dct_mz_mirror normal = "mods/dublicate_completed/images/cg/coin/dct_mz_mirror_normal.jpg"   # Женя смотрит в зеркало на дверце шкафа
+    image dct_mz_mirror bukal = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_mz_mirror_normal.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_mz_mirror_bukal.png')    # Женя смотрит в зеркало на дверце шкафа (расстроенная)
+    image dct_mz_mirror smile = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_mz_mirror_normal.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_mz_mirror_smile.png')    # Женя смотрит в зеркало на дверце шкафа (улыбающаяся)
+    
+    image dct_cg_christmas_balls_back = "mods/dublicate_completed/images/cg/coin/dct_cg_christmas_balls_back.jpg"   # Шары на ёлке
+    image dct_ball_to_world01 = "mods/dublicate_completed/images/anim/coin/dct_ball_to_world01.png"   # Шар с Алисиным миром на ёлке
+    image dct_cg_clusters_of_worlds = "mods/dublicate_completed/images/cg/coin/dct_cg_clusters_of_worlds.jpg"   # Миры-шарики
+    
+    image dct_cg_coin_volleyball = "mods/dublicate_completed/images/cg/coin/dct_cg_coin_volleyball.jpg" # Воллейбол на пляже (с Семёном)
     image dct_cg_coin_dv_on_beach = "mods/dublicate_completed/images/cg/coin/dct_cg_coin_dv_on_beach.jpg" # Алиса на пляже с полотенцем
     
     image dct_mi_piano1 = "mods/dublicate_completed/images/cg/coin/dct_mi_piano1.jpg" # Мику играет на пианино
@@ -565,7 +575,7 @@ init :
         
 
 
-    image dct_camp_stroll_to_the_right:                  # Смена локаций лагеря
+    image dct_camp_stroll_to_the_right:                  # Смена локаций лагеря (из первой главы Монетки)
         "dct_ext_music_club_sunset" with pushleft
         pause 2.5
         "dct_ext_washstand_sunset" with pushleft
@@ -586,30 +596,7 @@ init :
         pause 2.5
         repeat
         
-        
-        
-    # image dct_camp_stroll_to_the_right:                  # То же самое, но крутится без перерыва
-        # "bg ext_musclub_day" with pushright
-        # pause 1
-        # "bg ext_washstand_day" with pushright
-        # pause 1
-        # "dct_ext_stage_big_sunset" with pushright
-        # pause 1
-        # "bg ext_library_day" with pushright
-        # pause 1
-        # "bg ext_aidpost_day" with pushright
-        # pause 1
-        # "dct_ext_bathhouse_day" with pushright
-        # pause 1
-        # "dct_ext_beach_sunset_not_train" with pushright
-        # pause 1
-        # "dct_ext_boathouse_sunset" with pushright
-        # pause 1
-        # "d_ext_dv_hideout_sunset" with pushright
-        # pause 1
-        # repeat
-        
-        
+     
         
     image dct_el_shuttles_back_and_forth:                  # Электроник курсирует туда-сюда (мимо бибилиотеки)
         "el normal pioneer far"
@@ -643,7 +630,178 @@ init :
         repeat
         
         
+    ############################################
+    ############################################        Смена локаций лагеря (из четвёртой главы Монетки)
+ 
+    image dct_camp_hustle_to_the_left_locA:         # Случайная локация (А)
+        choice:
+            "dct_ext_bathhouse_day"
+        choice:
+            "dct_ext_boathouse_day_with_pass_train"
+        choice:
+            "ext_playground_day"
+        choice:
+            "dct_int_sporthall"
+        choice:
+            "dct_ext_house_of_el_day"
+        choice:
+            "dct_int_house_of_el_day"
+        choice:
+            "ext_library_day"
+        choice:
+            "int_library_day"
+
         
+    image dct_camp_hustle_to_the_left_locB:         # Случайная локация (Б)
+        choice:
+            "dct_ext_music_club_verandah_opendoor_day"
+        choice:
+            "int_musclub_day"
+        choice:
+            "dct_ext_stage_big_day"
+        choice:
+            "dct_ext_another_clubhouse_day"
+        choice:
+            "dct_ext_storage_day"
+        choice:
+            "dct_int_warehouse_day"
+        choice:
+            "int_clubs_male_day"
+        choice:
+            "ext_clubs_day"
+        
+        
+    image dct_camp_hustle_to_the_left_wayA:         # Случайный путь между локациями (А)
+        choice:
+            "ext_washstand_day"
+        choice:
+            "d_ext_dv_hideout_day_7"
+        choice:
+            "dct_ext_houses2_day"
+        choice:
+            "dct_ext_сentral_alley_from_dining_hall_to_west"
+        choice:
+            "dct_ext_alley_from_library_to_square"
+            zoom 0.5
+
+    
+    image dct_camp_hustle_to_the_left_wayB:         # Случайный путь между локациями (Б)
+        choice:
+            "ext_path_day"
+        choice:
+            "ext_path2_day"
+        choice:
+            "ext_houses_day"
+        choice:
+            "ext_square_day"
+        choice:
+            "dct_ext_square_profile_view_day"
+    
+    
+    image dct_camp_hustle_to_the_left1:                      # Смена случайных локаций   
+        "dct_camp_hustle_to_the_left_locA"
+        xcenter -0.5
+        linear 1 xcenter 0.5
+        pause 0.5
+        linear 1 xcenter -0.5
+        pause 3.46
+        repeat
+
+    image dct_camp_hustle_to_the_left2:                      # Смена случайных путей
+        "dct_camp_hustle_to_the_left_wayA"
+        xcenter 1.5
+        linear 1 xcenter 0.5
+        pause 0.5
+        linear 1 xcenter 1.5
+        pause 3.46
+        repeat
+    
+    image dct_camp_hustle_to_the_left3:                      # Смена случайных локаций   
+        "dct_camp_hustle_to_the_left_locB"
+        xcenter -0.5
+        linear 1 xcenter 0.5
+        pause 0.5
+        linear 1 xcenter -0.5
+        pause 3.46
+        repeat
+        
+    image dct_camp_hustle_to_the_left4:                      # Смена случайных путей
+        "dct_camp_hustle_to_the_left_wayB"
+        xcenter 1.5
+        linear 1 xcenter 0.5
+        pause 0.5
+        linear 1 xcenter 1.5
+        pause 3.46
+        repeat
+
+    ############################################
+    ############################################
+        
+        
+        
+    image dct_cg_mz_dreams_of_el:                  # Женя мечтает об Электронике
+        "mods/dublicate_completed/images/cg/coin/dct_cg_mz_dreams_of_el_1.jpg"
+        pause 4
+        "dct_cg_el_kick_ball" with dissolve2
+        pause 5.5
+        "mods/dublicate_completed/images/cg/coin/dct_cg_mz_dreams_of_el_3.jpg" with dissolve2
+        pause 7
+        "d4_el_wash" with dissolve2
+    
+    
+    
+    image dct_ball_to_world:                  # Ёлочный шар увеличивается в размерах
+        "mods/dublicate_completed/images/anim/coin/dct_ball_to_world01.png"
+        xcenter 0.5 ycenter 0.5
+        pause 0.5
+        "mods/dublicate_completed/images/anim/coin/dct_ball_to_world02.png" with Dissolve(0.2)
+        xcenter 0.5 ycenter 0.5
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_ball_to_world03.png" with Dissolve(0.2)
+        xcenter 0.5 ycenter 0.5
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_ball_to_world04.png" with Dissolve(0.2)
+        xcenter 0.5 ycenter 0.5
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_ball_to_world05.png" with Dissolve(0.2)
+        xcenter 0.5 ycenter 0.5
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_ball_to_world06.png" with Dissolve(0.2)
+        xcenter 0.5 ycenter 0.5
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_ball_to_world07.png" with Dissolve(0.2)
+        xcenter 0.5 ycenter 0.5
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_ball_to_world08.png" with Dissolve(0.2)
+        xcenter 0.5 ycenter 0.5
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_ball_to_world09.png" with Dissolve(0.18)
+        xcenter 0.5 ycenter 0.5
+        pause 0.18
+        "mods/dublicate_completed/images/anim/coin/dct_ball_to_world10.png" with Dissolve(0.16)
+        xcenter 0.5 ycenter 0.5
+        pause 0.16
+        "mods/dublicate_completed/images/anim/coin/dct_ball_to_world11.png" with Dissolve(0.14)
+        xcenter 0.5 ycenter 0.5
+        pause 0.14
+        "mods/dublicate_completed/images/anim/coin/dct_ball_to_world12.png" with Dissolve(0.12)
+        xcenter 0.5 ycenter 0.5
+        pause 0.12
+        "mods/dublicate_completed/images/anim/coin/dct_ball_to_world13.png" with Dissolve(0.1)
+        xcenter 0.5 ycenter 0.5
+        pause 0.1
+        "mods/dublicate_completed/images/anim/coin/dct_ball_to_world14.png" with Dissolve(0.08)
+        xcenter 0.5 ycenter 0.5
+        pause 0.08
+        "mods/dublicate_completed/images/anim/coin/dct_ball_to_world15.png" with Dissolve(0.06)
+        xcenter 0.5 ycenter 0.5
+        pause 0.06
+        "ext_square_day" with Dissolve(0.04)
+        xcenter 0.5 ycenter 0.5
+        
+    
+    
+    
     image dct_sl_sport_running_serious:                  # Славя (Саша) с эмоцией serious развёрнута зеркально. Это нужно, чтобы следом идущая трансформация 'dct_sl_sport_running_surprise' в момент применения перехода 'dissolve_fast' не вращала изображение туда-сюда
         "3500_sl serious sport"
         xzoom -1.0
@@ -975,13 +1133,13 @@ init :
         pause 0.5
         "uv sad far"
         anchor(0.5, 0.5) xcenter 0.145 ycenter 0.647 rotate 33.8
-        pause 0.15
+        pause 0.155
         "uv guilty far"
         anchor(0.5, 0.5) xcenter 0.148 ycenter 0.657 rotate 12.2
         pause 0.5
         "uv sad far"
         anchor(0.5, 0.5) xcenter 0.145 ycenter 0.647 rotate 33.8
-        pause 0.15
+        pause 0.155
         "uv shocked far"
         repeat
         
@@ -1048,6 +1206,7 @@ init :
     ##### ambience (coin)
     
     $ dct_ambience_volley_in_gym = "mods/dublicate_completed/sounds/coin/ambience/dct_ambience_volley_in_gym.ogg"   # Игра в волейбол в зале
+    $ dct_ambience_rattle_in_library = "mods/dublicate_completed/sounds/coin/ambience/dct_ambience_rattle_in_library.ogg" # Грохот в бибилиотеке, учинённый Максимом
     
     
     #music
@@ -1196,7 +1355,6 @@ init :
     $ dct_sfx_horn_rise = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_rise.ogg" # Горн-подъём
     $ dct_sfx_horn_rise_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_rise_through_loudspeaker.ogg" # Горн-подъём через репродктор
     $ dct_sfx_horn_rebound_through_loudspeaker = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_horn_rebound_through_loudspeaker.ogg" # Горн-отбой через репродктор
-    $ dct_sfx_rattle_in_library = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_rattle_in_library.ogg" # Грохот в бибилиотеке, учинённый Максимом
     $ dct_sfx_robot_run_club_attic = "<to 2.6>mods/dublicate_completed/sounds/coin/sfx/dct_sfx_robot_run_club_attic.ogg" # Яна пробегает по чердаку клуба
     $ dct_sfx_record_crackling = "mods/dublicate_completed/sounds/coin/sfx/dct_sfx_record_crackling.ogg" # Потрескивание старой пластинки
     $ dct_sfx_sveta_falls_in_gym = "mods/dublicate_completed/sounds/coin/sfx/dct_sveta_falls_in_gym.ogg" # Света падает в спортзале и вскрикивает
@@ -1321,6 +1479,7 @@ init :
     $ d_jn_young = Character(u"Яна-младшая", color="#2c8df0", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Дочь Александра
     $ d_maj = Character(u"Майор", color="#658554", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Майор из третьего сна Шурика
     $ d_voice_me = Character(u"Голос", color="#e1dd7d", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") # ГОЛОС цветом как у Семёна
+    $ d_oz_nvl = Character(u"Оксана: ", kind=nvl, color="#4de2f3", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Окасана Зайцева в режиме NVL
     
     $ d_voice_color = ""    # Переменная для смены цвета персонажа "Доносящийся голос"
     $ d_vocal_noise = Character(u"{color=[d_voice_color]}Доносящийся голос{/color}", color="#ffffff", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") # Голосовой шум, обрывки фраз на переферии
