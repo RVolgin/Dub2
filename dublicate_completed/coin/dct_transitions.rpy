@@ -51,7 +51,7 @@ label dct_transitions:
     stop ambience fadeout 1
     stop sound
     stop sound2 fadeout 1
-    
+
 
     $ renpy.music.set_volume(0.6)
     play music music_list['orchid'] fadein 2

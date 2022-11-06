@@ -567,8 +567,7 @@ label dct_replacement:
         zoom 0.75 xoffset 20
     window show
     dv "Все так Максим. Не обращай внимания."
-    show dv normal pioneer2 far with dspr:
-        zoom 1.0 xoffset -3
+    show 3500_dv normal pioneer2 as dv with dspr
     extend " Так, вспомнила одну вещь неприятную."
     hide dv with dissolve
     "А Максим сделал вывод: не провоцировать Алису на воспоминания."
@@ -950,7 +949,7 @@ label dct_replacement:
 
     
     stop sound fadeout 2
-    stop music fadeout 2
+    stop music
     stop ambience fadeout 2
     stop sound_loop fadeout 2
     scene black with dissolve2

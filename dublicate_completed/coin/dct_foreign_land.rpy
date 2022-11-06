@@ -1345,8 +1345,8 @@ label dct_foreign_land:
     
     $ renpy.music.set_volume(1.0, delay=0.0)
     play ambience ambience_clubs_inside_day fadein 1
-    hide black with dissolve
     play sound sfx_door_bell
+    hide black with dissolve
     "Пискнул таймер, десять минут пытки безмыслием истекли."
     scene dct_int_clubs_male2_night_zoom
     show el laugh pioneer at right

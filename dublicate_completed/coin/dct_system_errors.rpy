@@ -179,7 +179,7 @@ label dct_system_errors:
     th "Ну и пусть."
     extend " Зачем мне эта машина? Зачем мне знать, кем я была?"
     th "Семен и Алиса правильно говорят: я это я, такая какая есть. И все что было вложено в меня, это как удобрение, не больше. А я выросла собой."
-    show un smile3 pioneer close with dspr
+    show d_un hope pioneer close as un with dspr
     th "А совсем скоро приедет МОЙ Семен."
     show un cry_smile pioneer close with dissolve_fast
     extend " Вдруг он, наконец, проснется."
