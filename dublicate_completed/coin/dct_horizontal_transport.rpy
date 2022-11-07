@@ -743,10 +743,17 @@ label dct_horizontal_transport:
         alpha 1
         pause 0.6
         linear 0.8 alpha 0
+    
+    $ day_time()                      # Прописано, чтобы при обратной перемотке цвета не сбивались.
+    $ persistent.sprite_time = "day"
     "А все потому, что вчера вечером Семен изрек:"
     play ambience ambience_camp_center_night fadein 1.5
+    hide sh
     $ renpy.music.set_volume(0.4, delay=2)
     
+    window hide
+    $ night_time()
+    $ persistent.sprite_time = "night"
     scene bg ext_square_night
     show un normal pioneer at left:
         ycenter 0.65
@@ -755,6 +762,7 @@ label dct_horizontal_transport:
     show d_us normal sport_windbreaker:
         xcenter 0.54 ycenter 1.04 rotate 15.5
     with blinds
+    window auto
     me "Между прочим, костровая поляна выглядит абсолютно одинаково во всех узлах, где я побывал."
     me "Как говорится, видел одну — видел все."
     show d_sf laugh hike with dspr
@@ -772,15 +780,20 @@ label dct_horizontal_transport:
     show d_us serious sport_windbreaker
     show d_sf normal hike
     with dspr
+    
+    $ night_time()                      # Прописано, чтобы при обратной перемотке цвета не сбивались.
     extend " Почему раньше не догадался?"
     show d_us smile sport_windbreaker
     show d_sf sad hike
     show un smile2 pioneer
     with dspr
     pause 0.3
+    window hide
 
     stop ambience fadeout 1
     $ renpy.music.set_volume(1.0, delay=1)
+    
+    $ day_time()
     scene ext_bus
     show dct_ext_bus_alone_passenger:
         anchor (0.0, 1.0) pos (0.1, 0.5)
@@ -791,6 +804,7 @@ label dct_horizontal_transport:
     show dct_ext_camp_entrance_day:
         xcenter -0.5
     with blinds
+    window auto
     "Все когда-нибудь бывает впервые."
     show dct_ext_сentral_alley_from_dining_hall_to_west:
         linear 1 xcenter 1.5
