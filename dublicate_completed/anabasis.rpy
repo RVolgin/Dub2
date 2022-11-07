@@ -5045,9 +5045,9 @@ label dct_center_line:
     play sound dct_sfx_discharge
     hide dct_d5_sl_square_me_lead_7dl with flash
     "Вспышка! Пионеры бредут куда-то под дождем."
-    show dct_d1_un_book with flash
+    show dct_d1_un_book_2 with flash
     play sound2 dct_sfx_discharge
-    hide dct_d1_un_book with flash
+    hide dct_d1_un_book_2 with flash
     "Вспышка! Лена сидит на своей любимой лавочке и читает «Унесенные ветром»."
     show dct_boathouse_semen with flash
     play sound dct_sfx_discharge
