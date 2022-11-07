@@ -294,10 +294,10 @@ label dct_disposition:
     with squares
     "Лена грустно вздохнула и уселась на Женино место. Какая бы средненькая книга ни была, но постепенно и она увлекла Лену"
     play sound sfx_knock_door2
-    play sound2 [ "<silence 0.5>", sfx_close_door_campus_1 ]
+    play sound2 [ "<silence 1.1>", sfx_close_door_campus_1 ]
     show d_ma normal pioneer behind dct_int_library_standing_desk_front:
         xcenter 0.15 ycenter 0.55 alpha 0
-        pause 0.4
+        pause 1
         linear 0.4 xcenter 0.3 alpha 1
     extend ", поэтому, когда минут через пятнадцать в дверь постучали, Лена вздрогнула от неожиданности." with vpunch
     show d_ma surprise pioneer with dissolve_fast
