@@ -84,7 +84,7 @@ label dct_replacement:
     show d_sf serious sport with dspr
     "Дальше посидеть и посокрушаться у меня не получается."
     stop ambience fadeout 2.5
-    play sound dct_sveta_falls_in_gym
+    play sound dct_sfx_sveta_falls_in_gym
     show d_sf serious sport:
         pause 0.5
         linear 0.5 alpha 0
