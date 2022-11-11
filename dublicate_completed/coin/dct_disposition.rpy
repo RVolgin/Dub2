@@ -980,12 +980,15 @@ label dct_disposition:
     ###################################################################################
     
     
+    
+    # Появление ёлочных шаров через эффект дрожания Алисиной комнаты
+    
     show d_int_house_of_dv_night_without_light as d_int_house_of_dv2 at shiver with Dissolve(0.0)
     
     scene dct_cg_christmas_balls_back:
         zoom 1.0 anchor (0.35, 0.5) pos (-0.3, 0.5)
     show dct_ball_to_world01:
-        zoom 1.23 xcenter -0.3 ycenter 0.5 matrixcolor SaturationMatrix(0.75, desat=(0.9, 0.6, 0.05)) * TintMatrix("#be6012")
+        zoom 1.23 anchor (0.5, 0.5) pos (-0.3, 0.5) matrixcolor SaturationMatrix(0.75, desat=(0.9, 0.6, 0.05)) * TintMatrix("#be6012")
     show dct_dv_in_christmas_ball:
         zoom 0.82 anchor (0.521, 0.328) pos (-0.3, 0.5) matrixcolor SaturationMatrix(0.75, desat=(0.9, 0.8, 0.05)) * TintMatrix("#be8012")
     show dct_christmas_ball:
@@ -996,31 +999,44 @@ label dct_disposition:
     "Каждую ночь, с середины прошлого цикла, Алисе обязательно снился один и тот же сон. Очень спокойный, никуда не зовущий, не оставляющий после себя никаких эмоций, он просто снился."
     $ renpy.music.set_volume(1.0, delay=3)
 
+    # Плавное перемещение к Алисиному шару
+
     show dct_cg_christmas_balls_back:
-        easeout 1.35 zoom 0.7 pos (0.15, 0.5)
-        linear 0.4 zoom 0.6 pos (0.31, 0.5)
-        linear 0.3 pos (0.36, 0.5)
-        linear 0.4 zoom 0.7 pos (0.4, 0.5)
-        easein 1.35 zoom 1 pos (0.5, 0.5)
+        easeout 1.25 zoom 0.8 xpos -0.03
+        linear 0.5 zoom 0.7 xpos 0.12
+        linear 0.67 zoom 0.6 xpos 0.32
+        linear 0.1 xpos 0.35
+        linear 0.17 zoom 0.65 xpos 0.39
+        linear 0.2 zoom 0.75 xpos 0.43
+        easein 0.66 zoom 1 xpos 0.5
     show dct_ball_to_world01:
-        easeout 1.35 zoom 0.861 xcenter 0.15
-        linear 0.4 zoom 0.738 xcenter 0.31
-        linear 0.3 xcenter 0.36
-        linear 0.4 zoom 0.861 xcenter 0.4
-        easein 1.35 zoom 1.23 xcenter 0.5
+        easeout 1.25 zoom 0.984 xpos -0.03
+        linear 0.5 zoom 0.861 xpos 0.12
+        linear 0.67 zoom 0.738 xpos 0.32
+        linear 0.1 xpos 0.35
+        linear 0.17 zoom 0.7995 xpos 0.39
+        linear 0.2 zoom 0.9225 xpos 0.43
+        easein 0.66 zoom 1.23 xpos 0.5
     show dct_dv_in_christmas_ball:
-        easeout 1.35 zoom 0.574 pos (0.15, 0.5)
-        linear 0.4 zoom 0.492 pos (0.31, 0.5)
-        linear 0.3 pos (0.36, 0.5)
-        linear 0.4 zoom 0.574 pos (0.4, 0.5)
-        easein 1.35 zoom 0.82 pos (0.5, 0.5)
+        easeout 1.25 zoom 0.656 xpos -0.03
+        linear 0.5 zoom 0.574 xpos 0.12
+        linear 0.67 zoom 0.492 xpos 0.32
+        linear 0.1 xpos 0.35
+        linear 0.17 zoom 0.533 xpos 0.39
+        linear 0.2 zoom 0.615 xpos 0.43
+        easein 0.66 zoom 0.82 xpos 0.5
     show dct_christmas_ball:
-        easeout 1.35 zoom 0.7 pos (0.15, 0.5)
-        linear 0.4 zoom 0.6 pos (0.31, 0.5)
-        linear 0.3 pos (0.36, 0.5)
-        linear 0.4 zoom 0.7 pos (0.4, 0.5)
-        easein 1.35 zoom 1 pos (0.5, 0.5)
+        easeout 1.25 zoom 0.8 xpos -0.03
+        linear 0.5 zoom 0.7 xpos 0.12
+        linear 0.67 zoom 0.6 xpos 0.32
+        linear 0.1 xpos 0.35
+        linear 0.17 zoom 0.65 xpos 0.39
+        linear 0.2 zoom 0.75 xpos 0.43
+        easein 0.66 zoom 1 xpos 0.5
     "Начинался сон с того, что Алиса оказывалась заперта внутри латунно-желтого зеркального шара — елочной игрушки."
+    
+    # Развёртывание Алисиного шара в полноценную площадь
+    
     show dct_cg_christmas_balls_back:
         zoom 1 pos (0.5, 0.5)
     show dct_ball_to_world01:
@@ -1049,6 +1065,9 @@ label dct_disposition:
     show dct_christmas_ball:
         linear 1 zoom 1.11 alpha 0
     "Постепенно размеры игрушки росли, стенки отдалялись, теряли четкость, горизонт становился все дальше и вдруг Алиса понимала, что она уже не внутри зеркального шара, а снаружи."
+    
+    # Отдаление площади вместе с Алисой с переходом в сплошной белый цвет
+    
     scene dct_ext_square_extended_day:
         zoom 1.5 xcenter 0.5 ycenter 0.5
         easeout_cubic 4 zoom 0.65
@@ -1060,17 +1079,21 @@ label dct_disposition:
         pause 2.5
         linear 1.5 alpha 1
     "А потом это шар начинал уменьшаться в размерах, горизонт опять приближался и оказывалось, что вокруг Алисы плавают, иногда соприкасаясь, а иногда слипаясь в устойчивые гроздья множество таких шаров."
+    
+    # ТРЕБУЕТСЯ арт с мирами-шарами!!! А пока что заглушка
+    
     show dct_cg_clusters_of_worlds behind white:
-        xalign 0.0
+        xalign 1.0
     show dct_cg_clusters_of_worlds behind white:
-        ease 6 xalign 1.0
-        pause 0.2
         ease 6 xalign 0.0
+        pause 0.2
+        ease 6 xalign 1.0
         pause 0.2
         repeat
     show white:
         alpha 1
-        linear 1.5 alpha 0
+        pause 1
+        linear 2 alpha 0
     extend " И внутри каждого спрятана своя Алиса, в чем-то абсолютно такая же, а в чем-то похожая только на саму себя."
 
     "И можно перепрыгнуть со своего шара на соседний и проснуться уже там, внутри, рядом с двойником. И с двойником, при таком проникновении, ничего не случится. Вот только надо решиться прыгнуть."
