@@ -2301,7 +2301,7 @@ label dct_goddess:
     
 menu:
     "Конец седьмой части"
-    #"Продолжить":
-         #jump dct_olga
+    "Продолжить":
+        jump dct_olga
     "В меню":
         jump dct_mnu2
