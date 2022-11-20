@@ -203,8 +203,8 @@ init :
     image dct_poligon_6 = "mods/dublicate_completed/images/bg/dct_poligon_6.jpg"
     
     
-    image dct_ext_bus_sunrise = "mods/dublicate_completed/images/bg/dct_ext_bus_sunrise.jpg"    # Остановка с Икарусом, утро
-    image dct_int_bus_sunrise = "mods/dublicate_completed/images/bg/dct_int_bus_sunrise.jpg"    # Внутри Икаруса, утро
+    # image dct_ext_bus_sunrise = "mods/dublicate_completed/images/bg/dct_ext_bus_sunrise.jpg"    # Остановка с Икарусом, утро
+    # image dct_int_bus_sunrise = "mods/dublicate_completed/images/bg/dct_int_bus_sunrise.jpg"    # Внутри Икаруса, утро
     image dct_bank_from_water_side = "mods/dublicate_completed/images/bg/dct_bank_from_water_side.jpg"    # Вид на лодочную станцию и берег со стороны воды
     image dct_railway_embankment_day = "mods/dublicate_completed/images/bg/dct_railway_embankment_day.jpg"  # Берег возле железнодорожной насыпи ДЕНЬ
     image dct_railway_embankment_overcast = "mods/dublicate_completed/images/bg/dct_railway_embankment_overcast.jpg"    # Берег возле железнодорожной насыпи ПАСМУРНО
@@ -440,6 +440,7 @@ init :
     image dct_lineup_us_sport = "mods/dublicate_completed/images/cg/dct_lineup_us_sport.jpg"
     image dct_lineup_two_lines = "mods/dublicate_completed/images/cg/dct_lineup_two_lines.jpg"
     
+    image dct_d3_soccer_sport = "mods/dublicate_completed/images/cg/dct_d3_soccer_sport.jpg"    # Ульяна в спортивной форме пинает мяч
     image dct_un_on_birch = "mods/dublicate_completed/images/cg/dct_un_on_birch.jpg"    # Лена сидит на берёзе
     image dct_cg_beach_volleyball = "mods/dublicate_completed/images/cg/dct_cg_beach_volleyball.jpg"    # Воллейбол на пляже
     
