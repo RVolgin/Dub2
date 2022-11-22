@@ -93,12 +93,13 @@ label dct_dragon:
     stop music fadeout 1
     d_mp "Беги-беги. Может, ты и вовсе не приедешь."
         
-    scene int_bus_people_day with pixellate
+    scene int_bus_people_day
+    show us fear sport close at fleft
+    with pixellate
     $ day_time()
     $ persistent.sprite_time = "day"
     $ set_mode_adv ()
     play sound_loop sfx_intro_bus_engine_loop
-    show us fear sport close at fleft
     th "О, что-то начала вспоминать, нормально."
     "Рыжая орёт на меня, но мне не до неё."
     th "Отстань, Мелкая. Я тебе в домике морду набью."
@@ -127,52 +128,67 @@ label dct_dragon:
     $ set_mode_adv ()
     
     
-    scene dct_int_liaz_day_rain with pixellate
-    show dct_dream_veil:
-        shiver
+    scene dct_int_liaz_day_rain
+    show dct_dream_veil at shiver
+    with pixellate
     d_dy "Следующая остановка — Вокзал!"
     stop music fadeout 1
     
-    scene int_bus_people_day with pixellate
+    scene int_bus_people_day
+    show us fear sport close at fleft
+    with pixellate
     $ day_time()
     $ persistent.sprite_time = "day"
     play sound_loop sfx_intro_bus_engine_loop
-    show us fear sport close at fleft
     th "Почему мне кажется, что всё было не так? И тогда казалось, и сейчас."
     th "Почему я ехала на вокзал?"
     th "Мне нужно было в кассу, в окошко администратора. Показать путёвку в лагерь и забрать билет."
     th "Так, дальше что было? Вспоминай, Рыжая."
     stop sound_loop
     
-    scene dct_int_corridor2 with pixellate
+    scene dct_int_corridor2
+    show dct_dream_veil at shiver
+    with pixellate
     $ prolog_time()
     $ persistent.sprite_time = "day"
-    show dct_dream_veil:
-        shiver
+
     play music music_list["goodbye_home_shores"]
+    pause 0.4
+    show d_vl normal coat at center behind dct_dream_veil with dissolve
     "В коридоре, ведущем к кассам, я натыкаюсь на дядьку."
+    show d_vl normal coat:
+        easein 0.5 xcenter 0.62
+        pause 1.2
+        ease 1 xcenter 0.38
+        pause 1
+        easeout 0.5 xcenter 0.5
+        repeat
     "Я направо, и он направо, я налево, и он налево. И так несколько раз." 
     "Я помню, что колеблюсь: или обматерить его для начала, или сразу кастет доставать. Не люблю я таких дядечек с некоторых пор, не люблю аж до кастета, седина им в бороду."
+    show d_vl smile coat at right with dissolve_fast
     "Но дядька только улыбается и дорогу уступает, иди мол. А я сразу успокоилась, даже улыбнуться в ответ захотелось."
     d_dk "Проходите, барышня, а то до утра не разойдёмся. Вот только касса-то закрыта."
     "Дяденька окает, а я анекдот про окрестности Онежского озера сразу вспомнила. Мне правда самой захотелось улыбнуться в ответ, но я сдержалась."
     dv "Я слишком юна для тебя, дядя."
+    show d_vl normal coat with dspr
+    pause 0.4
     stop music fadeout 1
     
-    scene int_bus_people_day with pixellate
+    scene int_bus_people_day
+    show us fear sport close at fleft
+    with pixellate
     $ day_time()
     $ persistent.sprite_time = "day"
     play sound_loop sfx_intro_bus_engine_loop
-    show us fear sport close at fleft
     th "Вот, вспомнила. Тогда я тоже почувствовала, что что-то не так: почему в тоннеле ни души, что это за дядька, почему закрыта круглосуточная касса?"
     "Ульяна, ты меня уже достаёшь."
     stop sound_loop
     
-    scene dct_int_corridor2 with pixellate
+    scene dct_int_corridor2
+    show dct_dream_veil at shiver
+    with pixellate
     $ prolog_time()
     $ persistent.sprite_time = "day"
-    show dct_dream_veil:
-        shiver
     play music music_list["no_tresspassing"]
     "А касса и правда закрыта. Все пять окошечек, и в предбаннике никого. Только скучающий милиционер сидит на скамье и дремлет над газетой."
     "Сначала стучусь в окошко к администратору, не дождавшись ответа, начинаю стучать во все подряд."
@@ -182,11 +198,12 @@ label dct_dragon:
     "Я поворачиваюсь к милиционеру, чтобы отлаять его за «деточку», а того уже нету. Только пожелтевший «Советский спорт» на скамейке лежит."
     stop music fadeout 1
     
-    scene int_bus_people_day with pixellate
+    scene int_bus_people_day
+    show us angry sport close at fleft
+    with pixellate
     $ day_time()
     $ persistent.sprite_time = "day"
     play sound_loop sfx_intro_bus_engine_loop
-    show us angry sport close at fleft
     th "Мне было не по себе от этой чертовщины, а стало просто страшно. И я бросилась бежать"
     "Не помню, как я проскочила коридор. Просто, вот я стояла перед кассами, и вот я уже в зале. Кажется, мгновенно перенеслась."
     "Нет, через зал я только проскочила, прямо в буфет. Почему в буфет? Потому что там были люди. Представляете? Зал ожидания на вокзале пустой, и только в буфете кто-то есть." 
@@ -194,30 +211,32 @@ label dct_dragon:
     "Мелкая вроде успокаиваться начала. Поселю с собой, точно. Но морду всё равно набью."
     stop sound_loop
     
-    scene dct_int_cafe with pixellate
+    scene dct_int_cafe
+    show dct_dream_veil at shiver
+    with pixellate
     $ prolog_time()
     $ persistent.sprite_time = "day"
-    show dct_dream_veil:
-        shiver
     play music music_list["you_won_t_let_me_down"]
     play ambience ambience_dining_hall_empty
     "В буфете никого, только давешний дядька. Перед ним гора пирожков на тарелке, несколько бутылок с лимонадом и минералкой и начатый стакан с чаем."
+    show dct_int_cafe_sunset_rain behind dct_dream_veil:
+        alpha 0
+        ease 2.5 alpha 1
     "В дополнение к моим страхам ещё и темнеет — откуда-то натянуло грозовые тучи, перекрывшие свет заходящего солнца. Жёлтые лампочки накаливания не могут до конца победить темноту, и в зале устанавливается полумрак." 
-    
-    scene dct_int_cafe_sunset_rain with dissolve
-    $ prolog_time()
-    $ persistent.sprite_time = "sunset"
-    show dct_dream_veil:
-        shiver
-        
     "А я поняла, что во всём вокзале просто никого нет."
     "Никого, только дядька, я и стайка цыганок, испуганно жмущихся в тамбуре и не решающихся выйти на привокзальную площадь под ливень, который вот-вот начнётся."
+    
+    show d_vl normal coat at right behind dct_dream_veil with dissolve:
+        ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")   # Перекраска спрайта через преобразование matrixcolor. Свойство TintMatrix с цветом "#EFD0FF" даёт результат идентичный вечерним спрайтам
+    
     d_dk "Сейчас ливанёт. Садись, перекусишь перед дорогой, я и на тебя взял."
     "Я, чтобы не показывать свой страх, начинаю наступать на дядьку."
     dv "Ты! Что всё это значит? Это ты всё устроил!"
+    show d_vl smile coat with dspr
     d_dk "Что устроил?"
     "Дядька, улыбаясь, смотрит на меня снизу вверх."
     d_dk "Ты зачем к кассам попёрлась? Тебе что было сказано? \"Автобус на привокзальной площади\"."
+    show d_vl normal coat with dspr
     d_dk "Ох уж эти ..."
     "Тут дядька произносит непонятное слово."
     d_dk "Вечно всё путают и забывают. Да ты кушай." 
@@ -226,101 +245,111 @@ label dct_dragon:
     stop ambience
     stop music fadeout 1
     
-    scene int_bus_people_day with pixellate
+    scene int_bus_people_day
+    show us sad sport close at fleft
+    with pixellate
     $ day_time()
     $ persistent.sprite_time = "day"
     play sound_loop sfx_intro_bus_engine_loop
-    show us sad sport close at fleft
     th "Что-то тогда зашевелилось у меня в памяти в ответ на имя «Славяна», но успокоилось."
     stop sound_loop
     
-    scene dct_int_cafe_sunset_rain with pixellate
     $ prolog_time()
-    $ persistent.sprite_time = "sunset"
-    show dct_dream_veil:
-        shiver
+    scene dct_int_cafe_sunset_rain
+    show d_vl normal coat at right:
+        ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
+    show dct_dream_veil at shiver
+    with pixellate
     play ambience ambience_dining_hall_empty
     play sound dct_sfx_discharge
     "За окном загрохотало, тут же, как по приглашению, в буфет забегают две девушки, примерно мои ровесницы, только вот не моего круга."
-    show d_mi smile casual at left behind dct_dream_veil
+    show d_mi smile casual behind dct_dream_veil:
+        xcenter 0.25 matrixcolor TintMatrix("#EFD0FF")
     show d_sl smile dress behind dct_dream_veil:
-        xalign .7 yalign .1
-    with moveinleft
+        xcenter 0.45 ycenter 0.833 matrixcolor TintMatrix("#EFD0FF")
+    with easeinleft
     d_dk "Не смотри на них так, Алиса."
     stop sound
     stop ambience
     
-    scene int_bus_people_day with pixellate
+    scene int_bus_people_day
+    show us sad sport close at fleft
+    with pixellate
     $ day_time()
     $ persistent.sprite_time = "day"
     play sound_loop sfx_intro_bus_engine_loop
-    show us sad sport close at fleft
     th "Дядька тогда назвал меня по имени, но вот это меня почему-то совсем не напугало."
     "А Мелкая киснет. Да что с ней такое?"
     stop sound_loop
     
-    scene dct_int_cafe_sunset_rain with pixellate
+
     $ prolog_time()
-    $ persistent.sprite_time = "sunset"
-    show dct_dream_veil:
-        shiver
+    scene dct_int_cafe_sunset_rain
+    show d_vl normal coat at right:
+        ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
+    show d_mi smile casual:
+        xcenter 0.25 matrixcolor TintMatrix("#EFD0FF")
+    show d_sl smile dress:
+        xcenter 0.45 ycenter 0.833 matrixcolor TintMatrix("#EFD0FF")
+    show dct_dream_veil at shiver
+    with pixellate
     play music music_list["drown"]
     play ambience ambience_dining_hall_empty
-    show d_mi smile casual at left behind dct_dream_veil
-    show d_sl smile dress behind dct_dream_veil:
-        xalign .7 yalign .1
-    with dissolve
     d_dk "С ЭТИМИ девушками ты не знакома. Позволь официально представить тебе моих подруг по несчастью: Мику Хатсуне и Славяну Феоктистову. Девочки, это Алиса Двачевская, которая вот-вот окончательно проснётся и покинет нас надолго, если не навсегда. Ну это вы знаете, иначе нас бы сюда не выкинуло."
+    hide d_vl
     hide d_mi
     hide d_sl
     with dissolve
-    show d_mi smile casual at cleft behind dct_dream_veil
+    pause 0.7
+    show d_mi smile casual behind dct_dream_veil:
+        xcenter 0.4 ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
+    show d_vl normal coat behind dct_dream_veil:
+        xcenter 0.62 ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
     show d_sl smile dress behind dct_dream_veil:
-        xalign .99 yalign .1
+        xcenter 0.84 ycenter 1.033 matrixcolor TintMatrix("#EFD0FF")
     with dissolve
     mi "Здравствуйте, дядя Валера."
+    "Тут иностранка обращает на меня внимание."
     show d_mi grin casual
     show d_sl normal dress
-    with dissolve
-    "Тут иностранка обращает на меня внимание."
+    with dspr
     mi "Здравствуй, меня зовут Мику, Мику Хатсуне. Мику это имя, а Хатсуне это фамилия. Это японские имя и фамилия, потому что мама у меня…"
-    show d_mi sad casual with dissolve
+    show d_mi sad casual with dspr
     "И тут Мику вздрагивает, шепчет что-то вроде: «Никак не отвыкну», и внезапно замолкает, отвернувшись."
-    show d_sl smile dress with dissolve
+    show d_sl smile dress with dspr
     d_sl "Еле спаслись от дождя, дядя Валера!"
     stop ambience
     stop music fadeout 1
     
-    scene int_bus_people_day with pixellate
+    scene int_bus_people_day
+    show us cry sport close at fleft
+    with pixellate
     $ day_time()
     $ persistent.sprite_time = "day"
     play sound_loop sfx_intro_bus_engine_loop
-    show us cry sport close at fleft
     th "И опять. Мне тогда показалось, что имя «Мику» и эта манера тараторить мне знакома."
     th "Может быть, это всё-таки мне сон приснился, пока мы ехали?"
     "Ну Мелкая, ну нельзя же так. Ну обозналась ты, ну бывает."
     stop sound_loop
     
-    scene dct_int_cafe_sunset_rain with pixellate
+    scene dct_int_cafe_sunset_rain
+    show d_mi sad casual behind dct_dream_veil:
+        xcenter 0.4 ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
+    show d_vl normal coat behind dct_dream_veil:
+        xcenter 0.62 ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
+    show d_sl smile dress behind dct_dream_veil:
+        xcenter 0.84 ycenter 1.033 matrixcolor TintMatrix("#EFD0FF")
+    show dct_dream_veil at shiver
+    with pixellate
     $ prolog_time()
-    $ persistent.sprite_time = "sunset"
-    show dct_dream_veil:
-        shiver
     play music music_list["trapped_in_dreams"]
     play ambience ambience_dining_hall_empty
-    show d_mi sad casual at cleft behind dct_dream_veil
-    show d_sl smile dress behind dct_dream_veil:
-        xalign .99 yalign .1
-    with dissolve
-    hide d_mi
-    show d_mi normal casual at fleft behind dct_dream_veil
-    with dissolve
+    pause 0.5
+    show d_mi smile casual with dspr
     "Девочки делят между собой пирожки и жадно накидываются на еду, при этом иностранка не отстаёт от колхозницы." 
     "Или у них у всех стальные желудки, или они самоубийцы. Что-то брать в вокзальном буфете."
     "Пока они едят и переговариваются о чём-то своём, я пью лимонад, закусывая его своим личным печеньем из сумки (надеюсь — лимонад безопасный), и разглядываю всех троих."
-    hide d_mi
-    show d_mi normal casual at cleft behind dct_dream_veil
-    with dissolve
+    show d_mi normal casual with dissolve_fast
     mi "Дядя Валера." 
     "Я ожидала бесконечного потока слов от Мику, а она неожиданно меня обманула." 
     mi "Зачем вы так? Я понимаю, что вам нужно объяснить Алисе, почему мы трое вместе, но я себя несчастной не считаю, Славяна тоже. Да и вы тоже, не прибедняйтесь."
@@ -330,121 +359,134 @@ label dct_dragon:
     stop music fadeout 1
     
     
-    scene int_bus_people_day with pixellate
+    scene int_bus_people_day
+    show us sad sport close at fleft
+    with pixellate
     $ day_time()
     $ persistent.sprite_time = "day"
     play sound_loop sfx_intro_bus_engine_loop
-    show us sad sport close at fleft
     th "Это всё-таки был сон. В жизни я бы их всех послала, но во сне — почему бы и не поддержать разговор?"
     stop sound_loop
     
-    scene dct_int_cafe_sunset_rain with pixellate
+    scene dct_int_cafe_sunset_rain
+    show d_mi normal casual behind dct_dream_veil:
+        xcenter 0.4 ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
+    show d_vl normal coat behind dct_dream_veil:
+        xcenter 0.62 ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
+    show d_sl smile dress behind dct_dream_veil:
+        xcenter 0.84 ycenter 1.033 matrixcolor TintMatrix("#EFD0FF")
+    show dct_dream_veil at shiver
+    with pixellate
     $ prolog_time()
-    $ persistent.sprite_time = "sunset"
-    show dct_dream_veil:
-        shiver
+    show dct_dream_veil at shiver
     play music music_list["dance_of_fireflies"]
     play ambience ambience_dining_hall_empty
-    show d_mi normal casual at cleft behind dct_dream_veil
-    show d_sl smile dress behind dct_dream_veil:
-        xalign .99 yalign .1
-    hide d_mi
-    show d_mi normal casual at fleft behind dct_dream_veil
-    with dissolve
     d_dk "Как всегда, на той стороне площади."
     "Дядька пожимает плечами так, будто я у него спросила, какого цвета трава."
-    hide d_sl
-    show d_sl normal dress behind dct_dream_veil:
-        xalign .6 yalign .1
-    with dissolve
+    show d_sl normal dress with dspr
     d_sl "Дядь Валера, она же спит еще, она же место не может выбирать, ты ей хоть наводку дай какую. Где этот автобус, как на него сесть?"
+    show d_vl smile coat with dspr
     d_dk "Не ты нОходишь четырестОдесятый Овтобус, а четырестОдесятый Овтобус нОходит тебя!"
     "Дядька окает совсем уж преувеличенно. И ещё поднимает блестящий от пирожкового жира указательный палец кверху, чем портит всё впечатление." 
+    show d_vl normal coat with dspr
     "Славяна ждёт продолжения, но дядя Валера опять занялся пирожками и замолк, тогда Славяна берёт инициативу в свои руки."
-    show d_sl smile dress
+    show d_sl smile dress with dspr
     d_sl "Понимаешь, Алиса. Дядя Валера и есть водитель того самого автобуса." 
     "А дядя Валера, я уже мысленно так его называю, кивает в подтверждение."
+    show d_vl serious coat with dspr
     d_vl "Точно, и автобус, между прочим, уже час тебя дожидается. Какого… ты на вокзал попёрлась?"
     "И оканье его куда-то пропало."
     stop ambience
     stop music fadeout 1
     
-    scene int_bus_people_day with pixellate
+    scene int_bus_people_day
+    show us sad sport close at fleft
+    with pixellate
     $ day_time()
     $ persistent.sprite_time = "day"
     play sound_loop sfx_intro_bus_engine_loop
-    show us sad sport close at fleft
     th "А я совсем запуталась и потерялась между сном и воспоминаньями. И реальным кажутся только этот Икарус, соседка и пионерский лагерь, куда мы едем."
     "Хорошо хоть Мелкая реветь перестала."
     stop sound_loop
     
-    scene dct_int_cafe_sunset_rain with pixellate
+    scene dct_int_cafe_sunset_rain
+    show dct_dream_veil at shiver
+    with pixellate
     $ prolog_time()
-    $ persistent.sprite_time = "sunset"
-    show dct_dream_veil:
-        shiver
     play ambience ambience_dining_hall_empty
     "А эти трое расправились с пирожками, Мику относит тарелку на мойку (за все время ни буфетчица так и не появилась, ни посетителей никого не было), и мы, обогнув цыганок, выходим на привокзальную площадь."
     stop ambience
     
-    scene int_bus_people_day with pixellate
+    scene int_bus_people_day
+    show us sad sport close at fleft
+    with pixellate
     $ day_time()
     $ persistent.sprite_time = "day"
     play sound_loop sfx_intro_bus_engine_loop
-    show us sad sport close at fleft
     th "Дальнейшие события опять вспоминаются кусками."
     stop sound_loop
     
-    scene dct_ext_city_scuare_sunset with pixellate
-    $ prolog_time()
-    $ persistent.sprite_time = "sunset"
-    show dct_dream_veil:
-        shiver
-    play music twinkling
-    show d_mi smile casual at fleft behind dct_dream_veil
-    show d_sl smile dress behind dct_dream_veil:
-        xalign .99 yalign .1
+    scene dct_ext_city_scuare_sunset
+    show d_vl normal coat:
+        xcenter 0.32 matrixcolor TintMatrix("#A1C9D0")  # Перекраска спрайта через преобразование matrixcolor. Свойство TintMatrix с цветом "#A1C9D0" даёт результат почти идентичный ночным спрайтам
+    show d_mi smile casual at cright:
+        xcenter 0.87 matrixcolor TintMatrix("#A1C9D0")
+    show d_sl smile dress at right:
+        xcenter 0.67 ycenter 0.833 matrixcolor TintMatrix("#A1C9D0")
+    show dct_overcast_rain_1
+    show dct_dream_veil at shiver
     with pixellate
-    "Вот девочки прячутся под зонтиками, потому что ливень хоть и закончился и небо почти очистилось, но мелкий дождик ещё идет, а дядя Валера снимает с себя кожаную куртку и накидывает мне на плечи, оставаясь в одной рубашке." 
+    $ prolog_time()
+    play music twinkling
+    "Вот девочки прячутся под зонтиками, потому что ливень хоть и закончился и небо почти очистилось, но мелкий дождик ещё идет, а дядя Валера снимает с себя кожаную куртку и накидывает мне на плечи, оставаясь в одной рубашке."
+    show d_vl normal with dissolve_fast    
     dv "Дядя Валера, не надо, сами же промокнете."
     "Я сопротивляюсь, а он только отмахивается."
+    show d_vl smile with dspr    
     d_vl "Алиска, фантомы не болеют."
+    show d_vl normal with dspr    
     "От куртки слабо пахнет машинным маслом, бензином и табаком." 
+    show d_vl serious with dspr    
     "На мгновение мы встречаемся взглядами, и я вижу… тоску и что-то ещё, даже не могу описать что. Я не Достоевский, чтобы описывать." 
     "Дядя Валера извлекает из кармана куртки пачку сигарет и ключи от автобуса, закуривает, и контакт теряется."
+    show d_vl normal with dspr 
     "Но мне вдруг захотелось, чтобы тоски в глубине его карих глаз поубавилось. А ещё жалею, что маман в своих попытках устроить личную жизнь скатывалась всё ниже и ниже, не встретив вот такого дядю Валеру."
     "Я ещё хочу спросить про то, что за фантомы он поминал, но забываю."
+    show black with dissolve_fast
+    pause 0.5
+    hide black with dissolve_fast
     "Вот мы идём по улице, Славяна оглядывается."
-    hide d_sl
-    show d_sl normal dress behind dct_dream_veil:
-        xalign .6 yalign .1
-    with dissolve
+    show d_sl surprise dress with dissolve_fast
     d_sl "Идут за нами."
-    hide d_sl
-    show d_sl smile dress behind dct_dream_veil:
-        xalign .99 yalign .1
-    with dissolve
+    show d_sl smile dress with dissolve_fast
     "Тут уже оглядываюсь я. Всё те же цыганки, что стояли в тамбуре вокзала, идут за нами метрах в пятидесяти, не отставая и не догоняя."
+    show d_vl smile with dspr
     d_vl "Я же говорил, что так и таскаются за мной от сна к сну. Где я их подцепил — ума не приложу."
     stop music fadeout 1
     
-    scene int_bus_people_day with pixellate
+    scene int_bus_people_day
+    show us sad sport close at fleft
+    with pixellate
     $ day_time()
     $ persistent.sprite_time = "day"
     play sound_loop sfx_intro_bus_engine_loop
-    show us sad sport close at fleft
     th "Значит, это всё-таки сон."
     th "Да, я помню, тогда же и подумала, что подольше бы не просыпаться. А то проснёшься, а там беспутная маман и взрослая жизнь в общаге ткацкой фабрики."
     th "И это, Ульяна, не дуйся ты так. Я тебя даже бить передумала."
     stop sound_loop
     
-    scene dct_ext_city_scuare_sunset with pixellate
+    scene dct_ext_city_scuare_sunset
+    show dct_dream_veil at shiver
+    show d_vl normal:
+        xcenter 0.32 matrixcolor TintMatrix("#A1C9D0")
+    show d_sl normal dress at cleft:
+        xcenter 0.5 ycenter 0.833 matrixcolor TintMatrix("#A1C9D0")
+    show dct_overcast_rain_1
+    show d_mi serious casual at cright:
+        zoom 1.25 xcenter 0.75 ypos -0.03 matrixcolor TintMatrix("#A1C9D0")
+    with pixellate
     $ prolog_time()
-    $ persistent.sprite_time = "sunset"
-    show dct_dream_veil:
-        shiver
     play music higekitekina
-    show d_mi serious casual behind dct_dream_veil with dissolve
     "Вот Славяна с дядей Валерой вырвались вперёд. И мы идём плечом к плечу с Мику."
     mi "Знаешь, Алисочка. Я хотела, пока мы были под крышей, попросить у тебя подержать гитару, а то так поиграть хочется, что пальцы болят."
     "И вдруг, без перехода, Мику резко меняет тему."
@@ -455,49 +497,90 @@ label dct_dragon:
     mi "Хорошо, что всё обошлось. Потому что иначе… Меня нельзя убить, я остаточный фантом, но случилось бы что-то нехорошее. Молчи, Алисочка. Просто молчи. Ты убила его, и теперь за тобой долг." 
     mi "Ты мне его никогда не выплатишь, а я никогда не буду с тебя его требовать. Просто помни о нём. Я не сумасшедшая, я знаю, что ты не виновата и сейчас ничего не помнишь и не понимаешь, о чём речь, и в лагере мои слова забудешь. Но я тебя ненавижу."
     th "Ну молчи так молчи. Я и молчу."
-    hide d_mi with moveoutright
-    show d_sl normal dress behind dct_dream_veil with moveinleft:
-        xalign .5 yalign .1
-    "Вот Мику убежала вперёд всех, чтобы мы не видели, как она плачет. Вот дядя Валера догнал её, чтобы она не плакала в одиночестве. А я оказалась вдвоём со Славяной."
+    show d_mi cry casual far behind d_vl with dissolve:
+        zoom 1.0 xcenter 0.1 ypos 0.0
+    show d_vl serious
+    show d_sl serious dress
+    with dspr
+    "Вот Мику убежала вперёд всех, чтобы мы не видели, как она плачет."
+    show d_vl serious:
+        linear 0.5 alpha 0
+    show d_sl serious dress:
+        linear 0.5 alpha 0
+    show d_mi cry casual far:
+        linear 0.5 alpha 0
+    extend " Вот дядя Валера догнал её, чтобы она не плакала в одиночестве.{nw}"    # Обрываем реплику тегом {nw}, чтобы показать спрайты персонажей
+    show dct_overcast_rain_1 behind d_sl
+    show d_mi cry casual behind dct_overcast_rain_1:
+        linear 0.5 alpha 1
+    show d_vl serious:
+        linear 0.5 alpha 1
+    show d_sl normal dress close:
+        xcenter 0.72 ycenter 0.5
+        linear 0.5 alpha 1
+    "{cps=0}Вот Мику убежала вперёд всех, чтобы мы не видели, как она плачет. Вот дядя Валера догнал её, чтобы она не плакала в одиночестве. {/cps}А я оказалась вдвоём со Славяной."   # Вставляем дубль предыдущей реплики внутри тега {cps=0} {/cps}, чтобы она появлялась мгновенно. Тем самым создаётся впечатление, что это единая плавно текущая реплика, а спрайтs появляются посреди неё.
     dv "Вы тоже в лагерь?"
-    show d_sl sad dress
+    show d_sl sad dress close with dissolve_fast
     d_sl "Нет! Нам нельзя. Мы всего лишь остаточные фантомы! И не спрашивай об этом больше никогда!"
-    "Еще одна сумасшедшая."
+    show d_mi upset casual with dissolve_fast
+    th "Еще одна сумасшедшая."
     dv "А дядя Валера — он тоже фантом?"
     "Чтобы не беспокоить Славяну, спрашиваю я."
-    show d_sl serious dress
+    show d_sl serious dress close
+    show d_mi sad casual
+    show d_vl normal
+    with dissolve_fast
     d_sl "Почти. Дядя Валера — он застрял на полпути. Он говорит, что в его институте случилась авария, и три человека-оригинала пострадало. Слишком поздно решились на запись подлинников, двоих успели переписать, а он умер в процессе записи. Поэтому для него у вас нет тела."
     "Произносится всё это спокойно и как-то грустно, как будто о каком-то давнем несчастье рассказывают, так что я даже не знаю, как к этому относиться. Конечно, это бред, но вдруг я что-то не знаю и не понимаю? И где это — У НАС?"
     stop music fadeout 1
     
-    scene dct_ext_410bus with pixellate
+    scene dct_ext_410bus
+    show dct_overcast_rain_1
+    show dct_dream_veil at shiver
+    with pixellate
     $ prolog_time()
-    $ persistent.sprite_time = "night"
-    show dct_dream_veil:
-        shiver
+    
     play music adaytoremember
     "Вот мы стоим на проезжей части перед автобусом. Мику вдруг обнимает меня."
-    show d_mi cry casual behind dct_dream_veil with dissolve
+    show d_mi cry casual behind dct_dream_veil with dissolve:
+        zoom 1.25 xcenter 0.62 matrixcolor TintMatrix("#A1C9D0")
     mi "Прости меня, Алисочка. Забудь, что я тебе наговорила."
     hide d_mi
-    show d_sl tender dress behind dct_dream_veil:
-        xalign .5 yalign .1
+    show d_sl tender dress close behind dct_dream_veil:
+        xcenter 0.38 matrixcolor TintMatrix("#A1C9D0")
     with dissolve
     "Следом Славяна."
-    d_sl "Прощай, Алиса. Передай Семёну, что он… что его… Ничего ему не передавай. Забудь."
+    d_sl "Прощай, Алиса. Передай Семёну, что он…{w=0.5} что его…{w=0.3} Ничего ему не передавай. Забудь."
     hide d_sl with dissolve
+    show d_vl normal behind dct_overcast_rain_1 at center:
+        alpha 0 matrixcolor TintMatrix("#A1C9D0")
+        pause 1
+        linear 1 alpha 1
     "Тут автобус заводится, хлопает водительская дверь, и из кабины выходит дядя Валера."
     d_vl "Всё, по машинам, Алиса. До встречи, девочки."
     "Славяна и Мику отходят на тротуар, я порываюсь стянуть с себя куртку, но дядя Валера меня останавливает."
     d_vl "Потом, Алиса. Всё, поехали."
     "И засовывает что-то в карман куртки."
+    show d_vl smile
+    show d_mi cry_smile casual behind dct_overcast_rain_1:
+        xcenter 0.65 matrixcolor TintMatrix("#A1C9D0")
+    show d_sl tender dress behind dct_overcast_rain_1:
+        xcenter 0.35 ycenter 0.833 matrixcolor TintMatrix("#A1C9D0")
+    with dissolve
+    show dct_overcast_rain_2:
+        alpha 0
+        pause 1
+        linear 1.5 alpha 1
+    show d_vl smile:
+        alpha 1
+        pause 2
+        linear 1 alpha 0
     "Я забираюсь в салон, вижу, как дядя Валера коротко обнимает девочек и бежит в кабину под снова усиливающимся дождем. Что-то скрежещет под полом, и мы трогаемся."
     
-    scene dct_buswindov_rain with pixellate
+    scene dct_buswindov_rain
+    show dct_dream_veil at shiver
+    with pixellate
     $ prolog_time()
-    $ persistent.sprite_time = "night"
-    show dct_dream_veil:
-        shiver
     "Уже стемнело, мы не торопясь едем по городу сквозь дождь, останавливаясь на редких светофорах."
     "Окна запотели, и я время от времени смахиваю лишнюю влагу со стекла ребром ладони. По ногам потянуло тёплым воздухом — заработала печка."
     "Становится очень уютно, я поплотнее заворачиваюсь в куртку, вытягиваю ноги и прижимаюсь виском к прохладному стеклу, глядя на пробегающие за окном дома." 
@@ -505,11 +588,12 @@ label dct_dragon:
     "Какое-то время ещё пытаюсь понять, почему на имя «Семён» что-то откликается внутри меня. Никого же не знаю и не помню, чтобы человека так звали."
     stop music fadeout 1
 
-    scene int_bus_people_day with hpunch
+    scene int_bus_people_day
+    show us sad sport close at fleft
+    with hpunch
     $ day_time()
     $ persistent.sprite_time = "day"
     play music anewbeginning
-    show us sad sport close at fleft
     "Записка тает у меня в руках, а я вспоминаю: наконечник стрелы и спина, обтянутая пионерской рубашкой."
     "Вот я плавно тяну спуск, вот арбалет вздрагивает, и в этот момент Ульяна толкает меня. А я вижу, как стрела входит между лопатками Семёна." 
     "Семён?" 
