@@ -664,7 +664,8 @@ label dct_transitions:
     "Действительно, нужно было решить, кого из мелких перевести в средний отряд на освобождающееся место Максима, а для этого нужно было посоветоваться с теми мелкими, которые не спят."
     "В отличие от старшего и младшего отрядов, средний, пионеры в котором не просыпались никогда, права голоса здесь не имел."
     stop sound_loop fadeout 1
-    play ambience ambience_soccer_play_background fadein 1
+    # play ambience ambience_soccer_play_background fadein 1
+    play music music_list['farewell_to_the_past_full'] fadein 2
     scene bg ext_playground_day
     show d_oz n pioneer:
         xcenter 0.48 yalign 0.27
@@ -718,7 +719,8 @@ label dct_transitions:
     d_va "Жалею.{w=0.8} Но, Семён.{w=0.5} Мы никогда об этом тебе не говорили, но мы все очень-очень хотим вырасти."
     d_va "А вырасти можно только так."
     d_va "И все ребята ещё утром сказали, что я должен вырасти первым."
-    stop ambience fadeout 1
+    # stop ambience fadeout 1
+    stop music fadeout 1.5
     show black with dissolve
     
     pause 0.5
@@ -836,6 +838,7 @@ label dct_transitions:
     sh "Ладно уж, иди. Со схемой я сам управлюсь."
     show el smile pioneer with dspr
     sh "После ужина корпус делать будем, тогда приходи."
+    window hide
     show sh serious pioneer:
         easeout 2.5 xcenter -0.5
     show 3500_el smile pioneer as el:
@@ -848,7 +851,8 @@ label dct_transitions:
     pause 0.5
     
     
-    play ambience ambience_camp_center_day fadein 1
+    # play ambience ambience_camp_center_day fadein 1
+    play music music_list['get_to_know_me_better']  fadein 1
     scene bg ext_square_day
     show dv grin pioneer:
         xcenter 0.32
@@ -856,7 +860,10 @@ label dct_transitions:
         xcenter 0.61 yalign 0.02
     show black
     hide black with dissolve
+    window auto
     "Максим шагал рядом с Алисой, иногда искоса посматривая на помощника вожатой."
+    stop music fadeout 2.5
+    play ambience ambience_camp_center_day fadein 1.5
     scene bg ext_dining_hall_near_day
     show dv smile pioneer:
         xcenter 0.42 alpha 0
@@ -958,6 +965,9 @@ label dct_transitions:
         xcenter 0.88
     with dissolve_fast
     "А Максим... он просто ничего не понял."
+    stop ambience fadeout 1
+    
+    play music "<from 14.5 loop 0.0>sound/music/get_to_know_me_better.ogg" fadein 1.5
     scene bg ext_house_of_dv_day
     show dv grin pioneer far:
         xcenter 1.27
@@ -1029,11 +1039,13 @@ label dct_transitions:
     show dv laugh pioneer:
         linear 0.4 ycenter 0.64
     "Алиса откинулась на спину, на подушку, и беззвучно расхохоталась. Кажется, серая полоса в жизни заканчивалась."
-    stop ambience fadeout 1
+    # stop ambience fadeout 1
+    stop music fadeout 1.5
     show black with dissolve
     
+    pause 1
     
-    pause 0.5
+    
     play sound sfx_knock_door7_polite
     play music music_list['your_bright_side'] fadein 2.5
     scene black
