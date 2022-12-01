@@ -1570,6 +1570,8 @@ init :
     image dct_cassete = "mods/dublicate_completed/images/sprites/oth/dct_cassete.png"
     image dct_breaker = "mods/dublicate_completed/images/sprites/oth/dct_breaker.png"
     image dct_sht = "mods/dublicate_completed/images/sprites/oth/dct_sht.png" #СХТ40 - прозрачный спрайт вместо cg
+    image dct_gruzchik_1 = im.MatrixColor("mods/dublicate_completed/images/sprites/oth/dct_gruzchik_1.png", im.matrix.tint(0.63, 0.78, 0.82)) # Первый грузчик
+    image dct_gruzchik_2 = im.MatrixColor("mods/dublicate_completed/images/sprites/oth/dct_gruzchik_2.png", im.matrix.tint(0.63, 0.78, 0.82)) # Второй грузчик
     
     ##### Декорариум (coin)
     
