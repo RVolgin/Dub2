@@ -677,7 +677,7 @@ label dct_dreamreality:
         xzoom 1.1 yzoom 1.16 xcenter 0.535 ycenter 0.552 rotate 1.24 blur 10
     show 3500_dv grin pioneer3 as dv2:
         zoom 0.6 xcenter 0.84 ycenter 0.7
-    show 3500_dv normal casual at fleft:
+    show 3500_dv normal casual 1pt at fleft:
         ycenter 0.83
     show d_sl smile2 pioneer broom close at center#:
     show black:
@@ -696,13 +696,13 @@ label dct_dreamreality:
         linear 20 alpha 0
     "Они стоят, зеркальные отражения одна другой, и жадно разглядывают друг-друга, а всей разницы между ними, что одна вся в черном, а другая в обычной пионерской форме, с хулигански повязанным на запястье красным галстуком."
     "Губы их шевелятся, но слов с того места, где стоит Максим, не слышно."
-    show 3500_dv normal casual at fleft:
+    show 3500_dv normal casual 1pt at fleft:
         zoom 0.91 xcenter 0.32 ycenter 0.8
     show 3500_dv grin pioneer3 as dv2:
         zoom 0.66 xcenter 0.74 ycenter 0.72
     with Dissolve(1.5)
     "Потом обе Алисы одновременно, как по команде начинают медленно сходиться."
-    show 3500_dv normal casual at fleft:
+    show 3500_dv normal casual 1pt at fleft:
         zoom 0.825 xcenter 0.46 ycenter 0.78
     show 3500_dv grin pioneer3 as dv2:
         zoom 0.72 xcenter 0.64 ycenter 0.74
