@@ -227,7 +227,7 @@ label dct_dragon:
     "Никого, только дядька, я и стайка цыганок, испуганно жмущихся в тамбуре и не решающихся выйти на привокзальную площадь под ливень, который вот-вот начнётся."
     
     show d_vl normal coat at right behind dct_dream_veil with dissolve:
-        ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")   # Перекраска спрайта через преобразование matrixcolor. Свойство TintMatrix с цветом "#EFD0FF" даёт результат идентичный вечерним спрайтам
+        ypos 0.2 matrixcolor TintMatrix("#EFD0FF")   # Перекраска спрайта через преобразование matrixcolor. Свойство TintMatrix с цветом "#EFD0FF" даёт результат идентичный вечерним спрайтам
     
     d_dk "Сейчас ливанёт. Садись, перекусишь перед дорогой, я и на тебя взял."
     "Я, чтобы не показывать свой страх, начинаю наступать на дядьку."
@@ -257,7 +257,7 @@ label dct_dragon:
     $ prolog_time()
     scene dct_int_cafe_sunset_rain
     show d_vl normal coat at right:
-        ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
+        ypos 0.2 matrixcolor TintMatrix("#EFD0FF")
     show dct_dream_veil at shiver
     with pixellate
     play ambience ambience_dining_hall_empty
@@ -286,7 +286,7 @@ label dct_dragon:
     $ prolog_time()
     scene dct_int_cafe_sunset_rain
     show d_vl normal coat at right:
-        ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
+        ypos 0.2 matrixcolor TintMatrix("#EFD0FF")
     show d_mi smile casual:
         xcenter 0.25 matrixcolor TintMatrix("#EFD0FF")
     show d_sl smile dress:
@@ -302,9 +302,9 @@ label dct_dragon:
     with dissolve
     pause 0.7
     show d_mi smile casual behind dct_dream_veil:
-        xcenter 0.4 ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
+        xcenter 0.4 ycenter 0.68 matrixcolor TintMatrix("#EFD0FF")
     show d_vl normal coat behind dct_dream_veil:
-        xcenter 0.62 ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
+        xcenter 0.62 ypos 0.2 matrixcolor TintMatrix("#EFD0FF")
     show d_sl smile dress behind dct_dream_veil:
         xcenter 0.84 ycenter 1.033 matrixcolor TintMatrix("#EFD0FF")
     with dissolve
@@ -334,9 +334,9 @@ label dct_dragon:
     
     scene dct_int_cafe_sunset_rain
     show d_mi sad casual behind dct_dream_veil:
-        xcenter 0.4 ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
+        xcenter 0.4 ycenter 0.68 matrixcolor TintMatrix("#EFD0FF")
     show d_vl normal coat behind dct_dream_veil:
-        xcenter 0.62 ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
+        xcenter 0.62 ypos 0.2 matrixcolor TintMatrix("#EFD0FF")
     show d_sl smile dress behind dct_dream_veil:
         xcenter 0.84 ycenter 1.033 matrixcolor TintMatrix("#EFD0FF")
     show dct_dream_veil at shiver
@@ -370,9 +370,9 @@ label dct_dragon:
     
     scene dct_int_cafe_sunset_rain
     show d_mi normal casual behind dct_dream_veil:
-        xcenter 0.4 ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
+        xcenter 0.4 ycenter 0.68 matrixcolor TintMatrix("#EFD0FF")
     show d_vl normal coat behind dct_dream_veil:
-        xcenter 0.62 ycenter 0.7 matrixcolor TintMatrix("#EFD0FF")
+        xcenter 0.62 ypos 0.2 matrixcolor TintMatrix("#EFD0FF")
     show d_sl smile dress behind dct_dream_veil:
         xcenter 0.84 ycenter 1.033 matrixcolor TintMatrix("#EFD0FF")
     show dct_dream_veil at shiver
@@ -474,16 +474,16 @@ label dct_dragon:
     th "Да, я помню, тогда же и подумала, что подольше бы не просыпаться. А то проснёшься, а там беспутная маман и взрослая жизнь в общаге ткацкой фабрики."
     th "И это, Ульяна, не дуйся ты так. Я тебя даже бить передумала."
     stop sound_loop
-    
+
     scene dct_ext_city_scuare_sunset
     show dct_dream_veil at shiver
     show d_vl normal:
-        xcenter 0.32 matrixcolor TintMatrix("#A1C9D0")
+        zoom 0.75 xcenter 0.22 yalign 1.005 matrixcolor TintMatrix("#A1C9D0")
     show d_sl normal dress at cleft:
-        xcenter 0.5 ycenter 0.833 matrixcolor TintMatrix("#A1C9D0")
+        zoom 0.75 xcenter 0.4 matrixcolor TintMatrix("#A1C9D0")
     show dct_overcast_rain_1
     show d_mi serious casual at cright:
-        zoom 1.25 xcenter 0.75 ypos -0.03 matrixcolor TintMatrix("#A1C9D0")
+        zoom 1.25 xcenter 0.7 ypos -0.03 matrixcolor TintMatrix("#A1C9D0")
     with pixellate
     $ prolog_time()
     play music higekitekina
@@ -497,39 +497,32 @@ label dct_dragon:
     mi "Хорошо, что всё обошлось. Потому что иначе… Меня нельзя убить, я остаточный фантом, но случилось бы что-то нехорошее. Молчи, Алисочка. Просто молчи. Ты убила его, и теперь за тобой долг." 
     mi "Ты мне его никогда не выплатишь, а я никогда не буду с тебя его требовать. Просто помни о нём. Я не сумасшедшая, я знаю, что ты не виновата и сейчас ничего не помнишь и не понимаешь, о чём речь, и в лагере мои слова забудешь. Но я тебя ненавижу."
     th "Ну молчи так молчи. Я и молчу."
+    
     show d_mi cry casual far behind d_vl with dissolve:
-        zoom 1.0 xcenter 0.1 ypos 0.0
-    show d_vl serious
-    show d_sl serious dress
-    with dspr
+        zoom 0.657 xcenter 0.07 ycenter 0.65
+    show d_vl serious:
+    show d_sl surprise dress:
+    with dissolve_fast
     "Вот Мику убежала вперёд всех, чтобы мы не видели, как она плачет."
     show d_vl serious:
         linear 0.5 alpha 0
-    show d_sl serious dress:
+    show d_sl surprise dress:
         linear 0.5 alpha 0
     show d_mi cry casual far:
         linear 0.5 alpha 0
     extend " Вот дядя Валера догнал её, чтобы она не плакала в одиночестве.{nw}"    # Обрываем реплику тегом {nw}, чтобы показать спрайты персонажей
     show dct_overcast_rain_1 behind d_sl
-    show d_mi cry casual behind dct_overcast_rain_1:
-        linear 0.5 alpha 1
-    show d_vl serious:
-        linear 0.5 alpha 1
     show d_sl normal dress close:
-        xcenter 0.72 ycenter 0.5
+        zoom 1.0 xcenter 0.4 ycenter 0.5
         linear 0.5 alpha 1
     "{cps=0}Вот Мику убежала вперёд всех, чтобы мы не видели, как она плачет. Вот дядя Валера догнал её, чтобы она не плакала в одиночестве. {/cps}А я оказалась вдвоём со Славяной."   # Вставляем дубль предыдущей реплики внутри тега {cps=0} {/cps}, чтобы она появлялась мгновенно. Тем самым создаётся впечатление, что это единая плавно текущая реплика, а спрайтs появляются посреди неё.
     dv "Вы тоже в лагерь?"
-    show d_sl sad dress close with dissolve_fast
+    show d_sl serious dress close with dspr
     d_sl "Нет! Нам нельзя. Мы всего лишь остаточные фантомы! И не спрашивай об этом больше никогда!"
-    show d_mi upset casual with dissolve_fast
     th "Еще одна сумасшедшая."
     dv "А дядя Валера — он тоже фантом?"
     "Чтобы не беспокоить Славяну, спрашиваю я."
-    show d_sl serious dress close
-    show d_mi sad casual
-    show d_vl normal
-    with dissolve_fast
+    show d_sl sad dress close with dissolve_fast
     d_sl "Почти. Дядя Валера — он застрял на полпути. Он говорит, что в его институте случилась авария, и три человека-оригинала пострадало. Слишком поздно решились на запись подлинников, двоих успели переписать, а он умер в процессе записи. Поэтому для него у вас нет тела."
     "Произносится всё это спокойно и как-то грустно, как будто о каком-то давнем несчастье рассказывают, так что я даже не знаю, как к этому относиться. Конечно, это бред, но вдруг я что-то не знаю и не понимаю? И где это — У НАС?"
     stop music fadeout 1
