@@ -319,7 +319,7 @@ label dct_debut:
     pause 0.5
 
 
-    play music music_list['eat_some_trouble'] fadein 6
+    play music music_list['went_fishing_caught_a_girl'] fadein 6
     scene bg int_house_of_dv_day with dissolve
     "Письмо, забытое, лежало в кармане."
     play sound_loop dct_ambience_beach fadein 1.5
