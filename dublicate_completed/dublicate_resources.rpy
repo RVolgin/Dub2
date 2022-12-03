@@ -1,7 +1,6 @@
 init :
-    $ config.developer = True
-    $ config.autoreload = False
-    $ mods ["dublicate_completed"]=u"Дубликат COMPLETED"
+
+    $ mods ["dublicate"]=u"Дубликат"
     
         
         #Заголовки частей и глав.
@@ -1532,7 +1531,7 @@ init :
     
 
 
-label dublicate_completed:
+label dublicate:
 
     $ dct_ending_var = False
     
