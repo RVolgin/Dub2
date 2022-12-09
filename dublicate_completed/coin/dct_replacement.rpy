@@ -478,6 +478,7 @@ label dct_replacement:
     scene dct_ext_another_clubhouse_day with dissolve
     # "Шурик вынес на улицу табурет и присел под навесом, внимательно глядя на крыльцо заколоченного здания напротив."    # По канону
     "Шурик вынес на улицу табурет и присел под навесом, внимательно глядя на крыльцо заброшенного здания напротив."
+    play music "<from 42.0 loop 0.0>mods/dublicate_completed/sounds/music/twisterium_eternal_love.ogg" fadein 7
     th "Нужно только один раз увидеть, а дальше пойдет само."
     show d_jn:
        xzoom 1.8 yzoom 0.35 anchor (0.5, 1.0) pos (0.46, 0.795) blur 70 alpha 0
@@ -500,10 +501,12 @@ label dct_replacement:
     "Корпус робота изредка подрагивал и на эти единичные импульсы накладывалась еще и низкочастотная вибрация."
     "Резиновые ладони обхватили ладони белковые, бывший алюминиевый бидон прижался к человеческим ногам, голова, когда-то выколоченная Сыроежкиным из металлического листа вокруг деревянной болванки, сначала уткнулась лбом в пряжку ремня, а через минуту задралась, так, что в лицевом щитке отразились очки и мокрые глаза за ними."
     d_jn "Здравствуй, па!"
-    stop ambience fadeout 1
+    window hide
+    stop music fadeout 1.7
+    stop ambience fadeout 1.2
     show black with dissolve
     
-    pause 0.5
+    pause 1
     
     
     play music music_list['farewell_to_the_past_full'] fadein 1
@@ -514,6 +517,7 @@ label dct_replacement:
     show d_ma normal pioneer:
         xcenter 0.5 yalign 0.02
     with dissolve
+    window auto
     "Не смотря на вчерашние слова Саши, что все проголосуют за него, Максим волновался."
     show d_ma serious pioneer with dissolve_fast
     "Он уже привык относить себя к старшему отряду, и если вдруг большинство проголосует против…{w} Он, конечно, переживёт, но будет обидно."
