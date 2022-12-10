@@ -42,7 +42,8 @@ label dct_spravochnik:
     stop sound_loop
     stop ambience
     $ renpy.music.set_volume(0.3)
-    #$ renpy.random.shuffle(dct_playlist_sprav)  # Рандомизация порядка композиций в плейлисте, но непонятно, нужно ли
+    if renpy.seen_label("dct_spravochnik_ukaz"):
+        $ renpy.random.shuffle(dct_playlist_sprav)  # Рандомизация порядка композиций в плейлисте. Начинает срабатывать только после того, как Справочник хотябы раз запускали: осуществляется проверка на открытие лейбла dct_spravochnik_ukaz
     queue music dct_playlist_sprav
 
     
