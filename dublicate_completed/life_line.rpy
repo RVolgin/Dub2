@@ -4445,7 +4445,8 @@ label d_divergent:
         zoom 1.2
     mi "Сенечка, я некрасивая сейчас, отвернись."
     me "Доброе утро. Микусь, если ты некрасивая, то кто же тогда красивый?"
-    show d_mi shy body with dspr
+    show d_mi shy body close with dspr:
+        zoom 1
     mi "Всё равно не смотри, я стесняюсь."
     th "Так и запишем: «По утрам мы стесняемся». Именно по утрам почему-то."
     hide d_mi with moveoutleft
