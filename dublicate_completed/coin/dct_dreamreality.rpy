@@ -671,15 +671,25 @@ label dct_dreamreality:
     hide d_ma
     show d_ma serious pioneer coat carried guitar standing at center with dissolve:
         yalign 0.86
+    $ persistent.sprite_time = "night"
     "Потом, в следующие циклы, в этот день Максиму всегда снился один и тот же сон."
     hide d_ma with dissolve
+    
+    $ persistent.sprite_time = "day"
     scene dct_ext_square_night_purple:
         xzoom 1.1 yzoom 1.16 xcenter 0.535 ycenter 0.552 rotate 1.24 blur 10
     show 3500_dv grin pioneer3 as dv2:
-        zoom 0.6 xcenter 0.84 ycenter 0.7
+        zoom 0.6 xcenter 0.84 ycenter 0.7 matrixcolor TintMatrix("#A1C9D0")
+    show 3500_dv grin pioneer3 as dv4:
+        zoom 0.6 xcenter 0.84 ycenter 0.7 matrixcolor TintMatrix("#98A0E8")*BrightnessMatrix(value=0.1) alpha 0
+        
     show 3500_dv normal casual 1pt at fleft:
-        ycenter 0.83
-    show d_sl smile2 pioneer broom close at center#:
+        ycenter 0.83 matrixcolor TintMatrix("#A1C9D0")
+    show 3500_dv normal casual 1pt as dv3 at fleft:
+        ycenter 0.83 matrixcolor TintMatrix("#98A0E8")*BrightnessMatrix(value=0.1) alpha 0
+        
+    show d_sl smile2 pioneer broom close at center:
+        matrixcolor TintMatrix("#A1C9D0")
     show black:
         alpha 0.65
     with dissolve
@@ -692,20 +702,32 @@ label dct_dreamreality:
     #pause .5
     show black behind dv2 with Dissolve(1.8)
     "А потом уже смотрит только на двух других участников сна, на двух Алис."
+    show 3500_dv grin pioneer3 as dv4:
+        linear 15 alpha 0.7
+    show 3500_dv normal casual 1pt as dv3:
+        linear 15 alpha 0.7
     show black:
         linear 20 alpha 0
     "Они стоят, зеркальные отражения одна другой, и жадно разглядывают друг-друга, а всей разницы между ними, что одна вся в черном, а другая в обычной пионерской форме, с хулигански повязанным на запястье красным галстуком."
     "Губы их шевелятся, но слов с того места, где стоит Максим, не слышно."
-    show 3500_dv normal casual 1pt at fleft:
+    show 3500_dv normal casual 1pt:
         zoom 0.91 xcenter 0.32 ycenter 0.8
+    show 3500_dv normal casual 1pt as dv3:
+        zoom 0.91 xcenter 0.32 ycenter 0.8 alpha 0.85
     show 3500_dv grin pioneer3 as dv2:
         zoom 0.66 xcenter 0.74 ycenter 0.72
+    show 3500_dv grin pioneer3 as dv4:
+        zoom 0.66 xcenter 0.74 ycenter 0.72 alpha 0.85
     with Dissolve(1.5)
     "Потом, обе Алисы, одновременно, как по команде, начинают медленно сходиться."
-    show 3500_dv normal casual 1pt at fleft:
+    show 3500_dv normal casual 1pt:
         zoom 0.825 xcenter 0.46 ycenter 0.78
+    show 3500_dv normal casual 1pt as dv3:
+        zoom 0.825 xcenter 0.46 ycenter 0.78 alpha 1
     show 3500_dv grin pioneer3 as dv2:
         zoom 0.72 xcenter 0.64 ycenter 0.74
+    show 3500_dv grin pioneer3 as dv4:
+        zoom 0.72 xcenter 0.64 ycenter 0.74 alpha 1
     with Dissolve(1.5)
     th "Как на дуэли"
     
@@ -753,9 +775,11 @@ label dct_dreamreality:
     stop music fadeout 2.5
     stop sound
     stop sound2
+    $ persistent.sprite_time = "day"
     "«Рыж-ж-жевская!» — С оттяжкой произносит вслух Максим и просыпается окончательно."
     
     play ambience ambience_camp_center_night fadein 1.5
+    $ persistent.sprite_time = "night"
     dv "Что ты сейчас сказал? Повторить не боишься?"
     scene dct_ext_stage_close_night behind blink
     show 3500_dv angry casual 1pt behind blink:
