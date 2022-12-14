@@ -671,11 +671,11 @@ label dct_dreamreality:
     hide d_ma
     show d_ma serious pioneer coat carried guitar standing at center with dissolve:
         yalign 0.86
-    $ persistent.sprite_time = "night"
+    $ persistent.sprite_time = "night"          # Прописано, чтобы при обратной перемотке цвета не сбивались.
     "Потом, в следующие циклы, в этот день Максиму всегда снился один и тот же сон."
     hide d_ma with dissolve
     
-    $ persistent.sprite_time = "day"
+    $ persistent.sprite_time = "day"          # В сцене сна Максима перекраска спрайтов будет осуществрена матрицами по месту
     scene dct_ext_square_night_purple:
         xzoom 1.1 yzoom 1.16 xcenter 0.535 ycenter 0.552 rotate 1.24 blur 10
     show 3500_dv grin pioneer3 as dv2:
@@ -775,7 +775,7 @@ label dct_dreamreality:
     stop music fadeout 2.5
     stop sound
     stop sound2
-    $ persistent.sprite_time = "day"
+    $ persistent.sprite_time = "day"          # Прописано, чтобы при обратной перемотке цвета не сбивались.
     "«Рыж-ж-жевская!» — С оттяжкой произносит вслух Максим и просыпается окончательно."
     
     play ambience ambience_camp_center_night fadein 1.5
