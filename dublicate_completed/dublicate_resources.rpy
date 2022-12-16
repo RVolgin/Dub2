@@ -464,6 +464,7 @@ init :
     image dct_cg_coin_volleyball = "mods/dublicate_completed/images/cg/coin/dct_cg_coin_volleyball.jpg" # Воллейбол на пляже (с Семёном)
     image dct_cg_coin_dv_on_beach = "mods/dublicate_completed/images/cg/coin/dct_cg_coin_dv_on_beach.jpg" # Алиса на пляже с полотенцем
     
+    image dct_insomnia = "mods/dublicate_completed/images/cg/coin/dct_insomnia.jpg" # Семён и Ульяна не могут уснуть
     image dct_mi_piano1 = "mods/dublicate_completed/images/cg/coin/dct_mi_piano1.jpg" # Мику играет на пианино
     image dct_el_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_el_in_cage.png') # Электроник в клетке для чтения воспоминаний
     image dct_mi_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate_completed/images/cg/coin/dct_mi_in_cage.png') # Мику в клетке для чтения воспоминаний
