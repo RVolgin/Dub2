@@ -490,12 +490,56 @@ label dct_replacement:
     "Шурик встал с табурета, сделал несколько шагов, спустившись с крыльца на асфальт аллеи, и, присев на корточки, протянул руки навстречу механоиду. Почти, как когда-то, множество циклов тому назад."
     "Что-то толкалось в груди, что-то не давало говорить ровно."
     sh "Ну здравствуй, Яна."
-    scene dct_ext_camp_entrance_day
+    # scene dct_ext_camp_entrance_day
+    # show d_jn:
+        # zoom 0.17 anchor (0.5, 1.0) pos (0.265, 0.75)
+    # show 3500_sh normal pioneer:
+        # zoom 0.17 anchor (0.5, 1.0) pos (0.3, 0.75)
+    # with dissolve
+
+    ##################################################    Яна бежит к Шурику (сделано двуя попеременнми обращениями к спрайту, чтоб возникала иллюзия перехода Dissolve)
+       
     show d_jn:
-        zoom 0.17 anchor (0.5, 1.0) pos (0.265, 0.75)
-    show 3500_sh normal pioneer:
-        zoom 0.17 anchor (0.5, 1.0) pos (0.3, 0.75)
-    with dissolve
+        xzoom 1.0 yzoom 1.0 zoom 0.21
+        linear 0.5 alpha 0
+        pause 0.2
+        zoom 0.27 xcenter 0.459 ycenter 0.66
+        linear 0.5 alpha 1
+        pause 0.2
+        linear 0.5 alpha 0
+        pause 0.2
+        zoom 0.46 xcenter 0.452 ycenter 0.731
+        linear 0.5 alpha 1
+        pause 0.2
+        linear 0.5 alpha 0
+        pause 0.2
+        zoom 1.0 xcenter 0.435 ycenter 0.91
+        linear 0.5 alpha 1
+        pause 0.2
+        linear 0.5 alpha 0
+        
+    show d_jn as d_jn2:
+        zoom 0.24 xcenter 0.459 ycenter 0.63 alpha 0
+        linear 0.5 alpha 1
+        pause 0.2
+        linear 0.5 alpha 0
+        pause 0.2
+        zoom 0.34 xcenter 0.456 ycenter 0.687
+        linear 0.5 alpha 1
+        pause 0.2
+        linear 0.5 alpha 0
+        pause 0.2
+        zoom 0.68 xcenter 0.445 ycenter 0.805
+        linear 0.5 alpha 1
+        pause 0.2
+        linear 0.5 alpha 0
+        pause 0.2
+        zoom 1.4 xcenter 0.422 ycenter 1.04
+        linear 0.5 alpha 1
+        pause 0.2
+        linear 0.5 alpha 0
+    ##################################################
+
     "Зажужжали приводы, застучали каучуковые подошвы по доскам крыльца и асфальту."
     "Подхваченный двумя руками кошкоробот взлетел к небу и плавно опустился на землю."
     "Корпус робота изредка подрагивал и на эти единичные импульсы накладывалась еще и низкочастотная вибрация."
