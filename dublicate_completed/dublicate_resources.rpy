@@ -480,6 +480,8 @@ init :
     image dct_mi_morning_house = "mods/dublicate_completed/images/cg/coin/dct_mi_morning_house.jpg" # Мику проснувшаяся с утра
     image dct_ext_laboratory_of_d_sh = "mods/dublicate_completed/images/cg/coin/dct_ext_laboratory_of_d_sh.jpg" # Лаборатория Александра, вид снаружи на окна
     
+    image dct_sh_d_jn_reunion = "mods/dublicate_completed/images/cg/coin/dct_sh_d_jn_reunion.jpg" # Воссоединение Шурика с Яной возле клубов
+    
     image dct_coin_dv_sits_on_porch = "mods/dublicate_completed/images/cg/coin/dct_coin_dv_sits_on_porch.jpg" # Алиса на крыльце домика с тетрадкой
         
     image dct_dv_two_pieces_bg_dark = "mods/dublicate_completed/images/cg/coin/dct_dv_two_pieces_bg_dark.jpg"
