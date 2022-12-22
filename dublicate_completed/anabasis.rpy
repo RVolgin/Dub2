@@ -1260,21 +1260,32 @@ label dct_inversion:
     
     scene ext_path2_day with slideright:
         running
-    play ambience dct_ambience_run
+        play ambience "<loop 1.5 to 20.0>mods/dublicate_completed/sounds/ambience/dct_ambience_run.ogg"
     "Бегу вдоль забора до тропинки в старый лагерь, чтобы пройти на территорию там. Мне сейчас нужно оказаться на пристани до того, как там окажется Славя."
     "Уже почти подбегаю к калитке, это даже не калитка, а просто разрыв в заборе, через который проходит тропинка, и тут меня убивают."
-    stop ambience
     
-    scene ext_path_day with vpunch
     play sound dct_sfx_dart
+    pause 0.5
+    stop ambience
+    play sound2 "<from 21.0 to 22.5>mods/dublicate_completed/sounds/ambience/dct_ambience_run.ogg"
+    
+    pause 1
+    scene dct_shot_by_arrow with vpunch
     play music music_list["just_think"]
     "Что-то с хрустом бьёт меня в позвоночник, мои ноги подкашиваются, и я падаю лицом в хвою." 
     "Лежу, не чувствуя ни тела, ни конечностей, перед глазами одиноко зеленеет пробившаяся сквозь хвою травинка, слышу осторожные шаги, непонятные треск и шорох, потом моё тело трогают, видимо, веткой." 
-    scene ext_path_day with hpunch
+    # scene ext_path_day with hpunch
     play sound sfx_run_forest
+    pause 0.2
+    stop sound fadeout 5
     "Потом опять слышны лёгкие шаги, переходящие в бег. Паники нет, я верю Пионеру, что воскресну самое позднее в следующем цикле."
-    "Палач вообще впервые воскрес через полчаса. Глаза закрываются сами собой, и я постепенно отключаюсь."
-    show blink
+    show black:
+        alpha 0
+        pause 2.5
+        linear 1.5 alpha 1
+    # "Палач вообще впервые воскрес через полчаса. Глаза закрываются сами собой, и я постепенно отключаюсь."  # по Канону
+    "Палач вообще впервые воскрес через полчаса. Постепенно наваливается тишина, и следом я отключаюсь."
+    # show blink
     stop music fadeout 2
     $ renpy.pause(2.0)
     stop sound
