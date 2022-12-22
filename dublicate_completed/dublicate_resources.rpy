@@ -209,6 +209,9 @@ init :
     image dct_railway_embankment_overcast = "mods/dublicate_completed/images/bg/dct_railway_embankment_overcast.jpg"    # Берег возле железнодорожной насыпи ПАСМУРНО
     image dct_int_radioroom_light = "mods/dublicate_completed/images/bg/dct_int_radioroom_light.jpg"    # Радиорубка в клубе, свет включён
     image dct_int_radioroom_nolight = "mods/dublicate_completed/images/bg/dct_int_radioroom_nolight.jpg"    # Радиорубка в клубе, свет выключён
+    image dct_YOTD_entrance = "mods/dublicate_completed/images/bg/dct_YOTD_entrance.jpg"    # Подъезд (Год Дракона)
+    image dct_YOTD_neighbor_door_closed = "mods/dublicate_completed/images/bg/dct_YOTD_neighbor_door_closed.jpg"    # Дверь соседки закрытая (Год Дракона)
+    image dct_YOTD_neighbor_door_open = "mods/dublicate_completed/images/bg/dct_YOTD_neighbor_door_open.jpg"    # Дверь соседки открытая (Год Дракона)
     
         
     ##### bg (coin)
@@ -442,6 +445,7 @@ init :
     image dct_d3_soccer_sport = "mods/dublicate_completed/images/cg/dct_d3_soccer_sport.jpg"    # Ульяна в спортивной форме пинает мяч
     image dct_un_on_birch = "mods/dublicate_completed/images/cg/dct_un_on_birch.jpg"    # Лена сидит на берёзе
     image dct_cg_beach_volleyball = "mods/dublicate_completed/images/cg/dct_cg_beach_volleyball.jpg"    # Воллейбол на пляже
+    image dct_shot_by_arrow = "mods/dublicate_completed/images/cg/dct_shot_by_arrow.jpg"    # Семёна подстрелили
     
     
     ##### cg (coin)
