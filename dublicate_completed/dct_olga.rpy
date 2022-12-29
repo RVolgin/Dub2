@@ -2863,16 +2863,23 @@ label dct_olga_p8:
     $ persistent.sprite_time = "night"
     play ambience ambience_int_cabin_night
     th "Уложить чемодан, и можно ехать. Практика закончилась."
-    th "Вот только… Всё, что у меня останется от этого лета — пионерский галстук с автографами мальчиков и девочек из лагеря, которого нет; и кассета с голосом девочки, которая никогда не рождалась."
+    th "Вот только…"
+    show dct_mt_with_cassette_and_tie with squares
+    extend " Всё, что у меня останется от этого лета — пионерский галстук с автографами мальчиков и девочек из лагеря, которого нет; и кассета с голосом девочки, которая никогда не рождалась."
     stop ambience
-    
-    scene dct_mt_mirror with dissolve
-    $ night_time ()
-    $ persistent.sprite_time = "night"
     play ambience ambience_int_cabin_night
     th "Кокоро но негаи, цутеки но мираи…"
     play sound dct_sfx_mirabilis_futurum
-    dreamgirl "Ольга, глядя в зеркало, прошептала знакомые слова на незнакомом языке, последний раз щёлкнула выключателем и отправилась на остановку."
+    dreamgirl "В голове пронеслись знакомые слова на незнакомом языке.{w} Голос Мику звучал как наяву."
+    dreamgirl "Вожатая не смогла сдержать слёз."
+    hide dct_mt_with_cassette_and_tie with squares
+    extend " Да, пока ещё вожатая."
+    play sound sfx_clench2  #выключатель
+    show int_house_of_mt_night2:
+        alpha 0
+        pause 0.2
+        linear 0.2 alpha 1
+    dreamgirl "Ольга последний раз щёлкнула выключателем, закрыла дверь и отправилась на остановку."
     show black with dissolve2
     $ renpy.pause (3)
     stop ambience
