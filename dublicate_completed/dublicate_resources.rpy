@@ -212,6 +212,8 @@ init :
     image dct_YOTD_entrance = "mods/dublicate_completed/images/bg/dct_YOTD_entrance.jpg"    # Подъезд (Год Дракона)
     image dct_YOTD_neighbor_door_closed = "mods/dublicate_completed/images/bg/dct_YOTD_neighbor_door_closed.jpg"    # Дверь соседки закрытая (Год Дракона)
     image dct_YOTD_neighbor_door_open = "mods/dublicate_completed/images/bg/dct_YOTD_neighbor_door_open.jpg"    # Дверь соседки открытая (Год Дракона)
+    image dct_YOTD_yard1 = "mods/dublicate_completed/images/bg/dct_YOTD_yard1.jpg"    # Алисин двор. Взгляд от подъезда (Год Дракона)
+    image dct_YOTD_yard2 = "mods/dublicate_completed/images/bg/dct_YOTD_yard2.jpg"    # Алисин двор. Возле сараев (Год Дракона)
     
         
     ##### bg (coin)
@@ -446,6 +448,7 @@ init :
     image dct_un_on_birch = "mods/dublicate_completed/images/cg/dct_un_on_birch.jpg"    # Лена сидит на берёзе
     image dct_cg_beach_volleyball = "mods/dublicate_completed/images/cg/dct_cg_beach_volleyball.jpg"    # Воллейбол на пляже
     image dct_shot_by_arrow = "mods/dublicate_completed/images/cg/dct_shot_by_arrow.jpg"    # Семёна подстрелили
+    image dct_mt_with_cassette_and_tie = "mods/dublicate_completed/images/cg/dct_mt_with_cassette_and_tie.jpg"    # Ольга с аудиокассетой и галстуком с подписями
     
     
     ##### cg (coin)
@@ -1170,26 +1173,26 @@ init :
         
         
     image dct_bonfire_day_anim:     # Анимация костра (выводить на экран в позиции xcenter 0.5 yanchor 0.0 ypos 0.55)
-        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_01.jpg"
-        pause 0.1
-        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_02.jpg"
-        pause 0.1
-        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_03.jpg"
-        pause 0.1
-        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_04.jpg"
-        pause 0.1
-        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_05.jpg"
-        pause 0.1
-        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_06.jpg"
-        pause 0.1
-        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_07.jpg"
-        pause 0.1
-        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_08.jpg"
-        pause 0.1
-        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_09.jpg"
-        pause 0.1
-        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_10.jpg"
-        pause 0.1
+        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_01.jpg" with Dissolve(0.15)
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_02.jpg" with Dissolve(0.15)
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_03.jpg" with Dissolve(0.15)
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_04.jpg" with Dissolve(0.15)
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_05.jpg" with Dissolve(0.15)
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_06.jpg" with Dissolve(0.15)
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_07.jpg" with Dissolve(0.15)
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_08.jpg" with Dissolve(0.15)
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_09.jpg" with Dissolve(0.15)
+        pause 0.2
+        "mods/dublicate_completed/images/anim/coin/dct_bonfire_day_10.jpg" with Dissolve(0.15)
+        pause 0.2
         repeat
         
                   
@@ -1448,14 +1451,14 @@ init :
     
     $ d_mt2 = Character (u'Оля', color="#01df31", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Эмоциональная матрица
     
-    $ d_dk = Character (u'Дядька', color="#3dc65b", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Дядька/водитель
-    $ d_vl = Character (u'Дядя Валера', color="#3dc65b", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
+    $ d_dk = Character (u'Дядька', color="#d4cdaf", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Дядька/водитель
+    $ d_vl = Character (u'Дядя Валера', color="#d4cdaf", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
     
     $ d_ge = Character (u'Незнакомка', color="#01df31", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Незнакомка-ОД в городе
     
     $ d_dy = Character(u"Динамик", color="#e91b1b", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
     
-    $ d_mp = Character (u'Мария Петровна', color="#01df31", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Соседка Алисы kind = nvl
+    $ d_mp = Character (u'Мария Петровна', color="#76ac86", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Соседка Алисы kind = nvl
     
     $ d_to = Character (u'Анатолий', color="#3BE620", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Толик
     $ d_t1 = Character (u'Толик', color="#3BE620", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
