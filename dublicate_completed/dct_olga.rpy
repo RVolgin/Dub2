@@ -2869,7 +2869,7 @@ label dct_olga_p8:
     stop ambience
     play ambience ambience_int_cabin_night
     th "Кокоро но негаи, цутеки но мираи…"
-    play sound dct_sfx_mirabilis_futurum
+    play sound_loop "<from 25.0 loop 0.0>mods/dublicate_completed/sounds/sfx/dct_sfx_mirabilis_futurum.ogg" fadein 0.5
     dreamgirl "В голове пронеслись знакомые слова на незнакомом языке.{w} Голос Мику звучал как наяву."
     dreamgirl "Вожатая не смогла сдержать слёз."
     hide dct_mt_with_cassette_and_tie with squares
@@ -2879,7 +2879,8 @@ label dct_olga_p8:
         alpha 0
         pause 0.2
         linear 0.2 alpha 1
-    dreamgirl "Ольга последний раз щёлкнула выключателем, закрыла дверь и отправилась на остановку."
+    dreamgirl "Ольга последний раз щёлкнула выключателем, закрыла дверь, и отправилась на остановку."
+    stop sound_loop fadeout 3
     show black with dissolve2
     $ renpy.pause (3)
     stop ambience
