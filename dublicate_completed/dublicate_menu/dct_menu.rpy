@@ -1,6 +1,6 @@
 init 1:
     $ style.dct_menu_button = Style(style.default)
-    $ style.dct_menu_button.font  = "mods/dublicate_completed/fonts/bezpr.ttf"
+    $ style.dct_menu_button.font  = "mods/dublicate/fonts/bezpr.ttf"
     $ style.dct_menu_button.color = "#000000"
     $ style.dct_menu_button.size = 30
     $ style.dct_menu_button.kerning = 0.3
@@ -17,54 +17,54 @@ init 1:
     
 screen dct_menu_flower:
     zorder 1
-    add "mods/dublicate_completed/images/gui/dct_menu_flower.png"
+    add "mods/dublicate/images/gui/dct_menu_flower.png"
 screen dct_menu_olga_sep:
-    add "mods/dublicate_completed/images/gui/dct_menu_olga_sep.png"
+    add "mods/dublicate/images/gui/dct_menu_olga_sep.png"
 screen dct_menu_simon_sep:
-    add "mods/dublicate_completed/images/gui/dct_menu_simon_sep.png"
+    add "mods/dublicate/images/gui/dct_menu_simon_sep.png"
 screen dct_menu_cat_house_sep:
-    add "mods/dublicate_completed/images/gui/dct_menu_cat_house_sep.png"
+    add "mods/dublicate/images/gui/dct_menu_cat_house_sep.png"
 screen dct_menu_prologue_sep:
-    add "mods/dublicate_completed/images/gui/dct_menu_prologue_sep.png"
+    add "mods/dublicate/images/gui/dct_menu_prologue_sep.png"
 screen dct_menu_anabasis_sep:
-    add "mods/dublicate_completed/images/gui/dct_menu_anabasis_sep.png"
+    add "mods/dublicate/images/gui/dct_menu_anabasis_sep.png"
 screen dct_menu_life_line_sep:
-    add "mods/dublicate_completed/images/gui/dct_menu_life_line_sep.png"
+    add "mods/dublicate/images/gui/dct_menu_life_line_sep.png"
 screen dct_menu_dragon_sep:
-    add "mods/dublicate_completed/images/gui/dct_menu_dragon_sep.png"
+    add "mods/dublicate/images/gui/dct_menu_dragon_sep.png"
 screen dct_menu_clouds_sep:
-    add "mods/dublicate_completed/images/gui/dct_menu_clouds_sep.png"
+    add "mods/dublicate/images/gui/dct_menu_clouds_sep.png"
 screen dct_menu_4th_shift_sep:
-    add "mods/dublicate_completed/images/gui/dct_menu_4th_shift_sep.png"
+    add "mods/dublicate/images/gui/dct_menu_4th_shift_sep.png"
 screen dct_menu_effector_sep:
-    add "mods/dublicate_completed/images/gui/dct_menu_effector_sep.png"
+    add "mods/dublicate/images/gui/dct_menu_effector_sep.png"
 
 screen dct_menu_coin_sep:
-    add "mods/dublicate_completed/images/gui/dct_menu_coin_sep.png"
+    add "mods/dublicate/images/gui/dct_menu_coin_sep.png"
 screen dct_menu:
-    add "mods/dublicate_completed/images/gui/dct_menu_bg.png"
+    add "mods/dublicate/images/gui/dct_menu_bg.png"
     if persistent.d_olga > 0:
-        add "mods/dublicate_completed/images/gui/dct_menu_olga_v.png"
+        add "mods/dublicate/images/gui/dct_menu_olga_v.png"
     if persistent.d_sim > 0:
-        add "mods/dublicate_completed/images/gui/dct_menu_simon_v.png"
+        add "mods/dublicate/images/gui/dct_menu_simon_v.png"
     if persistent.d_miuki > 0:
-        add "mods/dublicate_completed/images/gui/dct_menu_cat_house_v.png"
+        add "mods/dublicate/images/gui/dct_menu_cat_house_v.png"
     if persistent.d_prolog > 0:
-        add "mods/dublicate_completed/images/gui/dct_menu_prologue_v.png"
+        add "mods/dublicate/images/gui/dct_menu_prologue_v.png"
     if persistent.d_ana > 0:
-        add "mods/dublicate_completed/images/gui/dct_menu_anabasis_v.png"
+        add "mods/dublicate/images/gui/dct_menu_anabasis_v.png"
     if persistent.d_lin > 0:
-        add "mods/dublicate_completed/images/gui/dct_menu_life_line_v.png"
+        add "mods/dublicate/images/gui/dct_menu_life_line_v.png"
     if persistent.d_dra > 0:
-        add "mods/dublicate_completed/images/gui/dct_menu_dragon_v.png"
+        add "mods/dublicate/images/gui/dct_menu_dragon_v.png"
     if persistent.d_nam > 0:
-        add "mods/dublicate_completed/images/gui/dct_menu_clouds_v.png"
+        add "mods/dublicate/images/gui/dct_menu_clouds_v.png"
     if persistent.d_shif > 0:
-        add "mods/dublicate_completed/images/gui/dct_menu_4th_shift_v.png"
+        add "mods/dublicate/images/gui/dct_menu_4th_shift_v.png"
     if persistent.d_eff > 0:
-        add "mods/dublicate_completed/images/gui/dct_menu_effector_v.png"
+        add "mods/dublicate/images/gui/dct_menu_effector_v.png"
     if persistent.d_coin > 0:
-        add "mods/dublicate_completed/images/gui/dct_menu_coin_v.png"
+        add "mods/dublicate/images/gui/dct_menu_coin_v.png"
     timer 0.01 action ShowTransient("dct_menu_flower")
     
     textbutton "О - значит Ольга":
@@ -258,7 +258,7 @@ screen dct_menu:
     textbutton "Монетка в фонтане":
         xpos 0.59
         ypos 0.773
-        if persistent.d_olga > 0:
+        if (persistent.d_olga > 0) and (persistent.d_dra > 0):
             if renpy.seen_label("dct_coin"):
                 style "dct_menu_button"
                 text_style "dct_menu_button"
