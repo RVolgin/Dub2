@@ -333,7 +333,9 @@ label dct_coin_final:
     $ renpy.music.set_volume(1.0, delay=0, channel='ambience')
     play ambience ambience_medium_crowd_outdoors fadein 2
     scene bg ext_polyana_day
-    show dct_bonfire_day
+    # show dct_bonfire_day
+    show dct_bonfire_day_anim:
+        xcenter 0.5 yanchor 0.0 ypos 0.55
     with irisout
     "А мы, собственно, уже вышли на костровую поляну."
     show d_sl shy pioneer close at left with dissolve
@@ -859,9 +861,8 @@ label dct_coin_final:
     $ renpy.sound.set_volume(1.0, delay=0)
     $ renpy.sound.set_volume(1.0, delay=0, channel='sound_loop')
     
-    if dct_ending_var == False:
-        $ persistent.d_coin = d_coin + 1
-        menu:
-            "Конец шестой части"
-            "В меню":
-                jump dct_mnu2
+    $ persistent.d_coin = d_coin + 1
+    menu:
+        "Конец книги «Монетка в фонтане»"
+        "В меню":
+            jump dct_mnu2

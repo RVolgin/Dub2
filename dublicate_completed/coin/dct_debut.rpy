@@ -96,7 +96,7 @@ label dct_debut:
     pause 0.5
 
 
-    play sound_loop "<from 7.0 loop 7.0>mods/dublicate_completed/sounds/sfx/dct_sfx_steps3.ogg"
+    play sound_loop "<from 7.0 loop 7.0>mods/dublicate/sounds/sfx/dct_sfx_steps3.ogg"
     play ambience ambience_forest_day fadein 1
     scene bg ext_path2_day
     show ext_path2_day at walking
