@@ -5876,7 +5876,7 @@ label return_bus:
     $ persistent.d_shif = d_shif + 1
     
 menu:
-    "Конец четвёртой части"
+    "Конец книги «Четвёртая смена»"
     "Продолжить":
         jump dct_effector
     "В меню":

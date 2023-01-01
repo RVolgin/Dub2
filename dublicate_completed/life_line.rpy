@@ -4325,9 +4325,14 @@ label d_balance:
     dv "Сенька, отдай гитару. Ольга Дмитриевна, я за него."
     th "Решилась? Неужели мы что-то сейчас услышим?"
     show dv smile pioneer with dspr
-    show dv shy pioneer with dspr
-    $ renpy.pause (0.5)
-    show dv normal pioneer with dspr
+    $ renpy.pause (0.3)
+    show dv shy pioneer with dissolve_fast
+    $ renpy.pause (0.3)
+    show dv normal pioneer with dissolve_fast
+    show dct_life_line_gatherings_around_campfire:
+        alpha 0
+        pause 1.2
+        linear 1.2 alpha 1
     "Алиса прячет свою дежурную ироничную усмешку. Ловит мой взгляд, улыбается снова, только уже грустно, и осторожно касается струн."
     "А я? Чёрт его знает, но задевает Алиса что-то во мне. Я уже никуда не хочу убежать, я хочу дослушать песню до конца."
     "Потому что я вздрагиваю от каждого куплета."
@@ -4368,7 +4373,9 @@ label d_balance:
     with dissolve2
     $ renpy.pause (3)
     th "А это уже про меня, я уже забыл про того пионера, а мне напомнили."
-    hide poem_text with dissolve2
+    show dct_life_line_gatherings_around_campfire behind poem_text
+    hide poem_text
+    with dissolve2
     th "Мы действительно как близнецы-братья — может, потому я его и чувствую лучше прочих, и мог бы оказаться на его месте."
     "Представляю себя на месте двойника, как я играю с Алисой в катакомбах в кошки-мышки. Представляю её ужас. Всё так, но кому бы я тогда писал подстрочник сегодня утром?"
     "Кто бы меня назвал Коробка на Голове?"
@@ -4448,7 +4455,7 @@ label d_divergent:
     show d_mi shy body close with dspr:
         zoom 1
     mi "Всё равно не смотри, я стесняюсь."
-        show d_mi shy body with dspr:
+    show d_mi shy body with dspr:
         xcenter 0.5 ycenter 0.53
     show d_mi shy shirt_without_tie as mi:
         xcenter 0.5 ycenter 0.53 alpha 0
@@ -5367,7 +5374,7 @@ label d_line:
     $ persistent.d_lin = d_lin + 1
     
 menu:
-    "Конец третьей части"
+    "Конец книги «Линия жизни»"
     "Продолжить":
         jump dct_4th_shift
     "В меню":

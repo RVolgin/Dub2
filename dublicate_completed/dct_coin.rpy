@@ -11,9 +11,9 @@ label dct_coin:       #вступительный лейбл
     
     call dct_transitions
     
-    #call dct_fluctuation
+    call dct_fluctuation
     
-    #call dct_disposition
+    call dct_disposition
     
     call dct_debut
     

@@ -1260,14 +1260,14 @@ label dct_inversion:
     
     scene ext_path2_day with slideright:
         running
-        play ambience "<loop 1.5 to 20.0>mods/dublicate_completed/sounds/ambience/dct_ambience_run.ogg"
+    play ambience "<loop 1.5 to 20.0>mods/dublicate/sounds/ambience/dct_ambience_run.ogg"
     "Бегу вдоль забора до тропинки в старый лагерь, чтобы пройти на территорию там. Мне сейчас нужно оказаться на пристани до того, как там окажется Славя."
     "Уже почти подбегаю к калитке, это даже не калитка, а просто разрыв в заборе, через который проходит тропинка, и тут меня убивают."
     
     play sound dct_sfx_dart
     pause 0.5
     stop ambience
-    play sound2 "<from 21.0 to 22.5>mods/dublicate_completed/sounds/ambience/dct_ambience_run.ogg"
+    play sound2 "<from 21.0 to 22.5>mods/dublicate/sounds/ambience/dct_ambience_run.ogg"
     
     pause 1
     scene dct_shot_by_arrow with vpunch
@@ -4406,7 +4406,7 @@ label dct_tambourines:
     show us sad pioneer
     us "И что, мне совсем-совсем нельзя сюда приходить?"
     me "А если я скажу «Нет», как я это проконтролирую? И что я тебе сделаю?"
-    me "Главное, не пакости здесь: битое стекло, окурки, консервные банки, кострища, пр{w}очее. Ну ты поняла."
+    me "Главное, не пакости здесь: битое стекло, окурки, консервные банки, кострища, прочее.{w} Ну ты поняла."
     show us normal pioneer
     me "Ладно, пошли, действительно скоро уже темнеть начнёт."
         
@@ -5687,7 +5687,7 @@ label dct_center_line:
     $ persistent.d_ana = d_ana + 1
     
 menu:
-    "Конец первой части"
+    "Конец книги «Анабасис»"
     "Продолжить":
         jump dct_dragon
     "В меню":

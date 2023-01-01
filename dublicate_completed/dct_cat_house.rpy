@@ -2299,7 +2299,7 @@ label dct_goddess:
     $ persistent.d_miuki = d_miuki + 1
     
 menu:
-    "Конец седьмой части"
+    "Конец книги «Кошкин дом»"
     "Продолжить":
         jump dct_olga
     "В меню":

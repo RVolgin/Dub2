@@ -2,30 +2,30 @@ init:
 
     $ dct_sprav_page = []    # Номер стараницы, открытой в Справочнике
     
-    image dct_bg_delo_spravochnik = ConditionSwitch(True, im.Composite((1920, 1080), (0, 0), 'mods/dublicate_completed/Images/gui/spravochnik/dct_bg_table.jpg', (0, 0), 'mods/dublicate_completed/Images/gui/spravochnik/dct_bg_delo.png', (0, 0), 'mods/dublicate_completed/Images/gui/spravochnik/dct_bg_title.png'))
+    image dct_bg_delo_spravochnik = ConditionSwitch(True, im.Composite((1920, 1080), (0, 0), 'mods/dublicate/Images/gui/spravochnik/dct_bg_table.jpg', (0, 0), 'mods/dublicate/Images/gui/spravochnik/dct_bg_delo.png', (0, 0), 'mods/dublicate/Images/gui/spravochnik/dct_bg_title.png'))
 
 
     #sfx
       
     $ dct_paper_sprav = [       # Набор звуков листания из разных частей одного файла
-        "<from 0.27 to 1.73>mods/dublicate_completed/Sounds/sfx/dct_sfx_pages.ogg",
-        "<from 2.64 to 4.17>mods/dublicate_completed/Sounds/sfx/dct_sfx_pages.ogg",
-        "<from 5.20 to 6.15>mods/dublicate_completed/Sounds/sfx/dct_sfx_pages.ogg",
-        "<from 7.13 to 8.06>mods/dublicate_completed/Sounds/sfx/dct_sfx_pages.ogg",
-        "<from 8.43 to 8.98>mods/dublicate_completed/Sounds/sfx/dct_sfx_pages.ogg",
-        "<from 9.67 to 10.96>mods/dublicate_completed/Sounds/sfx/dct_sfx_pages.ogg",
-        "<from 11.46 to 12.05>mods/dublicate_completed/Sounds/sfx/dct_sfx_pages.ogg",
+        "<from 0.27 to 1.73>mods/dublicate/Sounds/sfx/dct_sfx_pages.ogg",
+        "<from 2.64 to 4.17>mods/dublicate/Sounds/sfx/dct_sfx_pages.ogg",
+        "<from 5.20 to 6.15>mods/dublicate/Sounds/sfx/dct_sfx_pages.ogg",
+        "<from 7.13 to 8.06>mods/dublicate/Sounds/sfx/dct_sfx_pages.ogg",
+        "<from 8.43 to 8.98>mods/dublicate/Sounds/sfx/dct_sfx_pages.ogg",
+        "<from 9.67 to 10.96>mods/dublicate/Sounds/sfx/dct_sfx_pages.ogg",
+        "<from 11.46 to 12.05>mods/dublicate/Sounds/sfx/dct_sfx_pages.ogg",
         ]
 
     
     #music
         
     $ dct_playlist_sprav = [    # Плейлист из нескольких композиций
-        "mods/dublicate_completed/Sounds/coin/music/Sommarfagel[Exclusive_Mix](by_Wintergatan).ogg",
-        "mods/dublicate_completed/Sounds/coin/music/Marble_Machine(by_Wintergatan).ogg",
-        "mods/dublicate_completed/Sounds/coin/music/Starmachine2000(by_Wintergatan).ogg",
-        "mods/dublicate_completed/Sounds/coin/music/Valentine(by_Wintergatan).ogg",
-        "mods/dublicate_completed/Sounds/coin/music/Telescope(by_Wintergatan).ogg"
+        "mods/dublicate/Sounds/coin/music/Sommarfagel[Exclusive_Mix](by_Wintergatan).ogg",
+        "mods/dublicate/Sounds/coin/music/Marble_Machine(by_Wintergatan).ogg",
+        "mods/dublicate/Sounds/coin/music/Starmachine2000(by_Wintergatan).ogg",
+        "mods/dublicate/Sounds/coin/music/Valentine(by_Wintergatan).ogg",
+        "mods/dublicate/Sounds/coin/music/Telescope(by_Wintergatan).ogg"
         ]
     
     
@@ -62,8 +62,8 @@ label dct_spravochnik_ukaz:
         modal True
         
         imagemap:
-            ground "mods/dublicate_completed/Images/gui/spravochnik/dct_spravochnik_page_0a_ground.png"
-            auto "mods/dublicate_completed/Images/gui/spravochnik/dct_spravochnik_page_0a_%s.png"
+            ground "mods/dublicate/Images/gui/spravochnik/dct_spravochnik_page_0a_ground.png"
+            auto "mods/dublicate/Images/gui/spravochnik/dct_spravochnik_page_0a_%s.png"
             alpha True  # Прозрачные области изображения исключаются из активных зон
             
             hotspot(330,230,275,130) action [SetVariable("dct_sprav_page", 1), Play("sound", renpy.random.choice(dct_paper_sprav)), Jump("dct_spravochnik_pages")]   # АБ
@@ -74,8 +74,8 @@ label dct_spravochnik_ukaz:
             hotspot(1345,375,270,300) action [SetVariable("dct_sprav_page", 10), Play("sound", renpy.random.choice(dct_paper_sprav)), Jump("dct_spravochnik_pages")] # ФЦ
             
         imagemap:   # Некоторые зоны со ссылками переплетаются, поэтому пришлось добавить второй imagemap
-            ground "mods/dublicate_completed/Images/gui/spravochnik/dct_spravochnik_page_0b_ground.png"
-            auto "mods/dublicate_completed/Images/gui/spravochnik/dct_spravochnik_page_0b_%s.png"
+            ground "mods/dublicate/Images/gui/spravochnik/dct_spravochnik_page_0b_ground.png"
+            auto "mods/dublicate/Images/gui/spravochnik/dct_spravochnik_page_0b_%s.png"
             alpha True  # Прозрачные области изображения исключаются из активных зон
             
             hotspot(605,235,145,140) action [SetVariable("dct_sprav_page", 2), Play("sound", renpy.random.choice(dct_paper_sprav)), Jump("dct_spravochnik_pages")]   # В
@@ -101,9 +101,9 @@ label dct_spravochnik_pages:
         modal True
         
         imagemap:
-            ground "mods/dublicate_completed/Images/gui/spravochnik/dct_spravochnik_page_[dct_sprav_page]_ground.png"
-            idle "mods/dublicate_completed/Images/gui/spravochnik/dct_spravochnik_page_[dct_sprav_page]_idle.png"
-            hover "mods/dublicate_completed/Images/gui/spravochnik/dct_spravochnik_page_[dct_sprav_page]_hover.png"
+            ground "mods/dublicate/Images/gui/spravochnik/dct_spravochnik_page_[dct_sprav_page]_ground.png"
+            idle "mods/dublicate/Images/gui/spravochnik/dct_spravochnik_page_[dct_sprav_page]_idle.png"
+            hover "mods/dublicate/Images/gui/spravochnik/dct_spravochnik_page_[dct_sprav_page]_hover.png"
             alpha True  # Прозрачные области изображения исключаются из активных зон
             
             hotspot(330,125,130,100):                                       # Предыдущая страница
@@ -142,9 +142,6 @@ label dct_spravochnik_ukaz_pause:
 label dct_spravochnik_menu:
     stop music
     $ renpy.music.set_volume(1.0)
-    
-    if dct_ending_var == True:
-        $ dct_ending_var = False
-    else:
-        jump dct_mnu2
+    jump dct_mnu2
+
 

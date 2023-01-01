@@ -2869,7 +2869,7 @@ label dct_olga_p8:
     stop ambience
     play ambience ambience_int_cabin_night
     th "Кокоро но негаи, цутеки но мираи…"
-    play sound_loop "<from 25.0 loop 0.0>mods/dublicate_completed/sounds/sfx/dct_sfx_mirabilis_futurum.ogg" fadein 0.5
+    play sound_loop "<from 25.0 loop 0.0>mods/dublicate/sounds/sfx/dct_sfx_mirabilis_futurum.ogg" fadein 0.5
     dreamgirl "В голове пронеслись знакомые слова на незнакомом языке.{w} Голос Мику звучал как наяву."
     dreamgirl "Вожатая не смогла сдержать слёз."
     hide dct_mt_with_cassette_and_tie with squares
@@ -3116,13 +3116,10 @@ label dct_olga_p9:
     stop ambience
     
     scene black with blinds
-    if dct_ending_var == True:
-        return
-    else:
-        $ persistent.d_olga = d_olga + 1
-        menu:
-            "Конец восьмой части"
-            "Продолжить":
-                jump dct_coin
-            "В меню":
-                jump dct_mnu2    
+    $ persistent.d_olga = d_olga + 1
+    menu:
+        "Конец книги «О — значит Ольга»"
+        "Продолжить":
+            jump dct_coin
+        "В меню":
+            jump dct_mnu2   

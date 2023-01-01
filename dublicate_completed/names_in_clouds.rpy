@@ -9191,7 +9191,7 @@ label dct_tide:
     $ persistent.d_nam = d_nam + 1
     
 menu:
-    "Конец второй части"
+    "Конец книги «Имена в облаках»"
     "Продолжить":
         jump dct_life_line
     "В меню":

@@ -2758,7 +2758,7 @@ label the_pass:
     $ persistent.d_eff = d_eff + 1
     
 menu:
-    "Конец пятой части"
+    "Конец книги «Эффектор»"
     "Продолжить":
         jump dct_simon
     "В меню":
