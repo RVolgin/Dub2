@@ -256,7 +256,7 @@ label dct_sixhour:
     mz "А ты, лохматый, ещё раз начнешь руки распускать — лучше сразу костыли заказывай!"
     scene dct_int_bus_middle
     show dct_int_bus_middle_sh_body
-    show dct_int_bus_middle_sh surprise
+    show dct_int_bus_middle_sh surprise noglasses
     show el scared pioneer close:
         zoom 1.095 xcenter 0.31 ycenter 0.57 rotate -12.9
     with dissolve
@@ -269,6 +269,7 @@ label dct_sixhour:
     hide dct_int_bus_another_middle
     hide dct_int_bus_another_middle_mz_body
     hide dct_int_bus_another_middle_mz_head
+    show dct_int_bus_middle_sh surprise
     show el upset pioneer close
     with dissolve
     "А также сбитого с толку Сыроежкина, и даже бейсболку, принадлежащую тому же Сыроежкину и валяющуюся сейчас на полу."
@@ -698,7 +699,7 @@ label dct_sixhour:
     "Ульяна вскочила на ноги и выбежала из здания клубов. Александр проводил Ульяну непонимающим взглядом."
     adl_sh4 "Семён.{w=0.4} Это ведь твой оригинал был заведующим лабораторией синтеза биосистем. Если хочешь Ульяне помочь — покопайся в памяти."
     adl_sh4 "А моё мнение — всё, что может быть создано, должно быть создано. Вопрос только правильного применения."
-    show d_sf laugh pioneer with dspr
+    show d_sf grin pioneer with dspr
     me "«Какая великолепная физика!» Кроме того, что не мешать, я могу ещё что-то для тебя сделать?"
     show d_sf serious pioneer with dspr
     adl_sh4 "У тебя есть Выключатель?"
