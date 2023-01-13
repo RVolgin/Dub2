@@ -755,7 +755,7 @@ init :
     image d_sf smile sport = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1384), (0, 0), 'mods/dublicate/images/sprites/d_sf/d_sf_sport.png', (0, 0), 'mods/dublicate/images/sprites/d_sf/d_sf_smile.png'), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1384), (0, 0), 'mods/dublicate/images/sprites/d_sf/d_sf_sport.png', (0, 0), 'mods/dublicate/images/sprites/d_sf/d_sf_smile.png'), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((900, 1384), (0, 0), 'mods/dublicate/images/sprites/d_sf/d_sf_sport.png', (0, 0), 'mods/dublicate/images/sprites/d_sf/d_sf_smile.png'))
     image d_sf smile swim = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1384), (0, 0), 'mods/dublicate/images/sprites/d_sf/d_sf_swim.png', (0, 0), 'mods/dublicate/images/sprites/d_sf/d_sf_smile.png'), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1384), (0, 0), 'mods/dublicate/images/sprites/d_sf/d_sf_swim.png', (0, 0), 'mods/dublicate/images/sprites/d_sf/d_sf_smile.png'), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((900, 1384), (0, 0), 'mods/dublicate/images/sprites/d_sf/d_sf_swim.png', (0, 0), 'mods/dublicate/images/sprites/d_sf/d_sf_smile.png'))
     
-    
+  
     # #Сергей Зайцев   ---   уехал вниз, в категорию Дети
     
     # image d_sz normal pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate/images/sprites/d_sz/d_sz.png', im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate/images/sprites/d_sz/d_sz.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate/images/sprites/d_sz/d_sz.png')
@@ -1531,6 +1531,7 @@ init :
     image dct_int_bus_middle_sh normal = "mods/dublicate/images/sprites/d_unformat/dct_int_bus_middle_sh_normal.png"
     image dct_int_bus_middle_sh serious = "mods/dublicate/images/sprites/d_unformat/dct_int_bus_middle_sh_serious.png"
     image dct_int_bus_middle_sh surprise = "mods/dublicate/images/sprites/d_unformat/dct_int_bus_middle_sh_surprise.png"
+    image dct_int_bus_middle_sh surprise noglasses = "mods/dublicate/images/sprites/d_unformat/dct_int_bus_middle_sh_surprise_noglasses.png"
     image sh normal_serious pioneer dct = im.Composite((900,1080), (0,0), "images/sprites/normal/sh/sh_2_body.png", (0,0), "mods/dublicate/images/sprites/d_unformat/sh_2_normal_serious_dct.png")  # Шурик поправляет очки, строгий взгляд
     image sh normal_serious pioneer close dct = im.Composite((1050,1080), (0,0), "images/sprites/close/sh/sh_2_body.png", (0,0), "mods/dublicate/images/sprites/d_unformat/sh_2_normal_serious_close_dct.png")  # Шурик поправляет очки, строгий взгляд, близко
     image sh normal_serious pioneer far dct = im.Composite((630,1080), (0,0), "images/sprites/far/sh/sh_2_body.png", (0,0), "mods/dublicate/images/sprites/d_unformat/sh_2_normal_serious_far_dct.png")  # Шурик поправляет очки, строгий взгляд, далеко
@@ -1628,7 +1629,7 @@ init :
     image dct_clubs_male_comp_table = "mods/dublicate/images/sprites/oth/coin/dct_clubs_male_comp_table.png"    # Компьютер в клубе: монитор c классической жёлто-фиолетовой таблицей (выводить на экран в позиции xcenter 0.5 ycenter 0.45)
     image dct_int_bus_another_middle_close_seats = "mods/dublicate/images/sprites/oth/coin/dct_int_bus_another_middle_close_seats.png"    # Сиденья в автобусе, загораживающие проход
     
-    image dct_dream_sh_first_civilian = "mods/dublicate/images/sprites/oth/coin/dct_dream_sh_first_civilian.png"  # Заглушка гражданского из сна Шурика
+    image dct_dream_sh_first_civilian = "mods/dublicate/images/sprites/oth/coin/dct_dream_sh_first_civilian.png"  # Гражданский из сна Шурика
     image dct_dream_sh_first_smoke 1 = "mods/dublicate/images/sprites/oth/coin/dct_dream_sh_first_smoke_1.png"    # Дым №1 на полигоне из сна Шурика
     image dct_dream_sh_first_smoke 2 = "mods/dublicate/images/sprites/oth/coin/dct_dream_sh_first_smoke_2.png"    # Дым №1 на полигоне из сна Шурика
     image dct_dream_sh_first_smoke 3 = "mods/dublicate/images/sprites/oth/coin/dct_dream_sh_first_smoke_3.png"    # Дым №1 на полигоне из сна Шурика
@@ -1640,7 +1641,7 @@ init :
     
     image dct_ext_beach_night_view_from_gym_bush = "mods/dublicate/images/sprites/oth/coin/dct_ext_beach_night_view_from_gym_bush.png"    # Ночной вид с крыльца спортзала на кусты и пляж
     image dct_dream_sh_third_BTR_bus = "mods/dublicate/images/sprites/oth/coin/dct_dream_sh_third_BTR_bus.png"    # БТР и Икарус на автобусной остановке
-    image dct_dream_sh_third_major = "mods/dublicate/images/sprites/oth/coin/dct_dream_sh_third_major.png"        # Заглушка военного из сна Шурика
+    image dct_dream_sh_third_major = "mods/dublicate/images/sprites/oth/coin/dct_dream_sh_third_major.png"        # Майор из сна Шурика
     image dct_int_coaching_room3_zoom_OSB = im.Composite((3840,2160), (597,226), "mods/dublicate/images/sprites/oth/coin/dct_int_coaching_room3_zoom_OSB.jpg")    # Увеличенный кусок ОСБ с задней стенки шкафа
     image dct_mz_and_el_go_to_library_sketch = im.Composite((3840,2160), (1135,0), "mods/dublicate/images/sprites/oth/coin/dct_mz_and_el_go_to_library_sketch.jpg")   # Карандашный набросок Электроника и Жени, идущих в бибилиотеку
     
