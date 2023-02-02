@@ -10,9 +10,17 @@ init 1:
     
     $ style.dct_menu_button_increase = Style(style.dct_menu_button)
     $ style.dct_menu_button_increase.color = "#0835b3"
+    
+    $ style.dct_menu_button_dynamic = Style(style.dct_menu_button)
+    $ style.dct_menu_button_dynamic.color = "#046622"
+    
+    $ style.dct_menu_button_pedantic = Style(style.dct_menu_button)
+    $ style.dct_menu_button_pedantic.color = "#710547"
 
     $ style.dct_menu_button_exit = Style(style.dct_menu_button)
     $ style.dct_menu_button_exit.size = 38
+    
+    $ dct_dynped = True
     
     
 screen dct_menu_flower:
@@ -255,6 +263,8 @@ screen dct_menu:
         else:
             style "dct_menu_button_unavailable"
             text_style "dct_menu_button_unavailable"
+            
+
     textbutton "Монетка в фонтане":
         xpos 0.59
         ypos 0.773
@@ -262,18 +272,34 @@ screen dct_menu:
             if renpy.seen_label("dct_coin"):
                 style "dct_menu_button"
                 text_style "dct_menu_button"
-                action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_coin")]
-                hovered ShowTransient("dct_menu_coin_sep", transition=Dissolve(0.2))
-                unhovered Hide("dct_menu_coin_sep", transition=Dissolve(0.2))
             else:
                 style "dct_menu_button_increase"
                 text_style "dct_menu_button_increase"
-                action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_coin")]
-                hovered ShowTransient("dct_menu_coin_sep", transition=Dissolve(0.2))
-                unhovered Hide("dct_menu_coin_sep", transition=Dissolve(0.2))
+            action [Hide("dct_menu", transition=Dissolve(0.2)), If(dct_dynped == True, true=Jump("dct_coin_dyn"), false=Jump("dct_coin_ped"))]
+            hovered ShowTransient("dct_menu_coin_sep", transition=Dissolve(0.2))
+            unhovered Hide("dct_menu_coin_sep", transition=Dissolve(0.2))
         else:
             style "dct_menu_button_unavailable"
             text_style "dct_menu_button_unavailable"
+
+    
+    if (persistent.d_olga > 0) and (persistent.d_dra > 0):  # Кнопка Динамичная/Педантичная (скрыта, до тех пора, пока не станет доступна Монетка в фонтане)
+        if dct_dynped == True:
+            textbutton "Динамичная\n{size=15}{k=-2.9}--------------------------------{/k}{/size}":         # Кнопка "Динамичная" (проявляется, когда значение переменной "dct_dynped" = True)
+                xpos 0.75
+                ypos 0.773
+                style "dct_menu_button_dynamic"
+                text_style "dct_menu_button_dynamic"
+                action [SetVariable("dct_dynped", False)]
+        else:
+            textbutton "Педантичная\n{size=15}{k=-2.7}----------------------------------{/k}{/size}":         # Кнопка "Педантичная" (проявляется, когда значение переменной "dct_dynped" = False)
+                xpos 0.75
+                ypos 0.773
+                style "dct_menu_button_pedantic"
+                text_style "dct_menu_button_pedantic"
+                action [SetVariable("dct_dynped", True)]
+    
+    
     if (persistent.d_nam > 0) and (persistent.d_sim > 0) and (persistent.d_prolog > 0) and (persistent.d_ana > 0) and (persistent.d_dra > 0) and (persistent.d_shif > 0) and (persistent.d_lin > 0) and (persistent.d_miuki > 0) and (persistent.d_eff > 0) and (persistent.d_olga > 0) and (persistent.d_coin > 0):
         textbutton "Справочник":         # Кнопка СПРАВОЧНИК (скрыта, пока не прочитан весь мод)
             xpos 0.565
@@ -281,6 +307,8 @@ screen dct_menu:
             style "dct_menu_button_exit"
             text_style "dct_menu_button_exit"
             action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_spravochnik")]
+            
+            
     textbutton "Выход":
         xpos 0.78
         ypos 0.85

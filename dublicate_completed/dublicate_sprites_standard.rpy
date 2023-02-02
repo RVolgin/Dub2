@@ -1409,11 +1409,17 @@ init :
     
     # Яна и Яна
     
-    image d_jnjn = ConditionSwitch (
-        "persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jnjn_1.png', im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jnjn_1.png', im.matrix.tint(0.63, 0.78, 0.82)),
-        True, 'mods/dublicate/images/sprites/d_jnjn/d_jnjn_1.png'
-        )
+    image d_jn_old angry = ConditionSwitch ("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_old_angry.png', im.matrix.tint(0.94, 0.82, 1.0)),"persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_old_angry.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate/images/sprites/d_jnjn/d_jn_old_angry.png')
+    image d_jn_old cry = ConditionSwitch ("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_old_cry.png', im.matrix.tint(0.94, 0.82, 1.0)),"persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_old_cry.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate/images/sprites/d_jnjn/d_jn_old_cry.png')
+    image d_jn_old normal = ConditionSwitch ("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_old_normal.png', im.matrix.tint(0.94, 0.82, 1.0)),"persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_old_normal.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate/images/sprites/d_jnjn/d_jn_old_normal.png')
+    image d_jn_old smile = ConditionSwitch ("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_old_smile.png', im.matrix.tint(0.94, 0.82, 1.0)),"persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_old_smile.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate/images/sprites/d_jnjn/d_jn_old_smile.png')
+    
+    image d_jn_young dontlike = ConditionSwitch ("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_young_dontlike.png', im.matrix.tint(0.94, 0.82, 1.0)),"persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_young_dontlike.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate/images/sprites/d_jnjn/d_jn_young_dontlike.png')
+    image d_jn_young laugh = ConditionSwitch ("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_young_laugh.png', im.matrix.tint(0.94, 0.82, 1.0)),"persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_young_laugh.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate/images/sprites/d_jnjn/d_jn_young_laugh.png')
+    image d_jn_young normal = ConditionSwitch ("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_young_normal.png', im.matrix.tint(0.94, 0.82, 1.0)),"persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_young_normal.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate/images/sprites/d_jnjn/d_jn_young_normal.png')
+    image d_jn_young smile = ConditionSwitch ("persistent.sprite_time=='sunset'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_young_smile.png', im.matrix.tint(0.94, 0.82, 1.0)),"persistent.sprite_time=='night'", im.MatrixColor('mods/dublicate/images/sprites/d_jnjn/d_jn_young_smile.png', im.matrix.tint(0.63, 0.78, 0.82)), True, 'mods/dublicate/images/sprites/d_jnjn/d_jn_young_smile.png')
+    
+    
     
     # Дети
     

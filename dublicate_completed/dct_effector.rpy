@@ -1091,53 +1091,57 @@ label other_peoples_letters:
     show effector_letter_1 at truecenter with dspr
     $ renpy.pause (2)
     show black with dissolve:
-        alpha 0.4
-    show credits effector_letter_1_credits:
-        xalign 0.5 yanchor 0.0 ypos 1.0
-        linear 55.0 yanchor 1.0 ypos 0.45
+        alpha 0.45
+    
+    # show credits effector_letter_1_credits:
+        # xalign 0.5 yanchor 0.0 ypos 1.0
+        # linear 55.0 yanchor 1.0 ypos 0.45
+    
+    show dct_text_credits effector_letter_1_credits:
+        zoom 0.8 xalign 0.5 yanchor 0.0 ypos 1.0
+        linear 55.0 yanchor 1.0 ypos 0.49
     $ renpy.pause(60)
-    hide credits with dissolve2
+    hide dct_text_credits with dissolve2
     hide black with dissolve
     pause
-    
     hide effector_letter_1
+
+
     show effector_letter_2_1 at truecenter
     with dissolve
     $ renpy.pause (2)
     show black with dissolve:
-        alpha 0.4
+        alpha 0.45
     play music twisterium_eternal_love fadein 1
-    show credits effector_letter_2_1_credits:
-        xalign 0.5 yanchor 0.0 ypos 1.0
-        linear 60.0 yanchor 1.0 ypos 0.45
+    show dct_text_credits effector_letter_2_1_credits:
+        zoom 0.8 xalign 0.5 yanchor 0.0 ypos 1.0
+        linear 60.0 yanchor 1.0 ypos 0.54
     $ renpy.pause(65)
-    hide credits with dissolve2
-    #pause
-    
-    #hide effector_letter_2_1
-    #show effector_letter_2_2 at truecenter
-    #with dissolve
-    $ renpy.pause (2)
-    show  credits effector_letter_2_2_credits:
-        xalign 0.5 yanchor 0.0 ypos 1.0
-        linear 75.0 yanchor 1.0 ypos 0.45
+    hide dct_text_credits with dissolve2
+
+    $ renpy.pause (0.5)
+
+    show  dct_text_credits effector_letter_2_2_credits:
+        zoom 0.8 xalign 0.5 yanchor 0.0 ypos 1.0
+        linear 75.0 yanchor 1.0 ypos 0.48
     $ renpy.pause(80)
-    stop music fadeout 1
-    hide credits with dissolve2
+    stop music fadeout 2
+    hide dct_text_credits with dissolve2
     hide black with dissolve
     pause
-    
     hide effector_letter_2_1
+
+
     show effector_letter_3 at truecenter
     with dissolve
     $ renpy.pause (2)
     show black with dissolve:
-        alpha 0.4
-    show  credits effector_letter_3_credits:
-        xalign 0.5 yanchor 0.0 ypos 1.0
-        linear 55.0 yanchor 1.0 ypos 0.45
-    $ renpy.pause(60)
-    hide credits with dissolve2
+        alpha 0.45
+    show dct_text_credits effector_letter_3_credits:
+        zoom 0.8 xalign 0.5 yanchor 0.0 ypos 1.0
+        linear 50.0 yanchor 1.0 ypos 0.35
+    $ renpy.pause(55)
+    hide dct_text_credits with dissolve2
     hide black with dissolve
     pause
     
