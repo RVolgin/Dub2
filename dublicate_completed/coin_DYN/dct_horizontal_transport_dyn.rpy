@@ -4,7 +4,7 @@
 
 
 label dct_horizontal_transport_dyn:
-    $ save_name = u"Дубликат.\nМонетка в фонтане -- Горизонтальный транспорт"
+    $ save_name = u"Дубликат.\nМонетка в фонтане -- Горизонтальный транспорт\n(dynamic)"
     $ night_time()
     $ persistent.sprite_time = "night"
     scene black
@@ -549,7 +549,8 @@ label dct_horizontal_transport_dyn:
     "Перетаскивающая вещи Алиса старательно делала злобное лицо, но на самом деле была страшно довольна."
     th "Что тут у нас осталось?"
     extend " Полный шкаф платьев?"
-            yalign 0.0
+    scene dct_closet_with_dresses with dissolve:
+        yalign 0.0
     th "Интересно, для чего человеку столько платьев, если их ни разу не надевали?"
     show dct_closet_with_dresses:
         ease 2 yalign 1.0

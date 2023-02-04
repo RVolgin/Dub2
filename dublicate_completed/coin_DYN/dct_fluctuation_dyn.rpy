@@ -4,7 +4,7 @@
 
 
 label dct_fluctuation_dyn:
-    $ save_name = u"Дубликат.\nонетка в фонтане -- Отклонение\n(dynamic)"
+    $ save_name = u"Дубликат.\nМонетка в фонтане -- Отклонение\n(dynamic)"
     $ day_time()
     $ persistent.sprite_time = "day"
     scene black
