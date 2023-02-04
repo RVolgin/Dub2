@@ -1549,9 +1549,18 @@ init :
     # Лена
     image dct_int_bus_another_middle_un = "mods/dublicate/images/sprites/d_unformat/dct_int_bus_another_middle_un.png"
     image dct_int_bus_stern_un = "mods/dublicate/images/sprites/d_unformat/dct_int_bus_stern_un.png"
-    image dct_library_door_window_un = "mods/dublicate/images/sprites/d_unformat/dct_library_door_window_un.png"      # Лена в окошке двери бибилиотеки  
     # Ульяна
     image us_in_bush = "mods/dublicate/images/sprites/d_unformat/us_in_bush.png"
+    # image dct_us_shy_sport_far_mirror = im.Composite((675, 1080), (0, 0), 'mods/dublicate/images/sprites/d_unformat/dct_us_sport_far_mirror.png' (0, 0), im.Flip('images/sprites/far/us/us_3_shy.png', horizontal=True, vertical=False))  # Отзеркаленная Ульяна смотрит направо
+    # image dct_us_shy_sport_far_mirror = im.Composite((675, 1080), (0, 0), 'mods/dublicate/images/sprites/d_unformat/dct_us_sport_far_mirror.png' (0, 0), im.Flip('images/sprites/far/us/us_3_shy.png', horizontal=True, vertical=False))  # Отзеркаленная Ульяна смотрит направо
+    
+    
+    image dct_us_shy_sport_far_mirror = im.Composite((675, 1080), (0, 0), 'mods/dublicate/images/sprites/d_unformat/dct_us_sport_far_mirror.png', (0, 0), im.Flip('images/sprites/far/us/us_3_shy.png', horizontal=True, vertical=False))  # Отзеркаленная Ульяна смотрит направо
+    image dct_us_shy2_sport_far_mirror = im.Composite((675, 1080), (0, 0), 'mods/dublicate/images/sprites/d_unformat/dct_us_sport_far_mirror.png', (0, 0), im.Flip('images/sprites/far/us/us_3_shy2.png', horizontal=True, vertical=False))  # Отзеркаленная Ульяна смотрит вниз
+    
+    
+    # image dct_us_shy2_sport_far_mirror = im.Composite((675, 1080), (0, 0), im.Flip('images/sprites/far/us/us_3_body.png', horizontal=True, vertical=False), (0, 0), im.Flip('images/sprites/far/us/us_3_shy2.png', horizontal=True, vertical=False), (0, 0), 'mods/dublicate/images/sprites/d_unformat/dct_us_sport_far_mirror.png')  # Отзеркаленная Ульяна смотрит вниз
+    
     image d_us_sport_mirror = "mods/dublicate/images/sprites/d_unformat/d_us_sport_mirror.png"    # Надстройка для спортивной формы взрослой Ульяны при зеркальном отражении
     # Юля
     image uv_wild_in_forest_small = "mods/dublicate/images/sprites/d_unformat/uv_wild_in_forest_small.png"
