@@ -54,8 +54,6 @@ label dct_debut_dyn:
     show sh serious pioneer with dspr
     sh "Хорошо, тогда мнением доктора сам поинтересуйся, пожалуйста."
     sh "А то девочки начнут доктору рассказывать и что-нибудь напутают."
-    #"Сыроежкин молчал."
-    # Шурик поднял голову и увидел, что тот, весь подобравшись, как охотничья собака, внимательно смотрит сквозь открытую дверь на противоположную сторону аллеи.   # По канону
     show sh normal pioneer with dspr
     "Шурик оглянулся на товарища и увидел, что тот, весь подобравшись, как охотничья собака, внимательно смотрит сквозь открытую дверь на противоположную сторону аллеи."
     
@@ -66,7 +64,6 @@ label dct_debut_dyn:
     "Что-то невидимое, жужжа электромоторами и иногда задевая за кусты, скрывающие заброшенное здание напротив, двигалось со скоростью пешехода по обочине главной аллеи от перекрёстка в направлении ворот."
     show el angry pioneer close with dspr
     el "Уйдёт ведь!"
-    #"Шурик услышал шёпот и увидел, как Сыроежкин вслепую шарит рукой по столу."
     show sh surprise pioneer close at right with moveinright
     sh "Сергей, нет!"
     show el serious pioneer close
@@ -84,7 +81,6 @@ label dct_debut_dyn:
     el "Этого я не учёл."
     show sh normal_serious pioneer close dct with dissolve_fast
     sh "Но, Сергей."
-    #"Шурик поправил очки и строго посмотрел на Сыроежкина."
     sh "Предположим, мы действительно видели то, что видели. Тогда наш долг перед наукой — описать всё это."
     show sh normal pioneer close with dissolve_fast
     extend " И надо обязательно указать время. Сейчас девять часов двадцать семь минут."
@@ -183,7 +179,6 @@ label dct_debut_dyn:
     scene dct_ext_beach_day_with_pass_train
     show mt angry panama swim close
     with dissolve
-    #"А Ольга Дмитриевна и на самом деле царила сейчас над пляжем."
     mt "Мальчики, девочки, младший отряд!{w} Все построились и по моей команде заходим в воду!"
     mt "О! Вот и физруки подошли!"
     scene dct_ext_beach_day_lifesaving_shield
@@ -273,7 +268,6 @@ label dct_debut_dyn:
     "Физруки отправили в воду средний отряд, и воздух заполнился криками и девчоночьим визгом."
     show mz bukal glasses pioneer far with dspr
     th "Что за люди? Зачем так кричать?"
-    #опять недовольно поморщилась Женя.     # Опускаем
     "Официальная часть открытия купального сезона завершилась. Вожатая, окунув младший отряд, уже увела октябрят на спортплощадку. Средний отряд оказался предоставленным самому себе и устроил кучу-малу где-то на границе воды и суши."
     scene dct_cg_coin_volleyball with squares
     "Старший отряд, за вычетом Жени и кибернетиков, но зато с добавкой Максима и обоих физруков, затеял игру в волейбол."
@@ -368,7 +362,7 @@ label dct_debut_dyn:
     stop ambience fadeout 0.5
     play music twisterium_eternal_love fadein 1
     show dct_coin_letter1 at truecenter with dspr
-    pause
+    pause 1
     $ set_mode_nvl()
     window show
     "Привет…{w=0.8} сестрёнка.{w} Раз уж Ульяны так между собой общаются и я к тебе во сне так же обратилась, то и буду обращаться так же. Насколько я себя (тебя) знаю, ты не будешь против.{w} Кстати, это точно был сон? Потому что нашим Мику, Ульянке и Славе снилось то же самое.{w} Но что-то меня не туда понесло, начинаю сначала."
@@ -381,12 +375,13 @@ label dct_debut_dyn:
     "\nЗавидую вам и сержусь на Сеньку, что он к вам от нас сбежал (про сержусь тоже шутка), потому что новый его двойник... он пока так — ни рыба ни мясо.{w} Но хоть Сенька и сбежал к вам, но проснулся он именно у нас; я надеюсь, что в этом есть и моя заслуга, пусть я и не понимала, что делаю. Так что тоже можешь мне завидовать."
     "\nСестрёнка, я очень хочу рискнуть и тебя увидеть, и если ты не против — дай знать. Хоть через ваших Сеньку с Ульянкой дай знать, они в следующем цикле собрались опять к нам.\n\n\n{space=1200}{i}{size=+10}Алиса{/size}{/i}"
     "\nP.S. Приготовь свои детские воспоминания. Мы обязательно должны их сравнить!"
-    stop music fadeout 2.5
     nvl hide dissolve
     nvl clear
-    nvl show dissolve
+    window hide dissolve
+    $ set_mode_adv()
+    pause    
+    stop music fadeout 2.5
     scene black with dissolve2
-    window hide
     pause 1
     nvl hide
 
@@ -506,7 +501,6 @@ label dct_debut_dyn:
         xzoom -1
     with dissolve
     un "Как сходили?"
-    #"Сегодня за ужином у Леночки было настроение пообщаться, поэтому вопрос был задан с улыбкой и глядя в глаза."
     
     scene dct_int_dining_hall_table_sunset_back_people
     show d_sf smile pioneer:
@@ -533,7 +527,6 @@ label dct_debut_dyn:
     with dissolve
     un "Передавайте."
     show d_un serious pioneer holds_out_hands close as un with dissolve_fast
-    #"Лена с преувеличенно серьёзным выражением лица протянула обе руки к Персуновым."
     un "Передавайте, передавайте."
     
     scene dct_int_dining_hall_table_sunset_back_people
@@ -625,7 +618,6 @@ label dct_debut_dyn:
     show dct_int_dining_hall_table_sunset_front:
         xzoom -1
     with dissolve
-    #"А Лена тихо добавила:"
     un "А кое-кому и сильно больше."
     show mt normal pioneer close behind dct_int_dining_hall_table_sunset_front:
         xcenter 1.25 ycenter 0.23
