@@ -2,19 +2,17 @@
     #Глава 1. Шестичасовой цикл#
     ############################
 
-
 label dct_sixhour_dyn:
     $ save_name = u"Дубликат.\nМонетка в фонтане -- Шестичасовой цикл\n(dynamic)"
     $ day_time()
     $ persistent.sprite_time = "day"
+    window hide
     scene black
     show headline_text2 u"Глава I. Шестичасовой цикл" at truecenter with dspr
-    $ renpy.pause(3.0)
+    $ renpy.pause(3.0)   
 
     play sound_loop sfx_bus_interior_moving fadein 1.5
     hide headline_text2 with dissolve
-
-
     scene black
     $ set_mode_nvl()
     "Полуоткинутое кресло, шум мотора, мягкое покачивание. Да, это автобус: начался очередной цикл."
@@ -33,7 +31,6 @@ label dct_sixhour_dyn:
         xcenter 1.5
     show dct_dream_veil at shiver
     with dissolve
-
     $ set_mode_adv()
     show el normal pioneer close:
         zoom 1.095 xcenter 0.34 ycenter 0.56 rotate -8.9
@@ -42,6 +39,7 @@ label dct_sixhour_dyn:
     show dct_int_bus_middle_sh normal
     with dissolve
     "Сыроежкин спит на соседнем кресле.{w=0.4} Сейчас он проснётся и начнёт знакомиться."
+    
     scene dct_int_bus_people
     show dct_int_bus_people_sl_mi front:
         zoom 0.625
@@ -49,6 +47,7 @@ label dct_sixhour_dyn:
     show dct_dream_veil at shiver
     with pushleft
     "Где-то впереди Мику и Саша."
+    
     scene dct_int_bus_another_middle
     show dct_int_bus_another_middle_mz_body
     show dct_int_bus_another_middle_mz_head smile
@@ -56,6 +55,7 @@ label dct_sixhour_dyn:
     show dct_dream_veil at shiver
     with pushleft
     "Через проход от нас — Женя и Лена."
+    
     scene dct_int_bus_stern
     show dct_int_bus_stern_dv_us:
         zoom 0.5
@@ -63,15 +63,16 @@ label dct_sixhour_dyn:
     with pushleft
     "Позади, в конце салона — Ульяна и Алиса.{w} Вроде и всё, с остальными я не успеваю познакомиться, остальные меня не интересуют."
     stop music fadeout 2
-    
     scene black with dissolve
+    
     scene dct_int_bus_people behind blink
     show dct_int_bus_people_sl_mi back behind blink:
         zoom 0.625
     show dct_int_bus_people_vi standup behind blink
     show unblink
-    window show
+    window auto
     "Подлинник Александра Трофимова открыл глаза,{w=0.5} осторожно покосился на соседа справа"
+    
     scene dct_int_bus_middle
     show dct_int_bus_middle_sh_body
     show dct_int_bus_middle_sh surprise
@@ -80,8 +81,7 @@ label dct_sixhour_dyn:
     show d_sf_sleep:
         zoom 1.292 xcenter 0.37 ycenter 0.8 rotate -6.34
     with squares
-    extend " и вздрогнул."
-    window auto
+    extend " и вздрогнул." with vpunch
     th "А это ещё кто?"
     "Вместо привычного и ожидаемого Сыроежкина на сиденье рядом дремал полузнакомый парень лет двадцати пяти."
     show dct_int_bus_middle_sh serious with dspr
@@ -94,6 +94,7 @@ label dct_sixhour_dyn:
     show d_sf smile pioneer:
         pause 2.0
         linear 1.0 alpha 0
+    
     "И, ничего не говоря, поднялся с кресла и пошёл в хвост автобуса, где с последнего ряда уже раздавались голоса проснувшихся Алисы и Ульяны."
     scene dct_int_bus_stern
     show dct_int_bus_stern_dv_us:
@@ -104,6 +105,7 @@ label dct_sixhour_dyn:
     show dct_int_bus_stern_un behind dct_int_bus_stern_dv_us with dissolve:
         zoom 0.5
     extend " О, и Лена с ними. А на её месте кто?"
+    
     scene dct_int_bus_another_middle
     show dct_int_bus_another_middle_mz_body:
         blur 50
@@ -116,6 +118,7 @@ label dct_sixhour_dyn:
         linear 2.5 blur 0
     with fade
     "Александр поправил очки и пригляделся через проход. В кресле рядом с Женей, подставив ей своё плечо вместо подушки и прижавшись щекой к её затылку, спал Сыроежкин."
+    
     scene dct_int_bus_middle
     show dct_int_bus_middle_sh_body
     show dct_int_bus_middle_sh surprise
@@ -124,6 +127,7 @@ label dct_sixhour_dyn:
     show dct_int_bus_middle_sh normal with dspr
     usp "Сёмка…"
     "Сзади послышался голос. Александр подождал продолжения, но ничего: просто «Сёмка», и дальше шуршание, пыхтение и скрипнуло пару раз."
+    
     scene dct_int_bus_stern
     show dct_int_bus_stern_un:
         zoom 0.5
@@ -136,13 +140,10 @@ label dct_sixhour_dyn:
         zoom 0.5
     "Как будто кто-то потеснился на сиденье, чтобы посадить ещё одного человека."
     "Разговор за спиной продолжился, но разговаривали в четверть голоса, так что слов было не разобрать за шумом автобуса. Улавливался только сам факт разговора."
-
-
     stop sound_loop fadeout 2
     play music music_list["lightness"] fadein 3
     show blink
     "Под эти голоса Александр и задремал второй раз."
-
     scene black
     
     #Дорога
@@ -217,7 +218,6 @@ label dct_sixhour_dyn:
     play sound_loop sfx_bus_interior_moving fadein 2
     show black with dissolve2
     
-    
     "А разбудил его протестующий девичий крик."
     scene dct_int_bus_another_middle behind blink
     show el shocked pioneer close behind blink:
@@ -236,6 +236,7 @@ label dct_sixhour_dyn:
     th "Пересадили Сыроежкина, пока он спал. Хоть вы и активировались, но как были детьми, так и остались."
     "Кто-то шлёпнулся рядом на сиденье — понятное дело, кто; и тут же следом прилетела какая-то тряпка, зацепив Александра по носу и сбив с него очки."
     "Пришлось открывать глаза и изображать только что проснувшегося, благо без очков это было нетрудно."
+    
     scene dct_int_bus_another_middle
     show d_mz shyangry pioneer far:
         xcenter 0.64
@@ -243,6 +244,7 @@ label dct_sixhour_dyn:
     mz "Как тебя там? Который в очках. Прости, я не хотела."
     show d_mz angry pioneer far with dspr
     mz "А ты, лохматый, ещё раз начнешь руки распускать — лучше сразу костыли заказывай!"
+    
     scene dct_int_bus_middle
     show dct_int_bus_middle_sh_body
     show dct_int_bus_middle_sh surprise noglasses
@@ -284,6 +286,7 @@ label dct_sixhour_dyn:
     show dct_int_bus_middle_sh normal
     with dspr
     "И разговор пошёл по накатанной многими циклами колее."
+    window hide
     show black with dissolve2
     
     $ renpy.sound.set_volume(0.5)
@@ -292,6 +295,7 @@ label dct_sixhour_dyn:
     play sound_loop dct_sfx_loop_bus_moves_slow
     pause 0.7
     stop sound fadeout 2
+    window auto
     "Автобус начал плавно сбавлять ход. Зашевелились пионеры, самые нетерпеливые уже откинули подлокотники кресел и сидели, выставив чемоданы и свесив ноги в проход, готовые сорваться с места и побежать к дверям в ответ на шипение пневматики."
     show dct_int_bus_another_middle
     show dct_int_bus_another_middle_mz_body
@@ -313,6 +317,7 @@ label dct_sixhour_dyn:
     th "Да, это тот же самый Семён, которого я помню по посёлку, только сейчас он выглядит на двадцать пять. Вырос."
     th "Видимо, активировался, сумел встроиться в Систему, и Система привела его облик в соответствие с новой функцией. Помнил бы я циклы — я бы знал точно."
     th "Но какая мне разница?"
+    
     scene dct_int_bus_middle
     show dct_int_bus_middle_sh_body
     show dct_int_bus_middle_sh normal
@@ -320,8 +325,6 @@ label dct_sixhour_dyn:
         zoom 1.095 xcenter 0.31 ycenter 0.57 rotate -12.9
     with dissolve
     stop sound_loop fadeout 2
-    
-    
     $ renpy.sound.set_volume(0.3)
     play sound sfx_bus_stop
     "Автобус начал разворачиваться перед тем, как окончательно остановиться и открыть двери, а пионеры приготовились сорваться с места и устроить свалку перед дверями."
@@ -331,6 +334,7 @@ label dct_sixhour_dyn:
     show el shocked pioneer close:
     with dspr
     "И в этот момент от передних сидений раздался резкий свисток. Это было настолько неожиданно, что все вздрогнули."
+    
     scene dct_int_bus_people
     show dct_int_bus_people_sl_mi_sf
     show dct_int_bus_people_vi sitdown
@@ -347,10 +351,9 @@ label dct_sixhour_dyn:
     show dct_int_bus_people_vi sitdown with dissolve_fast
     dvp "Эй!"
     me "Поправку принимаю. Это касается только пионеров среднего отряда и их домиков."
-    
-    
     $ renpy.sound.set_volume(1.0)
     $ renpy.music.set_volume(0.35, delay=1.5)
+    
     scene dct_ext_buses_filled
     show black
     with dissolve
@@ -358,19 +361,15 @@ label dct_sixhour_dyn:
     window show
     pause 1
     hide black with dissolve
-    
     "Давно уже вышел младший отряд, был встречен вожатой и построен у ворот. Только две девочки и три мальчика подбежали к компании с заднего сиденья Икаруса. Обнялись, некоторые с удовольствием, некоторые неловко, но всё равно с радостью, и убежали назад к своим."
     "Давно уже чинно (по сравнению с октябрятами — чинно и степенно) вышел из Икаруса отряд старший и стоял кучкой на обочине."
     "Уже Ольга Дмитриевна подошла к старшим пионерам, заглянула в автобус, шепнула на ухо Семёну: «Сам кашу заварил, сам и расхлебывай» и увела октябрят в лагерь."
     "А средний отряд продолжал сидеть в автобусах, причём как в Икарусе, так и откуда-то прознавшая об праве выбора домиков та часть отряда, что ехала в ЛАЗе вместе с октябрятами."
     "Старшие отошли с асфальта в тень и уселись: кто на чемоданы, кто просто на траву."
-
-    
     window auto
     $ renpy.music.set_volume(0.0, delay=1.5)
     $ set_mode_adv()
     play ambience ambience_camp_entrance_day fadein 1.5
-    
     show d_sf normal pioneer at left with dissolve
     me "Алис, может, уведёшь старшаков? А то им ещё бельё и форму получать и домики, кстати, занимать."
     show dv smile pioneer2 with dissolve:
@@ -393,20 +392,18 @@ label dct_sixhour_dyn:
     hide dv with dissolve
     me "Да, конечно. И, Александр, можно на «ты»?"
     adl_sh4 "Тогда я Шурик, в крайнем случае, Саша. А Александр… Я… тебе уже, помнится, говорил…"
-    
-
     $ renpy.music.set_volume(1.0, delay=3.5)
     stop ambience fadeout 2
     hide d_sf
     hide sh
     with dissolve2
     "Пять минут спустя сидячая забастовка среднего отряда закончилась."
+    
     scene dct_int_bus_people
     show dct_int_bus_people_sf smile
     show dct_int_bus_people_vi sitdown
     with dissolve
     "Повеселевший Семён попросил весь средний отряд собраться в одном автобусе, чтобы не повторять два раза."
-    
     me "Я говорил, что последний вышедший из автобуса будет сам выбирать себе домик?"
     d_guys "Да-а-а!"
     me "Я говорил, что первого вышедшего из автобуса администрация поселит, не спросив его мнения?"
@@ -422,14 +419,12 @@ label dct_sixhour_dyn:
     me "Вот такое у-у-у-у… Или вы сейчас разобьётесь на пары и сами разберётесь, кто, где и с кем будет жить."
     "Семён сунул в руки ближайшему пионеру план лагеря."
     show dct_int_bus_people_sf smile with dspr
-    
     $ day_time()                        # Прописано, чтобы при обратной перемотке цвета не сбивались.
     $ persistent.sprite_time = "day"
     me "Кстати, для этого не обязательно сидеть в автобусе."
-    
-    
     $ renpy.music.set_volume(1.0, delay=0)
     stop music fadeout 1.5
+    
     scene bg ext_square_sunset
     show black
     with dissolve
@@ -441,7 +436,6 @@ label dct_sixhour_dyn:
     play music peritune_gentle_theme_piano fadein 1.5
     hide black with dissolve
     pause 0.5
-    
     "Потом был сумасшедший вечер:"
     show dct_ext_storage_day:
         alpha 0.0
@@ -484,6 +478,7 @@ label dct_sixhour_dyn:
         pause 2.5
         linear 1 alpha 1.0
     extend " визит на склад за бельём и пионерской формой, где задёрганные Алиса с Ульяной рычали на бестолковых пионеров."
+    
     scene bg ext_playground_day
     show int_house_of_dv_day:
         xcenter 0.5 ycenter 0.5     # это чтоб потом зумировать красиво
@@ -513,6 +508,7 @@ label dct_sixhour_dyn:
         anchor (0.5, 0.5)
         easeout 1 zoom 2 alpha 0
     extend "; Семён валялся на лавочке около футбольного поля, закинув руки за голову, разглядывая облака и размышляя"
+    
     scene dct_camp_stroll_to_the_right      # псевдокартинка из пролистывающихся фонов
     show sl surprise pioneer far at center:
         ycenter 0.55
@@ -527,9 +523,8 @@ label dct_sixhour_dyn:
         xcenter 0.5 ycenter 0.75
     with wipeup
     extend "; Ольга Дмитриевна у себя в домике спешно перепечатывала на взятой в библиотеке машинке «План мероприятий на I смену»."
-    
-    
     stop music fadeout 1.5
+    
     scene dct_int_house_of_el_sunset
     show el sad pioneer at cleft
     show sh serious pioneer at right
@@ -554,20 +549,17 @@ label dct_sixhour_dyn:
     "А потом убежал, для очистки совести пообещав, что вернётся, как только запишется."
     stop ambience fadeout 2
     
-    
-    play music music_list['dance_of_fireflies'] fadein 2
     scene dct_ext_library_sunset with dissolve
+    play music music_list['dance_of_fireflies'] fadein 2
     show dct_el_shuttles_back_and_forth:      # Сборная картинка: Электроник курсирует туда-сюда
     "Это «как только» продлится почти до полуночи. Сперва Сыроежкин несколько раз с независимым видом пройдёт мимо библиотеки, как будто он там случайно гуляет."
     hide dct_el_shuttles_back_and_forth with dissolve_fast
     show el angry pioneer far at right with dissolve
     show el angry pioneer at cright with dissolve
     show el angry pioneer close at center with dissolve
-    
     "Потом, почти решившись, подойдёт к двери и уже почти возьмётся за ручку, когда услышит смех и голоса Мику и Саши."
     show el shocked pioneer far at center with dissolve
     pause 0.4
-    
     show el normal pioneer far with dissolve:
         pause 2
         linear 1.5 alpha 0
@@ -577,7 +569,6 @@ label dct_sixhour_dyn:
     show mi grin pioneer:
         xcenter 1.32
         linear 3 xcenter -0.14
-        
     $ sunset_time()                        # Прописано, чтобы при обратной перемотке цвета не сбивались.
     $ persistent.sprite_time = "sunset"
     "Девочки, даром что не проснувшиеся, прекрасно сообразят, в чём дело, и, проходя мимо, захихикают."
@@ -590,6 +581,7 @@ label dct_sixhour_dyn:
     "Подёргает дверь, вздохнёт, взъерошит волосы и уйдёт на берег между пристанью и пляжем."
     hide el with dissolve
     "И там, укрывшись за деревьями от посторонних глаз, сидя на бревне, будет грустно кидать камушки в воду."
+    
     scene bg int_library_night2
     show mz normal glasses pioneer:
         xcenter 0.52
@@ -599,6 +591,7 @@ label dct_sixhour_dyn:
         linear 2 alpha 1
     with fade
     "А Женя, наблюдавшая за всеми этими танцами через окно и прождавшая Сыроежкина ещё двадцать минут после закрытия, расстроенная, засядет в своём домике и будет грустить."
+    
     scene dct_int_house_of_sl_night
     show mz normal pioneer close
     with dissolve
@@ -606,13 +599,11 @@ label dct_sixhour_dyn:
     th "Может, моя жизнь бы изменилась?"
     th "Зря я на него наорала там, в автобусе. Он же ничего плохого и не хотел. Может, завтра зайдёт?"
     show d_mz sad pioneer close as mz with dspr
-    
     $ night_time()                        # Прописано, чтобы при обратной перемотке цвета не сбивались.
     $ persistent.sprite_time = "night"
     th "Ну почему, почему у меня всегда всё наперекосяк выходит?"
     stop music fadeout 2
         
-    
     scene dct_int_house_of_el_sunset
     show sh serious pioneer
     show black
@@ -623,15 +614,17 @@ label dct_sixhour_dyn:
     hide black with dissolve
     "Александр Трофимов после ухода соседа подождал ещё минут тридцать, потом поднялся и, оставив записку Сыроежкину, отправился в кружок кибернетики."
     hide sh with dissolve
-    play ambience ambience_camp_center_evening fadein 1.5
+    
     scene dct_ext_clubs_sunset with dissolve
+    play ambience ambience_camp_center_evening fadein 1.5
     show int_clubs_male_sunset:
         alpha 0
         pause 1.8
         linear 0.7 alpha 1
     th "Хотел посидеть в одиночестве, когда никто не будет восхищаться «стальным фанатиком науки», но не получилось. Тут чаепитие в самом разгаре."
-    play ambience ambience_int_cabin_evening fadein 1.5
+    
     scene bg int_clubs_male_sunset
+    play ambience ambience_int_cabin_evening fadein 1.5
     show d_sf normal pioneer at left:
         zoom 1.25 ypos 0.20
     show d_us normal dress at right:
@@ -684,7 +677,6 @@ label dct_sixhour_dyn:
     adl_sh4 "Спасибо, что зашли. И передай Ульяне, пожалуйста, что когда рожают детей, то их согласия тоже не спрашивают."
     show d_sf normal pioneer with dspr
     stop ambience fadeout 6
-                      
     $ persistent.sprite_time = "sunset" # Прописано, чтобы при обратной перемотке цвета не сбивались.
     adl_sh4 "Ещё примерно час; если что понадобится, то обращайся. После — не приходи."
     hide d_sf with MoveTransition(1.1, leave=_moveright, leave_time_warp=_ease_time_warp)
@@ -730,7 +722,6 @@ label dct_sixhour_dyn:
     me "Вот я и пытаюсь делать так, чтоб потом не бегать за ними и носы не подтирать, чтобы они сами за себя думали. Часто вот такие казусы получаются, как в автобусе."
     stop ambience fadeout 1.5
     
-    
     scene dct_int_clubs_male_night_light_mon
     show sh serious pioneer close:
         xzoom -1.25 yzoom 1.25 anchor (0.5, 0.56) pos (0.3, 1.0)
@@ -752,8 +743,8 @@ label dct_sixhour_dyn:
     "Достал из начатой пачки одну сигарету, потом, вернув ящик в прежнее состояние, вышел на крыльцо."
     stop sound_loop fadeout 1.5
     
-    play ambience ambience_camp_center_night fadein 1.5
     $ renpy.music.set_volume(0.35, delay=1.5)
+    play ambience ambience_camp_center_night fadein 1.5
     scene dct_ext_clubs_night_light_inside
     show sh serious pioneer far at cright
     with fade
@@ -777,7 +768,8 @@ label dct_sixhour_dyn:
         linear 0.5 alpha 1
         linear 0.5 alpha 0
     "Александр затушил окурок, закопал его подвернувшейся кстати щепкой в рыхлую землю, вернулся в кружок."
-    play sound_loop sfx_keyboard_mouse_computer_noise fadein 1.5
+
+    play sound_loop sfx_keyboard_mouse_computer_noise fadein 1.5    
     scene dct_clubs_male_comp_night
     show dct_clubs_male_comp_night_light_mon
     show dct_clubs_male_comp_dim:
@@ -812,6 +804,7 @@ label dct_sixhour_dyn:
     with dissolve_fast
     "Александр встал, с видимым трудом выключил компьютер и деревянной ковыляющей походкой зашагал к выходу из кружка и дальше, в сторону площади и домика."
     $ renpy.music.set_volume(0.3, delay=1)
+
     play ambience ambience_camp_center_night fadein 1
     scene bg ext_clubs_night
     show sh upset pioneer far
@@ -833,14 +826,13 @@ label dct_sixhour_dyn:
     show ext_clubs_night:
         alpha 1
         linear 0.25 alpha 0
-    th "Удачи тебе!"
+    dreamgirl "Удачи тебе!"
     "Шурик вздрогнул, огляделся, узнал памятник Генде и удовлетворённо кивнул." with vpunch
     show sh normal pioneer close
     th "Двадцать четыре часа тринадцать минут. Надо же, заработался. И голова болит нехорошо, не пришлось бы завтра в медпункт обращаться. Планов много, а смена такая короткая. Надо выспаться, и всё пройдёт."
-
-
     scene black with fade
     $ renpy.music.set_volume(1.0, delay=1.5)
+    
     scene dct_ext_camp_entrance_night
     show dct_jn_near_gate
     with fade
@@ -851,18 +843,13 @@ label dct_sixhour_dyn:
        linear 2.5 xcenter 0.5 alpha 0.7
        linear 2.5 xcenter 1.0 alpha 0
     $ renpy.pause(2, hard=True)
-    
     $ night_time()                         # Прописано, чтобы при обратной перемотке цвета не сбивались.
     $ persistent.sprite_time = "night"
     "Но любой наблюдатель сказал бы про эту фигурку три слова: «Грусть и печаль»."
     stop ambience fadeout 2
     stop music fadeout 2
     scene black with dissolve2
-   
-    
     $ renpy.pause(3)
     
     $ renpy.music.set_volume(1.0, delay=0)
     $ renpy.music.set_volume(1.0, delay=0, channel='ambience')
-
-    
