@@ -1653,7 +1653,9 @@ init :
     image dct_christmas_ball = "mods/dublicate/images/sprites/oth/coin/dct_christmas_ball.png"        # Шар на ёлке, который слегка затуманивает Алису и её мир
     image dct_ext_glade_behind_clubs_day_barberry = "mods/dublicate/images/sprites/oth/coin/dct_ext_glade_behind_clubs_day_barberry.png"        # Куст барбариса на полянке за заднием клубов
     image dct_int_library_standing_desk_reader_place = "mods/dublicate/images/sprites/oth/coin/dct_int_library_standing_desk_reader_place.png"        # Ближайший читательский стол (с ногами Лены) при взляде из-за стола библиотекаря
+    
     image dct_coin_letter1 = "mods/dublicate/images/sprites/oth/coin/coin_letter1.png"        # Письмо Алисы
+    
     image dct_ext_beach_night_view_from_gym_bush = "mods/dublicate/images/sprites/oth/coin/dct_ext_beach_night_view_from_gym_bush.png"    # Ночной вид с крыльца спортзала на кусты и пляж
     image dct_dream_sh_third_BTR_bus = "mods/dublicate/images/sprites/oth/coin/dct_dream_sh_third_BTR_bus.png"    # БТР и Икарус на автобусной остановке
     image dct_dream_sh_third_major = "mods/dublicate/images/sprites/oth/coin/dct_dream_sh_third_major.png"        # Майор из сна Шурика
