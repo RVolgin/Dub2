@@ -828,162 +828,325 @@ label dct_disposition_dyn:
     with dspr
     "Погасила свет и завернулась в простыню."
     $ night_time()                       # Прописано, чтобы при обратной перемотке цвета не сбивались.
+    
+    
+    ########## Предварительная подгрузка шаров ##########
+    
+    show dct_multiverse_ball_to_dv_01:
+        xcenter 2.0 ycenter -2.5
+    show dct_multiverse_ball_to_dv_02:
+        xcenter 2.0 ycenter -2.0
+    show dct_multiverse_ball_to_dv_03:
+        xcenter 2.0 ycenter -1.5
+    show dct_multiverse_ball_to_dv_04:
+        xcenter 2.0 ycenter -1.0
+    show dct_multiverse_ball_to_dv_05:
+        xcenter 2.0 ycenter -0.5
+    show dct_multiverse_ball_to_dv_06:
+        xcenter 2.0 ycenter 0.0
+    show dct_multiverse_ball_to_dv_07:
+        xcenter 2.0 ycenter 0.5
+    show dct_multiverse_ball_to_dv_08:
+        xcenter 2.0 ycenter 1.0
+    show dct_multiverse_ball_to_dv_09:
+        xcenter 2.0 ycenter 1.5
+    show dct_multiverse_ball_to_dv_10:
+        xcenter 2.0 ycenter 2.0
+    show dct_multiverse_ball_to_dv_11:
+        xcenter -1.0 ycenter -2.5
+    show dct_multiverse_ball_to_dv_12:
+        xcenter -1.0 ycenter -2.0
+    show dct_multiverse_ball_to_dv_13:
+        xcenter -1.0 ycenter -1.5
+    show dct_multiverse_ball_to_dv_14:
+        xcenter -1.0 ycenter -1.0
+    show dct_multiverse_ball_to_dv_15:
+        xcenter -1.0 ycenter -0.5
+    show dct_multiverse_ball_to_dv_16:
+        xcenter -1.0 ycenter 0.0
+    show dct_multiverse_ball_to_dv_17:
+        xcenter -1.0 ycenter 0.5
+    show dct_multiverse_ball_to_dv_18:
+        xcenter -1.0 ycenter 1.0
+    show dct_multiverse_ball_to_dv_19:
+        xcenter -1.0 ycenter 1.5
+    show dct_multiverse_ball_to_dv_20:
+        xcenter -1.0 ycenter 2.0
+    
+    #####################################################
+    
     extend " Она уже знала, что ей приснится."
     window hide
     
     #
     #   Сон Алисы
     #
-    $ day_time()
+    
+    $ prolog_time()
     $ renpy.music.set_volume(0.3, delay=0)
     stop ambience fadeout 3
     play music music_list['tried_to_bring_it_back'] fadein 3
-    ###################################################################################
-    #  Вариант с "camera:" не подходит, потому что после этого перестаёт работать класс переходов MoveTransition(). Все эти move, moveinright, easeoutleft и т.п.
-    ###################################################################################
-    # show d_int_house_of_dv_night_without_light as d_int_house_of_dv2 at shiver with Dissolve(0.0)    
-    # scene dct_cg_christmas_balls_back:
-        # zoom 1.0 anchor (0.35, 0.5) pos (0.5, 0.5)
-    # show dct_ball_to_world01:
-        # zoom 1.23 xcenter 0.5 ycenter 0.5 matrixcolor SaturationMatrix(0.75, desat=(0.9, 0.6, 0.05)) * TintMatrix("#be6012")
-    # show dct_dv_in_christmas_ball:
-        # zoom 0.82 anchor (0.521, 0.328) pos (0.5, 0.5) matrixcolor SaturationMatrix(0.75, desat=(0.9, 0.8, 0.05)) * TintMatrix("#be8012")
-    # show dct_christmas_ball:
-        # anchor (0.5, 0.5) pos (0.5, 0.5)
-    # camera:
-        # perspective True
-        # xpos 1536
-    # with Dissolve(3.0)
-    # window auto
-    # "Каждую ночь, с середины прошлого цикла, Алисе обязательно снился один и тот же сон. Очень спокойный, никуда не зовущий, не оставляющий после себя никаких эмоций, он просто снился."
-    # $ renpy.music.set_volume(1.0, delay=3)
-    # camera:
-        # perspective True
-        # linear 1 zpos 400 xpos 1150
-        # linear 0.55 zpos 600 xpos 925
-        # linear 0.43 zpos 750 xpos 750
-        # linear 0.3 zpos 800 xpos 625
-        # linear 0.3 zpos 800 xpos 500
-        # linear 0.25 zpos 750 xpos 400
-        # linear 0.34 zpos 550 xpos 260
-        # linear 0.34 zpos 300 xpos 125
-        # linear 0.33 zpos 0 xpos 0
-    # "Начинался сон с того, что Алиса оказывалась заперта внутри латунно-желтого зеркального шара — елочной игрушки."
-    # camera:
-        # perspective True
-        # zpos 0 xpos 0
-    # show dct_cg_christmas_balls_back:
-        # linear 2 zoom 1.22 blur 80
-    # show dct_ball_to_world as dct_ball_to_world01 behind dct_dv_in_christmas_ball:
-        # linear 2 zoom 1.5
-    # show dct_ball_to_world behind dct_dv_in_christmas_ball:
-        # zoom 1.23 xcenter 0.5 ycenter 0.5 alpha 0
-        # linear 2 zoom 1.5 alpha 1
-    # show dct_dv_in_christmas_ball:
-        # linear 2 zoom 1
-    # show 3500_dv normal pioneer2:
-        # zoom 0.82 anchor (0.521, 0.328) pos (0.5, 0.5) alpha 0
-        # linear 2 zoom 1 alpha 1
-    # show dct_christmas_ball:
-        # linear 1 zoom 1.11 alpha 0
-    ###################################################################################
-    
+
     show d_int_house_of_dv_night_without_light as d_int_house_of_dv2 at shiver with Dissolve(0.0)
     
-    scene dct_cg_christmas_balls_back:
+    scene dct_cg_christmas_balls_back:                  # Фон с еловыми ветками
         zoom 1.0 anchor (0.35, 0.5) pos (-0.3, 0.5)
-    show dct_ball_to_world01:
+    show dct_ball_to_world01:                           # Площадь в форме ёлочного шара
         zoom 1.23 xcenter -0.3 ycenter 0.5 matrixcolor SaturationMatrix(0.75, desat=(0.9, 0.6, 0.05)) * TintMatrix("#be6012")
-    show dct_dv_in_christmas_ball:
+    show dct_dv_in_christmas_ball:                      # Алиса в ёлочном шаре
         zoom 0.82 anchor (0.521, 0.328) pos (-0.3, 0.5) matrixcolor SaturationMatrix(0.75, desat=(0.9, 0.8, 0.05)) * TintMatrix("#be8012")
-    show dct_christmas_ball:
+    show dct_christmas_ball:                            # Декоративная имитация ёлочного шара поверх площади и Алисы
         zoom 1.0 anchor (0.5, 0.5) pos (-0.3, 0.5)
+    
     with Dissolve(3.0)
     window auto
+    "Каждую ночь с середины прошлого цикла Алисе обязательно снился один и тот же сон.{nw}"
     
-    "Каждую ночь с середины прошлого цикла Алисе обязательно снился один и тот же сон. Очень спокойный, никуда не зовущий, не оставляющий после себя никаких эмоций — он просто снился."
+    ##########   Предварительная подгрузка тумана и сияния  ##########
+    
+    # Полярное сияние
+    show dct_multiverse_polar_lights_1:
+        anchor (0.0, 0.5) pos (1.1, 0.5) alpha 0.3
+    show dct_multiverse_polar_lights_2:
+        anchor (0.5, 0.0) pos (0.5, 1.1) alpha 0.3
+    # Туман
+    show dct_multiverse_fog_1:
+        anchor (1.0, 0.5) pos (-0.1, 0.5)
+    show dct_multiverse_fog_2:
+        anchor (0.5, 1.0) pos (0.5, -0.1)
+    show dct_multiverse_fog_3:
+        anchor (1.0, 1.0) pos (-0.1, -0.1)
+    show dct_multiverse_fog_4:
+        anchor (1.0, 0.0) pos (-0.1, 1.1)
+    show dct_multiverse_fog_5:
+        anchor (0.0, 1.0) pos (1.1, -0.1)
+    show dct_multiverse_fog_6:
+        anchor (0.0, 0.0) pos (1.1, 1.1)
+        
+    ##################################################################
+    
+    extend " "  # Это такая пауза в виде пробела, чтобы текст не пропадал, пока идёт предварительная прогрузка сияний и тумана    
+
+    extend "Очень спокойный, никуда не зовущий, не оставляющий после себя никаких эмоций — он просто снился."
     $ renpy.music.set_volume(1.0, delay=3)
-    show dct_cg_christmas_balls_back:
+
+    show dct_cg_christmas_balls_back:                   # Фон с еловыми ветками
         easeout 1.35 zoom 0.7 pos (0.15, 0.5)
         linear 0.4 zoom 0.6 pos (0.31, 0.5)
         linear 0.3 pos (0.36, 0.5)
         linear 0.4 zoom 0.7 pos (0.4, 0.5)
         easein 1.35 zoom 1 pos (0.5, 0.5)
-    show dct_ball_to_world01:
+    show dct_ball_to_world01:                           # Площадь в форме ёлочного шара
         easeout 1.35 zoom 0.861 xcenter 0.15
         linear 0.4 zoom 0.738 xcenter 0.31
         linear 0.3 xcenter 0.36
         linear 0.4 zoom 0.861 xcenter 0.4
         easein 1.35 zoom 1.23 xcenter 0.5
-    show dct_dv_in_christmas_ball:
+    show dct_dv_in_christmas_ball:                      # Алиса в ёлочном шаре
         easeout 1.35 zoom 0.574 pos (0.15, 0.5)
         linear 0.4 zoom 0.492 pos (0.31, 0.5)
         linear 0.3 pos (0.36, 0.5)
         linear 0.4 zoom 0.574 pos (0.4, 0.5)
         easein 1.35 zoom 0.82 pos (0.5, 0.5)
-    show dct_christmas_ball:
+    show dct_christmas_ball:                            # Декоративная имитация ёлочного шара поверх площади и Алисы
         easeout 1.35 zoom 0.7 pos (0.15, 0.5)
         linear 0.4 zoom 0.6 pos (0.31, 0.5)
         linear 0.3 pos (0.36, 0.5)
         linear 0.4 zoom 0.7 pos (0.4, 0.5)
         easein 1.35 zoom 1 pos (0.5, 0.5)
-        
     "Начинался сон с того, что Алиса оказывалась заперта внутри латунно-жёлтого зеркального шара — ёлочной игрушки."
-    show dct_cg_christmas_balls_back:
+    show dct_cg_christmas_balls_back:                   # Фон с еловыми ветками
         zoom 1 pos (0.5, 0.5)
-    show dct_ball_to_world01:
+    show dct_ball_to_world01:                           # Площадь в форме ёлочного шара    
         zoom 1.23 xcenter 0.5
-    show dct_dv_in_christmas_ball:
+    show dct_dv_in_christmas_ball:                      # Алиса в ёлочном шаре
         zoom 0.82 pos (0.5, 0.5)
-    show dct_christmas_ball:
+    show dct_christmas_ball:                            # Декоративная имитация ёлочного шара поверх площади и Алисы
         zoom 1 pos (0.5, 0.5)
-    show dct_cg_christmas_balls_back:
+
+
+    show dct_cg_christmas_balls_back:                   # Фон с еловыми ветками
         linear 2 zoom 1.22 blur 80
-    show dct_ball_to_world as dct_ball_to_world01 behind dct_dv_in_christmas_ball:
+    
+    show dct_ball_to_world as dct_ball_to_world01 behind dct_dv_in_christmas_ball:  # Площадь распахивается из шара. Подменяет собой площадь в ёлочном шаре (и имеет те же искажённые матрицей цвета), чтобы не возникало визуального конфликта со следующей картинкой
         linear 2 zoom 1.5
-    show dct_ball_to_world behind dct_dv_in_christmas_ball:
+    show dct_ball_to_world behind dct_dv_in_christmas_ball:     # Площадь распахивается из шара. Самостоятельная версия, постепенно проявляется, и перекрывает своим цветом предыдущую картинку
         zoom 1.23 xcenter 0.5 ycenter 0.5 alpha 0
         linear 2 zoom 1.5 alpha 1
-    show dct_dv_in_christmas_ball:
+    
+    show dct_dv_in_christmas_ball:                      # Алиса в ёлочном шаре
         linear 2 zoom 1
-    show 3500_dv normal pioneer2:
+    show 3500_dv normal pioneer2:                       # Алиса на площади в полный рост
         zoom 0.82 anchor (0.521, 0.328) pos (0.5, 0.5) alpha 0
         linear 2 zoom 1 alpha 1
+    
     show dct_christmas_ball:
-        linear 1 zoom 1.11 alpha 0
-
+        linear 1 zoom 1.11 alpha 0                      # Декоративная имитация ёлочного шара поверх площади и Алисы. ГЛУШИМ ЕЁ.
+    window show
     "Постепенно размеры игрушки росли, стенки отдалялись, теряли чёткость, горизонт становился всё дальше, и вдруг Алиса понимала, что она уже не внутри зеркального шара, а снаружи."
-    scene dct_ext_square_extended_day:
+
+
+    ########## Запускаем шары, и прячем их под Алисой, площадью и белой вспышкой ##########
+
+    # Звёздное небо
+    scene stars_1:
+    show stars_3:
+        linear 0.7 alpha 0
+        pause 0.3
+        linear 0.7 alpha 1
+        pause 0.3
+        repeat
+    
+    # Полярное сияние
+    show dct_multiverse_polar_lights_1:
+        anchor (0.0, 0.5) pos (0.0, 0.5) alpha 0.0
+        parallel:
+            easeout 68.4 anchor (0.5, 0.35) pos (0.5, 0.35) knot (0.5, 0.5)
+            easein 68.4 anchor (1.0, 0.5) pos (1.0, 0.5) knot (0.5, 0.5)
+            easeout 68.4 anchor (0.5, 0.65) pos (0.5, 0.65) knot (0.5, 0.5)
+            easein 68.4 anchor (0.0, 0.5) pos (0.0, 0.5) knot (0.5, 0.5)
+            repeat
+        parallel:
+            dct_polar_lights        # Периодическое сверкание
+            
+    show dct_multiverse_polar_lights_2:
+        anchor (0.5, 0.0) pos (0.5, 0.0) alpha 0.0
+        parallel:
+            easeout 49.8 anchor (0.35, 0.5) pos (0.35, 0.5) knot (0.5, 0.5)
+            easein 49.8 anchor (0.5, 1.0) pos (0.5, 1.0) knot (0.5, 0.5)
+            easeout 49.8 anchor (0.65, 0.5) pos (0.65, 0.5) knot (0.5, 0.5)
+            easein 49.8 anchor (0.5, 0.0) pos (0.5, 0.0) knot (0.5, 0.5)
+            repeat
+        parallel:
+            dct_polar_lights        # Периодическое сверкание
+
+    # Туман
+    show dct_multiverse_fog_1:
+        anchor (0.5, 0.5) pos (0.425, 0.5) rotate 0
+        linear 11 pos (0.45, 0.4) rotate -45
+        linear 11 pos (0.5, 0.37) rotate -90
+        linear 11 pos (0.55, 0.4) rotate -135
+        linear 11 pos (0.575, 0.5) rotate -180
+        linear 11 pos (0.55, 0.6) rotate -225
+        linear 11 pos (0.5, 0.63) rotate -270
+        linear 11 pos (0.45, 0.6) rotate -315
+        linear 11 pos (0.425, 0.5) rotate -360
+        repeat
+    show dct_multiverse_fog_2:
+        anchor (0.5, 0.5) pos (0.575, 0.5) rotate 0
+        linear 10 pos (0.55, 0.4) rotate 45
+        linear 10 pos (0.5, 0.37) rotate 90
+        linear 10 pos (0.45, 0.4) rotate 135
+        linear 10 pos (0.425, 0.5) rotate 180
+        linear 10 pos (0.45, 0.6) rotate 225
+        linear 10 pos (0.5, 0.63) rotate 270
+        linear 10 pos (0.55, 0.6) rotate 315
+        linear 10 pos (0.575, 0.5) rotate 360
+        repeat
+    show dct_multiverse_fog_3:
+        align (1.0, 0.0)
+        ease 76.6 align (0.0, 1.0)
+        ease 76.6 align (1.0, 0.0)
+        repeat
+    show dct_multiverse_fog_4:
+        align (0.0, 0.0)
+        ease 66.2 align (1.0, 1.0)
+        ease 66.2 align (0.0, 0.0)
+        repeat
+    show dct_multiverse_fog_5:
+        xcenter 0.5 yalign 0.0
+        ease 61.0 yalign 1.0
+        ease 61.0 yalign 0.0
+        repeat
+    show dct_multiverse_fog_6:
+        xalign 0.0 ycenter 0.5
+        ease 53.6 xalign 1.0
+        ease 53.6 xalign 0.0
+        repeat
+        
+    # Шары-миры
+
+    $ renpy.random.shuffle(dct_balls_list)   # Перемешиваем список шаров, чтобы в разных случаях на переднем плане оказывались раные шары
+    
+    show expression "dct_multiverse_ball_[dct_balls_list[0]]" as dct_ball_00 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[1]]" as dct_ball_01 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[2]]" as dct_ball_02 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[3]]" as dct_ball_03 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[4]]" as dct_ball_04 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[5]]" as dct_ball_05 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[6]]" as dct_ball_06 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[7]]" as dct_ball_07 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[8]]" as dct_ball_08 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[9]]" as dct_ball_09 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[10]]" as dct_ball_10 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[11]]" as dct_ball_11 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[12]]" as dct_ball_12 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[13]]" as dct_ball_13 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[14]]" as dct_ball_14 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[15]]" as dct_ball_15 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[16]]" as dct_ball_16 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[17]]" as dct_ball_17 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[18]]" as dct_ball_18 at dct_balls_scale
+    show expression "dct_multiverse_ball_[dct_balls_list[19]]" as dct_ball_19 at dct_balls_scale
+    
+    ##########################################################################################
+    
+    show dct_ext_square_extended_day:           # Площадь. Псевдорасширенная версия. Но так как мы уводим всё в белый цвет, то годится и такая
         zoom 1.5 xcenter 0.5 ycenter 0.5
         easeout_cubic 4 zoom 0.65
-    show 3500_dv normal pioneer2:
+    show 3500_dv normal pioneer2:               # Алиса на площади в полный рост
         zoom 1 anchor (0.521, 0.328) pos (0.5, 0.5)
         easeout 4 zoom 0.36
     show white:
         alpha 0
         pause 2.5
         linear 1.5 alpha 1
-    
     "А потом этот шар начинал уменьшаться в размерах, горизонт опять приближался, и оказывалось, что вокруг Алисы плавают, иногда соприкасаясь, а иногда слипаясь в устойчивые гроздья, множество таких шаров."
-    show dct_cg_clusters_of_worlds behind white:
-        xalign 0.0
-    show dct_cg_clusters_of_worlds behind white:
-        ease 6 xalign 1.0
-        pause 0.2
-        ease 6 xalign 0.0
-        pause 0.2
-        repeat
+    
+    ########## Убираем Алису, площадь и белый экран, являя шары читателю ##########
+    
+    window hide
+    
+    hide dct_ext_square_extended_day
+    hide 3500_dv normal pioneer2
     show white:
-        alpha 1
         linear 1.5 alpha 0
-    extend " И внутри каждого спрятана своя Алиса: в чём-то абсолютно такая же, а в чём-то похожая только на саму себя."
+    
+    pause
+    
+    # Добавляем Алис к шарам
+    
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[0]]" as dct_ball_00
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[1]]" as dct_ball_01
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[2]]" as dct_ball_02
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[3]]" as dct_ball_03
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[4]]" as dct_ball_04
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[5]]" as dct_ball_05
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[6]]" as dct_ball_06
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[7]]" as dct_ball_07
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[8]]" as dct_ball_08
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[9]]" as dct_ball_09
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[10]]" as dct_ball_10
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[11]]" as dct_ball_11
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[12]]" as dct_ball_12
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[13]]" as dct_ball_13
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[14]]" as dct_ball_14
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[15]]" as dct_ball_15
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[16]]" as dct_ball_16
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[17]]" as dct_ball_17
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[18]]" as dct_ball_18
+    show expression "dct_multiverse_ball_to_dv_[dct_balls_list[19]]" as dct_ball_19
+
+    window auto
+    
+    "И внутри каждого спрятана своя Алиса: в чём-то абсолютно такая же, а в чём-то похожая только на саму себя."
 
     "И можно перепрыгнуть со своего шара на соседний и проснуться уже там, внутри, рядом с двойником. И с двойником при таком проникновении ничего не случится. Вот только надо решиться прыгнуть."
     th "Интересно, Ленке то же самое снится?"
-    # "Ещё успела подумать Алиса перед тем, как уснуть окончательно."  # Опускаем
-    stop music fadeout 3
+    stop music fadeout 4
     show black:
         alpha 0
+        pause 0.5
         linear 3 alpha 1
     th "Она ведь та ещё партизанка — будет молчать, пока совсем плохо не станет."
 
