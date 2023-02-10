@@ -469,7 +469,6 @@ init :
     
     image dct_cg_christmas_balls_back = "mods/dublicate/images/cg/coin/dct_cg_christmas_balls_back.jpg"   # Шары на ёлке
     image dct_ball_to_world01 = "mods/dublicate/images/anim/coin/dct_ball_to_world01.png"   # Шар с Алисиным миром на ёлке
-    image dct_cg_clusters_of_worlds = "mods/dublicate/images/cg/coin/dct_cg_clusters_of_worlds.jpg"   # Миры-шарики
     
     image dct_cg_coin_volleyball = "mods/dublicate/images/cg/coin/dct_cg_coin_volleyball.jpg" # Воллейбол на пляже (с Семёном)
     image dct_cg_coin_dv_on_beach = "mods/dublicate/images/cg/coin/dct_cg_coin_dv_on_beach.jpg" # Алиса на пляже с полотенцем
@@ -518,18 +517,6 @@ init :
     image dct_int_bus_purple = "mods/dublicate/images/cg/coin/dct_int_bus_purple.jpg"
     image dct_d1_uv = "mods/dublicate/images/cg/coin/dct_d1_uv.jpg"
     image dct_d1_uv_2 = "mods/dublicate/images/cg/coin/dct_d1_uv_2.jpg"
-    
-
-
-    
-    
-    ##### Трансформации (coin)
-    
-    transform dct_zoom_sparkle:         # Вспышка блёсток
-        zoom 0 alpha 0 anchor(0.5, 0.5)
-        linear 0.2 zoom 0.8 alpha 1.0
-        linear 0.05 zoom 1.0 alpha 0
-        
 
 
 
@@ -763,6 +750,11 @@ init :
     
     
     
+    ############################################
+    ############################################        Сон Алисы (из четвёртой главы Монетки)
+    
+    
+    
     image dct_ball_to_world:                  # Ёлочный шар увеличивается в размерах
         "mods/dublicate/images/anim/coin/dct_ball_to_world01.png"
         xcenter 0.5 ycenter 0.5
@@ -812,9 +804,150 @@ init :
         "ext_square_day" with Dissolve(0.04)
         xcenter 0.5 ycenter 0.5
         
+
+    # Переменная с номерами. Нужна для перемешивания списка шаров, чтобы в разных случаях шары выводились на экран в разном порядке
+    $ dct_balls_list = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]
+
     
+    image dct_multiverse_polar_lights_1 = "mods/dublicate/images/anim/coin/dct_multiverse_polar_lights_1.png" # Полярное сияние, слой 1
+    image dct_multiverse_polar_lights_2 = "mods/dublicate/images/anim/coin/dct_multiverse_polar_lights_2.png" # Полярное сияние, слой 2
+    image dct_multiverse_fog_1 = "mods/dublicate/images/anim/coin/dct_multiverse_fog_1.png" # Туман, слой 1
+    image dct_multiverse_fog_2 = "mods/dublicate/images/anim/coin/dct_multiverse_fog_2.png" # Туман, слой 2
+    image dct_multiverse_fog_3 = "mods/dublicate/images/anim/coin/dct_multiverse_fog_3.png" # Туман, слой 3
+    image dct_multiverse_fog_4 = "mods/dublicate/images/anim/coin/dct_multiverse_fog_4.png" # Туман, слой 4
+    image dct_multiverse_fog_5 = "mods/dublicate/images/anim/coin/dct_multiverse_fog_5.png" # Туман, слой 5
+    image dct_multiverse_fog_6 = "mods/dublicate/images/anim/coin/dct_multiverse_fog_6.png" # Туман, слой 6
     
+    # Шары с мирами
+    image dct_multiverse_ball_01 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_01.png"
+    image dct_multiverse_ball_02 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_02.png"
+    image dct_multiverse_ball_03 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_03.png"
+    image dct_multiverse_ball_04 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_04.png"
+    image dct_multiverse_ball_05 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_05.png"
+    image dct_multiverse_ball_06 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_06.png"
+    image dct_multiverse_ball_07 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_07.png"
+    image dct_multiverse_ball_08 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_08.png"
+    image dct_multiverse_ball_09 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_09.png"
+    image dct_multiverse_ball_10 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_10.png"
+    image dct_multiverse_ball_11 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_11.png"
+    image dct_multiverse_ball_12 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_12.png"
+    image dct_multiverse_ball_13 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_13.png"
+    image dct_multiverse_ball_14 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_14.png"
+    image dct_multiverse_ball_15 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_15.png"
+    image dct_multiverse_ball_16 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_16.png"
+    image dct_multiverse_ball_17 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_17.png"
+    image dct_multiverse_ball_18 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_18.png"
+    image dct_multiverse_ball_19 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_19.png"
+    image dct_multiverse_ball_20 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_20.png"
     
+    # Шары с мирами и Алисами
+    image dct_multiverse_ball_dv_01 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_01.png"
+    image dct_multiverse_ball_dv_02 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_02.png"
+    image dct_multiverse_ball_dv_03 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_03.png"
+    image dct_multiverse_ball_dv_04 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_04.png"
+    image dct_multiverse_ball_dv_05 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_05.png"
+    image dct_multiverse_ball_dv_06 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_06.png"
+    image dct_multiverse_ball_dv_07 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_07.png"
+    image dct_multiverse_ball_dv_08 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_08.png"
+    image dct_multiverse_ball_dv_09 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_09.png"
+    image dct_multiverse_ball_dv_10 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_10.png"
+    image dct_multiverse_ball_dv_11 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_11.png"
+    image dct_multiverse_ball_dv_12 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_12.png"
+    image dct_multiverse_ball_dv_13 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_13.png"
+    image dct_multiverse_ball_dv_14 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_14.png"
+    image dct_multiverse_ball_dv_15 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_15.png"
+    image dct_multiverse_ball_dv_16 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_16.png"
+    image dct_multiverse_ball_dv_17 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_17.png"
+    image dct_multiverse_ball_dv_18 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_18.png"
+    image dct_multiverse_ball_dv_19 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_19.png"
+    image dct_multiverse_ball_dv_20 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_20.png"
+    
+    # Шары с мирами получают своих Алис
+    image dct_multiverse_ball_to_dv_01:
+        "dct_multiverse_ball_01"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_01" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_02:
+        "dct_multiverse_ball_02"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_02" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_03:
+        "dct_multiverse_ball_03"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_03" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_04:
+        "dct_multiverse_ball_04"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_04" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_05:
+        "dct_multiverse_ball_05"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_05" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_06:
+        "dct_multiverse_ball_06"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_06" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_07:
+        "dct_multiverse_ball_07"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_07" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_08:
+        "dct_multiverse_ball_08"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_08" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_09:
+        "dct_multiverse_ball_09"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_09" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_10:
+        "dct_multiverse_ball_10"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_10" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_11:
+        "dct_multiverse_ball_11"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_11" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_12:
+        "dct_multiverse_ball_12"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_12" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_13:
+        "dct_multiverse_ball_13"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_13" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_14:
+        "dct_multiverse_ball_14"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_14" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_15:
+        "dct_multiverse_ball_15"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_15" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_16:
+        "dct_multiverse_ball_16"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_16" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_17:
+        "dct_multiverse_ball_17"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_17" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_18:
+        "dct_multiverse_ball_18"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_18" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_19:
+        "dct_multiverse_ball_19"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_19" with Dissolve(1.5)
+    image dct_multiverse_ball_to_dv_20:
+        "dct_multiverse_ball_20"
+        pause (renpy.random.random() * 3 + 1.5)
+        "dct_multiverse_ball_dv_20" with Dissolve(1.5)
+    
+    ############################################
+    ############################################
+    
+
     image dct_sl_sport_running_serious:                  # Славя (Саша) с эмоцией serious развёрнута зеркально. Это нужно, чтобы следом идущая трансформация 'dct_sl_sport_running_surprise' в момент применения перехода 'dissolve_fast' не вращала изображение туда-сюда
         "3500_sl serious sport"
         xzoom -1.0
@@ -1173,9 +1306,9 @@ init :
         
         
         
+                # Анимация костра (выводить на экран в позиции xcenter 0.5 yanchor 0.0 ypos 0.55)
         
-        
-    image dct_bonfire_day_anim:     # Анимация костра (выводить на экран в позиции xcenter 0.5 yanchor 0.0 ypos 0.55)
+    image dct_bonfire_day_anim:
         "mods/dublicate/images/anim/coin/dct_bonfire_day_01.jpg" with Dissolve(0.15)
         pause 0.2
         "mods/dublicate/images/anim/coin/dct_bonfire_day_02.jpg" with Dissolve(0.15)
@@ -1403,20 +1536,20 @@ init :
    
     
     
-    ############
-    #Переменные#
-    ############
+    #############################################
+    #Переменные для обозначения прочитанных книг#
+    #############################################
     
+    $ d_olga = 0 #Ольга
     $ d_sim = 0 #Сёмка
+    $ d_miuki = 0 #Кошкин дом
     $ d_prolog = 0
     $ d_ana = 0 #Анабасис
+    $ d_lin = 0 #Линия жизни
     $ d_dra = 0 #Год дракона
     $ d_nam = 0 #Имена в облаках
     $ d_shif = 0 #4 смена
-    $ d_lin = 0 #Линия жизни
-    $ d_miuki = 0 #Кошкиндом
     $ d_eff = 0 #Эффектор
-    $ d_olga = 0 #Ольга
     $ d_coin = 0 #Монетка
     
     ###########
@@ -1435,7 +1568,7 @@ init :
     $ d_sz = Character(u"Сергей", color="#0089e1", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Сергей Зайцев
     $ d_oz = Character(u"Оксана", color="#4de2f3", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Оксана Зайцева
     $ d_gr = Character(u"Гришка", color="#4de2e7", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Гришка
-    #$ d_va = Character(u"Вася", color="#5de2e7", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Вася (переехал вниз в coin)
+    $ d_va = Character(u"Вася", color="#ac613a", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Вася
     $ d_ar = Character(u"Артём", color="#6ef3f8", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Артём
     $ d_ar_voice = Character(u"Второй голос", color="#6ef3f8", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Артём голос
     
@@ -1511,7 +1644,6 @@ init :
     $ d_ma = Character(u"Максим", color="#79cdf7", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Максим
     $ d_ka = Character(u"Катя", color="#894f91", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Катя
     $ d_vi = Character(u"Витька", color="#b7b7b7", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Витька
-    $ d_va = Character(u"Вася", color="#ac613a", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Вася
     $ d_sv = Character(u"Света", color="#55a022", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Света
     $ d_civ = Character(u"Тип в штатском", color="#e2c6a5", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Гражданский из первого сна Шурика
     $ d_guys = Character(u"Ребятня", color="#4de227", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") # Средний отряд, собирательный термин
@@ -1557,6 +1689,127 @@ init :
         linear 0.1 pos (0,0)
         linear 0.1 pos (-2,0)
         repeat
+        
+        
+        
+        
+    ##### Эффекты (coin)
+    
+    transform dct_zoom_sparkle:         # Вспышка блёсток в автобусе (в последней главе )
+        zoom 0 alpha 0 anchor(0.5, 0.5)
+        linear 0.2 zoom 0.8 alpha 1.0
+        linear 0.05 zoom 1.0 alpha 0
+        
+
+
+    transform dct_balls_scale:          # Поведение шаров из Aлисиного сна (в четвёртой главе)
+        zoom random.uniform(0.12,0.6)
+        align(renpy.random.random() * 2 - 0.5,renpy.random.random() * 2 - 0.5)  # Сначала диапазон (0.0 — 1.0) умножается на 2, затем из него вычитается 0.5, таким образом получается диапазон (-0.5 — 1.5), который позволяет шарам вылетать за край экрана
+        alpha random.uniform(0.4,0.8)
+        parallel:
+            ease renpy.random.randint(12,17) align(renpy.random.random() * 2 - 0.5,renpy.random.random() * 2 - 0.5)
+            ease renpy.random.randint(12,17) align(renpy.random.random() * 2 - 0.5,renpy.random.random() * 2 - 0.5)
+            ease renpy.random.randint(12,17) align(renpy.random.random() * 2 - 0.5,renpy.random.random() * 2 - 0.5)
+            ease renpy.random.randint(12,17) align(renpy.random.random() * 2 - 0.5,renpy.random.random() * 2 - 0.5)
+            ease renpy.random.randint(12,17) align(renpy.random.random() * 2 - 0.5,renpy.random.random() * 2 - 0.5)
+            ease renpy.random.randint(12,17) align(renpy.random.random() * 2 - 0.5,renpy.random.random() * 2 - 0.5)
+            ease renpy.random.randint(12,17) align(renpy.random.random() * 2 - 0.5,renpy.random.random() * 2 - 0.5)
+            ease renpy.random.randint(12,17) align(renpy.random.random() * 2 - 0.5,renpy.random.random() * 2 - 0.5)
+            ease renpy.random.randint(12,17) align(renpy.random.random() * 2 - 0.5,renpy.random.random() * 2 - 0.5)
+            ease renpy.random.randint(12,17) align(renpy.random.random() * 2 - 0.5,renpy.random.random() * 2 - 0.5)
+            repeat
+        parallel:
+            choice 30:
+                ease renpy.random.randint(3,7) zoom random.uniform(0.12,0.6)
+                ease renpy.random.randint(3,7) zoom random.uniform(0.12,0.6)
+                ease renpy.random.randint(3,7) zoom random.uniform(0.12,0.6)
+                ease renpy.random.randint(3,7) zoom random.uniform(0.12,0.6)
+                ease renpy.random.randint(3,7) zoom random.uniform(0.12,0.6)
+                ease renpy.random.randint(3,7) zoom random.uniform(0.12,0.6)
+                ease renpy.random.randint(3,7) zoom random.uniform(0.12,0.6)
+            choice 3:
+                ease renpy.random.randint(4,8) zoom 0.8
+            choice 1:
+                ease renpy.random.randint(5,9) zoom 1.0
+            repeat
+        parallel:
+            ease renpy.random.randint(2,5) alpha random.uniform(0.4,0.8)
+            ease renpy.random.randint(2,5) alpha random.uniform(0.4,0.8)
+            ease renpy.random.randint(2,5) alpha random.uniform(0.4,0.8)
+            ease renpy.random.randint(2,5) alpha random.uniform(0.4,0.8)
+            ease renpy.random.randint(2,5) alpha random.uniform(0.4,0.8)
+            ease renpy.random.randint(2,5) alpha random.uniform(0.4,0.8)
+            repeat 
+            
+            
+    
+    transform dct_polar_lights:             # Варианты полярного сияния из Aлисиного сна (в четвёртой главе)
+    
+        choice 2:           # Вероятность события от общего количества — 2
+            matrixcolor TintMatrix("#dea611")   # Перекраска спрайта в желтованый цвет через преобразование matrixcolor.
+            pause 0.1
+            linear 0.05 alpha 0.7
+            pause 0.2
+            linear 0.05 alpha 0.0
+            matrixcolor IdentityMatrix()   # Восстановление оригинального цвета
+        choice 2:           # Вероятность события от общего количества — 2
+            matrixcolor TintMatrix("#61ff1c")   # Перекраска спрайта в зеленоватый цвет через преобразование matrixcolor.
+            pause 0.1
+            linear 0.05 alpha 0.7
+            pause 0.2
+            linear 0.05 alpha 0.0
+            matrixcolor IdentityMatrix()   # Восстановление оригинального цвета
+        choice 2:           # Вероятность события от общего количества — 2
+            matrixcolor TintMatrix("#16a0ef")   # Перекраска спрайта в голубоватый цвет через преобразование matrixcolor.
+            pause 0.1
+            linear 0.05 alpha 0.7
+            pause 0.2
+            linear 0.05 alpha 0.0
+            matrixcolor IdentityMatrix()   # Восстановление оригинального цвета
+        choice 2:           # Вероятность события от общего количества — 2
+            matrixcolor TintMatrix("#f24482")   # Перекраска спрайта в розоватый цвет через преобразование matrixcolor.
+            pause 0.1
+            linear 0.05 alpha 0.7
+            pause 0.2
+            linear 0.05 alpha 0.0
+            matrixcolor IdentityMatrix()   # Восстановление оригинального цвета
+            
+        choice:           # Вероятность события от общего количества — 1
+            matrixcolor TintMatrix("#dea611")   # Перекраска спрайта в желтованый цвет через преобразование matrixcolor.
+            pause 0.1
+            linear 0.05 alpha 1.0
+            pause 0.35
+            linear 0.05 alpha 0.0
+            matrixcolor IdentityMatrix()   # Восстановление оригинального цвета
+        choice:           # Вероятность события от общего количества — 1
+            matrixcolor TintMatrix("#61ff1c")   # Перекраска спрайта в зеленоватый цвет через преобразование matrixcolor.
+            pause 0.1
+            linear 0.05 alpha 1.0
+            pause 0.35
+            linear 0.05 alpha 0.0
+            matrixcolor IdentityMatrix()   # Восстановление оригинального цвета
+        choice:           # Вероятность события от общего количества — 1
+            matrixcolor TintMatrix("#16a0ef")   # Перекраска спрайта в голубоватый цвет через преобразование matrixcolor.
+            pause 0.1
+            linear 0.05 alpha 1.0
+            pause 0.35
+            linear 0.05 alpha 0.0
+            matrixcolor IdentityMatrix()   # Восстановление оригинального цвета
+        choice:           # Вероятность события от общего количества — 1
+            matrixcolor TintMatrix("#f24482")   # Перекраска спрайта в розоватый цвет через преобразование matrixcolor.
+            pause 0.1
+            linear 0.05 alpha 1.0
+            pause 0.35
+            linear 0.05 alpha 0.0
+            matrixcolor IdentityMatrix()   # Восстановление оригинального цвета
+        
+        choice 24:           # Вероятность события от общего количества — 24
+            pause 1.0
+        repeat
+
+        
+        
+        
 
     #######
     #Титры#
