@@ -351,11 +351,11 @@ label dct_debut_dyn:
         pause 1.5
         linear 1 alpha 1
     "Купание, пляжный волейбол, обед… Так часов до трёх письмо и пролежало в кармане, забытое и нетронутое."
-    play ambience ambience_int_cabin_day fadein 3
+    stop music fadeout 2   
     
+    play ambience ambience_int_cabin_day fadein 3
     scene bg int_house_of_dv_day with blinds
     "И только после обеда, когда Алиса завалилась в домике на койку и потянула к себе тетрадку, сложенный вчетверо листок напомнил о себе."
-    stop music fadeout 2.5
     "Алиса потянула его из кармана, развернула и некоторое время просто разглядывала буквы собственного почерка."
     window hide
     pause 0.5
