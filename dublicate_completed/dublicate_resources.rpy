@@ -556,7 +556,7 @@ init :
     image dct_smartphone16 = "mods/dublicate/images/anim/dct_smartphone16.png"
     
     
-    
+
     ##### Анимация (coin)
     
     image dct_road_anim:                  # Дорога (автобус едет в лагерь)
@@ -1417,7 +1417,6 @@ init :
     ##### music (coin)
     
     $ Everlasting_Summer_guitar_cover = "mods/dublicate/sounds/coin/music/Everlasting_Summer[guitar_cover](youtu.be_z6sTDBAUTfg).ogg"
-    $ moments = "mods/dublicate/sounds/coin/music/Moments_(by_Shane_Ivers).ogg"
     
     
     #sfx
