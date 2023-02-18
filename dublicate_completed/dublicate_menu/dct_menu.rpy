@@ -302,13 +302,29 @@ screen dct_menu:
     
     if (persistent.d_nam > 0) and (persistent.d_sim > 0) and (persistent.d_prolog > 0) and (persistent.d_ana > 0) and (persistent.d_dra > 0) and (persistent.d_shif > 0) and (persistent.d_lin > 0) and (persistent.d_miuki > 0) and (persistent.d_eff > 0) and (persistent.d_olga > 0) and (persistent.d_coin > 0):
         textbutton "Справочник":         # Кнопка СПРАВОЧНИК (скрыта, пока не прочитан весь мод)
-            xpos 0.565
+            xpos 0.645
             ypos 0.85
             style "dct_menu_button_exit"
             text_style "dct_menu_button_exit"
             action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_spravochnik")]
             
             
+    textbutton "{space=65}Титры\n(финальные)":
+        xpos 0.37
+        ypos 0.85
+        style "dct_menu_button_exit"
+        text_style "dct_menu_button_exit"
+        action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_titles")]
+        
+        
+    textbutton "Титры":
+        xpos 0.565
+        ypos 0.85
+        style "dct_menu_button_exit"
+        text_style "dct_menu_button_exit"
+        action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_credits")]
+
+
     textbutton "Выход":
         xpos 0.78
         ypos 0.85
