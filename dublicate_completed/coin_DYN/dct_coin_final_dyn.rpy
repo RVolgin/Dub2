@@ -865,6 +865,7 @@ label dct_coin_final_dyn:
         linear 2.5 alpha 1.0
     "Всё хорошо, сестрёнка.{w=1} Я сейчас бросил монетку, и надеюсь, что она останется стоять на ребре."
     stop music fadeout 2.5
+    window hide
     
     $ renpy.pause(2.5)
 
@@ -874,7 +875,17 @@ label dct_coin_final_dyn:
     $ renpy.sound.set_volume(1.0, delay=0, channel='sound_loop')
     
     $ persistent.d_coin = d_coin + 1
-    menu:
-        "Конец книги «Монетка в фонтане»"
-        "В меню":
-            jump dct_mnu2
+    
+    show image("images/gui/choice/prologue/choice_box.png"):
+        xzoom 4 yzoom 0.5 align (0.5, 0.5)
+    show text "{color=#496463}{size=50}Конец книги «Монетка в фонтане»{/size}{/color}":
+        align (0.5, 0.5)
+    with dspr
+    
+    pause 2
+    
+    hide image("images/gui/choice/prologue/choice_box.png")
+    hide text
+    with dissolve_fast
+    
+    jump dct_titles
