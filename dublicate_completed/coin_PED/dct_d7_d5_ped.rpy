@@ -112,7 +112,8 @@ label dct_d7_d5_ped:
     $ persistent.sprite_time = "day"
     window auto
     play music brush_marks fadein 1
-    scene dct_coin_bus-stop
+    scene dct_coin_bus-stop:
+        zoom 0.75
     show dct_dream_veil at shiver
     with dissolve
     "А Шурику действительно снова снился сон Александра."
@@ -144,7 +145,8 @@ label dct_d7_d5_ped:
     show d_jn_young dontlike with dissolve_fast:
         zoom 0.75 xcenter 0.31 yalign 0.0
     "Нарастающий шум мотора, который мешал разговору в течение всего сна, становится уже совершенно невыносимым, и вот из-за угла, осторожно высунув сперва свою щучью морду, выворачивает БТР и следом за ним совершенно бесшумный в сравнении с БТР Икарус."
-    show dct_dream_sh_third_BTR_bus behind d_jn_old with dissolve
+    show dct_dream_sh_third_BTR_bus behind d_jn_old with dissolve:
+        zoom 0.75
     "С брони спрыгивает незнакомый майор, отдаёт честь:"
     show d_jn_young normal with dspr
     show dct_dream_sh_third_major behind d_jn_young at right with dissolve:

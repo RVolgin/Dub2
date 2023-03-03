@@ -208,7 +208,8 @@ label dct_sixhour_ped:
     $ renpy.pause(0.8, hard = True)
     
     #Яна и Яна
-    show dct_coin_bus-stop
+    show dct_coin_bus-stop:
+        zoom 0.75 xcenter 0.5
     show d_jn_old smile:
         zoom 0.75 xcenter 0.54
     show d_jn_young smile:
@@ -224,7 +225,7 @@ label dct_sixhour_ped:
     
     #Яна
     show dct_coin_bus-stop:
-        easeout 2.5 zoom 2.4 ycenter 0.6
+        easeout 2.5 zoom 1.8 ycenter 0.6
     show d_jn:
         easeout 2.5 zoom 4.8 ycenter 1.2
     stop music fadeout 2

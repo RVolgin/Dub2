@@ -387,12 +387,12 @@ label dct_fluctuation_ped:
     with dissolve
     "Вот полигон, где падают с неба горящие мишени и догорают уже на земле."
     "Вот тот же самый полигон, только по нему бегает маленький, с пятилетнего ребёнка, алюминиевый человечек. Все военные недоуменно переглядываются, а Сыроежкин стоит тут же, у раскрытого ящика, и довольный улыбается."
-    
-    scene dct_coin_bus-stop
+    scene dct_coin_bus-stop:
+        zoom 0.75
     show d_jn_old normal:
-        zoom 0.45 xcenter 0.37 ypos 0.1
+        zoom 0.55 xcenter 0.44 ypos 0.15
     show d_jn_young dontlike:
-        zoom 0.45 xcenter 0.28 ypos 0.1
+        zoom 0.55 xcenter 0.32 ypos 0.15
     show dct_dream_veil at shiver
     with dissolve
     "А вот автобусная остановка, на которой стоят удивительно знакомые женщина лет тридцати пяти и десяти-одиннадцатилетняя девочка. Женщина по случаю прохладной погоды в лёгком свитере, а девочку заставили надеть куртку, чем она крайне недовольна."
@@ -402,11 +402,13 @@ label dct_fluctuation_ped:
     with dspr
     "Они обе заметили Шурика, но стоят и не шевелятся, девочка радостно улыбается, а женщина пытается спрятать улыбку под строгой маской."
     "Во сне Шурик знает, что их зовут Яна и Яна. Во сне Шурик знает, что сами они не заговорят — к ним надо подойти; знает и то, что не надо к ним подходить. Но сдерживаться нет сил, и Шурик подходит."
+    show dct_coin_bus-stop:
+        zoom 1 anchor (0.1, 0.17)
     show d_jn_old smile:
-        zoom 1 xcenter 0.45 ycenter 0.833
+        zoom 1 xcenter 0.51 ycenter 0.833
     show d_jn_young smile:
-        zoom 1 xcenter 0.25 ycenter 0.833
-    with dissolve_fast
+        zoom 1 xcenter 0.29 ycenter 0.833
+    with dissolve
     d_jn_old "Здравствуй, Саша."
     show d_jn_old cry
     show d_jn_young smile
