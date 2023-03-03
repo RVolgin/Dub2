@@ -12,7 +12,7 @@ init 1:
         ###  С гиперссылками ничего не выходит
     
     $ style.dct_hyperlink_button = Style(style.dct_titles_button)
-    $ style.dct_hyperlink_button.font  = "mods/primerchik_navskidku_4/OpenSans-Bold.ttf"
+    $ style.dct_hyperlink_button.font = "mods/dublicate/fonts/OpenSans-Bold.ttf"
     $ style.dct_hyperlink_button.size = 30
     $ style.dct_hyperlink_button.color = "#54afff"
     $ style.dct_hyperlink_button.hover_color = "#abd8ff"
@@ -21,7 +21,7 @@ init 1:
     
     
     # $ style.dct_hyperlink = Style(style.dct_titles_button)
-    # $ style.dct_hyperlink.font  = "mods/primerchik_navskidku_4/OpenSans-Bold.ttf"
+    # $ style.dct_hyperlink.font = "mods/dublicate/fonts/OpenSans-Bold.ttf"
     # $ style.dct_hyperlink.size = 30
     # # $ style.dct_hyperlink.bold = True
     # $ style.dct_hyperlink.color = "#aaaaff"
