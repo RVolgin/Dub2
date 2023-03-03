@@ -3117,9 +3117,14 @@ label dct_olga_p9:
     
     scene black with blinds
     $ persistent.d_olga = d_olga + 1
-    menu:
+    
+menu:
         "Конец книги «О — значит Ольга»"
-        "Продолжить":
-            jump dct_coin
+        "Продолжить с динамичной подачей (темп сюжета как в предыдущих частях)":
+            $ dct_dynped = True
+            jump dct_coin_dyn
+        "Продолжить с педантичной подачей (сохранено оригинальное литературное повествование)":
+            $ dct_dynped = False
+            jump dct_coin_ped
         "В меню":
             jump dct_mnu2   
