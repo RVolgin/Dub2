@@ -83,7 +83,7 @@ label dct_spravochnik_ukaz:
             hotspot(1060,215,285,150) action [SetVariable("dct_sprav_page", 7), Play("sound", renpy.random.choice(dct_paper_sprav)), Jump("dct_spravochnik_pages")]  # ПР
             hotspot(1210,365,250,150) action [SetVariable("dct_sprav_page", 9), Play("sound", renpy.random.choice(dct_paper_sprav)), Jump("dct_spravochnik_pages")]  # ТУ
             hotspot(1215,680,280,285) action [SetVariable("dct_sprav_page", 11), Play("sound", renpy.random.choice(dct_paper_sprav)), Jump("dct_spravochnik_pages")] # ШЭЮ
-            hotspot(800,125,100,135) action Jump("dct_spravochnik_menu")    # Меню
+            hotspot(800,125,100,135) action [Hide("dct_spravochnik_ukaz", transition=Dissolve(0.5)), Jump("dct_spravochnik_menu")]    # Меню
                 
             
             
@@ -126,7 +126,11 @@ label dct_spravochnik_pages:
                     Jump("dct_spravochnik_ukaz_pause")
                     ]
             
-            hotspot(800,125,100,100) action Jump("dct_spravochnik_menu")    # Меню
+            hotspot(800,125,100,100):                                       # Меню
+                action [
+                    Hide("dct_spravochnik_pages", transition=Dissolve(0.5)),
+                    Jump("dct_spravochnik_menu")
+                    ]
             
             
 
@@ -140,7 +144,8 @@ label dct_spravochnik_ukaz_pause:
     # Выход в меню
     
 label dct_spravochnik_menu:
-    stop music
+    stop music fadeout 0.5
+    pause 0.6
     $ renpy.music.set_volume(1.0)
     jump dct_mnu2
 
