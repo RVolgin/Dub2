@@ -2,7 +2,7 @@ init:
 
     $ dct_sprav_page = []    # Номер стараницы, открытой в Справочнике
     
-    image dct_bg_delo_spravochnik = ConditionSwitch(True, im.Composite((1920, 1080), (0, 0), 'mods/dublicate/Images/gui/spravochnik/dct_bg_table.jpg', (0, 0), 'mods/dublicate/Images/gui/spravochnik/dct_bg_delo.png', (0, 0), 'mods/dublicate/Images/gui/spravochnik/dct_bg_title.png'))
+    # image dct_bg_delo_spravochnik = ConditionSwitch(True, im.Composite((1920, 1080), (0, 0), 'mods/dublicate/Images/gui/dct_bg_table.jpg', (0, 0), 'mods/dublicate/Images/gui/dct_bg_delo.png', (0, 0), 'mods/dublicate/Images/gui/spravochnik/dct_bg_title.png'))
 
 
     #sfx
@@ -36,7 +36,7 @@ label dct_spravochnik:
 
     $ day_time()
     $ dct_sprav_page = []
-    show dct_bg_delo_spravochnik
+    show image(im.Composite((1920, 1080), (0, 0), 'mods/dublicate/Images/gui/dct_bg_table.jpg', (0, 0), 'mods/dublicate/Images/gui/spravochnik/dct_bg_spravochnik.png', (0, 0), 'mods/dublicate/Images/gui/spravochnik/dct_bg_title.png'))
     window auto
     stop sound
     stop sound_loop

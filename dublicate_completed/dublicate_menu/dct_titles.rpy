@@ -93,9 +93,9 @@ init 1:
 
     screen dct_titles_authors_list: 
             
-        text 'СЮЖЕТ, СЦЕНАРИЙ, КОД\n{vspace=15}Двадцатьвторой (Тангейзер Вагнеров)\n\n{vspace=15}МЕНЮ\n{vspace=15}Лисёндра, Salo Tor, Павел Грошев\n\n{vspace=15}СЦЕНАРИЙ, КОД ("Монетка в фонтане")\n{vspace=15}Павел Грошев, Роман Волгин, Endless Sunset\n\n{vspace=15}ВЫЧИТКА, КОРРЕКЦИЯ\n{vspace=15}Андрей Серебрянников, Endless Sunset.\n\n{vspace=15}ГРАФИКА\n{vspace=15}Андрей Серебрянников, Павел Грошев':
+        text 'СЮЖЕТ, СЦЕНАРИЙ, КОД\n{vspace=15}Двадцатьвторой (Тангейзер Вагнеров)\n\n{vspace=15}МЕНЮ\n{vspace=15}Лисёндра, Salo Tor, Павел Грошев\n\n{vspace=15}СЦЕНАРИЙ, КОД ("Монетка в фонтане")\n{vspace=15}Павел Грошев, Роман Волгин, Endless Sunset\n\n{vspace=15}ВЫЧИТКА, КОРРЕКЦИЯ\n{vspace=15}Андрей Серебрянников, Endless Sunset.\n\n{vspace=15}ГРАФИКА\n{vspace=15}Ленофаг Тихонов, Андрей Серебрянников, Павел Грошев\n\n{vspace=15}При участии команды Переиздание-Reissue':
             xalign 0.5
-            ypos 0.25
+            ypos 0.2
             text_align 0.5
             color "#fff"
             font "mods/dublicate/fonts/OpenSans-Bold.ttf"
@@ -228,7 +228,7 @@ init 1:
             size 30
             outlines [(2, '#000', 0, 0)]
             
-        text 'Ветер крепчает\n{vspace=15}Повседневная жизнь старшеклассников':
+        text 'Повседневная жизнь старшеклассников':
             xalign 0.5
             ypos 0.6
             text_align 0.5
@@ -251,7 +251,7 @@ init 1:
 
     screen dct_titles_sounds_list:
     
-        text 'Стихи (а вообще-то песня) «Демон Дороги» - с разрешения автора: Светланы Никифоровой (Алькор)\n{vspace=15}Зелёный гитарист — Everlasting Summer [[guitar cover]\n{vspace=15}Wintergatan — Marble Machine, Sommarfågel, Starmachine2000, Telescope, Valentine\n{vspace=15}Инструментальная версия песни «Я ваша тайна» предоставлена автором: Владимиром Захаровым (Рок-Острова)\n{vspace=30}Дополнительные звуки и музыка:\nnoisefx.ru , freesound.org , vk.com/madiax, freemusicarchive.org , audeeyah.com , bensound.com':
+        text 'Стихи (а вообще-то песня) «Демон Дороги» - с разрешения автора: Светланы Никифоровой (Алькор)\n{vspace=15}Зелёный гитарист — Everlasting Summer [[guitar cover]\n{vspace=15}Wintergatan — Marble Machine, Sommarfågel, Starmachine2000, Telescope, Valentine\n{vspace=15}Инструментальная версия песни «Я ваша тайна» предоставлена автором: Владимиром Захаровым (Рок-Острова)\n{vspace=30}Дополнительные звуки и музыка:\nnoisefx.ru, freesound.org, vk.com/madiax, freemusicarchive.org, audeeyah.com, bensound.com':
             xalign 0.5
             ypos 0.2
             text_align 0.5            
@@ -319,14 +319,18 @@ init 1:
             size 50
             outlines [(2, '#000', 0, 0)]
             
-        text 'СЮЖЕТ, СЦЕНАРИЙ, КОД\n{vspace=15}Двадцатьвторой (Тангейзер Вагнеров)\n\n{vspace=15}МЕНЮ\n{vspace=15}Лисёндра, Salo Tor, Павел Грошев\n\n{vspace=15}СЦЕНАРИЙ, КОД ("Монетка в фонтане")\n{vspace=15}Павел Грошев, Роман Волгин, Endless Sunset\n\n{vspace=15}ВЫЧИТКА, КОРРЕКЦИЯ\n{vspace=15}Андрей Серебрянников, Endless Sunset.\n\n{vspace=15}ГРАФИКА\n{vspace=15}Андрей Серебрянников, Павел Грошев':
+        text 'СЮЖЕТ, СЦЕНАРИЙ, КОД\n{vspace=10}Двадцатьвторой (Тангейзер Вагнеров)\n\n{vspace=10}МЕНЮ\n{vspace=10}Лисёндра, Salo Tor, Павел Грошев\n\n{vspace=10}СЦЕНАРИЙ, КОД ("Монетка в фонтане")\n{vspace=10}Павел Грошев, Роман Волгин, Endless Sunset\n\n{vspace=10}ВЫЧИТКА, КОРРЕКЦИЯ\n{vspace=10}Андрей Серебрянников, Endless Sunset.\n\n{vspace=10}ГРАФИКА\n{vspace=10}Ленофаг Тихонов, Андрей Серебрянников, Павел Грошев':
             xalign 0.5
-            ypos 0.22
+            ypos 0.2
             text_align 0.5
             color "#fff"
             font "mods/dublicate/fonts/OpenSans-Bold.ttf"
             size 30
             outlines [(2, '#000', 0, 0)]
+        
+        text "При участии команды " xanchor 1.0 xpos 0.506 ypos 0.876 color "#fff" font "mods/dublicate/fonts/OpenSans-Bold.ttf" size 30 outlines [(2, '#000', 0, 0)]
+        
+        textbutton "Переиздание-Reissue" xanchor 0.0 xpos 0.506 ypos 0.876 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/bl_lmr_cosplay")
         
         textbutton 'Меню':
             xalign 0.4
@@ -643,7 +647,7 @@ init 1:
             size 50
             outlines [(2, '#000', 0, 0)]
 
-        text 'Ветер крепчает\n{vspace=15}Повседневная жизнь старшеклассников':
+        text 'Повседневная жизнь старшеклассников':
             xcenter 0.7
             ypos 0.63
             text_align 0.5

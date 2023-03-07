@@ -50,7 +50,8 @@ screen dct_menu_effector_sep:
 screen dct_menu_coin_sep:
     add "mods/dublicate/images/gui/dct_menu_coin_sep.png"
 screen dct_menu:
-    add "mods/dublicate/images/gui/dct_menu_bg.png"
+    add "mods/dublicate/images/gui/dct_bg_table.jpg"
+    add "mods/dublicate/images/gui/dct_bg_menu.png"
     if persistent.d_olga > 0:
         add "mods/dublicate/images/gui/dct_menu_olga_v.png"
     if persistent.d_sim > 0:
@@ -74,6 +75,13 @@ screen dct_menu:
     if persistent.d_coin > 0:
         add "mods/dublicate/images/gui/dct_menu_coin_v.png"
     timer 0.01 action ShowTransient("dct_menu_flower")
+    
+
+    textbutton "Дубликат":   # Это просто заголовок. Функции кнопки у него нет
+        xpos 0.648
+        ypos 0.102
+        style "dct_menu_button_exit"
+        text_style "dct_menu_button_exit"
     
     textbutton "О - значит Ольга":
         xpos 0.59
@@ -298,23 +306,14 @@ screen dct_menu:
                 style "dct_menu_button_pedantic"
                 text_style "dct_menu_button_pedantic"
                 action [SetVariable("dct_dynped", True)]
-    
-    
-    if (persistent.d_nam > 0) and (persistent.d_sim > 0) and (persistent.d_prolog > 0) and (persistent.d_ana > 0) and (persistent.d_dra > 0) and (persistent.d_shif > 0) and (persistent.d_lin > 0) and (persistent.d_miuki > 0) and (persistent.d_eff > 0) and (persistent.d_olga > 0) and (persistent.d_coin > 0):
-        textbutton "Справочник":         # Кнопка СПРАВОЧНИК (скрыта, пока не прочитан весь мод)
-            xpos 0.645
-            ypos 0.85
-            style "dct_menu_button_exit"
-            text_style "dct_menu_button_exit"
-            action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_spravochnik")]
-            
-            
-    textbutton "{space=65}Титры\n(финальные)":
-        xpos 0.37
-        ypos 0.85
-        style "dct_menu_button_exit"
-        text_style "dct_menu_button_exit"
-        action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_titles")]
+
+
+    # textbutton "{space=65}Титры\n(финальные)":
+        # xpos 0.37
+        # ypos 0.85
+        # style "dct_menu_button_exit"
+        # text_style "dct_menu_button_exit"
+        # action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_titles")]
         
         
     textbutton "Титры":
@@ -325,9 +324,27 @@ screen dct_menu:
         action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_credits")]
 
 
+    if (persistent.d_nam > 0) and (persistent.d_sim > 0) and (persistent.d_prolog > 0) and (persistent.d_ana > 0) and (persistent.d_dra > 0) and (persistent.d_shif > 0) and (persistent.d_lin > 0) and (persistent.d_miuki > 0) and (persistent.d_eff > 0) and (persistent.d_olga > 0) and (persistent.d_coin > 0):
+        textbutton "Справочник":         # Кнопка СПРАВОЧНИК (скрыта, пока не прочитан весь мод)
+            xpos 0.645
+            ypos 0.85
+            style "dct_menu_button_exit"
+            text_style "dct_menu_button_exit"
+            action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_spravochnik")]
+
+
     textbutton "Выход":
         xpos 0.78
         ypos 0.85
         style "dct_menu_button_exit"
         text_style "dct_menu_button_exit"
         action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_exit")]
+        
+        
+        
+                    
+            
+    imagebutton:            # Кнопка-штамп "Об авторе"
+        pos (0.14, 0.82)
+        auto "mods/dublicate/images/gui/dct_stamp_author_%s.png"
+        action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_epitaph")]
