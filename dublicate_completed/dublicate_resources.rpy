@@ -452,6 +452,7 @@ init :
     image dct_shot_by_arrow = "mods/dublicate/images/cg/dct_shot_by_arrow.jpg"    # Семёна подстрелили
     image dct_mt_with_cassette_and_tie = "mods/dublicate/images/cg/dct_mt_with_cassette_and_tie.jpg"    # Ольга с аудиокассетой и галстуком с подписями
     image dct_life_line_gatherings_around_campfire = "mods/dublicate/images/cg/dct_life_line_gatherings_around_campfire.jpg"    # Посиделки у костра (Линия жизни)
+    image dct_landscape_forest3_semen_us = "mods/dublicate/images/cg/dct_landscape_forest3_semen_us.png"    # Семён и Ульяна по плащём в дождь
     
     
     ##### cg (coin)
@@ -469,6 +470,19 @@ init :
     
     image dct_cg_christmas_balls_back = "mods/dublicate/images/cg/coin/dct_cg_christmas_balls_back.jpg"   # Шары на ёлке
     image dct_ball_to_world01 = "mods/dublicate/images/anim/coin/dct_ball_to_world01.png"   # Шар с Алисиным миром на ёлке
+    image dct_cg_christmas_balls_composite:                 # КОМПОЗИТНЫЙ АРТ ёлки с шарами
+        contains:
+            "dct_cg_christmas_balls_back"                   # Фон с еловыми ветками
+            zoom 1.0 anchor (0.35, 0.5) pos (-0.3, 0.5)
+        contains:
+            "dct_ball_to_world01"                           # Площадь в форме ёлочного шара
+            zoom 1.23 anchor (0.5, 0.5) pos (-0.3, 0.5) matrixcolor SaturationMatrix(0.75, desat=(0.9, 0.6, 0.05)) * TintMatrix("#be6012")
+        contains:
+            "dct_dv_in_christmas_ball"                      # Алиса в ёлочном шаре
+            zoom 0.82 anchor (0.522, 0.328) pos (-0.3, 0.5) matrixcolor SaturationMatrix(0.75, desat=(0.9, 0.8, 0.05)) * TintMatrix("#be8012")
+        contains:
+            "dct_christmas_ball"                            # Декоративная имитация ёлочного шара поверх площади и Алисы
+            zoom 1.0 anchor (0.5, 0.5) pos (-0.3, 0.5)
     
     image dct_cg_coin_volleyball = "mods/dublicate/images/cg/coin/dct_cg_coin_volleyball.jpg" # Воллейбол на пляже (с Семёном)
     image dct_cg_coin_dv_on_beach = "mods/dublicate/images/cg/coin/dct_cg_coin_dv_on_beach.jpg" # Алиса на пляже с полотенцем
