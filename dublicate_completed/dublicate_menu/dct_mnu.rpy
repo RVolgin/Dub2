@@ -1,6 +1,8 @@
 label dct_mnu2:
-    $ prolog_time()
+    $ day_time()
     scene black
+    show image("mods/dublicate/images/gui/dct_bg_table.jpg")
+    show image("mods/dublicate/images/gui/dct_bg_menu.png")
     call screen dct_menu
 #Техническое меню
 #Пока так, но однозначно в переделку.
