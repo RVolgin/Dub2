@@ -19,10 +19,10 @@ label dct_exit:
         stop music fadeout 1.0
     
     scene black
-    show credits dct_credits:
-        xalign 0.5
-        ypos 1.3
-        linear 52.0 ypos -4.0
-    $ renpy.pause(15)
+    # show credits dct_credits:     # С появлением отдельных титров в меню, потеряло актуальность
+        # xalign 0.5
+        # ypos 1.3
+        # linear 52.0 ypos -4.0
+    # $ renpy.pause(15)
 
 return
