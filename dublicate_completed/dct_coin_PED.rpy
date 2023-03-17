@@ -1218,6 +1218,7 @@ label dct_transitions_ped:
     
     
     play ambience ambience_camp_center_day fadein 1
+    play music music_list['i_want_to_play'] fadein 1
     scene bg ext_square_day
     show el normal pioneer close:
         xcenter 0.1
@@ -1379,6 +1380,7 @@ label dct_transitions_ped:
     with dissolve
     "Он ещё услышал, как Мику воскликнула: «Отлично, значит в восемь вечера у меня в кружке!», и пошёл собирать автографы за себя и за Шурика."
     stop ambience fadeout 1
+    stop music fadeout 1
     
     
     show black with dissolve
@@ -1677,6 +1679,7 @@ label dct_transitions_ped:
 
 
     play ambience ambience_dining_hall_full fadein 1
+    play music music_list['everyday_theme'] fadein 3
     scene dct_int_dining_hall_table_day_back_people
     show dct_int_dining_hall_table_day_chairs
     show d_el smile2 pioneer close as el:
@@ -1730,6 +1733,7 @@ label dct_transitions_ped:
     scene bg int_dining_hall_people_day with dissolve
     "Кибернетики отнесли грязную посуду на мойку и покинули столовую."
     stop ambience fadeout 1
+    stop music fadeout 1
     
     play sound_loop ambience_camp_center_day fadein 1
     scene bg ext_square_day
@@ -1820,6 +1824,7 @@ label dct_transitions_ped:
     show dv sad pioneer far at cright
     with dissolve_fast
     extend ". Но помешала невовремя появившаяся на крыльце и услышавшая про горн Алиса."
+    play music music_list['that_s_our_madhouse'] fadein 2
     show dv grin pioneer with dissolve_fast
     "Смерила взглядом Катерину, вопросительно посмотрела на неё и сказала, как задним числом уже поняла, некоторую двусмысленность:"
     dv "Катерина, это место занято!"
@@ -1866,6 +1871,7 @@ label dct_transitions_ped:
     dv "\~ Вот чёрт, я не хотела. \~"
     show dv grin pioneer as dv2 with dissolve_fast
     dv "\~ Хотя перебьётся Катька, от неё и так мальчики не отходят. \~"
+    stop music fadeout 1.5                          
     scene dct_ext_dining_bench_day
     show d_ka angry pioneer:
         zoom 0.2 xcenter 0.575 ycenter 0.68
@@ -2344,6 +2350,7 @@ label dct_transitions_ped:
 
 
     play ambience ambience_camp_center_night fadein 1
+    play music peritune_gentle_theme_piano fadein 2
     scene bg ext_playground_night with dissolve
     "Уже стемнело, когда дверь в спортзал открылась и на пороге показались два силуэта."
     scene bg ext_dining_hall_away_night with pushright
@@ -2527,6 +2534,7 @@ label dct_fluctuation_ped:
     
     
     play ambience ambience_camp_center_day fadein 1
+    play music music_list['afterword'] fadein 3
     window show
     # scene bg ext_square_day with dissolve
     scene dct_ext_square_profile_view_day with dissolve # Возможно, этот ракурс площади более уместен?
@@ -2535,7 +2543,6 @@ label dct_fluctuation_ped:
     "Максим, правда, не понял ещё, последнее — это хорошо или плохо: с одной стороны, никто не контролировал, как он проводит время и не заставлял ходить строем; а с другой — он уже дважды за сутки успел получить втык от вожатой и от Алисы."
     stop ambience fadeout 1
     
-    play music cambo_coffee fadein 1
     scene anim prolog_1 with dissolve
     show mt angry pioneer
     show dct_dream_veil at shiver
@@ -2603,7 +2610,7 @@ label dct_fluctuation_ped:
         linear 1.5 alpha 1
     stop ambience fadeout 2.5
     "Максим побежал к флагштокам на своё место и подумал: почему он совершенно не обижается на Алису за её, казалось бы, грубость и вчера, и сегодня? Что-то чувствовалось хорошее за показной резкостью помощницы вожатой."
-    
+    stop music fadeout 1
     scene black with dspr
     window hide
     $ renpy.pause(1.0)
@@ -2702,7 +2709,7 @@ label dct_fluctuation_ped:
     
     $ set_mode_nvl()
     window show
-    play music music_list['everyday_theme'] fadein 0.5
+    play music music_list['eat_some_trouble'] fadein 0.5
     show dv angry pioneer:
         xcenter 0.5 alpha 0
         linear 1 alpha 1
@@ -2845,7 +2852,7 @@ label dct_fluctuation_ped:
     stop sound fadeout 1.5
     "Опять кто-то лёгкий пробежал по краю крыши, на Шурика сверху посыпался мусор, но задремавший Шурик не отреагировал."
     stop sound_loop fadeout 1
-    play music music_list['afterword'] fadein 1
+    play music twinkling fadein 1
     scene black with dissolve
     "Сон на этот раз был несвязный. Может быть, там, во сне, внутренняя логика и присутствовала, но вот запомнился он разрозненными фрагментами."
     scene dct_dream_sh_first_disert
@@ -2924,6 +2931,7 @@ label dct_fluctuation_ped:
     
     window show
     play ambience ambience_dining_hall_full
+    play music music_list['i_want_to_play'] fadein 2
     scene dct_int_dining_hall_table_sunset_back_people
     show dct_int_dining_hall_d_ka blur:
         xcenter 0.35 ycenter 0.35
@@ -3076,7 +3084,7 @@ label dct_fluctuation_ped:
     $ persistent.sprite_time = "sunset"
     "Покрасневшая Алиса предпочла, закончив с ужином, отправиться по своим делам, отмолчавшись на просьбу японки."
     stop ambience fadeout 1
-    
+    stop music fadeout 2
     
     
     
@@ -3163,6 +3171,7 @@ label dct_fluctuation_ped:
     show d_ma smile pioneer with dissolve_fast
     extend " Но с условием. Жени и Ленки не будет, скорее всего, но чтобы Мику и Сашу пригласил обязательно."
     scene bg ext_path_night with blinds
+    play music music_list['dance_of_fireflies'] fadein 2
     "И вот сейчас Максим искал Алису, чтобы проводить её до домика под тем предлогом, что сам живёт в соседнем. Пошёл по тропинке на голос и уже перед аллеей нечаянно подслушал разговор."
     dv "Завтра уходите?"
     me "Да, в пять утра."
@@ -3194,6 +3203,7 @@ label dct_fluctuation_ped:
     dv "Ну тогда до послезавтра."
     us "Да, до послезавтра. К полудню будем. И не вздумайте нас спасать ещё раз!"
     "Силуэты на аллее обнялись. Двое пошли в сторону спортзала, а третий повернул назад, к площади. Максим бегом обогнал Алису по тропинке, вывалился из кустов на площадь и перехватил проходящую по аллее Двачевскую."
+    play music adaytoremember fadein 2
     scene bg ext_square_night
     show dv surprise pioneer2 far
     with irisout
@@ -3501,7 +3511,7 @@ label dct_disposition_ped:
     pause 1
 
 
-    play music music_list['i_dont_blame_you'] fadein 1
+    play music peritune_gentle_theme_piano fadein 1
     play ambience ambience_library_day fadein 1
     scene bg int_library_day:
         matrixcolor BrightnessMatrix(value=-0.25)
@@ -3625,6 +3635,9 @@ label dct_disposition_ped:
     "Лена тоже против общества Максима не возражала, поэтому скоро тишину в библиотеке прерывало только шуршание страниц и шмыгающий нос нелегально искупавшегося вчера Максима."
     show d_ma serious pioneer with dissolve_fast
     d_ma "Лен, а можно спросить?"
+    stop ambience
+    $ renpy.music.set_volume (0.5)
+    play music anewbeginning fadein 3
     show un shy pioneer with dspr
     "Максим решился начать разговор."
     d_ma "Скажи, вы нашего физрука давно знаете? Ты и Алиса."
@@ -3648,6 +3661,8 @@ label dct_disposition_ped:
     show d_ma smile pioneer with dissolve_fast
     d_ma "То есть ему было лет восемь.{w=0.5} Ну да, если так, то он для вас не заместитель начальника лагеря, а просто как старший брат. Понятно."
     show un smile pioneer with dissolve
+    stop music fadeout 2.5
+    play ambience ambience_library_day fadein 2
     "Все было не так, но Лена не стала поправлять."
     show un normal pioneer with dspr
     play sound sfx_open_door_1
@@ -3664,7 +3679,7 @@ label dct_disposition_ped:
     window hide
     stop ambience fadeout 1
     scene black with dissolve
-
+    $ renpy.music.set_volume (1.0)
     pause 0.5
 
 
@@ -3682,6 +3697,7 @@ label dct_disposition_ped:
     "Шурик запер клуб и, огибая здание, пошёл на своё вчерашнее место."
     stop sound_loop fadeout 1
     play ambience ambience_forest_day fadein 1
+    play music the_day_when_i_die fadein 2
     scene dct_ext_glade_behind_clubs_day
     show dct_ext_glade_behind_clubs_day_barberry
     with dissolve
@@ -3693,7 +3709,7 @@ label dct_disposition_ped:
     "Далее следовало описать события первого дня.{w} Шурик порылся в памяти:\n{i}Событие первое — сон в автобусе. Приснилось, что мне сорок лет и я еду в лагерь с пионерами. Почему-то называю пионеров {b}миксами{/b} и {b}копиями{/b}.{/i}"
     "{i}Событие второе — провал в памяти. Поздно вечером обнаружил себя стоящим на площади, спиной к лаборатории. Что делал в лаборатории — не помню, и восстановить свои действия не удалось{/i}."
     "{cps=0}{i}Событие второе — провал в памяти. Поздно вечером обнаружил себя стоящим на площади, спиной к {s}лаборатории{/s}. Что делал в {s}лаборатории{/s} — не помню, и восстановить свои действия не удалось{/i}.{/cps} Шурик зачеркнул «лабораторию» и написал «кружок». Вроде бы всё.{w} Но тут мысли Шурика перебили."
-    
+    stop music
     mip "Привет. А ты Сергея не видел?" ### у Оксаны имя голубого цвета. Стоит ли вводить отдельный тег?  
     "Главный кибернетик, вздрогнув от неожиданности, уронил карандаш." with hpunch
     show d_oz n pioneer behind dct_ext_glade_behind_clubs_day_barberry with dissolve:
@@ -3749,8 +3765,9 @@ label dct_disposition_ped:
     "А потом, без перехода, Лена вспомнила, как в столовой Женя и Электроник постоянно бросали взгляды друг на друга и как они вздрагивали, отводили глаза и зажимались, если этим взглядам случалось встретиться.{w} Да, это оно."
     "Лена быстро набросала сцену приручения стрекозы, чтобы поработать над ней после, когда время будет, а сама взяла карандаши, папку с бумагой и направилась к Жене в библиотеку."
     stop sound_loop fadeout 2
-    play music twisterium_eternal_love fadein 3
+    
     scene bg int_library_day
+    play ambience ambience_library_day fadein 2
     show mz normal pioneer glasses at right
     with dissolve
     mz "А, это ты. Заходи."
@@ -3762,6 +3779,9 @@ label dct_disposition_ped:
     "Женя фыркнула на слове «публичная» и пожала плечами."
     show mz normal pioneer glasses with dspr
     mz "Читай."
+    $ renpy.music.set_volume (0.5, delay=1.5)
+    stop ambience fadeout 1
+    play music fm_freemusic_chillout_music fadein 3
     hide mz with dissolve
     "Лена так и сделала — ну почти так. Выбрала книгу побольше форматом, устроилась за одним из читательских столов так, чтобы Женя оказалась в нужном ракурсе, и, спрятав в раскрытой книге лист бумаги, начала делать зарисовки, стараясь поймать эмоции." #цг-шку бы сюда
     "Женя читала что-то своё, время от времени бросая взгляды за окно и на входную дверь, хмурилась, коротко поджимала губы и переворачивала страницу.{w} А после очередной страницы проскрипела, не глядя на Лену:"
@@ -3778,8 +3798,6 @@ label dct_disposition_ped:
         alpha 0
         pause 1.5
         linear 1 alpha 1
-    stop music fadeout 4
-    play ambience ambience_library_day fadein 2.5
     "Ещё на полчаса девочки погрузились в молчание, прерываемое шелестом бумаги и редкими вздохами. Да иногда снаружи доносились голоса пионеров: по Плану мероприятий у среднего отряда было сейчас свободное время, чем они и пользовались, устроив беготню по всему лагерю."
     th "А ведь она ждёт, что Сергей заглянет, а тот боится и где-то прячется."
     extend " Зря девочки посадили Сергея на моё место, и зря я на это согласилась. Нужно бы сейчас всё рассказать, но Женя не поверит — решит, что я Сергея выгораживаю. С её-то точки зрения всё было так, как она увидела."
@@ -3799,9 +3817,9 @@ label dct_disposition_ped:
     window hide
 
     pause 0.5
+    $ renpy.music.set_volume (1.0, delay=1)
 
 
-    play music music_list['your_bright_side'] fadein 1
     window auto
     scene bg int_library_day
     show d_mz sad pioneer glasses close:
@@ -3827,8 +3845,6 @@ label dct_disposition_ped:
         zoom 1.25 align (-0.5, 0.5) alpha 0
         pause 1.3
         linear 1 alpha 1
-    stop music fadeout 2
-    play ambience ambience_library_day fadein 2
     extend " вздрогнула, когда вдруг повернулась дверная ручка.\n«Он!» — ёкнуло внутри."
     play sound sfx_medpunkt_door_open
     scene dct_int_library_standing_desk_back
@@ -3840,12 +3856,15 @@ label dct_disposition_ped:
     show dct_int_library_standing_desk_reader_place behind un
     show d_un hope pioneer as un behind dct_int_library_standing_desk_reader_place with dissolve:
         zoom 0.2 xcenter 0.48 ycenter 0.32
+    $ renpy.music.set_volume (0.5, delay=1.5)
     "Лену Женя уже отнесла к числу безопасных, подвоха от неё не ждала, поэтому выгонять из библиотеки не стала, а разрешила остаться и посидеть-почитать. В общем-то, каждый любитель посидеть-почитать был понятен Жене и не вызывал у неё ни агрессии, ни испуга."
     "И даже то, что Лена вместо чтения занялась рисованием, Женю особо не раздражало."
     show un surprise pioneer with dissolve_fast
     extend " Так только, дала понять, что заметила, и всё.{w} Только поначалу неприятно немного было оказаться в фокусе чужого внимания."
     show un grin pioneer with dissolve_fast
     extend " Под конец даже разговорились немного, обсуждая разное."
+    stop music fadeout 3
+    play ambience ambience_library_day fadein 2
     show d_un hope pioneer as un with dspr
     un "Женя, в субботу сбор отряда будет."
     mz "Я не приду."
@@ -3881,6 +3900,8 @@ label dct_disposition_ped:
     "Теперь осталось только вернуть журналы на место, и можно запирать библиотеку на перерыв. Или не запирать — идти всё равно некуда."
     "Женя взяла журналы, подержала их в руках и положила обратно на полку."
     show d_mz sceptic pioneer glasses close with dspr
+    $ renpy.music.set_volume (1.0)
+    play music music_list['just_think'] fadein 3
     "Потом взяла самый верхний и быстро пролистала его. Нет, всё верно, вон и библиотечный штамп на месте. Но всё же."
     show d_mz surprise pioneer glasses close with dspr
     "Женя подошла к каталогу, выдвинула несколько ящичков и умело пробежалась по картотеке, потом проделала это ещё раз, читая каждую карточку, вынимая карточки из ящичков и проверяя, не завалилась ли какая-нибудь карточка, выпав из общего ряда."
@@ -3897,6 +3918,7 @@ label dct_disposition_ped:
     th "Кажется, придётся спросить у новенького, где он берёт журналы. Может, он и книг хороших оттуда же натаскает?"
     window hide
     stop ambience fadeout 1
+    stop music fadeout 1
     scene black with dissolve
 
     pause 0.5
@@ -4575,6 +4597,7 @@ label dct_debut_ped:
     scene int_clubs_male_day
     show el serious pioneer close at cleft
     with dissolve
+    play music homeworldcollapse 
     "Что-то невидимое, жужжа электромоторами и иногда задевая за кусты, скрывающие заброшенное здание напротив, двигалось со скоростью пешехода по обочине главной аллеи от перекрёстка в направлении ворот."
     show el angry pioneer close with dspr
     el "Уйдёт ведь!"
@@ -4592,6 +4615,7 @@ label dct_debut_ped:
     play sound sfx_chair_fall
     "Небольшой трансформатор выпал из разжавшейся кисти Сыроежкина обратно на стол, глухо стукнув при этом."
     show el sad pioneer close with dspr
+    stop music fadeout 2
     el "Этого я не учёл."
     show sh normal_serious pioneer close dct with dissolve_fast
     sh "Но, Сергей."
@@ -4690,6 +4714,7 @@ label dct_debut_ped:
 
 
     play ambience ambience_lake_shore_day fadein 1
+    play music music_list['she_is_kind'] fadein 2
     scene dct_ext_beach_day_with_pass_train
     show mt angry panama swim close
     with dissolve
@@ -4819,6 +4844,7 @@ label dct_debut_ped:
     hide d_ma with dissolve
     stop sound_loop fadeout 1.5
     stop ambience fadeout 1.5
+    stop music fadeout 1
     show black:
         alpha 0
         pause 0.5
@@ -4861,18 +4887,19 @@ label dct_debut_ped:
         pause 1.5
         linear 1 alpha 1
     "Купание, пляжный волейбол, обед… Так часов до трёх письмо и пролежало в кармане, забытое и нетронутое."
+    stop music fadeout 2   
     play ambience ambience_int_cabin_day fadein 3
     scene bg int_house_of_dv_day with blinds
     "И только после обеда, когда Алиса завалилась в домике на койку и потянула к себе тетрадку, сложенный вчетверо листок напомнил о себе."
-    stop music fadeout 2.5
     "Алиса потянула его из кармана, развернула и некоторое время просто разглядывала буквы собственного почерка."
     window hide
     
     pause 0.5
-    
-    $ set_mode_nvl()
-    play music anewbeginning fadein 0.5
     stop ambience fadeout 0.5
+    play music twisterium_eternal_love fadein 1
+    show dct_coin_letter1 at truecenter with dspr
+    pause 1
+    $ set_mode_nvl()
     window show
     "Привет…{w=0.8} сестрёнка.{w} Раз уж Ульяны так между собой общаются и я к тебе во сне так же обратилась, то и буду обращаться так же. Насколько я себя (тебя) знаю, ты не будешь против.{w} Кстати, это точно был сон? Потому что нашим Мику, Ульянке и Славе снилось то же самое.{w} Но что-то меня не туда понесло, начинаю сначала."
     "\nПривет, сестрёнка!{w} Обе Ульяны и Сенька очень хорошо о тебе отзываются, вот я и решила написать.{w} Очень бы хотелось познакомиться лично, но Сенька бьёт себя пятками в грудь, морщит верхнюю губу и качает головой.{w} «Я, — говорит, — не уверен, что это безопасно для вас. Что одна из вас не исчезнет в течение получаса. Вы не настолько друг от друга отличаетесь, чтобы безопасно сосуществовать в одном узле. Имею, — мол, — опыт».{w} Приходится ему верить, а жаль.{w} А мне кажется, что мы с тобой не отражения одного и того же человека, а самостоятельные люди — просто, ну, как двойняшки. Или потомки того самого человека.{w} Ты, конечно, поопытнее меня будешь и вон как высоко прыгнула — в помощницы вожатой (шучу), но и я не хуже.{w} Рассказала о твоей должности Славе, а та только улыбнулась и сказала, что сочувствует тебе. Вот так, тогда я тоже тебе сочувствую."
@@ -4884,7 +4911,6 @@ label dct_debut_ped:
     "\nЗавидую вам и сержусь на Сеньку, что он к вам от нас сбежал (про сержусь тоже шутка), потому что новый его двойник... он пока так — ни рыба ни мясо.{w} Но хоть Сенька и сбежал к вам, но проснулся он именно у нас; я надеюсь, что в этом есть и моя заслуга, пусть я и не понимала, что делаю. Так что тоже можешь мне завидовать."
     "\nСестрёнка, я очень хочу рискнуть и тебя увидеть, и если ты не против — дай знать. Хоть через ваших Сеньку с Ульянкой дай знать, они в следующем цикле собрались опять к нам.\n\n\n{space=1200}{i}{size=+10}Алиса{/size}{/i}"
     "\nP.S. Приготовь свои детские воспоминания. Мы обязательно должны их сравнить!"
-    stop music fadeout 2.5
     nvl hide dissolve
     nvl clear
     nvl show dissolve
@@ -5152,6 +5178,7 @@ label dct_debut_ped:
 
 
     play ambience ambience_camp_center_evening fadein 1
+    play music music_list['farewell_to_the_past_full'] fadein 2
     scene bg ext_square_sunset:
     show un normal pioneer at cright:
         ycenter 0.65
@@ -5222,6 +5249,7 @@ label dct_debut_ped:
     th "Но они же держали свои руки на моих плечах, отдавая мне свою силу — это точно. И я помню это, и они помнят."
     show un surprise pioneer with dspr
     th "Сегодня Алиска на пляже положила свою ладонь мне на плечо, так мы обе вздрогнули!"
+    stop music fadeout 5
     show un normal pioneer with dissolve_fast
     "На площади появился Максим с горном под мышкой."
     show un smile pioneer with dspr
@@ -5330,6 +5358,7 @@ label dct_d7_d5_ped:
     scene bg int_dining_hall_day
     show d_bg normal suit at cright:
         yalign .1
+    show dct_dream_veil at shiver
     with blinds
     window auto
     d_gd "Попадёшь в двести первый узел — увидишь там развалины домов."
@@ -5369,19 +5398,19 @@ label dct_d7_d5_ped:
     $ day_time()
     $ persistent.sprite_time = "day"
     window auto
-    play music brush_marks fadein 1
+    play music twinkling fadein 1
     scene dct_coin_bus-stop:
         zoom 0.75
     show dct_dream_veil at shiver
     with dissolve
     "А Шурику действительно снова снился сон Александра."
-    show d_jn_old angry:
+    show d_jn_old angry behind dct_dream_veil:
         zoom 0.75 xcenter 0.39
-    show d_jn_old normal as d_jn_old_norm:
+    show d_jn_old normal as d_jn_old_norm behind dct_dream_veil:
         zoom 0.75 xcenter 0.39 alpha 1
         pause 1.6
         linear 0.2 alpha 0
-    show d_jn_young normal:
+    show d_jn_young normal behind dct_dream_veil:
         zoom 0.75 xcenter 0.31
     with dissolve
     "Опять ему снились обе Яны, стоящие на остановке.{w=.7} И опять старшая Яна ругала его во сне."
@@ -5881,6 +5910,8 @@ label dct_d7_d5_ped:
     
     
     play ambience ambience_camp_center_day fadein 1
+    $ renpy.music.set_volume(0.5)
+    play music music_list['two_glasses_of_melancholy'] fadein 2
     scene bg ext_clubs_day
     show 3500_sl serious pioneer:
         zoom .17 anchor (.5, 1.0) pos (.46, .71)
@@ -6069,6 +6100,7 @@ label dct_d7_d5_ped:
     "И вспомнилась ещё одна Ленина работа, совсем свежая, висящая в тренерской."
     stop ambience fadeout 1
     
+    play music peritune_gentle_theme_piano fadein 1
     play sound_loop ambience_camp_center_day fadein 1
     scene black
     show dct_int_coaching_room3:
@@ -6111,7 +6143,7 @@ label dct_d7_d5_ped:
         linear 3 zoom 0.1 pos (.72, .5) alpha 0
     "И идут эти мальчик с девочкой вроде бы каждый сам по себе, но по тому, как они чуть склонились друг к другу, как они старательно при этом отводят друг от друга глаза, как они идут в ногу, видно, что уже связаны они, хотя ещё и сами об этом не подозревают."
     stop sound_loop2 fadeout 1
-
+    stop music fadeout 1
     play ambience ambience_dining_hall_full fadein 1
     scene bg int_dining_hall_people_day with blinds
     "Столовский шум волнами накатывался и отступал, иногда из него удавалось выделить отдельные голоса."
@@ -6400,8 +6432,7 @@ label dct_d7_d5_ped:
         ease 2.5 size (1920, 1252) align (1.0, 0.5)
     "Та аллея, на которой стояла библиотека — она расширялась в самом конце; посередине расширения располагалась клумба, увенчанная очередным гипсовым пионером, и в этом лагере, где не было своей Слави, совершенно заброшенная; а по периметру были расставлены скамейки."
     window auto
-    stop ambience fadeout 1
-    play music dreamers_of_the_day fadein 1
+    play music music_list['confession_oboe'] fadein 2
     scene dct_mz_and_el_sitting_on_bench_near_flowerbed with squares
     "Вот на одной из этих скамеек сейчас и сидели Женя и Сыроежкин и большую часть времени молчали."
     "Обоим было ужасно неловко, оба не знали, куда девать руки, оба краснели, едва пересекаясь взглядом, но разбежаться, как будто ничего не было, казалось ещё хуже."
@@ -6421,6 +6452,7 @@ label dct_d7_d5_ped:
     $ day_time()                        # Прописано, чтобы при обратной перемотке цвета не сбивались.
     $ persistent.sprite_time = "day"
     "Жаль, что это некому было видеть: старшие были заняты своими делами, а средние и младшие уже к тому времени были на пляже."
+    stop ambience fadeout 1
     stop music fadeout 1.5
     show black with dissolve
     window hide
@@ -6480,6 +6512,7 @@ label dct_d7_d5_ped:
     
     $ persistent.sprite_time = "sunset"
     scene bg ext_house_of_mt_sunset
+    play music tenderness fadein 2
     show d_sf normal pioneer at left:
         ypos 0.2
     show unblink
@@ -7836,7 +7869,7 @@ label dct_foreign_land_ped:
     
 
     $ persistent.sprite_time = "night"
-    play music music_list['confession_oboe']
+    play music music_list['afterword'] fadein 1
     scene dct_int_clubs_male_rain with dissolve
     pause 0.3
     show el serious pioneer close at right with dissolve
@@ -7910,6 +7943,7 @@ label dct_foreign_land_ped:
     scene dct_el_in_cage with squares
     "И стена с окном медленно поползла слева направо, а шкаф начал вплывать в поле зрения."
     "Предстояло самое трудное: усидеть десять минут, не думая о Жене. Вообще ни о чём не думая, но главное — о Жене."
+    $ renpy.music.set_volume(0.4, delay=1.0)
     scene white with dissolve
     "Электроник прикрыл глаза и представил перед собой белую, слабо светящуюся стену, за которой остался весь внешний мир."
     show mz normal pioneer close:
@@ -7924,14 +7958,12 @@ label dct_foreign_land_ped:
         alpha 0
         linear 0.5 alpha 0.2
     extend " Женя…"
-    stop music fadeout 1
+    $ renpy.music.set_volume(1.0, delay=1.0)
     show black with dissolve
     hide mz
     
     pause 0.5
     
-    $ renpy.music.set_volume(1.0, delay=0.0)
-    play ambience ambience_clubs_inside_day fadein 1
     play sound sfx_door_bell
     hide black with dissolve
     "Пискнул таймер, десять минут пытки безмыслием истекли."
@@ -9031,7 +9063,9 @@ label dct_system_errors_ped:
     with dissolve
     sh "Сергей, я думаю, что просто мы ещё слишком мало знаем о мозге, и ошибка закралась в самом начале."
     "Шурику было неудобно перед товарищем, но он старался не показывать виду; сказывался опыт Александра, которому случалось представлять неудачи в экспериментах как запланированные результаты."
+    stop ambience fadeout 1
     
+    play music higekitekina fadein 1
     scene dct_ext_another_clubhouse_day with squares
     "В окно открывался вид на заброшенное здание напротив — логово Яны."
     "Она и сейчас где-то там, внутри.{w} Или ещё где-то."
@@ -9085,6 +9119,8 @@ label dct_system_errors_ped:
     show el sad pioneer with dissolve_fast
     sh "\~ Это, правда, убьёт Яну-робота и нынешнего Шурика, но кому они нужны, кроме друг друга? Они — так, побочный результат сбоев в экспериментах. \~"
     sh "\~ Но то, что дело не в нашей установке — ты ошибаешься, дело именно в ней. \~"
+    stop music fadeout 2
+    play ambience ambience_clubs_inside_day fadein 1
     show sh normal_smile pioneer with dissolve_fast:
         ycenter 0.5
     sh "Спасибо, Сергей. Дело именно в установке, что бы ты ни думал. Я справлюсь, не переживай."
@@ -9171,6 +9207,7 @@ label dct_system_errors_ped:
 
 
     scene dct_ext_island_glance_south_day
+    play music peritune_gentle_theme_piano fadein 1
     show un smile pioneer close:
         xcenter 0.86 ycenter 0.6
     with dissolve
@@ -9216,6 +9253,7 @@ label dct_system_errors_ped:
     th "А вот куда уйдём — я не знаю. В Шлюз? В пустые узлы? В материнские миры?"
     th "Ульяна говорила, что выход туда через теплообменник скоро закроется, но ведь есть же ещё точки перехода в пещерах."
     extend " Что-то я запомнила из прошлого цикла, из того, что не хотела запоминать, никуда не денешься."
+    stop music
     $ renpy.sound.set_volume(1.7, delay=0, channel='sound2')
     $ renpy.sound.set_volume(2.5, delay=0, channel='sound3')
     play sound sfx_blow_out_candle
@@ -9318,6 +9356,7 @@ label dct_system_errors_ped:
     
 
     play ambience ambience_library_day fadein 1
+    play music music_list['your_bright_side'] fadein 3
     scene bg int_library_day
     show d_mz smile3 glasses pioneer close at right
     with dissolve
@@ -9375,6 +9414,7 @@ label dct_system_errors_ped:
     show d_sf sad pioneer with dspr
     "Семён проводил девочку взглядом, кивнул своим мыслям и опять уткнулся в бумагу."
     stop ambience fadeout 1
+    stop music fadeout 1
     show black with dissolve
     
     play ambience ambience_library_day fadein 1
@@ -9663,7 +9703,7 @@ label dct_system_errors_ped:
     "Семён выбрался из лодки, поддержал девушек, пока они обувались, и необычная компания продолжила обход лагеря."
     
     #"Ульяна посередине, Семен справа, и слева, чуть в стороне, Катя."  # Опускаем.
-    
+    play music music_list['farewell_to_the_past_edit'] fadein 2    
     "Дорога шла вдоль берега, справа за деревьями показался домик Алисы. Можно было разглядеть хозяйку, сидящую на крыльце и что-то пишущую в тетрадь."
     stop ambience fadeout 1
     play sound_loop ambience_lake_shore_night fadein 1
@@ -10010,6 +10050,8 @@ label dct_dreamreality_ped:
     show black with dissolve_fast:
         alpha 0.6
     hide black with dissolve_fast
+    play music music_list['tried_to_bring_it_back'] fadein 2
+    stop ambience fadeout 1
     "Лампочка под куполом мигнула. Вдруг показалось, что кроме этой эстрады, ничего больше в мире не существует, что весь мир сжался до янтарно-жёлтого шара, в который заключена эстрада и два человека на ней."
     d_ma "\~ Как там Алиса сказала? «Вспомни свой домашний адрес», — а я не помню! Как я могу его вспомнить, если его не существует, если существуют только Алиса и её глаза? \~"
     d_ma "\~ Вот был целый мир, а лампочка мигнула, и раз — и нет мира, остался только лагерь внутри жёлтого шара, а прочий мир перестал существовать. \~"
@@ -10040,6 +10082,7 @@ label dct_dreamreality_ped:
     "Показалось, что ровный горизонтальный край сцены начал терять чёткость очертаний и размываться."
     "Страшно не было."
     d_ma "\~ Вот и всё. Я исчез, не успев даже влюбиться в тебя. \~"
+    stop music fadeout 2
     play ambience ambience_camp_center_night fadein 2
     show dct_ext_stage_close_night_darker:
         linear 2 blur 0
@@ -10641,11 +10684,11 @@ label dct_horizontal_transport_ped:
     stop sound
     stop sound_loop
     stop ambience
-    play music twinkling
     show headline_text2 u"Глава XI. Горизонтальный транспорт" at truecenter with dspr
     $ renpy.pause(3.0)
     hide headline_text2 with dissolve
 
+    play ambience ambience_camp_center_night fadein 1
     scene bg ext_square_night
     show un normal pioneer at left:
         ycenter 0.65
@@ -10738,6 +10781,8 @@ label dct_horizontal_transport_ped:
     me "Лена?"
     show un cry_smile pioneer with dissolve_fast
     "Лена посмотрела на Семёна неожиданно доверчиво. И как когда-то рассказала ему о себе и Семёне-втором, начала свой рассказ."
+    stop ambience fadeout 1
+    play music twinkling fadein 1
     show anim prolog_1:
         alpha 0
         linear 0.5 alpha 1
@@ -10765,6 +10810,8 @@ label dct_horizontal_transport_ped:
     un "И вот у нас всё встало на свои места.{w} Никакая мы не модель. Никто нас не придумывал. Есть наши лагеря — Сеть, как вы с Ульяной их называете, есть Материнские миры и есть Земля."
     un "И всё это связано — через людей.{w} И там, и там, и здесь."
     un "И вот мы сейчас переписываем рассказик.{w} То есть переписывают Мику из того лагеря с нашей Алиской, а я так, на подхвате — почитать, покритиковать, иллюстрации сделать.{w} И Ульянка-маленькая, она — наш почтальон."
+    stop music fadeout 1.5
+    play ambience ambience_camp_center_night fadein 1
     show un serious pioneer
     show anim prolog_1:
         alpha 1
@@ -10812,7 +10859,7 @@ label dct_horizontal_transport_ped:
     extend " И сестрёнка подумает. И Алиса подумает."
     show d_us smile sport_windbreaker with dspr
     extend " А сейчас — пошли спать, Сёмк."
-    stop music fadeout 1.5
+    stop ambience fadeout 1
     scene black with dissolve
     
     pause 1.2
@@ -10856,6 +10903,8 @@ label dct_horizontal_transport_ped:
     th "Покоя тебе, где бы ты ни был."
     show d_jn with dissolve_fast:
         xalign 0.5 yalign 0.3
+    stop ambience fadeout 1
+    play music fm_freemusic_chillout_music fadein 2
     d_jn "Па, а зачем я?"
     "Нужно было отвечать."
     th "Я не должен чувствовать вину, но мне стыдно."
@@ -10896,7 +10945,6 @@ label dct_horizontal_transport_ped:
         pause 0.6
         linear 1 alpha 0
     extend " Над конструкцией я тоже буду думать."
-    stop ambience fadeout 1
     play sound_loop ambience_int_cabin_night fadein 1
     scene dct_int_house_of_el_night with slidedown
     "Яна убежала, а неожиданно развеселившийся Шурик вернулся в домик, покосился на спящего Сыроежкина, подмигнул своему отражению и прошептал:"
@@ -10904,6 +10952,7 @@ label dct_horizontal_transport_ped:
     $ persistent.sprite_time = "night"
     sh "Не надо оваций. Если пионера и руководителя кружка кибернетики из меня не выйдет, я всегда могу переквалифицироваться в пожилые электрики."
     stop sound_loop fadeout 1
+    stop music fadeout 1
     show black with dissolve
     window hide
     
@@ -10984,6 +11033,7 @@ label dct_horizontal_transport_ped:
     with dissolve
     "Максим чуть отстал от проскользнувшей вперед Сашки и, может быть, даже так бы и прождал ту на веранде, не заходя в помещение, если бы не..."
     show d_ma surprise pioneer with dspr
+    play music music_list['you_lost_me'] fadein 3
     sa "Максииим!"
     stop sound_loop
     scene bg int_musclub_day with slidedown
@@ -11004,6 +11054,7 @@ label dct_horizontal_transport_ped:
     show d_ma surprise pioneer at cleft with dissolve_fast:
         zoom 1.0 yalign 0.02
     "Неизвестно, что сработало: инстинкт или Сашина скрытая память о том, как она сама начала похоже растворяться после контакта с Пионером."
+    stop music fadeout 2
     show d_ma surprise pioneer with dissolve_fast:
         zoom 1.25 yalign 0.08
     show mi cry pioneer close:

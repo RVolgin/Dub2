@@ -4978,9 +4978,9 @@ label dct_d7_d5_dyn:
     $ persistent.sprite_time = "day"
     play ambience ambience_dining_hall_empty fadein 1
     scene bg int_dining_hall_day
-    show dct_dream_veil at shiver
     show d_bg normal suit at cright:
         yalign .1
+    show dct_dream_veil at shiver
     with blinds
     window auto
     d_gd "Попадёшь в двести первый узел — увидишь там развалины домов."
@@ -5021,13 +5021,13 @@ label dct_d7_d5_dyn:
         zoom 0.75
     show dct_dream_veil at shiver
     with dissolve
-    show d_jn_old angry:
+    show d_jn_old angry behind dct_dream_veil:
         zoom 0.75 xcenter 0.39
-    show d_jn_old normal as d_jn_old_norm:
+    show d_jn_old normal as d_jn_old_norm behind dct_dream_veil:
         zoom 0.75 xcenter 0.39 alpha 1
         pause 1.6
         linear 0.2 alpha 0
-    show d_jn_young normal:
+    show d_jn_young normal behind dct_dream_veil:
         zoom 0.75 xcenter 0.31
     with dissolve
     "Шурику опять снились обе Яны, стоящие на остановке.{w=.7} И опять старшая Яна ругала его во сне."
@@ -5810,7 +5810,6 @@ label dct_d7_d5_dyn:
         pause 1.7
         ease 1 xcenter 0.72
     "Шурик отключил установку, перемотал кассету на самое начало, подключил магнитофон к компьютеру и запустил программу дешифровки."
-    stop music fadeout 1
     hide sh with dissolve
     play sound2 [ "<silence 1.5>", sfx_open_window ]
     "После этого восстановил в кружке всё как было, вылез в окно и отправился на пляж."
@@ -9050,7 +9049,7 @@ label dct_system_errors_dyn:
     show d_ka normal pioneer at right:                     
         zoom 1.1 ycenter 0.9
     with dissolve
-    play music music_list['farewell_to_the_past_edit'] fadein 2 
+    play music music_list['farewell_to_the_past_edit'] fadein 2
     "Дорога шла вдоль берега, справа за деревьями показался домик Алисы. Можно было разглядеть хозяйку, сидящую на крыльце и что-то пишущую в тетрадь."
     stop ambience fadeout 1
 
@@ -9985,7 +9984,6 @@ label dct_horizontal_transport_dyn:
     stop sound
     stop sound_loop
     stop ambience
-    stop music
     show headline_text2 u"Глава XI. Горизонтальный транспорт" at truecenter with dspr
     $ renpy.pause(3.0)
     hide headline_text2 with dissolve
