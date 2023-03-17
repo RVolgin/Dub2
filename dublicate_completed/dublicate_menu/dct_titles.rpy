@@ -174,7 +174,7 @@ init 1:
         
     screen dct_titles_mods_list1:
     
-        text '7 дней лета: Lost Alpha\n{vspace=15}Second Chance\n{vspace=15}Sprites and CG by Orika\n{vspace=15}Бесконечное Лето [[Русская озвучка]\n{vspace=15}Булки, кефир и рок-н-ролл \n{vspace=15}Вспомнить всё\n{vspace=15}Гости из будущего\n{vspace=15}Другая история\n{vspace=15}История одного пионера\n{vspace=15}Лето в библиотеке\n{vspace=15}Настоящий лагерь...':
+        text '7 дней лета: Lost Alpha\n{vspace=15}Second Chance\n{vspace=15}Sprites and CG by Orika\n{vspace=15}Бесконечное Лето [[Русская озвучка]\n{vspace=15}Булки, кефир и рок-н-ролл \n{vspace=15}Вспомнить всё\n{vspace=15}Гости из будущего\n{vspace=15}Другая история\n{vspace=15}История одного пионера\n{vspace=15}Лето в библиотеке\n{vspace=15}Настоящий лагерь...\n{vspace=15}Они пьют не только кровь':
             xalign 0.5
             ypos 0.2
             text_align 0.5
@@ -186,7 +186,7 @@ init 1:
     
     screen dct_titles_mods_list2:
     
-        text 'Они пьют не только кровь\n{vspace=15}Орден Совёнка 2\n{vspace=15}Падшая пионерка\n{vspace=15}По ту сторону Совёнка\n{vspace=15}Поездка Лены\n{vspace=15}Последний пионер\n{vspace=15}Продолжение истории\n{vspace=15}СБОРНИК ЦГ, БГ И СПРАЙТОВ\n(+архивы разработки)\n{vspace=15}Смотритель\n{vspace=15}Эти безумные деньки':
+        text 'Орден Совёнка 2\n{vspace=15}Падшая пионерка\n{vspace=15}Пионериада\n{vspace=15}По ту сторону Совёнка\n{vspace=15}Поездка Лены\n{vspace=15}Последний пионер\n{vspace=15}Продолжение истории\n{vspace=15}СБОРНИК ЦГ, БГ И СПРАЙТОВ (+архивы разработки)\n{vspace=15}Сказка - ложь, да в ней намёк...\n{vspace=15}Смотритель\n{vspace=15}Эти безумные деньки':
             xalign 0.5
             ypos 0.2
             text_align 0.5
@@ -523,7 +523,7 @@ init 1:
             size 50
             outlines [(2, '#000', 0, 0)]
 
-        text '7 дней лета: Lost Alpha\n{vspace=15}Second Chance\n{vspace=15}Sprites and CG by Orika\n{vspace=15}Бесконечное Лето [[Русская озвучка]\n{vspace=15}Булки, кефир и рок-н-ролл \n{vspace=15}Вспомнить всё\n{vspace=15}Гости из будущего\n{vspace=15}Другая история\n{vspace=15}История одного пионера\n{vspace=15}Лето в библиотеке\n{vspace=15}Настоящий лагерь...':
+        text '7 дней лета: Lost Alpha\n{vspace=15}Second Chance\n{vspace=15}Sprites and CG by Orika\n{vspace=15}Бесконечное Лето [[Русская озвучка]\n{vspace=15}Булки, кефир и рок-н-ролл \n{vspace=15}Вспомнить всё\n{vspace=15}Гости из будущего\n{vspace=15}Другая история\n{vspace=15}История одного пионера\n{vspace=15}Лето в библиотеке\n{vspace=15}Настоящий лагерь...\n{vspace=15}Они пьют не только кровь':
             xalign 0.25
             ypos 0.22
             text_align 0.5
@@ -532,7 +532,7 @@ init 1:
             size 30
             outlines [(2, '#000', 0, 0)]
 
-        text 'Они пьют не только кровь\n{vspace=15}Орден Совёнка 2\n{vspace=15}Падшая пионерка\n{vspace=15}По ту сторону Совёнка\n{vspace=15}Поездка Лены\n{vspace=15}Последний пионер\n{vspace=15}Продолжение истории\n{vspace=15}СБОРНИК ЦГ, БГ И СПРАЙТОВ\n(+архивы разработки)\n{vspace=30}Смотритель\n{vspace=15}Эти безумные деньки':
+        text 'Орден Совёнка 2\n{vspace=15}Падшая пионерка\n{vspace=15}Пионериада\n{vspace=15}По ту сторону Совёнка\n{vspace=15}Поездка Лены\n{vspace=15}Последний пионер\n{vspace=15}Продолжение истории\n{vspace=15}СБОРНИК ЦГ, БГ И СПРАЙТОВ\n(+архивы разработки)\n{vspace=30}Сказка - ложь, да в ней намёк...\n{vspace=15}Смотритель\n{vspace=15}Эти безумные деньки':
             xalign 0.75
             ypos 0.22
             text_align 0.5
@@ -785,33 +785,28 @@ label dct_titles:
 
 
 
-
 label dct_credits:
 
-    play music dct_Moments fadein 2
-    
+    play music dct_Moments fadein 2    
     if persistent.d_coin > 0: # Если Монетка прочитана, что приравниваем к прочитанному целиком моду, выводится фон с прибывшим поездом
         show dct_ext_train_day
     else:
-        show dct_ext_train_day_not_train # Если Монетка не прочитана, выводится пустой перрон, поезд еще в пути 
-        
+        show dct_ext_train_day_not_train # Если Монетка не прочитана, выводится пустой перрон, поезд еще в пути         
     show image(Solid("#000000")):
         alpha 1
         linear 2 alpha 0.15
     $ renpy.pause(2,hard=True)
-
-    $ renpy.block_rollback()    # Запрет отката истории (чтоб колёсиком случайно не накрутили)
-   
+    $ renpy.block_rollback()    # Запрет отката истории (чтоб колёсиком случайно не накрутили)   
     call screen dct_credits_authors with dissolve
     call screen dct_credits_artists
     call screen dct_credits_artists_other
     call screen dct_credits_mods
     call screen dct_credits_sounds_novel_anime
 
+
 label dct_credits_closed:
     stop music fadeout 2
     show image(Solid("#000000")):
         linear 2 alpha 1
-
-    pause 2.5
+    pause 2
     jump dct_mnu2
