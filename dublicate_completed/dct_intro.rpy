@@ -9,10 +9,10 @@ label dct_intro:
         xalign 0.5
         yalign 0.3
     $ renpy.pause (3)
-    d_rb "Эта история о людях."
+    d_rb "Эта история — о людях."
     d_rb "О разных людях, живших и живущих неизвестно где и неизвестно когда."
     d_rb "О людях настоящих и не совсем настоящих."
-    d_rb "Но все равно...{w} О людях."
+    d_rb "Но всё равно...{w} О людях."
     hide d_jn with pixellate
     $ renpy.pause (1)
     stop music fadeout 1.0
