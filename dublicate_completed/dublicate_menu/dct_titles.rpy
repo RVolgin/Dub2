@@ -127,7 +127,7 @@ init 1:
 
     screen dct_titles_artists_list1:
         
-        text 'AnBro\n{vspace=15}ArseniXC\n{vspace=15}Bomj Jack Letovich Tucker\n{vspace=15}burbur\n{vspace=15}Dream Maker (PapaKarlo)\n{vspace=15}Eru\n{vspace=15}Kef34\n{vspace=15}KokkaMokka\n{vspace=15}MarkTailor\n{vspace=15}miku_xikka\n{vspace=15}Mo~\n{vspace=15}Naraii\n{vspace=15}Orika\n{vspace=15}polinaowl\n{vspace=15}Quandial':
+        text 'AnBro\n{vspace=12}ArseniXC\n{vspace=12}Bomj Jack Letovich Tucker\n{vspace=12}burbur\n{vspace=12}Dream Maker (PapaKarlo)\n{vspace=12}Eru\n{vspace=12}Kef34\n{vspace=12}KokkaMokka\n{vspace=12}MarkTailor\n{vspace=12}MEMORIAMARIS\n{vspace=12}miku_xikka\n{vspace=12}Mo~\n{vspace=12}mono\n{vspace=12}Naraii\n{vspace=12}Orika\n{vspace=12}polinaowl':
             xalign 0.5
             ypos 0.2
             text_align 0.5
@@ -139,7 +139,7 @@ init 1:
 
     screen dct_titles_artists_list2:
     
-        text 'SHONI AGITA\n{vspace=15}Tocakyca\n{vspace=15}UntitledExpression\n{vspace=15}VAR\n{vspace=15}Weeping Cat (Four MdSd)\n{vspace=15}Wrath Art\n{vspace=15}Алексей Ручковский\n{vspace=15}Вдохновение vs. Лень\n{vspace=15}Ив Нарвал\n{vspace=15}Лаборатория фотошопа\n{vspace=15}Максим Смолев\n{vspace=15}Персональный Арт Советова\n{vspace=15}Стасек\n{vspace=15}Художник-кун':
+        text 'Quandial\n{vspace=12}SHONI AGITA\n{vspace=12}Tocakyca\n{vspace=12}UntitledExpression\n{vspace=12}VAR\n{vspace=12}Weeping Cat (Four MdSd)\n{vspace=12}Wrath Art\n{vspace=12}Алексей Ручковский\n{vspace=12}Вдохновение vs. Лень\n{vspace=12}Ив Нарвал\n{vspace=12}Лаборатория фотошопа\n{vspace=12}Максим Смолев\n{vspace=12}Персональный Арт Советова\n{vspace=12}Стасек\n{vspace=12}Художник-кун':
             xalign 0.5
             ypos 0.2
             text_align 0.5
@@ -186,7 +186,7 @@ init 1:
     
     screen dct_titles_mods_list2:
     
-        text 'Они пьют не только кровь\n{vspace=15}Орден Совёнка 2\n{vspace=15}Падшая пионерка\n{vspace=15}Пионериада\n{vspace=15}По ту сторону Совёнка\n{vspace=15}Поездка Лены\n{vspace=15}Последний пионер\n{vspace=15}Продолжение истории\n{vspace=15}СБОРНИК ЦГ, БГ И СПРАЙТОВ (+архивы разработки)\n{vspace=15}Сказка - ложь, да в ней намёк...\n{vspace=15}Смотритель\n{vspace=15}Эти безумные деньки':
+        text 'Они пьют не только кровь\n{vspace=15}Орден Совёнка 2\n{vspace=15}Падшая пионерка\n{vspace=15}Пионериада\n{vspace=15}По ту сторону Совёнка\n{vspace=15}Поездка Лены\n{vspace=15}Последний пионер\n{vspace=15}Продолжение истории\n{vspace=15}СБОРНИК ЦГ, БГ И СПРАЙТОВ (+архивы разработки)\n{vspace=15}Сказка — ложь, да в ней намёк...\n{vspace=15}Смотритель\n{vspace=15}Эти безумные деньки':
             xalign 0.5
             ypos 0.2
             text_align 0.5
@@ -228,7 +228,7 @@ init 1:
             size 30
             outlines [(2, '#000', 0, 0)]
             
-        text 'Повседневная жизнь старшеклассников':
+        text 'Врата\n{vspace=15}Повседневная жизнь старшеклассников':
             xalign 0.5
             ypos 0.6
             text_align 0.5
@@ -368,60 +368,74 @@ init 1:
     ##      Вариант с гиперссылками в самом тексте (пока отключён, т.к. не понятно, как нужно прописать стиль для гиперссылок)
     ##
 
-        # text '{a=https://vk.com/anbro_s}AnBro{/a}\n{vspace=15}{a=https://vk.com/arsenixc}ArseniXC{/a}\n{vspace=15}{a=https://vk.com/bomjjack}Bomj Jack Letovich Tucker{/a}\n{vspace=15}{a=https://vk.com/bur_2}burbur{/a}\n{vspace=15}{a=https://vk.com/dreamofmaker}Dream Maker (PapaKarlo){/a}\n{vspace=15}{a=https://vk.com/eru_chan}Eru{/a}\n{vspace=15}{a=https://vk.com/kef34art}Kef34{/a}\n{vspace=15}{a=https://vk.com/kokkamokka}KokkaMokka{/a}\n{vspace=15}{a=https://vk.com/shwwma}MarkTailor{/a}\n{vspace=15}{a=https://vk.com/kunz_digital}miku_xikka{/a}\n{vspace=15}{a=https://vk.com/mo_shy_arts}Mo~{/a}\n{vspace=15}{a=https://vk.com/naraii03}Naraii{/a}\n{vspace=15}{a=https://vk.com/orika_art}Orika{/a}\n{vspace=15}{a=https://vk.com/owlpolina}polinaowl{/a}\n{vspace=15}{a=https://vk.com/quandyarts}Quandial{/a}':
-            # xalign 0.25
-            # ypos 0.19
+        # text '{a=https://vk.com/anbro_s}AnBro{/a}\n{vspace=15}{a=https://vk.com/arsenixc}ArseniXC{/a}\n{vspace=15}{a=https://vk.com/bomjjack}Bomj Jack Letovich Tucker{/a}\n{vspace=15}{a=https://vk.com/bur_2}burbur{/a}\n{vspace=15}{a=https://vk.com/dreamofmaker}Dream Maker (PapaKarlo){/a}\n{vspace=15}{a=https://vk.com/eru_chan}Eru{/a}\n{vspace=15}{a=https://vk.com/kef34art}Kef34{/a}\n{vspace=15}{a=https://vk.com/kokkamokka}KokkaMokka{/a}\n{vspace=15}{a=https://vk.com/shwwma}MarkTailor{/a}\n{vspace=15}{a=https://vk.com/memoriamaris}MEMORIAMARIS{/a}':
+            # xalign 0.2
+            # ypos 0.23
             # text_align 0.5
             # color "#fff"
             # font "mods/dublicate/fonts/OpenSans-Bold.ttf"
             # size 30
             # outlines [(2, '#000', 0, 0)]
         
-        # text '{a=https://vk.com/shoniagita}SHONI AGITA{/a}\n{vspace=15}{a=https://vn.reactor.cc/user/Tocakyca}Tocakyca{/a}\n{vspace=15}{a=https://vk.com/untitledexpression}UntitledExpression{/a}\n{vspace=15}{a=https://vk.com/art_by_var}VAR{/a}\n{vspace=15}{a=https://vk.com/weepingcat}Weeping Cat (Four MdSd){/a}\n{vspace=15}{a=https://www.instagram.com/wrath.art/}Wrath Art{/a}\n{vspace=15}{a=https://vk.com/id185406057}Алексей Ручковский{/a}\n{vspace=15}{a=https://vk.com/vd_vs_ln}Вдохновение vs. Лень{/a}\n{vspace=15}{a=https://vk.com/public61508685}Ив Нарвал{/a}\n{vspace=15}{a=https://vk.com/public184889068}Лаборатория фотошопа{/a}\n{vspace=15}{a=https://vk.com/smolevn}Максим Смолев{/a}\n{vspace=15}{a=https://vk.com/sovietov_art}Персональный Арт Советова{/a}\n{vspace=15}{a=https://vk.com/stasekpivasek}Стасек{/a}\n{vspace=15}{a=https://vk.com/ikskey}Художник-кун{/a}':
-            # xalign 0.75
-            # ypos 0.19
+        # text '{a=https://vk.com/kunz_digital}miku_xikka{/a}\n{vspace=15}{a=https://vk.com/mo_shy_arts}Mo~{/a}\n{vspace=15}{a=https://vk.com/club184214703}mono{/a}\n{vspace=15}{a=https://vk.com/naraii03}Naraii{/a}\n{vspace=15}{a=https://vk.com/orika_art}Orika{/a}\n{vspace=15}{a=https://vk.com/owlpolina}polinaowl{/a}\n{vspace=15}{a=https://vk.com/quandyarts}Quandial{/a}\n{vspace=15}{a=https://vk.com/shoniagita}SHONI AGITA{/a}\n{vspace=15}{a=https://vn.reactor.cc/user/Tocakyca}Tocakyca{/a}\n{vspace=15}{a=https://vk.com/untitledexpression}UntitledExpression{/a}\n{vspace=15}{a=https://vk.com/art_by_var}VAR{/a}':
+            # xalign 0.5
+            # ypos 0.23
             # text_align 0.5
             # color "#fff"
             # font "mods/dublicate/fonts/OpenSans-Bold.ttf"
             # size 30
             # outlines [(2, '#000', 0, 0)]
+        
+        # text '{a=https://vk.com/weepingcat}Weeping Cat (Four MdSd){/a}\n{vspace=15}{a=https://www.instagram.com/wrath.art/}Wrath Art{/a}\n{vspace=15}{a=https://vk.com/id185406057}Алексей Ручковский{/a}\n{vspace=15}{a=https://vk.com/vd_vs_ln}Вдохновение vs. Лень{/a}\n{vspace=15}{a=https://vk.com/public61508685}Ив Нарвал{/a}\n{vspace=15}{a=https://vk.com/public184889068}Лаборатория фотошопа{/a}\n{vspace=15}{a=https://vk.com/smolevn}Максим Смолев{/a}\n{vspace=15}{a=https://vk.com/sovietov_art}Персональный Арт Советова{/a}\n{vspace=15}{a=https://vk.com/stasekpivasek}Стасек{/a}\n{vspace=15}{a=https://vk.com/ikskey}Художник-кун{/a}':
+            # xalign 0.8
+            # ypos 0.23
+            # text_align 0.5
+            # color "#fff"
+            # font "mods/dublicate/fonts/OpenSans-Bold.ttf"
+            # size 30
+            # outlines [(2, '#000', 0, 0)]
+            
             
         ################################################    
             
         ### Гиперссылки через textbutton
         
-        textbutton "AnBro" xcenter 0.32 ypos 0.19 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/anbro_s")
-        textbutton "ArseniXC" xcenter 0.32 ypos 0.24 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/arsenixc")
-        textbutton "Bomj Jack Letovich Tucker" xcenter 0.32 ypos 0.29 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/bomjjack")
-        textbutton "burbur" xcenter 0.32 ypos 0.34 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/bur_2")
-        textbutton "Dream Maker (PapaKarlo)" xcenter 0.32 ypos 0.39 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/dreamofmaker")
-        textbutton "Eru" xcenter 0.32 ypos 0.44 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/eru_chan")
-        textbutton "Kef34" xcenter 0.32 ypos 0.49 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/kef34art")
-        textbutton "KokkaMokka" xcenter 0.32 ypos 0.54 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/kokkamokka")
-        textbutton "MarkTailor" xcenter 0.32 ypos 0.59 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/shwwma")
-        textbutton "miku xikka" xcenter 0.32 ypos 0.64 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/kunz_digital")
-        textbutton "Mo~" xcenter 0.32 ypos 0.69 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/mo_shy_arts")
-        textbutton "Narai" xcenter 0.32 ypos 0.74 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/naraii03")
-        textbutton "Orika" xcenter 0.32 ypos 0.79 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/orika_art")
-        textbutton "polinaowl" xcenter 0.32 ypos 0.84 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/owlpolina")
-        textbutton "Quandial" xcenter 0.32 ypos 0.89 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/quandyarts")
-        
-        textbutton "SHONI AGITA" xcenter 0.68 ypos 0.19 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/shoniagita")
-        textbutton "Tocakyca" xcenter 0.68 ypos 0.24 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vn.reactor.cc/user/Tocakyca")
-        textbutton "UntitledExpression" xcenter 0.68 ypos 0.29 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/untitledexpression")
-        textbutton "VAR" xcenter 0.68 ypos 0.34 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/art_by_var")
-        textbutton "Weeping Cat (Four MdSd)" xcenter 0.68 ypos 0.39 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/weepingcat")
-        textbutton "Wrath Art" xcenter 0.68 ypos 0.44 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://www.instagram.com/wrath.art/")
-        textbutton "Алексей Ручковский" xcenter 0.68 ypos 0.49 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/id185406057")
-        textbutton "Вдохновение vs. Лень" xcenter 0.68 ypos 0.54 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/vd_vs_ln")
-        textbutton "Ив Нарвал" xcenter 0.68 ypos 0.59 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/public61508685")
-        textbutton "Лаборатория фотошопа" xcenter 0.68 ypos 0.64 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/public184889068")
-        textbutton "Максим Смолев" xcenter 0.68 ypos 0.69 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/smolevn")
-        textbutton "Персональный Арт Советова" xcenter 0.68 ypos 0.74 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/sovietov_art")
-        textbutton "Стасек" xcenter 0.68 ypos 0.79 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/stasekpivasek")
-        textbutton "Художник-кун" xcenter 0.68 ypos 0.84 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/ikskey")
+              
+        textbutton "AnBro" xcenter 0.2 ypos 0.23 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/anbro_s")
+        textbutton "ArseniXC" xcenter 0.2 ypos 0.29 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/arsenixc")
+        textbutton "Bomj Jack Letovich Tucker" xcenter 0.2 ypos 0.35 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/bomjjack")
+        textbutton "burbur" xcenter 0.2 ypos 0.41 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/bur_2")
+        textbutton "Dream Maker (PapaKarlo)" xcenter 0.2 ypos 0.47 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/dreamofmaker")
+        textbutton "Eru" xcenter 0.2 ypos 0.53 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/eru_chan")
+        textbutton "Kef34" xcenter 0.2 ypos 0.59 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/kef34art")
+        textbutton "KokkaMokka" xcenter 0.2 ypos 0.65 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/kokkamokka")
+        textbutton "MarkTailor" xcenter 0.2 ypos 0.71 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/shwwma")
+        textbutton "MEMORIAMARIS" xcenter 0.2 ypos 0.77 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/memoriamaris")
 
-            
+        textbutton "miku_xikka" xcenter 0.5 ypos 0.23 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/kunz_digital")
+        textbutton "Mo~" xcenter 0.5 ypos 0.29 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/mo_shy_arts")
+        textbutton "mono" xcenter 0.5 ypos 0.35 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/club184214703")
+        textbutton "Narai" xcenter 0.5 ypos 0.41 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/naraii03")
+        textbutton "Orika" xcenter 0.5 ypos 0.47 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/orika_art")
+        textbutton "polinaowl" xcenter 0.5 ypos 0.53 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/owlpolina")
+        textbutton "Quandial" xcenter 0.5 ypos 0.59 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/quandyarts")
+        textbutton "SHONI AGITA" xcenter 0.5 ypos 0.65 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/shoniagita")
+        textbutton "Tocakyca" xcenter 0.5 ypos 0.71 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vn.reactor.cc/user/Tocakyca")
+        textbutton "UntitledExpression" xcenter 0.5 ypos 0.77 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/untitledexpression")
+        textbutton "VAR" xcenter 0.5 ypos 0.83 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/art_by_var")
+
+        textbutton "Weeping Cat (Four MdSd)" xcenter 0.8 ypos 0.23 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/weepingcat")
+        textbutton "Wrath Art" xcenter 0.8 ypos 0.29 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://www.instagram.com/wrath.art/")
+        textbutton "Алексей Ручковский" xcenter 0.8 ypos 0.35 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/id185406057")
+        textbutton "Вдохновение vs. Лень" xcenter 0.8 ypos 0.41 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/vd_vs_ln")
+        textbutton "Ив Нарвал" xcenter 0.8 ypos 0.47 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/public61508685")
+        textbutton "Лаборатория фотошопа" xcenter 0.8 ypos 0.53 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/public184889068")
+        textbutton "Максим Смолев" xcenter 0.8 ypos 0.59 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/smolevn")
+        textbutton "Персональный Арт Советова" xcenter 0.8 ypos 0.65 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/sovietov_art")
+        textbutton "Стасек" xcenter 0.8 ypos 0.71 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/stasekpivasek")
+        textbutton "Художник-кун" xcenter 0.8 ypos 0.77 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/ikskey")
+
+
         ################################################ 
 
         textbutton 'Меню':
@@ -532,7 +546,7 @@ init 1:
             size 30
             outlines [(2, '#000', 0, 0)]
 
-        text 'Они пьют не только кровь\n{vspace=15}Орден Совёнка 2\n{vspace=15}Падшая пионерка\n{vspace=15}Пионериада\n{vspace=15}По ту сторону Совёнка\n{vspace=15}Поездка Лены\n{vspace=15}Последний пионер\n{vspace=15}Продолжение истории\n{vspace=15}СБОРНИК ЦГ, БГ И СПРАЙТОВ (+архивы разработки)\n{vspace=15}Сказка - ложь, да в ней намёк...\n{vspace=15}Смотритель\n{vspace=15}Эти безумные деньки':
+        text 'Они пьют не только кровь\n{vspace=15}Орден Совёнка 2\n{vspace=15}Падшая пионерка\n{vspace=15}Пионериада\n{vspace=15}По ту сторону Совёнка\n{vspace=15}Поездка Лены\n{vspace=15}Последний пионер\n{vspace=15}Продолжение истории\n{vspace=15}СБОРНИК ЦГ, БГ И СПРАЙТОВ (+архивы разработки)\n{vspace=15}Сказка — ложь, да в ней намёк...\n{vspace=15}Смотритель\n{vspace=15}Эти безумные деньки':
             xcenter 0.72
             ypos 0.22
             text_align 0.5
@@ -647,7 +661,7 @@ init 1:
             size 50
             outlines [(2, '#000', 0, 0)]
 
-        text 'Повседневная жизнь старшеклассников':
+        text 'Врата\n{vspace=15}Повседневная жизнь старшеклассников':
             xcenter 0.7
             ypos 0.63
             text_align 0.5

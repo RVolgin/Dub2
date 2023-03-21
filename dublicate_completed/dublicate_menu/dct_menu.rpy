@@ -308,7 +308,7 @@ screen dct_menu:
                 action [SetVariable("dct_dynped", True)]
 
 
-    # textbutton "{space=65}Титры\n(финальные)":
+    # textbutton "{space=65}Титры\n(финальные)":        #   Техническая кнопка, нужна для тестирования. В рабочем билде должна быть отключена
         # xpos 0.37
         # ypos 0.85
         # style "dct_menu_button_exit"
