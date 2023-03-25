@@ -9,7 +9,7 @@ label dream1:
     $ set_mode_nvl()
     $ save_name = u"Дубликат. Пролог"
     play music music_list["orchid"]
-    scene dct_ext_square_day_gate with blinds #пока так, заказать - должна быть площадь п. Шлюз
+    scene dct_ext_square_day_gate with blinds #пока так, заказать — должна быть площадь п. Шлюз
     show dct_dream_veil:
         shiver
     "Вот уже который цикл я вижу один и тот же сон. Почти каждую ночь."
