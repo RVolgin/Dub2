@@ -447,6 +447,7 @@ init :
     image dct_lineup_two_lines = "mods/dublicate/images/cg/dct_lineup_two_lines.jpg"
     
     image dct_d3_soccer_sport = "mods/dublicate/images/cg/dct_d3_soccer_sport.jpg"    # Ульяна в спортивной форме пинает мяч
+    
     image dct_un_on_birch = "mods/dublicate/images/cg/dct_un_on_birch.jpg"    # Лена сидит на берёзе
     image dct_cg_beach_volleyball = "mods/dublicate/images/cg/dct_cg_beach_volleyball.jpg"    # Воллейбол на пляже
     image dct_shot_by_arrow = "mods/dublicate/images/cg/dct_shot_by_arrow.jpg"    # Семёна подстрелили
@@ -458,7 +459,7 @@ init :
     ##### cg (coin)
     
     image dct_int_bus_window_view = "mods/dublicate/images/cg/coin/dct_int_bus_window_view.jpg"   # Два сиденья и окно в автобусе
-    
+    image dct_dv_us_me_in_catacombs_living = "mods/dublicate/images/cg/dct_dv_us_me_in_catacombs_living.png"    # Алиса, Ульяна и Семён на прозрачном фоне (для убежища в катакомбах)
     image dct_int_mirror_in_library = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/coin/dct_mirror_wall_library.jpg', (0, 0), 'mods/dublicate/images/cg/coin/dct_mirror_with_shadow.png', (0, 0), 'mods/dublicate/images/cg/coin/dct_mirror_bookshelves.png', (0, 0), 'mods/dublicate/images/cg/coin/dct_mirror_frame.png') # Зеркало в бибилотеке
     image dct_disassembled_catrobot = "mods/dublicate/images/cg/coin/dct_disassembled_catrobot.jpg"   # Остатки кошкоробота на столе
     image dct_cg_foots_and_ball = "mods/dublicate/images/cg/coin/dct_cg_foots_and_ball.jpg"   # Ботинки и мяч на траве
