@@ -52,7 +52,7 @@ init 1:
         contains:                           # Слой с изображением движущегося фона за окном
             "dct_titles_view_outside"
             anchor (0.75, 0.5) pos (0.5, 0.58)
-            linear 7 anchor (0.25, 0.5)
+            linear 10 anchor (0.25, 0.5)
             repeat
         contains:                           # Слой с изображением купе
             "mods/dublicate/images/gui/titles/dct_titles_coupe.png"
