@@ -3953,19 +3953,18 @@ label d_balance:
     dv "А ну пошли на веранду."
     stop ambience
 
-    scene ext_musclub_day with dissolve
+    scene dct_ext_music_club_verandah_opendoor_day with dissolve
     play ambience ambience_camp_center_day
     "На веранде всё это исполняется несколько раз."
     "Сперва мной и Мику и на английском, потом Алиса начинает подыгрывать, потом я начинаю петь припев на русском, и на четвёртый раз мы с Мику поём на английском, а припев — мы втроём на русском."
-    show un normal pioneer with moveinright
+    show un normal pioneer at fright with moveinright
     play music music_list["my_daily_life"]
     un "Мику, нам нужно в столовую."
     "Лена пришла за Мику. Скоро обед, и пора накрывать столы."
     un "… мне очень понравилось. А русские слова есть?"
-    hide un
-    show dv normal pioneer
-    with dissolve
+    show dv normal pioneer at cleft with dissolve
     dv "Это к Сеньке, он знает."
+    hide un with dissolve
     me "Алиска, я тебе смысловой перевод дам, а уж над рифмой и размером сама думай, я в тебя верю."
     hide dv with dissolve
     "Тут же набрасываю текст, как я его запомнил, и отдаю рыжей, а сам иду в столовую помогать Мику."
