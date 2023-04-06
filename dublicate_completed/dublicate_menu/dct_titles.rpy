@@ -129,7 +129,7 @@ init 1:
         
         text 'AnBro\n{vspace=12}ArseniXC\n{vspace=12}Bomj Jack Letovich Tucker\n{vspace=12}burbur\n{vspace=12}Dream Maker (PapaKarlo)\n{vspace=12}Eru\n{vspace=12}Kef34\n{vspace=12}KokkaMokka\n{vspace=12}MarkTailor\n{vspace=12}MEMORIAMARIS\n{vspace=12}miku_xikka\n{vspace=12}Mo~\n{vspace=12}mono\n{vspace=12}Naraii\n{vspace=12}Orika\n{vspace=12}polinaowl':
             xalign 0.5
-            ypos 0.2
+            ypos 0.19
             text_align 0.5
             color "#fff"
             font "mods/dublicate/fonts/OpenSans-Bold.ttf"
@@ -139,9 +139,9 @@ init 1:
 
     screen dct_titles_artists_list2:
     
-        text 'Quandial\n{vspace=12}SHONI AGITA\n{vspace=12}Tocakyca\n{vspace=12}UntitledExpression\n{vspace=12}VAR\n{vspace=12}Weeping Cat (Four MdSd)\n{vspace=12}Wrath Art\n{vspace=12}Алексей Ручковский\n{vspace=12}Вдохновение vs. Лень\n{vspace=12}Ив Нарвал\n{vspace=12}Лаборатория фотошопа\n{vspace=12}Максим Смолев\n{vspace=12}Персональный Арт Советова\n{vspace=12}Стасек\n{vspace=12}Художник-кун':
+        text 'Quandial\n{vspace=12}Sainty\n{vspace=12}SHONI AGITA\n{vspace=12}Tocakyca\n{vspace=12}UntitledExpression\n{vspace=12}VAR\n{vspace=12}Weeping Cat (Four MdSd)\n{vspace=12}Wrath Art\n{vspace=12}Алексей Ручковский\n{vspace=12}Вдохновение vs. Лень\n{vspace=12}Ив Нарвал\n{vspace=12}Лаборатория фотошопа\n{vspace=12}Максим Смолев\n{vspace=12}Персональный Арт Советова\n{vspace=12}Стасек\n{vspace=12}Художник-кун':
             xalign 0.5
-            ypos 0.2
+            ypos 0.19
             text_align 0.5
             color "#fff"
             font "mods/dublicate/fonts/OpenSans-Bold.ttf"
@@ -368,7 +368,7 @@ init 1:
     ##      Вариант с гиперссылками в самом тексте (пока отключён, т.к. не понятно, как нужно прописать стиль для гиперссылок)
     ##
 
-        # text '{a=https://vk.com/anbro_s}AnBro{/a}\n{vspace=15}{a=https://vk.com/arsenixc}ArseniXC{/a}\n{vspace=15}{a=https://vk.com/bomjjack}Bomj Jack Letovich Tucker{/a}\n{vspace=15}{a=https://vk.com/bur_2}burbur{/a}\n{vspace=15}{a=https://vk.com/dreamofmaker}Dream Maker (PapaKarlo){/a}\n{vspace=15}{a=https://vk.com/eru_chan}Eru{/a}\n{vspace=15}{a=https://vk.com/kef34art}Kef34{/a}\n{vspace=15}{a=https://vk.com/kokkamokka}KokkaMokka{/a}\n{vspace=15}{a=https://vk.com/shwwma}MarkTailor{/a}\n{vspace=15}{a=https://vk.com/memoriamaris}MEMORIAMARIS{/a}':
+        # text '{a=https://vk.com/anbro_s}AnBro{/a}\n{vspace=15}{a=https://vk.com/arsenixc}ArseniXC{/a}\n{vspace=15}{a=https://vk.com/bomjjack}Bomj Jack Letovich Tucker{/a}\n{vspace=15}{a=https://vk.com/bur_2}burbur{/a}\n{vspace=15}{a=https://vk.com/dreamofmaker}Dream Maker (PapaKarlo){/a}\n{vspace=15}{a=https://vk.com/eru_chan}Eru{/a}\n{vspace=15}{a=https://vk.com/kef34art}Kef34{/a}\n{vspace=15}{a=https://vk.com/kokkamokka}KokkaMokka{/a}\n{vspace=15}{a=https://vk.com/shwwma}MarkTailor{/a}\n{vspace=15}{a=https://vk.com/memoriamaris}MEMORIAMARIS{/a}\n{vspace=15}{a=https://vk.com/kunz_digital}miku_xikka{/a}':
             # xalign 0.2
             # ypos 0.23
             # text_align 0.5
@@ -377,7 +377,7 @@ init 1:
             # size 30
             # outlines [(2, '#000', 0, 0)]
         
-        # text '{a=https://vk.com/kunz_digital}miku_xikka{/a}\n{vspace=15}{a=https://vk.com/mo_shy_arts}Mo~{/a}\n{vspace=15}{a=https://vk.com/club184214703}mono{/a}\n{vspace=15}{a=https://vk.com/naraii03}Naraii{/a}\n{vspace=15}{a=https://vk.com/orika_art}Orika{/a}\n{vspace=15}{a=https://vk.com/owlpolina}polinaowl{/a}\n{vspace=15}{a=https://vk.com/quandyarts}Quandial{/a}\n{vspace=15}{a=https://vk.com/shoniagita}SHONI AGITA{/a}\n{vspace=15}{a=https://vn.reactor.cc/user/Tocakyca}Tocakyca{/a}\n{vspace=15}{a=https://vk.com/untitledexpression}UntitledExpression{/a}\n{vspace=15}{a=https://vk.com/art_by_var}VAR{/a}':
+        # text '{a=https://vk.com/mo_shy_arts}Mo~{/a}\n{vspace=15}{a=https://vk.com/club184214703}mono{/a}\n{vspace=15}{a=https://vk.com/naraii03}Naraii{/a}\n{vspace=15}{a=https://vk.com/orika_art}Orika{/a}\n{vspace=15}{a=https://vk.com/owlpolina}polinaowl{/a}\n{vspace=15}{a=https://vk.com/quandyarts}Quandial{/a}\n{vspace=15}{a=https://vk.com/shoniagita}SHONI AGITA{/a}\n{vspace=15}{a=https://vn.reactor.cc/user/Tocakyca}Tocakyca{/a}\n{vspace=15}{a=https://vk.com/untitledexpression}UntitledExpression{/a}\n{vspace=15}{a=https://vk.com/art_by_var}VAR{/a}':
             # xalign 0.5
             # ypos 0.23
             # text_align 0.5
@@ -411,14 +411,15 @@ init 1:
         textbutton "KokkaMokka" xcenter 0.2 ypos 0.65 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/kokkamokka")
         textbutton "MarkTailor" xcenter 0.2 ypos 0.71 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/shwwma")
         textbutton "MEMORIAMARIS" xcenter 0.2 ypos 0.77 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/memoriamaris")
+        textbutton "miku xikka" xcenter 0.2 ypos 0.83 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/kunz_digital")
 
-        textbutton "miku_xikka" xcenter 0.5 ypos 0.23 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/kunz_digital")
-        textbutton "Mo~" xcenter 0.5 ypos 0.29 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/mo_shy_arts")
-        textbutton "mono" xcenter 0.5 ypos 0.35 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/club184214703")
-        textbutton "Narai" xcenter 0.5 ypos 0.41 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/naraii03")
-        textbutton "Orika" xcenter 0.5 ypos 0.47 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/orika_art")
-        textbutton "polinaowl" xcenter 0.5 ypos 0.53 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/owlpolina")
-        textbutton "Quandial" xcenter 0.5 ypos 0.59 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/quandyarts")
+        textbutton "Mo~" xcenter 0.5 ypos 0.23 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/mo_shy_arts")
+        textbutton "mono" xcenter 0.5 ypos 0.29 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/club184214703")
+        textbutton "Narai" xcenter 0.5 ypos 0.35 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/naraii03")
+        textbutton "Orika" xcenter 0.5 ypos 0.41 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/orika_art")
+        textbutton "polinaowl" xcenter 0.5 ypos 0.47 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/owlpolina")
+        textbutton "Quandial" xcenter 0.5 ypos 0.53 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/quandyarts")
+        textbutton "Sainty" xcenter 0.5 ypos 0.59 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/art_sainty")
         textbutton "SHONI AGITA" xcenter 0.5 ypos 0.65 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/shoniagita")
         textbutton "Tocakyca" xcenter 0.5 ypos 0.71 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vn.reactor.cc/user/Tocakyca")
         textbutton "UntitledExpression" xcenter 0.5 ypos 0.77 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/untitledexpression")
@@ -434,6 +435,7 @@ init 1:
         textbutton "Персональный Арт Советова" xcenter 0.8 ypos 0.65 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/sovietov_art")
         textbutton "Стасек" xcenter 0.8 ypos 0.71 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/stasekpivasek")
         textbutton "Художник-кун" xcenter 0.8 ypos 0.77 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/ikskey")
+
 
 
         ################################################ 
