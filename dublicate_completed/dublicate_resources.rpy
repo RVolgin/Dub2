@@ -252,6 +252,7 @@ init :
     image dct_ext_musclub_backside_night_brightwindows = "mods/dublicate/images/bg/coin/dct_ext_musclub_backside_night_brightwindows.jpg"   # Музыкальный клуб с тыльной стороны ночью со светящимися окнами
     image dct_ext_dining_bench_day = "mods/dublicate/images/bg/coin/dct_ext_dining_bench_day.png"       # Скамейка у входа в столовую, ДЕНЬ
     image dct_ext_dining_bench_day_front = "mods/dublicate/images/bg/coin/dct_ext_dining_bench_day_front.png"   # Скамейка у входа в столовую (только скамейка, столб и угол здания)
+    image dct_ext_dining_bench_day_front2 = "mods/dublicate/images/bg/coin/dct_ext_dining_bench_day_front2.png"   # Скамейка у входа в столовую (только скамейка и столб)
     image dct_ext_dining_bench_sunset = "mods/dublicate/images/bg/coin/dct_ext_dining_bench_sunset.png" # Скамейка у входа в столовую, ЗАКАТ
     image dct_ext_dining_door_day = "mods/dublicate/images/bg/coin/dct_ext_dining_door_day.jpg"         # Двери столовой, ДЕНЬ
     image dct_ext_dining_door_day_front = "mods/dublicate/images/bg/coin/dct_ext_dining_door_day_front.png" # Двери столовой (только лавка и ограждение)
