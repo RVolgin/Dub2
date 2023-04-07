@@ -1562,16 +1562,23 @@ label d_ignition:
     stop music fadeout 1
     stop ambience
     
-    scene ext_dining_hall_near_day with dissolve
+    scene dct_ext_dining_door_day with dissolve:
+        anchor(0.52, 0.51) pos(0.5, 0.5)
     play ambience ambience_camp_center_day
     "Так за разговорами ужин заканчивается; сытые и довольные, мы выходим из столовой, чтобы нас на крыльце перехватила Славя."
     "Она на пару с Электроником, собственно, весь отряд перехватывает."
-    show sl normal pioneer with dissolve
+    show sl normal pioneer with dissolve:
+        xcenter 0.42
     sl "Мальчики, девочки, не разбегайтесь. После ужина — турнир."
-    hide sl with moveoutleft
+    # hide sl with moveoutleft
     "Кто-то хочет выиграть, кому-то по барабану, кому-то этот турнир вовсе не нужен, но присутствие вожатой глушит протесты."
     "Вспоминаю, где карты: у вожатой или у Слави — бывает и так, и так."
     th "Отыграть побыстрее и спрятаться куда, чтобы подумать о делах скорбных."
+    
+    scene dct_ext_dining_bench_day
+    show el smile pioneer:
+        zoom 0.85 xcenter 0.58 ycenter 0.74
+    with dissolve
     me "Электроник, карты-то есть?"
     show el surprise pioneer with dissolve
     "Второе по значимости лицо отечественной кибернетики вздрагивает и подозрительно смотрит на меня."
@@ -1580,17 +1587,23 @@ label d_ignition:
     show el normal pioneer with dspr
     el "Нет, карты у Ольги Дмитриевны. Я тебя хотел попросить, чтобы ты с ней договорился."
     th "А если ты этого не сделаешь, меня вожатая сама за картами сгоняет."
-    hide el with moveoutleft
-    show mt normal panama pioneer with dissolve
+    # hide el with moveoutleft
+    
+    scene dct_ext_dining_door_day:
+        anchor(0.52, 0.51) pos(0.5, 0.5)
+    show mt normal panama pioneer far at fright
+    with dissolve
     "Выразительно смотрю на вожатую и протягиваю руку."
     me "Или вы сами за картами пойдёте?"
-    show mt smile panama pioneer with dspr
+    show mt smile panama pioneer with dissolve_fast
     mt "Семён, всё продумано."
     "В руках у вожатой неизвестно откуда оказываются четыре колоды. Они все с разной рубашкой, с разным рисунком, разной степени засаленности."
     me "Конфискат?"
     mt "Точно, в первые же два дня. Теперь осторожничают — знаю, у кого ещё есть, но пока с поличным не попались."
     me "Вернуть не забудьте. А то непорядочно получится."
-    hide mt with moveoutleft
+    # hide mt with moveoutleft
+    
+    scene ext_dining_hall_near_day with dissolve
     "Устраиваюсь на лавочке около крыльца и отключаюсь от внешних раздражителей, только слежу вполглаза, как пустеет столовая, но большинство пионеров не расходятся, а ждут турнира."
     "Как расстилают половую тряпку перед входом в знак того, что уборка закончена."
     "Как уносят, держа вдвоём, ведро с отходами дежурные — это девочки из среднего отряда, те же, что и в обед, им лет по двенадцать."
@@ -1602,7 +1615,7 @@ label d_ignition:
     hide blink
     show sl normal pioneer close at left
     show unblink
-    sl "Семён, если ты так не хочешь играть, то никто тебя не заставляет. Давай я вожатую уговорю, чтобы тебя на кого из среднего отряда заменили." 
+    sl "Семён, если ты так не хочешь играть, то никто тебя не заставляет. Давай я вожатую уговорю, чтобы тебя на кого из среднего отряда заменила." 
     me "Славя, а смысл?"
     sl "Прости, я наблюдала за тобой. У тебя выражение лица всё обречённее и обречённее делалось."
     "К счастью, вожатая решает, что уже можно начинать."
@@ -2005,16 +2018,31 @@ label d_conversion:
     "Ну и младший и средний отряды нам в помощь."
     stop ambience
 
-    scene ext_dining_hall_near_day
-    show mi smile pioneer
+    scene dct_ext_dining_bench_day
+    # show dct_ext_dining_bench_day_front2  # Для проходящей Слави
+    # show mi smile pioneer at cright       #
+    show mi smile pioneer           # Для выскакивающей Слави
     with squares
     play ambience ambience_camp_center_day
     mi "Сенечка, это замечательно, что ты будешь мне помогать, потому что в кружке столько работы, что я одна ни за что бы не справилась. И мы же можем разговаривать, когда будем наводить порядок? Я вот, например, хочу о тебе узнать всё-всё."
     show mi normal pioneer with dspr
     mi "Ну, конечно, всё что расскажешь, а то будет невежливо выспрашивать у тебя про то, о чём ты не хочешь говорить."
     "А я-то надеялся побездельничать, поиграть на гитарке… Мечты-мечты… Кажется, Дмитриевна знала что делала, когда отрядила меня в помощь Мику."
-    show sl normal pioneer with moveinleft
-    hide sl normal pioneer with moveoutleft
+    
+    show sl normal pioneer at fright with easeinright   #   Выскакивающая Славя
+    hide sl normal pioneer with easeoutright            #
+    
+    # show 3500_sl back pioneer behind dct_ext_dining_bench_day_front2:   #
+        # xanchor 1.0 xpos 1.52 ycenter 0.915                             #
+        # pause 0.8                                                       #
+        # parallel:                                                       #
+            # pause 0.8                                                   # Проходящая Славя
+            # easeout 1.0 xanchor 0.5                                     #
+        # parallel:                                                       #
+            # linear 1.8 zoom 0.4 xpos 0.85 ycenter 0.7                   #
+            # linear 0.9 zoom 0.25 xpos 0.78 ycenter 0.745                #
+            # linear 1.3 zoom 0.18 xpos 0.67 ycenter 0.73                 #
+            
     "Это мы уже позавтракали и стоим на крыльце столовой. Славя проходит мимо нас, слегка задевая меня рукой. Да помню я, помню, сейчас приду."
     me "Микусь, меня Славя зачем-то на складе после завтрака хотела увидеть. Или пошли вместе?"
     mi "Нет, иди один, только не задерживайся надолго. Иди, я пока посмотрю, как нам быстрее всё сделать. Мне, конечно, интересно, но я хочу пораньше с работой разделаться."
@@ -2988,16 +3016,22 @@ label d_reanimation:
     stop ambience
     
     scene ext_dining_hall_near_day
-    show mt normal panama pioneer
+    show mt normal panama pioneer far at cleft
     with dissolve
     play ambience ambience_camp_center_day
     "Линейка закончилась, пионеры отправляются на завтрак в порядке от младших к старшим, и на крыльце столовой в первый раз возникает вопрос о Шурике."
     "Странно, что только сейчас, потому что Ольга не могла не заметить отсутствие кибернетика ещё на линейке. Нас же всего девять человек, это же не средний отряд, в строю которого хоть теоретически, но можно потеряться."
     "Но на линейке вожатая внимательно осмотрела всех, кивнула — мол, всё хорошо, и начала свою ежеутреннюю молитву."
+    
+    scene dct_ext_dining_door_day:
+        anchor(0.52, 0.51) pos(0.5, 0.5)
+    show mt normal panama pioneer at cright
+    with dissolve
     "И на крыльце-то она, пожалуй, ничего бы не заметила, если бы не Сыроежкин."
-    show el shocked pioneer at right with moveinright
+    show el shocked pioneer far at cleft with dissolve
     el "Ольга Дмитриевна, Шурик пропал!"
     mt "Да? И где же он?"
+    show el sad pioneer far with dspr
     "Похоже, Дмитриевне до фонаря, она бы ещё плечами пожала: «Я-то тут при чём? Сам пропал — пусть сам себя ищет»."
     stop ambience
 
