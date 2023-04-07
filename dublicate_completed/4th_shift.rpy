@@ -2581,17 +2581,23 @@ label routine_:
     stop sound_loop
     stop ambience
 
-    show ext_dining_hall_near_day
-    show mt normal pioneer
+    show dct_ext_dining_door_day:
+        zoom 0.625
+    show mt normal pioneer at right
     with squares
     "Ольга Дмитриевна стояла на крыльце столовой. Кивнула Виоле с подопечным Толиком, улыбнулась гостям — Семёну и Ульяне-большой."
     play ambience ambience_camp_center_day
     mt "Ульяна, спасибо за помощь в спортзале."
-    hide mt
-    show mt normal pioneer at left
+    # hide mt
+    # show mt normal pioneer at left
+    # with dissolve
+    # show d_us laugh sport at right with moveinright:
+        # ypos -0.05
+    show d_us laugh sport at cleft:
+        xzoom -1 ypos -0.05
+    show d_us_sport_mirror at cleft:
+        xzoom -1 ypos -0.05
     with dissolve
-    show d_us laugh sport at right with moveinright:
-        ypos -0.05
     us_old "Радастартьсятоварщвожатая!"
     show d_us smile sport with dspr
     us_old "Только ваши мальчики всю работу сделали, я лишь показывала, что и куда. Особенно, {w=1}особенно Артём. Отметьте его как-нибудь, пожалуйста. А то я только спасибо сказать могу."
@@ -2600,7 +2606,9 @@ label routine_:
     us_old "А что вы тут стоите? Не хотите обедать?"
     mt "Всего лишь долг вожатой, не более. Вы идите, Ульяна, не ждите меня. Я сейчас всех запущу и тоже зайду."
     us_old "Тогда мы вас ждём."
-    hide d_us with dissolve
+    hide d_us
+    hide d_us_sport_mirror
+    with dissolve
     th "Пятый день смены без происшествий прожит до середины. Уже хорошо."
     stop ambience
 
