@@ -1265,30 +1265,6 @@ init :
     
     # Максим
     
-    #d_ma_1
-    #d_ma_blink
-    #d_ma_blink_smile
-    #d_ma_grin
-    #d_ma_laugh
-    #d_ma_normal
-    #d_ma_smile2
-    
-    #d_ma_happy
-    #d_ma_shy
-    #d_ma_surprise
-
-    #d_ma_2
-    #d_ma_happy
-    #d_ma_shy
-    #d_ma_smile
-    #d_ma_surprise
-
-    #d_ma_3
-    #d_ma_angry
-    #d_ma_grin2
-    #d_ma_rage
-    #d_ma_serious
-    
     image d_ma blink pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1290), (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_1_pioneer.png', (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_blink.png'), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1290), (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_1_pioneer.png', (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_blink.png'), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((900, 1290), (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_1_pioneer.png', (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_blink.png'))
     image d_ma blink_smile pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1290), (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_1_pioneer.png', (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_blink_smile.png'), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1290), (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_1_pioneer.png', (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_blink_smile.png'), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((900, 1290), (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_1_pioneer.png', (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_blink_smile.png'))
     image d_ma grin pioneer = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1290), (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_1_pioneer.png', (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_grin.png'), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1290), (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_1_pioneer.png', (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_grin.png'), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((900, 1290), (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_1_pioneer.png', (0, 0), 'mods/dublicate/images/sprites/d_ma/d_ma_grin.png'))
@@ -1555,16 +1531,8 @@ init :
     image dct_int_bus_stern_un = "mods/dublicate/images/sprites/d_unformat/dct_int_bus_stern_un.png"
     # Ульяна
     image us_in_bush = "mods/dublicate/images/sprites/d_unformat/us_in_bush.png"
-    # image dct_us_shy_sport_far_mirror = im.Composite((675, 1080), (0, 0), 'mods/dublicate/images/sprites/d_unformat/dct_us_sport_far_mirror.png' (0, 0), im.Flip('images/sprites/far/us/us_3_shy.png', horizontal=True, vertical=False))  # Отзеркаленная Ульяна смотрит направо
-    # image dct_us_shy_sport_far_mirror = im.Composite((675, 1080), (0, 0), 'mods/dublicate/images/sprites/d_unformat/dct_us_sport_far_mirror.png' (0, 0), im.Flip('images/sprites/far/us/us_3_shy.png', horizontal=True, vertical=False))  # Отзеркаленная Ульяна смотрит направо
-    
-    
     image dct_us_shy_sport_far_mirror = im.Composite((675, 1080), (0, 0), 'mods/dublicate/images/sprites/d_unformat/dct_us_sport_far_mirror.png', (0, 0), im.Flip('images/sprites/far/us/us_3_shy.png', horizontal=True, vertical=False))  # Отзеркаленная Ульяна смотрит направо
     image dct_us_shy2_sport_far_mirror = im.Composite((675, 1080), (0, 0), 'mods/dublicate/images/sprites/d_unformat/dct_us_sport_far_mirror.png', (0, 0), im.Flip('images/sprites/far/us/us_3_shy2.png', horizontal=True, vertical=False))  # Отзеркаленная Ульяна смотрит вниз
-    
-    
-    # image dct_us_shy2_sport_far_mirror = im.Composite((675, 1080), (0, 0), im.Flip('images/sprites/far/us/us_3_body.png', horizontal=True, vertical=False), (0, 0), im.Flip('images/sprites/far/us/us_3_shy2.png', horizontal=True, vertical=False), (0, 0), 'mods/dublicate/images/sprites/d_unformat/dct_us_sport_far_mirror.png')  # Отзеркаленная Ульяна смотрит вниз
-    
     image d_us_sport_mirror = "mods/dublicate/images/sprites/d_unformat/d_us_sport_mirror.png"    # Надстройка для спортивной формы взрослой Ульяны при зеркальном отражении
     # Юля
     image uv_wild_in_forest_small = "mods/dublicate/images/sprites/d_unformat/uv_wild_in_forest_small.png"
@@ -1597,86 +1565,20 @@ init :
     image d_sm_black = "mods/dublicate/images/sprites/black/d_sm_black.png"
     
     #Декорариум
-    
-    image semulal_day = "mods/dublicate/images/sprites/oth/semulal_day.png"
-    image semulal_night = "mods/dublicate/images/sprites/oth/semulal_night.png"
-    image dct_fog = "mods/dublicate/images/sprites/oth/dct_fog.png"
-    image fog_face_mask = "mods/dublicate/images/sprites/oth/fog_face_mask.png"
-    image dct_ext_houses_fog = "mods/dublicate/images/sprites/oth/dct_ext_houses_fog.png"
-    image dct_ext_house_of_kids_day_fog = "mods/dublicate/images/sprites/oth/dct_ext_house_of_kids_day_fog.png"
-    image dct_ext_cliff_day_boat_bow = "mods/dublicate/images/sprites/oth/dct_ext_cliff_day_boat_bow.png"
-    image dct_simon_watcher = "mods/dublicate/images/sprites/oth/dct_simon_watcher.png"
-    image big_flame = "mods/dublicate/images/sprites/oth/big_flame.png"
-    image dct_plectr_hand = "mods/dublicate/images/sprites/oth/dct_plectr_hand.png"
-    image dct_plectr_medi = "mods/dublicate/images/sprites/oth/dct_plectr_medi.png"
-    #image us_in_bush = "mods/dublicate/images/sprites/oth/us_in_bush.png" - Переехал выше, в неформатные
-    image effector_letter_1 = "mods/dublicate/images/sprites/oth/effector_letter_1.png"
-    image effector_letter_2_1 = "mods/dublicate/images/sprites/oth/effector_letter_2_1.png"
-    image effector_letter_2_2 = "mods/dublicate/images/sprites/oth/effector_letter_2_2.png"
-    image effector_letter_3 = "mods/dublicate/images/sprites/oth/effector_letter_3.png"
-    image dct_int_mine_coalface_greenflash = "mods/dublicate/images/sprites/oth/dct_int_mine_coalface_greenflash.png"
-    image dct_ext_module_smoke = "mods/dublicate/images/sprites/oth/dct_ext_module_smoke.png"
-    image ext_path_night_fog = "mods/dublicate/images/sprites/oth/ext_path_night_fog.png"
-    image dct_ext_backroad_fog = "mods/dublicate/images/sprites/oth/dct_ext_backroad_fog.png"
-    #image uv_wild_in_forest_small = "mods/dublicate/images/sprites/oth/uv_wild_in_forest_small.png" - Переехал выше, в неформатные
-    #image uv_wild_in_forest_medium = "mods/dublicate/images/sprites/oth/uv_wild_in_forest_medium.png" - Переехал выше, в неформатные
-    image posp = "mods/dublicate/images/sprites/oth/posp.png"
-    image footprint_photo = "mods/dublicate/images/sprites/oth/footprint_photo.png"
-    image uv_spy_wild = "mods/dublicate/images/sprites/oth/uv_spy_wild.png"
-    image uv_spy_neko = "mods/dublicate/images/sprites/oth/uv_spy_neko.png"
-    image dct_apple_uv_un = "mods/dublicate/images/sprites/oth/dct_apple_uv_un.png"
-    image gate_ext_camp_entrance_day = "mods/dublicate/images/sprites/oth/gate_ext_camp_entrance_day.png"
-    image gate_ext_camp_entrance_night = "mods/dublicate/images/sprites/oth/gate_ext_camp_entrance_night.png"
-    image gate_ext_bus_stop = "mods/dublicate/images/sprites/oth/gate_ext_bus_stop.png"
-    image gate_ext_polyana_night = "mods/dublicate/images/sprites/oth/gate_ext_polyana_night.png"
-    image gate_ext_pyramid = "mods/dublicate/images/sprites/oth/gate_ext_pyramid.png"
-    image gate_ext_square_night = "mods/dublicate/images/sprites/oth/gate_ext_square_night.png"
-    image dct_overcast_rain_1 = "mods/dublicate/images/sprites/oth/dct_overcast_rain_1.png"
-    image dct_overcast_rain_2 = "mods/dublicate/images/sprites/oth/dct_overcast_rain_2.png"
-    image dct_overcast_rain_3 = "mods/dublicate/images/sprites/oth/dct_overcast_rain_3.png"
-    image dct_cassete = "mods/dublicate/images/sprites/oth/dct_cassete.png"
-    image dct_breaker = "mods/dublicate/images/sprites/oth/dct_breaker.png"
-    image dct_sht = "mods/dublicate/images/sprites/oth/dct_sht.png" #СХТ40 - прозрачный спрайт вместо cg
-    image dct_gruzchik_1 = im.MatrixColor("mods/dublicate/images/sprites/oth/dct_gruzchik_1.png", im.matrix.tint(0.63, 0.78, 0.82)) # Первый грузчик
-    image dct_gruzchik_2 = im.MatrixColor("mods/dublicate/images/sprites/oth/dct_gruzchik_2.png", im.matrix.tint(0.63, 0.78, 0.82)) # Второй грузчик
 
-    ##### Декорариум (coin)
-    
+    image big_flame = "mods/dublicate/images/sprites/oth/big_flame.png"
+    image dct_apple_uv_un = "mods/dublicate/images/sprites/oth/dct_apple_uv_un.png"
+    image dct_bonfire_day = "mods/dublicate/images/sprites/oth/dct_bonfire_day.png"
+    image dct_breaker = "mods/dublicate/images/sprites/oth/dct_breaker.png"
+    image dct_cassete = "mods/dublicate/images/sprites/oth/dct_cassete.png"
+    image dct_christmas_ball = "mods/dublicate/images/sprites/oth/dct_christmas_ball.png"        # Шар на ёлке, который слегка затуманивает Алису и её мир
+    image dct_clubs_male_comp_al = "mods/dublicate/images/sprites/oth/dct_clubs_male_comp_al.png"          # Компьютер в клубе: монитор с изображением Александра (выводить на экран в позиции xcenter 0.5 ycenter 0.45)
     image dct_clubs_male_comp_clear = "mods/dublicate/images/sprites/oth/dct_clubs_male_comp_clear.png"    # Компьютер в клубе: монитор яркий (выводить на экран в позиции xcenter 0.5 ycenter 0.45)
     image dct_clubs_male_comp_dim = "mods/dublicate/images/sprites/oth/dct_clubs_male_comp_dim.png"        # Компьютер в клубе: монитор тусклый (выводить на экран в позиции xcenter 0.5 ycenter 0.45)
     image dct_clubs_male_comp_sh = "mods/dublicate/images/sprites/oth/dct_clubs_male_comp_sh.png"          # Компьютер в клубе: монитор с изображением Шурика (выводить на экран в позиции xcenter 0.5 ycenter 0.45)
     image dct_clubs_male_comp_table = "mods/dublicate/images/sprites/oth/dct_clubs_male_comp_table.png"    # Компьютер в клубе: монитор c классической жёлто-фиолетовой таблицей (выводить на экран в позиции xcenter 0.5 ycenter 0.45)
-    image dct_int_bus_another_middle_close_seats = "mods/dublicate/images/sprites/oth/dct_int_bus_another_middle_close_seats.png"    # Сиденья в автобусе, загораживающие проход
-    
-    image dct_dream_sh_first_civilian = "mods/dublicate/images/sprites/oth/dct_dream_sh_first_civilian.png"  # Гражданский из сна Шурика
-    image dct_dream_sh_first_smoke 1 = "mods/dublicate/images/sprites/oth/dct_dream_sh_first_smoke_1.png"    # Дым №1 на полигоне из сна Шурика
-    image dct_dream_sh_first_smoke 2 = "mods/dublicate/images/sprites/oth/dct_dream_sh_first_smoke_2.png"    # Дым №1 на полигоне из сна Шурика
-    image dct_dream_sh_first_smoke 3 = "mods/dublicate/images/sprites/oth/dct_dream_sh_first_smoke_3.png"    # Дым №1 на полигоне из сна Шурика
-    image dct_dream_sh_first_soldiers = "mods/dublicate/images/sprites/oth/dct_dream_sh_first_soldiers.png"  # Заглушка для солдат из сна Шурика
-    
-    image dct_christmas_ball = "mods/dublicate/images/sprites/oth/dct_christmas_ball.png"        # Шар на ёлке, который слегка затуманивает Алису и её мир
-    image dct_ext_glade_behind_clubs_day_barberry = "mods/dublicate/images/sprites/oth/dct_ext_glade_behind_clubs_day_barberry.png"        # Куст барбариса на полянке за заднием клубов
-    image dct_int_library_standing_desk_reader_place = "mods/dublicate/images/sprites/oth/dct_int_library_standing_desk_reader_place.png"        # Ближайший читательский стол (с ногами Лены) при взляде из-за стола библиотекаря
-    
-    image dct_coin_letter1 = "mods/dublicate/images/sprites/oth/coin_letter1.png"        # Письмо Алисы
-    
-    image dct_ext_beach_night_view_from_gym_bush = "mods/dublicate/images/sprites/oth/dct_ext_beach_night_view_from_gym_bush.png"    # Ночной вид с крыльца спортзала на кусты и пляж
-    image dct_dream_sh_third_BTR_bus = "mods/dublicate/images/sprites/oth/dct_dream_sh_third_BTR_bus.png"    # БТР и Икарус на автобусной остановке
-    image dct_dream_sh_third_major = "mods/dublicate/images/sprites/oth/dct_dream_sh_third_major.png"        # Майор из сна Шурика
-    image dct_int_coaching_room3_zoom_OSB = im.Composite((3840,2160), (597,226), "mods/dublicate/images/sprites/oth/dct_int_coaching_room3_zoom_OSB.jpg")    # Увеличенный кусок ОСБ с задней стенки шкафа
-    image dct_mz_and_el_go_to_library_sketch = im.Composite((3840,2160), (1135,0), "mods/dublicate/images/sprites/oth/dct_mz_and_el_go_to_library_sketch.jpg")   # Карандашный набросок Электроника и Жени, идущих в бибилиотеку
-    
-    image dct_clubs_male_comp_al = "mods/dublicate/images/sprites/oth/dct_clubs_male_comp_al.png"          # Компьютер в клубе: монитор с изображением Александра (выводить на экран в позиции xcenter 0.5 ycenter 0.45)
-    image dct_dormitory_at_range_Ural_BTR = "mods/dublicate/images/sprites/oth/dct_dormitory_at_range_Ural_BTR.png"          # Урал и БТР на фоне общежития у полигона
-    
-    image dct_int_aidpost_day_curtain = "mods/dublicate/images/sprites/oth/dct_int_aidpost_day_curtain.png"    # Занавеска в медпункте задёрнута
-    image dct_int_aidpost_day_curtain ajar = "mods/dublicate/images/sprites/oth/dct_int_aidpost_day_curtain_ajar.png"  # Занавеска в медпункте слегка приоткрыта
-    
-    image dct_ext_bus_alone_passenger = "mods/dublicate/images/sprites/oth/dct_ext_bus_alone_passenger.png"  # Пассажир на задней площадке Икаруса
-    
-    image dct_wave_left_to_up = "mods/dublicate/images/sprites/oth/dct_wave_left_to_up.png"
-    image dct_wave_right_to_down = "mods/dublicate/images/sprites/oth/dct_wave_right_to_down.png"
     image dct_coin_bus_sparkle1 = "mods/dublicate/images/sprites/oth/dct_coin_bus_sparkle1.png"
+    image dct_coin_bus_sparkle10 = "mods/dublicate/images/sprites/oth/dct_coin_bus_sparkle10.png"
     image dct_coin_bus_sparkle2 = "mods/dublicate/images/sprites/oth/dct_coin_bus_sparkle2.png"
     image dct_coin_bus_sparkle3 = "mods/dublicate/images/sprites/oth/dct_coin_bus_sparkle3.png"
     image dct_coin_bus_sparkle4 = "mods/dublicate/images/sprites/oth/dct_coin_bus_sparkle4.png"
@@ -1685,15 +1587,67 @@ init :
     image dct_coin_bus_sparkle7 = "mods/dublicate/images/sprites/oth/dct_coin_bus_sparkle7.png"
     image dct_coin_bus_sparkle8 = "mods/dublicate/images/sprites/oth/dct_coin_bus_sparkle8.png"
     image dct_coin_bus_sparkle9 = "mods/dublicate/images/sprites/oth/dct_coin_bus_sparkle9.png"
-    image dct_coin_bus_sparkle10 = "mods/dublicate/images/sprites/oth/dct_coin_bus_sparkle10.png"
-    image dct_ext_path_day_bush = "mods/dublicate/images/sprites/oth/dct_ext_path_day_bush.png"
-    image dct_bonfire_day = "mods/dublicate/images/sprites/oth/dct_bonfire_day.png"
-    image dct_int_bus_leftwindow_day_wheat_Maya = "mods/dublicate/images/sprites/oth/dct_int_bus_leftwindow_day_wheat_Maya.png"
-    image dct_ext_bus_road_wheat_Maya = "mods/dublicate/images/sprites/oth/dct_ext_bus_road_wheat_Maya.png"
-    image dct_ext_road_day_wheat_Maya = "mods/dublicate/images/sprites/oth/dct_ext_road_day_wheat_Maya.png"
-    image dct_ext_outside_field_Maya = "mods/dublicate/images/sprites/oth/dct_ext_outside_field_Maya.png"
-    image dct_epilogue_monitor_screensaver = "mods/dublicate/images/sprites/oth/dct_epilogue_monitor_screensaver.png"
+    image dct_coin_letter1 = "mods/dublicate/images/sprites/oth/coin_letter1.png"        # Письмо Алисы
+    image dct_dormitory_at_range_Ural_BTR = "mods/dublicate/images/sprites/oth/dct_dormitory_at_range_Ural_BTR.png"          # Урал и БТР на фоне общежития у полигона
+    image dct_dream_sh_first_civilian = "mods/dublicate/images/sprites/oth/dct_dream_sh_first_civilian.png"  # Гражданский из сна Шурика
+    image dct_dream_sh_first_smoke 1 = "mods/dublicate/images/sprites/oth/dct_dream_sh_first_smoke_1.png"    # Дым №1 на полигоне из сна Шурика
+    image dct_dream_sh_first_smoke 2 = "mods/dublicate/images/sprites/oth/dct_dream_sh_first_smoke_2.png"    # Дым №1 на полигоне из сна Шурика
+    image dct_dream_sh_first_smoke 3 = "mods/dublicate/images/sprites/oth/dct_dream_sh_first_smoke_3.png"    # Дым №1 на полигоне из сна Шурика
+    image dct_dream_sh_first_soldiers = "mods/dublicate/images/sprites/oth/dct_dream_sh_first_soldiers.png"  # Заглушка для солдат из сна Шурика
+    image dct_dream_sh_third_BTR_bus = "mods/dublicate/images/sprites/oth/dct_dream_sh_third_BTR_bus.png"    # БТР и Икарус на автобусной остановке
+    image dct_dream_sh_third_major = "mods/dublicate/images/sprites/oth/dct_dream_sh_third_major.png"        # Майор из сна Шурика
     image dct_epilogue_monitor_document = "mods/dublicate/images/sprites/oth/dct_epilogue_monitor_document.png"
-    image dct_epilogue_monitor_ussr_wallpaper = "mods/dublicate/images/sprites/oth/dct_epilogue_monitor_ussr_wallpaper.png"
+    image dct_epilogue_monitor_screensaver = "mods/dublicate/images/sprites/oth/dct_epilogue_monitor_screensaver.png"
     image dct_epilogue_monitor_ussr_grin = "mods/dublicate/images/sprites/oth/dct_epilogue_monitor_ussr_grin.png"
+    image dct_epilogue_monitor_ussr_wallpaper = "mods/dublicate/images/sprites/oth/dct_epilogue_monitor_ussr_wallpaper.png"
+    image dct_ext_backroad_fog = "mods/dublicate/images/sprites/oth/dct_ext_backroad_fog.png"
+    image dct_ext_beach_night_view_from_gym_bush = "mods/dublicate/images/sprites/oth/dct_ext_beach_night_view_from_gym_bush.png"    # Ночной вид с крыльца спортзала на кусты и пляж
+    image dct_ext_bus_alone_passenger = "mods/dublicate/images/sprites/oth/dct_ext_bus_alone_passenger.png"  # Пассажир на задней площадке Икаруса
+    image dct_ext_bus_road_wheat_Maya = "mods/dublicate/images/sprites/oth/dct_ext_bus_road_wheat_Maya.png"
+    image dct_ext_cliff_day_boat_bow = "mods/dublicate/images/sprites/oth/dct_ext_cliff_day_boat_bow.png"
+    image dct_ext_glade_behind_clubs_day_barberry = "mods/dublicate/images/sprites/oth/dct_ext_glade_behind_clubs_day_barberry.png"        # Куст барбариса на полянке за заднием клубов
+    image dct_ext_house_of_kids_day_fog = "mods/dublicate/images/sprites/oth/dct_ext_house_of_kids_day_fog.png"
+    image dct_ext_houses_fog = "mods/dublicate/images/sprites/oth/dct_ext_houses_fog.png"
+    image dct_ext_module_smoke = "mods/dublicate/images/sprites/oth/dct_ext_module_smoke.png"
+    image dct_ext_outside_field_Maya = "mods/dublicate/images/sprites/oth/dct_ext_outside_field_Maya.png"
+    image dct_ext_path_day_bush = "mods/dublicate/images/sprites/oth/dct_ext_path_day_bush.png"
+    image dct_ext_road_day_wheat_Maya = "mods/dublicate/images/sprites/oth/dct_ext_road_day_wheat_Maya.png"
+    image dct_fog = "mods/dublicate/images/sprites/oth/dct_fog.png"
+    image dct_gruzchik_1 = im.MatrixColor("mods/dublicate/images/sprites/oth/dct_gruzchik_1.png", im.matrix.tint(0.63, 0.78, 0.82)) # Первый грузчик
+    image dct_gruzchik_2 = im.MatrixColor("mods/dublicate/images/sprites/oth/dct_gruzchik_2.png", im.matrix.tint(0.63, 0.78, 0.82)) # Второй грузчик
+    image dct_int_aidpost_day_curtain = "mods/dublicate/images/sprites/oth/dct_int_aidpost_day_curtain.png"    # Занавеска в медпункте задёрнута
+    image dct_int_aidpost_day_curtain ajar = "mods/dublicate/images/sprites/oth/dct_int_aidpost_day_curtain_ajar.png"  # Занавеска в медпункте слегка приоткрыта
+    image dct_int_bus_another_middle_close_seats = "mods/dublicate/images/sprites/oth/dct_int_bus_another_middle_close_seats.png"    # Сиденья в автобусе, загораживающие проход
+    image dct_int_bus_leftwindow_day_wheat_Maya = "mods/dublicate/images/sprites/oth/dct_int_bus_leftwindow_day_wheat_Maya.png"
+    image dct_int_coaching_room3_zoom_OSB = im.Composite((3840,2160), (597,226), "mods/dublicate/images/sprites/oth/dct_int_coaching_room3_zoom_OSB.jpg")    # Увеличенный кусок ОСБ с задней стенки шкафа
+    image dct_int_library_standing_desk_reader_place = "mods/dublicate/images/sprites/oth/dct_int_library_standing_desk_reader_place.png"        # Ближайший читательский стол (с ногами Лены) при взляде из-за стола библиотекаря
+    image dct_int_mine_coalface_greenflash = "mods/dublicate/images/sprites/oth/dct_int_mine_coalface_greenflash.png"
+    image dct_mz_and_el_go_to_library_sketch = im.Composite((3840,2160), (1135,0), "mods/dublicate/images/sprites/oth/dct_mz_and_el_go_to_library_sketch.jpg")   # Карандашный набросок Электроника и Жени, идущих в бибилиотеку
+    image dct_overcast_rain_1 = "mods/dublicate/images/sprites/oth/dct_overcast_rain_1.png"
+    image dct_overcast_rain_2 = "mods/dublicate/images/sprites/oth/dct_overcast_rain_2.png"
+    image dct_overcast_rain_3 = "mods/dublicate/images/sprites/oth/dct_overcast_rain_3.png"
+    image dct_plectr_hand = "mods/dublicate/images/sprites/oth/dct_plectr_hand.png"
+    image dct_plectr_medi = "mods/dublicate/images/sprites/oth/dct_plectr_medi.png"
+    image dct_sht = "mods/dublicate/images/sprites/oth/dct_sht.png" #СХТ40 - прозрачный спрайт вместо cg
+    image dct_simon_watcher = "mods/dublicate/images/sprites/oth/dct_simon_watcher.png"
+    image dct_wave_left_to_up = "mods/dublicate/images/sprites/oth/dct_wave_left_to_up.png"
+    image dct_wave_right_to_down = "mods/dublicate/images/sprites/oth/dct_wave_right_to_down.png"
+    image effector_letter_1 = "mods/dublicate/images/sprites/oth/effector_letter_1.png"
+    image effector_letter_2_1 = "mods/dublicate/images/sprites/oth/effector_letter_2_1.png"
+    image effector_letter_2_2 = "mods/dublicate/images/sprites/oth/effector_letter_2_2.png"
+    image effector_letter_3 = "mods/dublicate/images/sprites/oth/effector_letter_3.png"
+    image ext_path_night_fog = "mods/dublicate/images/sprites/oth/ext_path_night_fog.png"
+    image fog_face_mask = "mods/dublicate/images/sprites/oth/fog_face_mask.png"
+    image footprint_photo = "mods/dublicate/images/sprites/oth/footprint_photo.png"
+    image gate_ext_bus_stop = "mods/dublicate/images/sprites/oth/gate_ext_bus_stop.png"
+    image gate_ext_camp_entrance_day = "mods/dublicate/images/sprites/oth/gate_ext_camp_entrance_day.png"
+    image gate_ext_camp_entrance_night = "mods/dublicate/images/sprites/oth/gate_ext_camp_entrance_night.png"
+    image gate_ext_polyana_night = "mods/dublicate/images/sprites/oth/gate_ext_polyana_night.png"
+    image gate_ext_pyramid = "mods/dublicate/images/sprites/oth/gate_ext_pyramid.png"
+    image gate_ext_square_night = "mods/dublicate/images/sprites/oth/gate_ext_square_night.png"
+    image posp = "mods/dublicate/images/sprites/oth/posp.png"
+    image semulal_day = "mods/dublicate/images/sprites/oth/semulal_day.png"
+    image semulal_night = "mods/dublicate/images/sprites/oth/semulal_night.png"
+    image uv_spy_neko = "mods/dublicate/images/sprites/oth/uv_spy_neko.png"
+    image uv_spy_wild = "mods/dublicate/images/sprites/oth/uv_spy_wild.png"
 

@@ -396,7 +396,8 @@ label dct_avers:
     #show d_us laugh sport:
         #zoom 1.2
         #pos (0.3, -0.05)
-    show dct_landscape_forest3_semen_us
+    show dct_landscape_forest3_semen_us:
+        matrixcolor TintMatrix("#A1C9D0")  # Перекраска спрайта через преобразование matrixcolor. Свойство TintMatrix с цветом "#A1C9D0" даёт результат почти идентичный ночным спрайтам
     show dct_overcast_rain_2:
         xzoom -1.0
     show dct_overcast_rain_3:
