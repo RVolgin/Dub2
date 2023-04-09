@@ -21,11 +21,11 @@ init:
     #music
         
     $ dct_playlist_sprav = [    # Плейлист из нескольких композиций
-        "mods/dublicate/Sounds/coin/music/Sommarfagel[Exclusive_Mix](by_Wintergatan).ogg",
-        "mods/dublicate/Sounds/coin/music/Marble_Machine(by_Wintergatan).ogg",
-        "mods/dublicate/Sounds/coin/music/Starmachine2000(by_Wintergatan).ogg",
-        "mods/dublicate/Sounds/coin/music/Valentine(by_Wintergatan).ogg",
-        "mods/dublicate/Sounds/coin/music/Telescope(by_Wintergatan).ogg"
+        "mods/dublicate/Sounds/music/Sommarfagel[Exclusive_Mix](by_Wintergatan).ogg",
+        "mods/dublicate/Sounds/music/Marble_Machine(by_Wintergatan).ogg",
+        "mods/dublicate/Sounds/music/Starmachine2000(by_Wintergatan).ogg",
+        "mods/dublicate/Sounds/music/Valentine(by_Wintergatan).ogg",
+        "mods/dublicate/Sounds/music/Telescope(by_Wintergatan).ogg"
         ]
     
     

@@ -34,9 +34,9 @@ init 1:
     
     ### Музыка в меню
     
-    $ dct_Moments = "<to 124.685>mods/dublicate/sounds/coin/music/Moments_(by_Shane_Ivers).ogg"
+    $ dct_Moments = "<to 124.685>mods/dublicate/sounds/music/Moments_(by_Shane_Ivers).ogg"
     
-    $ Ya_vasha_tayna = "<from 1.5>mods/dublicate/sounds/coin/music/Ya_vasha_tayna[instrumental](by_Rock_ostrova).ogg"
+    $ Ya_vasha_tayna = "<from 1.5>mods/dublicate/sounds/music/Ya_vasha_tayna[instrumental](by_Rock_ostrova).ogg"
     
     
     ### Фоны в меню
