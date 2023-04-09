@@ -219,146 +219,146 @@ init :
         
     ##### bg (coin)
     
-    image dct_clubs_male_comp_day = "mods/dublicate/images/bg/coin/dct_clubs_male_comp_day.jpg"     # Рабочий стол с компом в клубе кибертнетиков
-    image dct_clubs_male_comp_night = "mods/dublicate/images/bg/coin/dct_clubs_male_comp_night.jpg"
-    image dct_clubs_male_comp_night_light_mon = "mods/dublicate/images/bg/coin/dct_clubs_male_comp_night_light_mon.jpg"
-    image dct_clubs_male_comp_sunset = "mods/dublicate/images/bg/coin/dct_clubs_male_comp_sunset.jpg"
-    image dct_ext_clubs_night_light_inside = "mods/dublicate/images/bg/coin/dct_ext_clubs_night_light_inside.jpg" # Здание клуба кибернетиков ночью со светящимися окнами
-    image dct_ext_buses_filled = "mods/dublicate/images/bg/coin/dct_ext_buses_filled.jpg"       # Икарус и ЛАЗ на стоянке, в Икарусе сидят люди
-    image dct_ext_house_of_el_day = "mods/dublicate/images/bg/coin/dct_ext_house_of_el_day.jpg"     # Домик кибернетиков ЭКСТЕРЬЕР
-    image dct_ext_house_of_el_night = "mods/dublicate/images/bg/coin/dct_ext_house_of_el_night.jpg"
-    image dct_ext_house_of_el_sunset = "mods/dublicate/images/bg/coin/dct_ext_house_of_el_sunset.jpg"
-    image dct_ext_library_sunset = "mods/dublicate/images/bg/coin/dct_ext_library_sunset.jpg"
-    image dct_int_bus_middle = "mods/dublicate/images/bg/coin/dct_int_bus_middle.jpg"   # Салон автобуса, левый борт
-    image dct_int_bus_another_middle = "mods/dublicate/images/bg/coin/dct_int_bus_another_middle.jpg"   # Салон автобуса, правый борт
-    image dct_int_bus_people = "mods/dublicate/images/bg/coin/dct_int_bus_people.jpg"   # Салон автобуса, видоизменённая передняя площадка
-    image dct_int_bus_stern = "mods/dublicate/images/bg/coin/dct_int_bus_stern.jpg"     # Салон автобуса, задняя площадка
-    image dct_ext_camp_entrance_night = "mods/dublicate/images/bg/coin/dct_ext_camp_entrance_night.jpg" # Вид на клуб и на ворота лагеря ночью
-    image dct_int_clubs_male_night = "mods/dublicate/images/bg/coin/dct_int_clubs_male_night.jpg"   # Внутри клуба ночью
-    image dct_int_clubs_male_night_light = "mods/dublicate/images/bg/coin/dct_int_clubs_male_night_light.jpg"
-    image dct_int_clubs_male_night_light_mon = "mods/dublicate/images/bg/coin/dct_int_clubs_male_night_light_mon.jpg"
-    image dct_int_house_of_el_day = "mods/dublicate/images/bg/coin/dct_int_house_of_el_day.jpg"     # Домик кибернетиков ИНТЕРЬЕР
-    image dct_int_house_of_el_night = "mods/dublicate/images/bg/coin/dct_int_house_of_el_night.jpg"
-    image dct_int_house_of_el_night_light = "mods/dublicate/images/bg/coin/dct_int_house_of_el_night_light.jpg"
-    image dct_int_house_of_el_sunset = "mods/dublicate/images/bg/coin/dct_int_house_of_el_sunset.jpg"
-    image dct_coin_bus-stop = "mods/dublicate/images/bg/coin/dct_coin_bus-stop.jpg"     # Автобусная остановка из снов Шурика
+    image dct_clubs_male_comp_day = "mods/dublicate/images/bg/dct_clubs_male_comp_day.jpg"     # Рабочий стол с компом в клубе кибертнетиков
+    image dct_clubs_male_comp_night = "mods/dublicate/images/bg/dct_clubs_male_comp_night.jpg"
+    image dct_clubs_male_comp_night_light_mon = "mods/dublicate/images/bg/dct_clubs_male_comp_night_light_mon.jpg"
+    image dct_clubs_male_comp_sunset = "mods/dublicate/images/bg/dct_clubs_male_comp_sunset.jpg"
+    image dct_ext_clubs_night_light_inside = "mods/dublicate/images/bg/dct_ext_clubs_night_light_inside.jpg" # Здание клуба кибернетиков ночью со светящимися окнами
+    image dct_ext_buses_filled = "mods/dublicate/images/bg/dct_ext_buses_filled.jpg"       # Икарус и ЛАЗ на стоянке, в Икарусе сидят люди
+    image dct_ext_house_of_el_day = "mods/dublicate/images/bg/dct_ext_house_of_el_day.jpg"     # Домик кибернетиков ЭКСТЕРЬЕР
+    image dct_ext_house_of_el_night = "mods/dublicate/images/bg/dct_ext_house_of_el_night.jpg"
+    image dct_ext_house_of_el_sunset = "mods/dublicate/images/bg/dct_ext_house_of_el_sunset.jpg"
+    image dct_ext_library_sunset = "mods/dublicate/images/bg/dct_ext_library_sunset.jpg"
+    image dct_int_bus_middle = "mods/dublicate/images/bg/dct_int_bus_middle.jpg"   # Салон автобуса, левый борт
+    image dct_int_bus_another_middle = "mods/dublicate/images/bg/dct_int_bus_another_middle.jpg"   # Салон автобуса, правый борт
+    image dct_int_bus_people = "mods/dublicate/images/bg/dct_int_bus_people.jpg"   # Салон автобуса, видоизменённая передняя площадка
+    image dct_int_bus_stern = "mods/dublicate/images/bg/dct_int_bus_stern.jpg"     # Салон автобуса, задняя площадка
+    image dct_ext_camp_entrance_night = "mods/dublicate/images/bg/dct_ext_camp_entrance_night.jpg" # Вид на клуб и на ворота лагеря ночью
+    image dct_int_clubs_male_night = "mods/dublicate/images/bg/dct_int_clubs_male_night.jpg"   # Внутри клуба ночью
+    image dct_int_clubs_male_night_light = "mods/dublicate/images/bg/dct_int_clubs_male_night_light.jpg"
+    image dct_int_clubs_male_night_light_mon = "mods/dublicate/images/bg/dct_int_clubs_male_night_light_mon.jpg"
+    image dct_int_house_of_el_day = "mods/dublicate/images/bg/dct_int_house_of_el_day.jpg"     # Домик кибернетиков ИНТЕРЬЕР
+    image dct_int_house_of_el_night = "mods/dublicate/images/bg/dct_int_house_of_el_night.jpg"
+    image dct_int_house_of_el_night_light = "mods/dublicate/images/bg/dct_int_house_of_el_night_light.jpg"
+    image dct_int_house_of_el_sunset = "mods/dublicate/images/bg/dct_int_house_of_el_sunset.jpg"
+    image dct_coin_bus-stop = "mods/dublicate/images/bg/dct_coin_bus-stop.jpg"     # Автобусная остановка из снов Шурика
     
     
     
-    image dct_dream_sh_first_disert = "mods/dublicate/images/bg/coin/dct_dream_sh_first_disert.jpg"
-    image dct_int_library_standing_desk_back = "mods/dublicate/images/bg/coin/dct_int_library_standing_desk_back.jpg"   # Бибилотека, вид из-за Жениного стола
-    image dct_int_library_standing_desk_front = "mods/dublicate/images/bg/coin/dct_int_library_standing_desk_front.png"
-    image dct_ext_musclub_backside_night = "mods/dublicate/images/bg/coin/dct_ext_musclub_backside_night.jpg"   # Музыкальный клуб с тыльной стороны ночью
-    image dct_ext_musclub_backside_night_brightwindows = "mods/dublicate/images/bg/coin/dct_ext_musclub_backside_night_brightwindows.jpg"   # Музыкальный клуб с тыльной стороны ночью со светящимися окнами
-    image dct_ext_dining_bench_day = "mods/dublicate/images/bg/coin/dct_ext_dining_bench_day.png"       # Скамейка у входа в столовую, ДЕНЬ
-    image dct_ext_dining_bench_day_front = "mods/dublicate/images/bg/coin/dct_ext_dining_bench_day_front.png"   # Скамейка у входа в столовую (только скамейка, столб и угол здания)
-    image dct_ext_dining_bench_day_front2 = "mods/dublicate/images/bg/coin/dct_ext_dining_bench_day_front2.png"   # Скамейка у входа в столовую (только скамейка и столб)
-    image dct_ext_dining_bench_sunset = "mods/dublicate/images/bg/coin/dct_ext_dining_bench_sunset.png" # Скамейка у входа в столовую, ЗАКАТ
-    image dct_ext_dining_door_day = "mods/dublicate/images/bg/coin/dct_ext_dining_door_day.jpg"         # Двери столовой, ДЕНЬ
-    image dct_ext_dining_door_day_front = "mods/dublicate/images/bg/coin/dct_ext_dining_door_day_front.png" # Двери столовой (только лавка и ограждение)
-    image dct_ext_dining_door_sunset = "mods/dublicate/images/bg/coin/dct_ext_dining_door_sunset.jpg"   # Двери столовой, ЗАКАТ
-    image dct_int_dining_hall_table_day_back = "mods/dublicate/images/bg/coin/dct_int_dining_hall_table_day_back.jpg"   # Обеденный стол, ДЕНЬ
-    image dct_int_dining_hall_table_day_back_people = "mods/dublicate/images/bg/coin/dct_int_dining_hall_table_day_back_people.jpg"
-    image dct_int_dining_hall_table_day_chairs = "mods/dublicate/images/bg/coin/dct_int_dining_hall_table_day_chairs.png"
-    image dct_int_dining_hall_table_day_front = "mods/dublicate/images/bg/coin/dct_int_dining_hall_table_day_front.png"
-    image dct_int_dining_hall_table_sunset_back = "mods/dublicate/images/bg/coin/dct_int_dining_hall_table_sunset_back.jpg" # Обеденный стол, ЗАКАТ
-    image dct_int_dining_hall_table_sunset_back_people = "mods/dublicate/images/bg/coin/dct_int_dining_hall_table_sunset_back_people.jpg"
-    image dct_int_dining_hall_table_sunset_chairs = "mods/dublicate/images/bg/coin/dct_int_dining_hall_table_sunset_chairs.png"
-    image dct_int_dining_hall_table_sunset_front = "mods/dublicate/images/bg/coin/dct_int_dining_hall_table_sunset_front.png"
-    image dct_ext_сentral_alley_from_dining_hall_to_west = "mods/dublicate/images/bg/coin/dct_ext_сentral_alley_from_dining_hall_to_west.jpg" # Главная аллея лагеря от столовой с видом на западные ворота
-    image dct_ext_playground_opposite_gate_day = "mods/dublicate/images/bg/coin/dct_ext_playground_opposite_gate_day.jpg"
-    image dct_int_dining_hall_people_sunset = "mods/dublicate/images/bg/coin/dct_int_dining_hall_people_sunset.jpg"
-    image dct_ext_music_club_sunset = "mods/dublicate/images/bg/coin/dct_ext_music_club_sunset.jpg"
+    image dct_dream_sh_first_disert = "mods/dublicate/images/bg/dct_dream_sh_first_disert.jpg"
+    image dct_int_library_standing_desk_back = "mods/dublicate/images/bg/dct_int_library_standing_desk_back.jpg"   # Бибилотека, вид из-за Жениного стола
+    image dct_int_library_standing_desk_front = "mods/dublicate/images/bg/dct_int_library_standing_desk_front.png"
+    image dct_ext_musclub_backside_night = "mods/dublicate/images/bg/dct_ext_musclub_backside_night.jpg"   # Музыкальный клуб с тыльной стороны ночью
+    image dct_ext_musclub_backside_night_brightwindows = "mods/dublicate/images/bg/dct_ext_musclub_backside_night_brightwindows.jpg"   # Музыкальный клуб с тыльной стороны ночью со светящимися окнами
+    image dct_ext_dining_bench_day = "mods/dublicate/images/bg/dct_ext_dining_bench_day.png"       # Скамейка у входа в столовую, ДЕНЬ
+    image dct_ext_dining_bench_day_front = "mods/dublicate/images/bg/dct_ext_dining_bench_day_front.png"   # Скамейка у входа в столовую (только скамейка, столб и угол здания)
+    image dct_ext_dining_bench_day_front2 = "mods/dublicate/images/bg/dct_ext_dining_bench_day_front2.png"   # Скамейка у входа в столовую (только скамейка и столб)
+    image dct_ext_dining_bench_sunset = "mods/dublicate/images/bg/dct_ext_dining_bench_sunset.png" # Скамейка у входа в столовую, ЗАКАТ
+    image dct_ext_dining_door_day = "mods/dublicate/images/bg/dct_ext_dining_door_day.jpg"         # Двери столовой, ДЕНЬ
+    image dct_ext_dining_door_day_front = "mods/dublicate/images/bg/dct_ext_dining_door_day_front.png" # Двери столовой (только лавка и ограждение)
+    image dct_ext_dining_door_sunset = "mods/dublicate/images/bg/dct_ext_dining_door_sunset.jpg"   # Двери столовой, ЗАКАТ
+    image dct_int_dining_hall_table_day_back = "mods/dublicate/images/bg/dct_int_dining_hall_table_day_back.jpg"   # Обеденный стол, ДЕНЬ
+    image dct_int_dining_hall_table_day_back_people = "mods/dublicate/images/bg/dct_int_dining_hall_table_day_back_people.jpg"
+    image dct_int_dining_hall_table_day_chairs = "mods/dublicate/images/bg/dct_int_dining_hall_table_day_chairs.png"
+    image dct_int_dining_hall_table_day_front = "mods/dublicate/images/bg/dct_int_dining_hall_table_day_front.png"
+    image dct_int_dining_hall_table_sunset_back = "mods/dublicate/images/bg/dct_int_dining_hall_table_sunset_back.jpg" # Обеденный стол, ЗАКАТ
+    image dct_int_dining_hall_table_sunset_back_people = "mods/dublicate/images/bg/dct_int_dining_hall_table_sunset_back_people.jpg"
+    image dct_int_dining_hall_table_sunset_chairs = "mods/dublicate/images/bg/dct_int_dining_hall_table_sunset_chairs.png"
+    image dct_int_dining_hall_table_sunset_front = "mods/dublicate/images/bg/dct_int_dining_hall_table_sunset_front.png"
+    image dct_ext_сentral_alley_from_dining_hall_to_west = "mods/dublicate/images/bg/dct_ext_сentral_alley_from_dining_hall_to_west.jpg" # Главная аллея лагеря от столовой с видом на западные ворота
+    image dct_ext_playground_opposite_gate_day = "mods/dublicate/images/bg/dct_ext_playground_opposite_gate_day.jpg"
+    image dct_int_dining_hall_people_sunset = "mods/dublicate/images/bg/dct_int_dining_hall_people_sunset.jpg"
+    image dct_ext_music_club_sunset = "mods/dublicate/images/bg/dct_ext_music_club_sunset.jpg"
     
     
     
-    image dct_ext_between_beach_and_boathouse_day = "mods/dublicate/images/bg/coin/dct_ext_between_beach_and_boathouse_day.jpg"   # Берег между пляжем и лодочной станцией, ДЕНЬ
-    image dct_ext_between_beach_and_boathouse_sunset = "mods/dublicate/images/bg/coin/dct_ext_between_beach_and_boathouse_sunset.jpg"   # Берег между пляжем и лодочной станцией, ЗАКАТ
-    image dct_ext_glade_behind_clubs_day = "mods/dublicate/images/bg/coin/dct_ext_glade_behind_clubs_day.jpg"   # Полянка за зданием кружка кибернетики, ДЕНЬ
-    image dct_ext_glade_behind_clubs_night = "mods/dublicate/images/bg/coin/dct_ext_glade_behind_clubs_night.jpg"   # Полянка за зданием кружка кибернетики, НОЧЬ
-    image dct_ext_glade_behind_clubs_sunset = "mods/dublicate/images/bg/coin/dct_ext_glade_behind_clubs_sunset.jpg"   # Полянка за зданием кружка кибернетики, ЗАКАТ
+    image dct_ext_between_beach_and_boathouse_day = "mods/dublicate/images/bg/dct_ext_between_beach_and_boathouse_day.jpg"   # Берег между пляжем и лодочной станцией, ДЕНЬ
+    image dct_ext_between_beach_and_boathouse_sunset = "mods/dublicate/images/bg/dct_ext_between_beach_and_boathouse_sunset.jpg"   # Берег между пляжем и лодочной станцией, ЗАКАТ
+    image dct_ext_glade_behind_clubs_day = "mods/dublicate/images/bg/dct_ext_glade_behind_clubs_day.jpg"   # Полянка за зданием кружка кибернетики, ДЕНЬ
+    image dct_ext_glade_behind_clubs_night = "mods/dublicate/images/bg/dct_ext_glade_behind_clubs_night.jpg"   # Полянка за зданием кружка кибернетики, НОЧЬ
+    image dct_ext_glade_behind_clubs_sunset = "mods/dublicate/images/bg/dct_ext_glade_behind_clubs_sunset.jpg"   # Полянка за зданием кружка кибернетики, ЗАКАТ
     
     
     
-    image dct_ext_water_islands_buoys_day = "mods/dublicate/images/bg/coin/dct_ext_water_islands_buoys_day.jpg"   # Речка, буйки и острова
+    image dct_ext_water_islands_buoys_day = "mods/dublicate/images/bg/dct_ext_water_islands_buoys_day.jpg"   # Речка, буйки и острова
     
-    image dct_ext_square_extended_day = "mods/dublicate/images/bg/coin/dct_ext_square_extended_day.jpg"   # Расширенная площадь, день (очень некачественный вариант)
-    
-    
-    
-    image dct_ext_beach_night_view_from_gym = "mods/dublicate/images/bg/coin/dct_ext_beach_night_view_from_gym.jpg" # Пляж ночью, вид с крыльца спортзала
-    image dct_ext_stage_close_day = "mods/dublicate/images/bg/coin/dct_ext_stage_close_day.jpg" # Сцена днём, приближенная
-    image dct_ext_stage_edge_day = "mods/dublicate/images/bg/coin/dct_ext_stage_edge_day.jpg" # Сцена, самый край возле колонки
-    image dct_ext_square_profile_view_day = "mods/dublicate/images/bg/coin/dct_ext_square_profile_view_day.jpg" # Площадь с боку днём, вид на Генду и админ. корпус
-    image dct_ext_alley_from_library_to_square = "mods/dublicate/images/bg/coin/dct_ext_alley_from_library_to_square.jpg" # Аллея от бибилиотеки к площади
-    image dct_int_clubs_male2_night_zoom = "mods/dublicate/images/bg/coin/dct_int_clubs_male2_night_zoom.jpg" # Кладовка кибернетиков (левая половина) в двукратном зуме
-    image dct_ext_beach_barhan = "mods/dublicate/images/bg/coin/dct_ext_beach_barhan.jpg" # Пляж с тентом-зонтиком днём
-    image dct_ext_beach_day_lifesaving_shield = "mods/dublicate/images/bg/coin/dct_ext_beach_day_lifesaving_shield.jpg" # Пляж со щитом средств для спасения утопающих
+    image dct_ext_square_extended_day = "mods/dublicate/images/bg/dct_ext_square_extended_day.jpg"   # Расширенная площадь, день (очень некачественный вариант)
     
     
     
-    image dct_ext_forest_dark_night = "mods/dublicate/images/bg/coin/dct_ext_forest_dark_night.jpg" # "Дремучий лес" (Шурик пробирается по лагерю)
-    image dct_int_musclub_night_light = "mods/dublicate/images/bg/coin/dct_int_musclub_night_light.jpg" # Музклуб внутри (ночь, свет включён)
-    image dct_int_musclub_night_nolight = "mods/dublicate/images/bg/coin/dct_int_musclub_night_nolight.jpg" # Музклуб внутри (ночь, свет выключён)
-    image dct_ext_music_club_verandah_night = "mods/dublicate/images/bg/coin/dct_ext_music_club_verandah_night.jpg" # Музклуб, веранда (ночь, свет не горит)
-    image dct_ext_musclub_night_lantern_light = "mods/dublicate/images/bg/coin/dct_ext_musclub_night_lantern_light.jpg" # Музклуб снаружи (ночь, свет от фонаря)
-    image dct_ext_houses_night_lantern_light = "mods/dublicate/images/bg/coin/dct_ext_houses_night_lantern_light.jpg" # Аллея ночью с подсветкой
-    image dct_ext_houses_rain = "mods/dublicate/images/bg/coin/dct_ext_houses_rain.jpg" # Аллея днём в дождь
-    image dct_ext_library_rain = "mods/dublicate/images/bg/coin/dct_ext_library_rain.jpg" # Бибилиотека снаружи днём в дождь
-    image dct_int_library_rain = "mods/dublicate/images/bg/coin/dct_int_library_rain.jpg" # Бибилиотека внутри днём в дождь
-    image dct_int_library_rain_lamp = "mods/dublicate/images/bg/coin/dct_int_library_rain_lamp.png" # Бибилиотека: включённая лампа
-    image dct_ext_dining_hall_near_rain = "mods/dublicate/images/bg/coin/dct_ext_dining_hall_near_rain.jpg" # Столовая близко днём в дождь
-    image dct_int_dining_hall_people_rain = "mods/dublicate/images/bg/coin/dct_int_dining_hall_people_rain.jpg" # Столовая внутри днём в дождь
-    image dct_dormitory_at_range = "mods/dublicate/images/bg/coin/dct_dormitory_at_range.jpg" # Общежитие у полигона из воспоминаний Александра
+    image dct_ext_beach_night_view_from_gym = "mods/dublicate/images/bg/dct_ext_beach_night_view_from_gym.jpg" # Пляж ночью, вид с крыльца спортзала
+    image dct_ext_stage_close_day = "mods/dublicate/images/bg/dct_ext_stage_close_day.jpg" # Сцена днём, приближенная
+    image dct_ext_stage_edge_day = "mods/dublicate/images/bg/dct_ext_stage_edge_day.jpg" # Сцена, самый край возле колонки
+    image dct_ext_square_profile_view_day = "mods/dublicate/images/bg/dct_ext_square_profile_view_day.jpg" # Площадь с боку днём, вид на Генду и админ. корпус
+    image dct_ext_alley_from_library_to_square = "mods/dublicate/images/bg/dct_ext_alley_from_library_to_square.jpg" # Аллея от бибилиотеки к площади
+    image dct_int_clubs_male2_night_zoom = "mods/dublicate/images/bg/dct_int_clubs_male2_night_zoom.jpg" # Кладовка кибернетиков (левая половина) в двукратном зуме
+    image dct_ext_beach_barhan = "mods/dublicate/images/bg/dct_ext_beach_barhan.jpg" # Пляж с тентом-зонтиком днём
+    image dct_ext_beach_day_lifesaving_shield = "mods/dublicate/images/bg/dct_ext_beach_day_lifesaving_shield.jpg" # Пляж со щитом средств для спасения утопающих
     
     
     
-    image dct_ext_aidpost_after_rain = "mods/dublicate/images/bg/coin/dct_ext_aidpost_after_rain.jpg" # Медпункт после дождя
-    image dct_ext_dining_hall_away_after_rain = "mods/dublicate/images/bg/coin/dct_ext_dining_hall_away_after_rain.jpg" # Столовая вдали после дождя
-    image dct_ext_square_after_rain = "mods/dublicate/images/bg/coin/dct_ext_square_after_rain.jpg" # Площадь после дождя
-    image dct_ext_сentral_alley_from_dining_hall_to_west_after_rain = "mods/dublicate/images/bg/coin/dct_ext_сentral_alley_from_dining_hall_to_west_after_rain.jpg" # Аллея от столовой до западных ворот после дождя
-    image dct_ext_clubs_rain = "mods/dublicate/images/bg/coin/dct_ext_clubs_rain.jpg" # Клуб кибернетиков (снаружи) во время дождя дождя
-    image dct_int_clubs_male_rain = "mods/dublicate/images/bg/coin/dct_int_clubs_male_rain.jpg" # Клуб кибернетиков (внутри) во время дождя дождя
-    image dct_ext_another_clubhouse_day = "mods/dublicate/images/bg/coin/dct_ext_another_clubhouse_day.jpg" # Второе здание клубов (заброшенное)
-    image dct_ext_camp_entrance_day = "mods/dublicate/images/bg/coin/dct_ext_camp_entrance_day.jpg" #  # Вид на клуб и на ворота лагеря днём
+    image dct_ext_forest_dark_night = "mods/dublicate/images/bg/dct_ext_forest_dark_night.jpg" # "Дремучий лес" (Шурик пробирается по лагерю)
+    image dct_int_musclub_night_light = "mods/dublicate/images/bg/dct_int_musclub_night_light.jpg" # Музклуб внутри (ночь, свет включён)
+    image dct_int_musclub_night_nolight = "mods/dublicate/images/bg/dct_int_musclub_night_nolight.jpg" # Музклуб внутри (ночь, свет выключён)
+    image dct_ext_music_club_verandah_night = "mods/dublicate/images/bg/dct_ext_music_club_verandah_night.jpg" # Музклуб, веранда (ночь, свет не горит)
+    image dct_ext_musclub_night_lantern_light = "mods/dublicate/images/bg/dct_ext_musclub_night_lantern_light.jpg" # Музклуб снаружи (ночь, свет от фонаря)
+    image dct_ext_houses_night_lantern_light = "mods/dublicate/images/bg/dct_ext_houses_night_lantern_light.jpg" # Аллея ночью с подсветкой
+    image dct_ext_houses_rain = "mods/dublicate/images/bg/dct_ext_houses_rain.jpg" # Аллея днём в дождь
+    image dct_ext_library_rain = "mods/dublicate/images/bg/dct_ext_library_rain.jpg" # Бибилиотека снаружи днём в дождь
+    image dct_int_library_rain = "mods/dublicate/images/bg/dct_int_library_rain.jpg" # Бибилиотека внутри днём в дождь
+    image dct_int_library_rain_lamp = "mods/dublicate/images/bg/dct_int_library_rain_lamp.png" # Бибилиотека: включённая лампа
+    image dct_ext_dining_hall_near_rain = "mods/dublicate/images/bg/dct_ext_dining_hall_near_rain.jpg" # Столовая близко днём в дождь
+    image dct_int_dining_hall_people_rain = "mods/dublicate/images/bg/dct_int_dining_hall_people_rain.jpg" # Столовая внутри днём в дождь
+    image dct_dormitory_at_range = "mods/dublicate/images/bg/dct_dormitory_at_range.jpg" # Общежитие у полигона из воспоминаний Александра
+    
+    
+    
+    image dct_ext_aidpost_after_rain = "mods/dublicate/images/bg/dct_ext_aidpost_after_rain.jpg" # Медпункт после дождя
+    image dct_ext_dining_hall_away_after_rain = "mods/dublicate/images/bg/dct_ext_dining_hall_away_after_rain.jpg" # Столовая вдали после дождя
+    image dct_ext_square_after_rain = "mods/dublicate/images/bg/dct_ext_square_after_rain.jpg" # Площадь после дождя
+    image dct_ext_сentral_alley_from_dining_hall_to_west_after_rain = "mods/dublicate/images/bg/dct_ext_сentral_alley_from_dining_hall_to_west_after_rain.jpg" # Аллея от столовой до западных ворот после дождя
+    image dct_ext_clubs_rain = "mods/dublicate/images/bg/dct_ext_clubs_rain.jpg" # Клуб кибернетиков (снаружи) во время дождя дождя
+    image dct_int_clubs_male_rain = "mods/dublicate/images/bg/dct_int_clubs_male_rain.jpg" # Клуб кибернетиков (внутри) во время дождя дождя
+    image dct_ext_another_clubhouse_day = "mods/dublicate/images/bg/dct_ext_another_clubhouse_day.jpg" # Второе здание клубов (заброшенное)
+    image dct_ext_camp_entrance_day = "mods/dublicate/images/bg/dct_ext_camp_entrance_day.jpg" #  # Вид на клуб и на ворота лагеря днём
 
     
     
-    image dct_ext_island_glance_south_day = "mods/dublicate/images/bg/coin/dct_ext_island_glance_south_day.jpg" # Остров, вид на ж/д мост, день
-    image dct_ext_square_profile_view_sunset = "mods/dublicate/images/bg/coin/dct_ext_square_profile_view_sunset.jpg" # Площадь с боку вечером, вид на Генду и админ. корпус
-    image dct_ext_pier_night = "mods/dublicate/images/bg/coin/dct_ext_pier_night.jpg" # Палуба лодочной станции, ночь
-    image dct_ext_alley_from_shore_to_clubs_night = "mods/dublicate/images/bg/coin/dct_ext_alley_from_shore_to_clubs_night.jpg" # Аллея от набережной к клубам ночью.
-    image dct_ext_shore_behind_boathouse_night_1 = "mods/dublicate/images/bg/coin/dct_ext_shore_behind_boathouse_night_1.jpg" # Участок за лодочной станцией, взгляд в сторону воды, ночью.
-    image dct_ext_shore_behind_boathouse_night_2 = "mods/dublicate/images/bg/coin/dct_ext_shore_behind_boathouse_night_2.jpg" # Участок за лодочной станцией, взгляд в сторону берега, ночью.
+    image dct_ext_island_glance_south_day = "mods/dublicate/images/bg/dct_ext_island_glance_south_day.jpg" # Остров, вид на ж/д мост, день
+    image dct_ext_square_profile_view_sunset = "mods/dublicate/images/bg/dct_ext_square_profile_view_sunset.jpg" # Площадь с боку вечером, вид на Генду и админ. корпус
+    image dct_ext_pier_night = "mods/dublicate/images/bg/dct_ext_pier_night.jpg" # Палуба лодочной станции, ночь
+    image dct_ext_alley_from_shore_to_clubs_night = "mods/dublicate/images/bg/dct_ext_alley_from_shore_to_clubs_night.jpg" # Аллея от набережной к клубам ночью.
+    image dct_ext_shore_behind_boathouse_night_1 = "mods/dublicate/images/bg/dct_ext_shore_behind_boathouse_night_1.jpg" # Участок за лодочной станцией, взгляд в сторону воды, ночью.
+    image dct_ext_shore_behind_boathouse_night_2 = "mods/dublicate/images/bg/dct_ext_shore_behind_boathouse_night_2.jpg" # Участок за лодочной станцией, взгляд в сторону берега, ночью.
     
     
 
-    image dct_bank_from_water_side_zoom = "mods/dublicate/images/bg/coin/dct_bank_from_water_side_zoom.jpg"
-    image dct_ext_square_night_darker = "mods/dublicate/images/bg/coin/dct_ext_square_night_darker.jpg"
-    image dct_ext_square_night_darkest = "mods/dublicate/images/bg/coin/dct_ext_square_night_darkest.jpg"
-    image dct_ext_square_night_crop = "mods/dublicate/images/bg/coin/dct_ext_square_night_crop.jpg"
-    image dct_ext_square_night_purple = "mods/dublicate/images/bg/coin/dct_ext_square_night_purple.jpg"
-    image dct_ext_square_night_purple_blur = "mods/dublicate/images/bg/coin/dct_ext_square_night_purple_blur.jpg"
-    image dct_ext_square_night_purple_blur_HD = im.Scale("mods/dublicate/images/bg/coin/dct_ext_square_night_purple_blur_HD.jpg",1920,1080)
-    image dct_ext_square_profile_view_night = "mods/dublicate/images/bg/coin/dct_ext_square_profile_view_night.jpg" # Площадь с боку ночью, вид на Генду и админ. корпус
-    image dct_ext_square_profile_view_night_darker = "mods/dublicate/images/bg/coin/dct_ext_square_profile_view_night_darker.jpg"
-    image dct_ext_square_profile_view_night_darkest = "mods/dublicate/images/bg/coin/dct_ext_square_profile_view_night_darkest.jpg"
-    image dct_ext_stage_close_night = "mods/dublicate/images/bg/coin/dct_ext_stage_close_night.jpg"
-    image dct_ext_stage_close_night_darker = "mods/dublicate/images/bg/coin/dct_ext_stage_close_night_darker.jpg"
-    image dct_ext_stage_normal_night_darker = "mods/dublicate/images/bg/coin/dct_ext_stage_normal_night_darker.jpg"
+    image dct_bank_from_water_side_zoom = "mods/dublicate/images/bg/dct_bank_from_water_side_zoom.jpg"
+    image dct_ext_square_night_darker = "mods/dublicate/images/bg/dct_ext_square_night_darker.jpg"
+    image dct_ext_square_night_darkest = "mods/dublicate/images/bg/dct_ext_square_night_darkest.jpg"
+    image dct_ext_square_night_crop = "mods/dublicate/images/bg/dct_ext_square_night_crop.jpg"
+    image dct_ext_square_night_purple = "mods/dublicate/images/bg/dct_ext_square_night_purple.jpg"
+    image dct_ext_square_night_purple_blur = "mods/dublicate/images/bg/dct_ext_square_night_purple_blur.jpg"
+    image dct_ext_square_night_purple_blur_HD = im.Scale("mods/dublicate/images/bg/dct_ext_square_night_purple_blur_HD.jpg",1920,1080)
+    image dct_ext_square_profile_view_night = "mods/dublicate/images/bg/dct_ext_square_profile_view_night.jpg" # Площадь с боку ночью, вид на Генду и админ. корпус
+    image dct_ext_square_profile_view_night_darker = "mods/dublicate/images/bg/dct_ext_square_profile_view_night_darker.jpg"
+    image dct_ext_square_profile_view_night_darkest = "mods/dublicate/images/bg/dct_ext_square_profile_view_night_darkest.jpg"
+    image dct_ext_stage_close_night = "mods/dublicate/images/bg/dct_ext_stage_close_night.jpg"
+    image dct_ext_stage_close_night_darker = "mods/dublicate/images/bg/dct_ext_stage_close_night_darker.jpg"
+    image dct_ext_stage_normal_night_darker = "mods/dublicate/images/bg/dct_ext_stage_normal_night_darker.jpg"
     
         
         
-    image dct_ext_music_club_verandah_opendoor_day = "mods/dublicate/images/bg/coin/dct_ext_music_club_verandah_opendoor_day.jpg" # Музклуб, веранда (день, дверь открыта)
-    image dct_ext_houses2_day = "mods/dublicate/images/bg/coin/dct_ext_houses2_day.jpg" # Дорожка среди домиков, день
+    image dct_ext_music_club_verandah_opendoor_day = "mods/dublicate/images/bg/dct_ext_music_club_verandah_opendoor_day.jpg" # Музклуб, веранда (день, дверь открыта)
+    image dct_ext_houses2_day = "mods/dublicate/images/bg/dct_ext_houses2_day.jpg" # Дорожка среди домиков, день
     
     
     
-    image dct_int_bus_rightwindow_day = "mods/dublicate/images/bg/coin/dct_int_bus_rightwindow_day.jpg"
-    image dct_int_bus_leftwindow_day = "mods/dublicate/images/bg/coin/dct_int_bus_leftwindow_day.jpg"
-    image dct_ext_bus_road = "mods/dublicate/images/bg/coin/dct_ext_bus_road.jpg"
-    image dct_ext_outside_field = "mods/dublicate/images/bg/coin/dct_ext_outside_field.jpg"
-    image dct_author_room = "mods/dublicate/images/bg/coin/dct_author_room.jpg"
+    image dct_int_bus_rightwindow_day = "mods/dublicate/images/bg/dct_int_bus_rightwindow_day.jpg"
+    image dct_int_bus_leftwindow_day = "mods/dublicate/images/bg/dct_int_bus_leftwindow_day.jpg"
+    image dct_ext_bus_road = "mods/dublicate/images/bg/dct_ext_bus_road.jpg"
+    image dct_ext_outside_field = "mods/dublicate/images/bg/dct_ext_outside_field.jpg"
+    image dct_author_room = "mods/dublicate/images/bg/dct_author_room.jpg"
     
     
     
@@ -460,19 +460,19 @@ init :
     
     ##### cg (coin)
     
-    image dct_int_bus_window_view = "mods/dublicate/images/cg/coin/dct_int_bus_window_view.jpg"   # Два сиденья и окно в автобусе
+    image dct_int_bus_window_view = "mods/dublicate/images/cg/dct_int_bus_window_view.jpg"   # Два сиденья и окно в автобусе
     
-    image dct_int_mirror_in_library = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/coin/dct_mirror_wall_library.jpg', (0, 0), 'mods/dublicate/images/cg/coin/dct_mirror_with_shadow.png', (0, 0), 'mods/dublicate/images/cg/coin/dct_mirror_bookshelves.png', (0, 0), 'mods/dublicate/images/cg/coin/dct_mirror_frame.png') # Зеркало в бибилотеке
-    image dct_disassembled_catrobot = "mods/dublicate/images/cg/coin/dct_disassembled_catrobot.jpg"   # Остатки кошкоробота на столе
-    image dct_cg_foots_and_ball = "mods/dublicate/images/cg/coin/dct_cg_foots_and_ball.jpg"   # Ботинки и мяч на траве
-    image dct_cg_el_kick_ball = "mods/dublicate/images/cg/coin/dct_cg_el_kick_ball.jpg"   # Электроник пинает мяч
+    image dct_int_mirror_in_library = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/dct_mirror_wall_library.jpg', (0, 0), 'mods/dublicate/images/cg/dct_mirror_with_shadow.png', (0, 0), 'mods/dublicate/images/cg/dct_mirror_bookshelves.png', (0, 0), 'mods/dublicate/images/cg/dct_mirror_frame.png') # Зеркало в бибилотеке
+    image dct_disassembled_catrobot = "mods/dublicate/images/cg/dct_disassembled_catrobot.jpg"   # Остатки кошкоробота на столе
+    image dct_cg_foots_and_ball = "mods/dublicate/images/cg/dct_cg_foots_and_ball.jpg"   # Ботинки и мяч на траве
+    image dct_cg_el_kick_ball = "mods/dublicate/images/cg/dct_cg_el_kick_ball.jpg"   # Электроник пинает мяч
     
-    image dct_mz_mirror normal = "mods/dublicate/images/cg/coin/dct_mz_mirror_normal.jpg"   # Женя смотрит в зеркало на дверце шкафа
-    image dct_mz_mirror bukal = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/coin/dct_mz_mirror_normal.jpg', (0, 0), 'mods/dublicate/images/cg/coin/dct_mz_mirror_bukal.png')    # Женя смотрит в зеркало на дверце шкафа (расстроенная)
-    image dct_mz_mirror smile = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/coin/dct_mz_mirror_normal.jpg', (0, 0), 'mods/dublicate/images/cg/coin/dct_mz_mirror_smile.png')    # Женя смотрит в зеркало на дверце шкафа (улыбающаяся)
+    image dct_mz_mirror normal = "mods/dublicate/images/cg/dct_mz_mirror_normal.jpg"   # Женя смотрит в зеркало на дверце шкафа
+    image dct_mz_mirror bukal = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/dct_mz_mirror_normal.jpg', (0, 0), 'mods/dublicate/images/cg/dct_mz_mirror_bukal.png')    # Женя смотрит в зеркало на дверце шкафа (расстроенная)
+    image dct_mz_mirror smile = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/dct_mz_mirror_normal.jpg', (0, 0), 'mods/dublicate/images/cg/dct_mz_mirror_smile.png')    # Женя смотрит в зеркало на дверце шкафа (улыбающаяся)
     
-    image dct_cg_christmas_balls_back = "mods/dublicate/images/cg/coin/dct_cg_christmas_balls_back.jpg"   # Шары на ёлке
-    image dct_ball_to_world01 = "mods/dublicate/images/anim/coin/dct_ball_to_world01.png"   # Шар с Алисиным миром на ёлке
+    image dct_cg_christmas_balls_back = "mods/dublicate/images/cg/dct_cg_christmas_balls_back.jpg"   # Шары на ёлке
+    image dct_ball_to_world01 = "mods/dublicate/images/anim/dct_ball_to_world01.png"   # Шар с Алисиным миром на ёлке
     image dct_cg_christmas_balls_composite:                 # КОМПОЗИТНЫЙ АРТ ёлки с шарами
         contains:
             "dct_cg_christmas_balls_back"                   # Фон с еловыми ветками
@@ -487,53 +487,53 @@ init :
             "dct_christmas_ball"                            # Декоративная имитация ёлочного шара поверх площади и Алисы
             zoom 1.0 anchor (0.5, 0.5) pos (-0.3, 0.5)
     
-    image dct_cg_coin_volleyball = "mods/dublicate/images/cg/coin/dct_cg_coin_volleyball.jpg" # Воллейбол на пляже (с Семёном)
-    image dct_cg_coin_dv_on_beach = "mods/dublicate/images/cg/coin/dct_cg_coin_dv_on_beach.jpg" # Алиса на пляже с полотенцем
+    image dct_cg_coin_volleyball = "mods/dublicate/images/cg/dct_cg_coin_volleyball.jpg" # Воллейбол на пляже (с Семёном)
+    image dct_cg_coin_dv_on_beach = "mods/dublicate/images/cg/dct_cg_coin_dv_on_beach.jpg" # Алиса на пляже с полотенцем
     
-    image dct_insomnia = "mods/dublicate/images/cg/coin/dct_insomnia.jpg" # Семён и Ульяна не могут уснуть
-    image dct_mi_piano1 = "mods/dublicate/images/cg/coin/dct_mi_piano1.jpg" # Мику играет на пианино
-    image dct_el_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/coin/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate/images/cg/coin/dct_el_in_cage.png') # Электроник в клетке для чтения воспоминаний
-    image dct_mi_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/coin/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate/images/cg/coin/dct_mi_in_cage.png') # Мику в клетке для чтения воспоминаний
-    image dct_sh_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/coin/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate/images/cg/coin/dct_sh_in_cage.png') # Шурик в клетке для чтения воспоминаний
-    image dct_sh_in_cage_with_pushbutton = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/coin/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate/images/cg/coin/dct_sh_in_cage_with_pushbutton.png') # Шурик в клетке для чтения воспоминаний (с кнопкой и проводом)
-    image dct_empty_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/coin/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate/images/cg/coin/dct_empty_in_cage.png') # Пустая клетка для чтения воспоминаний
-    image dct_sky_over_flowerbed_behind_library = "mods/dublicate/images/cg/coin/dct_sky_over_flowerbed_behind_library.jpg" # Небо над головой в обраблении крон
-    image dct_mz_and_el_sitting_on_bench_near_flowerbed = "mods/dublicate/images/cg/coin/dct_mz_and_el_sitting_on_bench_near_flowerbed.jpg" # Эл и Женя сидят на лавочке
+    image dct_insomnia = "mods/dublicate/images/cg/dct_insomnia.jpg" # Семён и Ульяна не могут уснуть
+    image dct_mi_piano1 = "mods/dublicate/images/cg/dct_mi_piano1.jpg" # Мику играет на пианино
+    image dct_el_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate/images/cg/dct_el_in_cage.png') # Электроник в клетке для чтения воспоминаний
+    image dct_mi_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate/images/cg/dct_mi_in_cage.png') # Мику в клетке для чтения воспоминаний
+    image dct_sh_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate/images/cg/dct_sh_in_cage.png') # Шурик в клетке для чтения воспоминаний
+    image dct_sh_in_cage_with_pushbutton = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate/images/cg/dct_sh_in_cage_with_pushbutton.png') # Шурик в клетке для чтения воспоминаний (с кнопкой и проводом)
+    image dct_empty_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate/images/cg/dct_empty_in_cage.png') # Пустая клетка для чтения воспоминаний
+    image dct_sky_over_flowerbed_behind_library = "mods/dublicate/images/cg/dct_sky_over_flowerbed_behind_library.jpg" # Небо над головой в обраблении крон
+    image dct_mz_and_el_sitting_on_bench_near_flowerbed = "mods/dublicate/images/cg/dct_mz_and_el_sitting_on_bench_near_flowerbed.jpg" # Эл и Женя сидят на лавочке
     
-    image dct_mz_and_el_sitting_on_grass = "mods/dublicate/images/cg/coin/dct_mz_and_el_sitting_on_grass.jpg" # Эл и Женя сидят на траве под деревьями
-    image dct_convoy_of_trucks = "mods/dublicate/images/cg/coin/dct_convoy_of_trucks.jpg" # Колонна Уралов
-    image dct_road_bus_BTR = "mods/dublicate/images/cg/coin/dct_road_bus_BTR.jpg" # Автобус в кювете и подбитый БТР
-    image dct_mi_morning_house = "mods/dublicate/images/cg/coin/dct_mi_morning_house.jpg" # Мику проснувшаяся с утра
-    image dct_ext_laboratory_of_d_sh = "mods/dublicate/images/cg/coin/dct_ext_laboratory_of_d_sh.jpg" # Лаборатория Александра, вид снаружи на окна
+    image dct_mz_and_el_sitting_on_grass = "mods/dublicate/images/cg/dct_mz_and_el_sitting_on_grass.jpg" # Эл и Женя сидят на траве под деревьями
+    image dct_convoy_of_trucks = "mods/dublicate/images/cg/dct_convoy_of_trucks.jpg" # Колонна Уралов
+    image dct_road_bus_BTR = "mods/dublicate/images/cg/dct_road_bus_BTR.jpg" # Автобус в кювете и подбитый БТР
+    image dct_mi_morning_house = "mods/dublicate/images/cg/dct_mi_morning_house.jpg" # Мику проснувшаяся с утра
+    image dct_ext_laboratory_of_d_sh = "mods/dublicate/images/cg/dct_ext_laboratory_of_d_sh.jpg" # Лаборатория Александра, вид снаружи на окна
     
-    image dct_sh_d_jn_reunion = "mods/dublicate/images/cg/coin/dct_sh_d_jn_reunion.jpg" # Воссоединение Шурика с Яной возле клубов
+    image dct_sh_d_jn_reunion = "mods/dublicate/images/cg/dct_sh_d_jn_reunion.jpg" # Воссоединение Шурика с Яной возле клубов
     
-    image dct_coin_dv_sits_on_porch = "mods/dublicate/images/cg/coin/dct_coin_dv_sits_on_porch.jpg" # Алиса на крыльце домика с тетрадкой
+    image dct_coin_dv_sits_on_porch = "mods/dublicate/images/cg/dct_coin_dv_sits_on_porch.jpg" # Алиса на крыльце домика с тетрадкой
         
-    image dct_dv_two_pieces_bg_dark = "mods/dublicate/images/cg/coin/dct_dv_two_pieces_bg_dark.jpg"
-    image dct_dv_two_pieces_bg_square = "mods/dublicate/images/cg/coin/dct_dv_two_pieces_bg_square.jpg"
-    image dct_dv_two_pieces_casual = im.Scale("mods/dublicate/images/cg/coin/dct_dv_two_pieces_casual.png",1536,1620)
-    image dct_dv_two_pieces_pioneer = im.Scale("mods/dublicate/images/cg/coin/dct_dv_two_pieces_pioneer.png",1536,1620)
-    image dct_dv_argue = "mods/dublicate/images/cg/coin/dct_dv_argue.jpg"
-    image dct_dv_argue sternsmile = "mods/dublicate/images/cg/coin/dct_dv_argue_sternsmile.jpg"
-    image dct_sl_clean_square_1 = im.Alpha("mods/dublicate/images/cg/coin/dct_sl_clean_square_1.jpg",0.7)
-    image dct_sl_clean_square_2 = im.Alpha("mods/dublicate/images/cg/coin/dct_sl_clean_square_2.jpg",0.7)
-    image dct_sl_clean_square_3 = im.Alpha("mods/dublicate/images/cg/coin/dct_sl_clean_square_3.jpg",0.7)
-    image dct_sl_clean_square_4 = im.Alpha("mods/dublicate/images/cg/coin/dct_sl_clean_square_4.jpg",0.7)
-    image dct_sl_clean_square_5 = im.Alpha("mods/dublicate/images/cg/coin/dct_sl_clean_square_5.jpg",0.7)
-    image dct_sl_clean_square_6 = "mods/dublicate/images/cg/coin/dct_sl_clean_square_6.jpg"
-    image dct_sl_clean_square_7 = "mods/dublicate/images/cg/coin/dct_sl_clean_square_7.jpg"
-    image dct_dsl_in_shop = im.Alpha("mods/dublicate/images/cg/coin/dct_dsl_in_shop.jpg",0.7)
-    image arseniy_chebynkin_izbad = im.Scale("mods/dublicate/images/cg/coin/arseniy_chebynkin_izbad.jpg",1920,1080) #Изба из Травницы (https://arsenixc.artstation.com/projects/PeEE1)
+    image dct_dv_two_pieces_bg_dark = "mods/dublicate/images/cg/dct_dv_two_pieces_bg_dark.jpg"
+    image dct_dv_two_pieces_bg_square = "mods/dublicate/images/cg/dct_dv_two_pieces_bg_square.jpg"
+    image dct_dv_two_pieces_casual = im.Scale("mods/dublicate/images/cg/dct_dv_two_pieces_casual.png",1536,1620)
+    image dct_dv_two_pieces_pioneer = im.Scale("mods/dublicate/images/cg/dct_dv_two_pieces_pioneer.png",1536,1620)
+    image dct_dv_argue = "mods/dublicate/images/cg/dct_dv_argue.jpg"
+    image dct_dv_argue sternsmile = "mods/dublicate/images/cg/dct_dv_argue_sternsmile.jpg"
+    image dct_sl_clean_square_1 = im.Alpha("mods/dublicate/images/cg/dct_sl_clean_square_1.jpg",0.7)
+    image dct_sl_clean_square_2 = im.Alpha("mods/dublicate/images/cg/dct_sl_clean_square_2.jpg",0.7)
+    image dct_sl_clean_square_3 = im.Alpha("mods/dublicate/images/cg/dct_sl_clean_square_3.jpg",0.7)
+    image dct_sl_clean_square_4 = im.Alpha("mods/dublicate/images/cg/dct_sl_clean_square_4.jpg",0.7)
+    image dct_sl_clean_square_5 = im.Alpha("mods/dublicate/images/cg/dct_sl_clean_square_5.jpg",0.7)
+    image dct_sl_clean_square_6 = "mods/dublicate/images/cg/dct_sl_clean_square_6.jpg"
+    image dct_sl_clean_square_7 = "mods/dublicate/images/cg/dct_sl_clean_square_7.jpg"
+    image dct_dsl_in_shop = im.Alpha("mods/dublicate/images/cg/dct_dsl_in_shop.jpg",0.7)
+    image arseniy_chebynkin_izbad = im.Scale("mods/dublicate/images/cg/arseniy_chebynkin_izbad.jpg",1920,1080) #Изба из Травницы (https://arsenixc.artstation.com/projects/PeEE1)
     
-    image dct_dv_mirror = "mods/dublicate/images/cg/coin/dct_dv_mirror.jpg"   # Алиса в зеркале шкафа
-    image dct_closet_with_dresses = "mods/dublicate/images/cg/coin/dct_closet_with_dresses.jpg"   # Шкаф с платьями
+    image dct_dv_mirror = "mods/dublicate/images/cg/dct_dv_mirror.jpg"   # Алиса в зеркале шкафа
+    image dct_closet_with_dresses = "mods/dublicate/images/cg/dct_closet_with_dresses.jpg"   # Шкаф с платьями
     
-    image dct_int_bus_blue = "mods/dublicate/images/cg/coin/dct_int_bus_blue.jpg"
-    image dct_int_bus_pink = "mods/dublicate/images/cg/coin/dct_int_bus_pink.jpg"
-    image dct_int_bus_purple = "mods/dublicate/images/cg/coin/dct_int_bus_purple.jpg"
-    image dct_d1_uv = "mods/dublicate/images/cg/coin/dct_d1_uv.jpg"
-    image dct_d1_uv_2 = "mods/dublicate/images/cg/coin/dct_d1_uv_2.jpg"
+    image dct_int_bus_blue = "mods/dublicate/images/cg/dct_int_bus_blue.jpg"
+    image dct_int_bus_pink = "mods/dublicate/images/cg/dct_int_bus_pink.jpg"
+    image dct_int_bus_purple = "mods/dublicate/images/cg/dct_int_bus_purple.jpg"
+    image dct_d1_uv = "mods/dublicate/images/cg/dct_d1_uv.jpg"
+    image dct_d1_uv_2 = "mods/dublicate/images/cg/dct_d1_uv_2.jpg"
 
 
 
@@ -577,17 +577,17 @@ init :
     ##### Анимация (coin)
     
     image dct_road_anim:                  # Дорога (автобус едет в лагерь)
-        "mods/dublicate/images/anim/coin/dct_road_6.jpg"
+        "mods/dublicate/images/anim/dct_road_6.jpg"
         pause 0.6
-        "mods/dublicate/images/anim/coin/dct_road_5.jpg" with dissolve_fast
+        "mods/dublicate/images/anim/dct_road_5.jpg" with dissolve_fast
         pause 0.6
-        "mods/dublicate/images/anim/coin/dct_road_4.jpg" with dissolve_fast
+        "mods/dublicate/images/anim/dct_road_4.jpg" with dissolve_fast
         pause 0.6
-        "mods/dublicate/images/anim/coin/dct_road_3.jpg" with dissolve_fast
+        "mods/dublicate/images/anim/dct_road_3.jpg" with dissolve_fast
         pause 0.6
-        "mods/dublicate/images/anim/coin/dct_road_2.jpg" with dissolve_fast
+        "mods/dublicate/images/anim/dct_road_2.jpg" with dissolve_fast
         pause 0.6
-        "mods/dublicate/images/anim/coin/dct_road_1.jpg" with dissolve_fast
+        "mods/dublicate/images/anim/dct_road_1.jpg" with dissolve_fast
         pause 1
         
 
@@ -757,11 +757,11 @@ init :
         
         
     image dct_cg_mz_dreams_of_el:                  # Женя мечтает об Электронике
-        "mods/dublicate/images/cg/coin/dct_cg_mz_dreams_of_el_1.jpg"
+        "mods/dublicate/images/cg/dct_cg_mz_dreams_of_el_1.jpg"
         pause 4
         "dct_cg_el_kick_ball" with dissolve2
         pause 5.5
-        "mods/dublicate/images/cg/coin/dct_cg_mz_dreams_of_el_3.jpg" with dissolve2
+        "mods/dublicate/images/cg/dct_cg_mz_dreams_of_el_3.jpg" with dissolve2
         pause 7
         "d4_el_wash" with dissolve2
     
@@ -773,49 +773,49 @@ init :
     
     
     image dct_ball_to_world:                  # Ёлочный шар увеличивается в размерах
-        "mods/dublicate/images/anim/coin/dct_ball_to_world01.png"
+        "mods/dublicate/images/anim/dct_ball_to_world01.png"
         xcenter 0.5 ycenter 0.5
         pause 0.5
-        "mods/dublicate/images/anim/coin/dct_ball_to_world02.png" with Dissolve(0.2)
+        "mods/dublicate/images/anim/dct_ball_to_world02.png" with Dissolve(0.2)
         xcenter 0.5 ycenter 0.5
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_ball_to_world03.png" with Dissolve(0.2)
+        "mods/dublicate/images/anim/dct_ball_to_world03.png" with Dissolve(0.2)
         xcenter 0.5 ycenter 0.5
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_ball_to_world04.png" with Dissolve(0.2)
+        "mods/dublicate/images/anim/dct_ball_to_world04.png" with Dissolve(0.2)
         xcenter 0.5 ycenter 0.5
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_ball_to_world05.png" with Dissolve(0.2)
+        "mods/dublicate/images/anim/dct_ball_to_world05.png" with Dissolve(0.2)
         xcenter 0.5 ycenter 0.5
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_ball_to_world06.png" with Dissolve(0.2)
+        "mods/dublicate/images/anim/dct_ball_to_world06.png" with Dissolve(0.2)
         xcenter 0.5 ycenter 0.5
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_ball_to_world07.png" with Dissolve(0.2)
+        "mods/dublicate/images/anim/dct_ball_to_world07.png" with Dissolve(0.2)
         xcenter 0.5 ycenter 0.5
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_ball_to_world08.png" with Dissolve(0.2)
+        "mods/dublicate/images/anim/dct_ball_to_world08.png" with Dissolve(0.2)
         xcenter 0.5 ycenter 0.5
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_ball_to_world09.png" with Dissolve(0.18)
+        "mods/dublicate/images/anim/dct_ball_to_world09.png" with Dissolve(0.18)
         xcenter 0.5 ycenter 0.5
         pause 0.18
-        "mods/dublicate/images/anim/coin/dct_ball_to_world10.png" with Dissolve(0.16)
+        "mods/dublicate/images/anim/dct_ball_to_world10.png" with Dissolve(0.16)
         xcenter 0.5 ycenter 0.5
         pause 0.16
-        "mods/dublicate/images/anim/coin/dct_ball_to_world11.png" with Dissolve(0.14)
+        "mods/dublicate/images/anim/dct_ball_to_world11.png" with Dissolve(0.14)
         xcenter 0.5 ycenter 0.5
         pause 0.14
-        "mods/dublicate/images/anim/coin/dct_ball_to_world12.png" with Dissolve(0.12)
+        "mods/dublicate/images/anim/dct_ball_to_world12.png" with Dissolve(0.12)
         xcenter 0.5 ycenter 0.5
         pause 0.12
-        "mods/dublicate/images/anim/coin/dct_ball_to_world13.png" with Dissolve(0.1)
+        "mods/dublicate/images/anim/dct_ball_to_world13.png" with Dissolve(0.1)
         xcenter 0.5 ycenter 0.5
         pause 0.1
-        "mods/dublicate/images/anim/coin/dct_ball_to_world14.png" with Dissolve(0.08)
+        "mods/dublicate/images/anim/dct_ball_to_world14.png" with Dissolve(0.08)
         xcenter 0.5 ycenter 0.5
         pause 0.08
-        "mods/dublicate/images/anim/coin/dct_ball_to_world15.png" with Dissolve(0.06)
+        "mods/dublicate/images/anim/dct_ball_to_world15.png" with Dissolve(0.06)
         xcenter 0.5 ycenter 0.5
         pause 0.06
         "ext_square_day" with Dissolve(0.04)
@@ -826,58 +826,58 @@ init :
     $ dct_balls_list = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]
 
     
-    image dct_multiverse_polar_lights_1 = "mods/dublicate/images/anim/coin/dct_multiverse_polar_lights_1.png" # Полярное сияние, слой 1
-    image dct_multiverse_polar_lights_2 = "mods/dublicate/images/anim/coin/dct_multiverse_polar_lights_2.png" # Полярное сияние, слой 2
-    image dct_multiverse_fog_1 = "mods/dublicate/images/anim/coin/dct_multiverse_fog_1.png" # Туман, слой 1
-    image dct_multiverse_fog_2 = "mods/dublicate/images/anim/coin/dct_multiverse_fog_2.png" # Туман, слой 2
-    image dct_multiverse_fog_3 = "mods/dublicate/images/anim/coin/dct_multiverse_fog_3.png" # Туман, слой 3
-    image dct_multiverse_fog_4 = "mods/dublicate/images/anim/coin/dct_multiverse_fog_4.png" # Туман, слой 4
-    image dct_multiverse_fog_5 = "mods/dublicate/images/anim/coin/dct_multiverse_fog_5.png" # Туман, слой 5
-    image dct_multiverse_fog_6 = "mods/dublicate/images/anim/coin/dct_multiverse_fog_6.png" # Туман, слой 6
+    image dct_multiverse_polar_lights_1 = "mods/dublicate/images/anim/dct_multiverse_polar_lights_1.png" # Полярное сияние, слой 1
+    image dct_multiverse_polar_lights_2 = "mods/dublicate/images/anim/dct_multiverse_polar_lights_2.png" # Полярное сияние, слой 2
+    image dct_multiverse_fog_1 = "mods/dublicate/images/anim/dct_multiverse_fog_1.png" # Туман, слой 1
+    image dct_multiverse_fog_2 = "mods/dublicate/images/anim/dct_multiverse_fog_2.png" # Туман, слой 2
+    image dct_multiverse_fog_3 = "mods/dublicate/images/anim/dct_multiverse_fog_3.png" # Туман, слой 3
+    image dct_multiverse_fog_4 = "mods/dublicate/images/anim/dct_multiverse_fog_4.png" # Туман, слой 4
+    image dct_multiverse_fog_5 = "mods/dublicate/images/anim/dct_multiverse_fog_5.png" # Туман, слой 5
+    image dct_multiverse_fog_6 = "mods/dublicate/images/anim/dct_multiverse_fog_6.png" # Туман, слой 6
     
     # Шары с мирами
-    image dct_multiverse_ball_01 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_01.png"
-    image dct_multiverse_ball_02 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_02.png"
-    image dct_multiverse_ball_03 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_03.png"
-    image dct_multiverse_ball_04 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_04.png"
-    image dct_multiverse_ball_05 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_05.png"
-    image dct_multiverse_ball_06 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_06.png"
-    image dct_multiverse_ball_07 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_07.png"
-    image dct_multiverse_ball_08 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_08.png"
-    image dct_multiverse_ball_09 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_09.png"
-    image dct_multiverse_ball_10 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_10.png"
-    image dct_multiverse_ball_11 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_11.png"
-    image dct_multiverse_ball_12 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_12.png"
-    image dct_multiverse_ball_13 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_13.png"
-    image dct_multiverse_ball_14 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_14.png"
-    image dct_multiverse_ball_15 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_15.png"
-    image dct_multiverse_ball_16 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_16.png"
-    image dct_multiverse_ball_17 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_17.png"
-    image dct_multiverse_ball_18 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_18.png"
-    image dct_multiverse_ball_19 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_19.png"
-    image dct_multiverse_ball_20 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_20.png"
+    image dct_multiverse_ball_01 = "mods/dublicate/images/anim/dct_multiverse_ball_01.png"
+    image dct_multiverse_ball_02 = "mods/dublicate/images/anim/dct_multiverse_ball_02.png"
+    image dct_multiverse_ball_03 = "mods/dublicate/images/anim/dct_multiverse_ball_03.png"
+    image dct_multiverse_ball_04 = "mods/dublicate/images/anim/dct_multiverse_ball_04.png"
+    image dct_multiverse_ball_05 = "mods/dublicate/images/anim/dct_multiverse_ball_05.png"
+    image dct_multiverse_ball_06 = "mods/dublicate/images/anim/dct_multiverse_ball_06.png"
+    image dct_multiverse_ball_07 = "mods/dublicate/images/anim/dct_multiverse_ball_07.png"
+    image dct_multiverse_ball_08 = "mods/dublicate/images/anim/dct_multiverse_ball_08.png"
+    image dct_multiverse_ball_09 = "mods/dublicate/images/anim/dct_multiverse_ball_09.png"
+    image dct_multiverse_ball_10 = "mods/dublicate/images/anim/dct_multiverse_ball_10.png"
+    image dct_multiverse_ball_11 = "mods/dublicate/images/anim/dct_multiverse_ball_11.png"
+    image dct_multiverse_ball_12 = "mods/dublicate/images/anim/dct_multiverse_ball_12.png"
+    image dct_multiverse_ball_13 = "mods/dublicate/images/anim/dct_multiverse_ball_13.png"
+    image dct_multiverse_ball_14 = "mods/dublicate/images/anim/dct_multiverse_ball_14.png"
+    image dct_multiverse_ball_15 = "mods/dublicate/images/anim/dct_multiverse_ball_15.png"
+    image dct_multiverse_ball_16 = "mods/dublicate/images/anim/dct_multiverse_ball_16.png"
+    image dct_multiverse_ball_17 = "mods/dublicate/images/anim/dct_multiverse_ball_17.png"
+    image dct_multiverse_ball_18 = "mods/dublicate/images/anim/dct_multiverse_ball_18.png"
+    image dct_multiverse_ball_19 = "mods/dublicate/images/anim/dct_multiverse_ball_19.png"
+    image dct_multiverse_ball_20 = "mods/dublicate/images/anim/dct_multiverse_ball_20.png"
     
     # Шары с мирами и Алисами
-    image dct_multiverse_ball_dv_01 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_01.png"
-    image dct_multiverse_ball_dv_02 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_02.png"
-    image dct_multiverse_ball_dv_03 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_03.png"
-    image dct_multiverse_ball_dv_04 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_04.png"
-    image dct_multiverse_ball_dv_05 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_05.png"
-    image dct_multiverse_ball_dv_06 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_06.png"
-    image dct_multiverse_ball_dv_07 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_07.png"
-    image dct_multiverse_ball_dv_08 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_08.png"
-    image dct_multiverse_ball_dv_09 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_09.png"
-    image dct_multiverse_ball_dv_10 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_10.png"
-    image dct_multiverse_ball_dv_11 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_11.png"
-    image dct_multiverse_ball_dv_12 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_12.png"
-    image dct_multiverse_ball_dv_13 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_13.png"
-    image dct_multiverse_ball_dv_14 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_14.png"
-    image dct_multiverse_ball_dv_15 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_15.png"
-    image dct_multiverse_ball_dv_16 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_16.png"
-    image dct_multiverse_ball_dv_17 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_17.png"
-    image dct_multiverse_ball_dv_18 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_18.png"
-    image dct_multiverse_ball_dv_19 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_19.png"
-    image dct_multiverse_ball_dv_20 = "mods/dublicate/images/anim/coin/dct_multiverse_ball_dv_20.png"
+    image dct_multiverse_ball_dv_01 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_01.png"
+    image dct_multiverse_ball_dv_02 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_02.png"
+    image dct_multiverse_ball_dv_03 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_03.png"
+    image dct_multiverse_ball_dv_04 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_04.png"
+    image dct_multiverse_ball_dv_05 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_05.png"
+    image dct_multiverse_ball_dv_06 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_06.png"
+    image dct_multiverse_ball_dv_07 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_07.png"
+    image dct_multiverse_ball_dv_08 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_08.png"
+    image dct_multiverse_ball_dv_09 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_09.png"
+    image dct_multiverse_ball_dv_10 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_10.png"
+    image dct_multiverse_ball_dv_11 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_11.png"
+    image dct_multiverse_ball_dv_12 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_12.png"
+    image dct_multiverse_ball_dv_13 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_13.png"
+    image dct_multiverse_ball_dv_14 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_14.png"
+    image dct_multiverse_ball_dv_15 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_15.png"
+    image dct_multiverse_ball_dv_16 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_16.png"
+    image dct_multiverse_ball_dv_17 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_17.png"
+    image dct_multiverse_ball_dv_18 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_18.png"
+    image dct_multiverse_ball_dv_19 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_19.png"
+    image dct_multiverse_ball_dv_20 = "mods/dublicate/images/anim/dct_multiverse_ball_dv_20.png"
     
     # Шары с мирами получают своих Алис
     image dct_multiverse_ball_to_dv_01:
@@ -977,28 +977,28 @@ init :
     
     
     image dct_clubs_male_comp_sh_crumble:                  # Шурик фрагментируется на экране монитора (выводить на экран в позиции xcenter 0.5 ycenter 0.45)
-        "mods/dublicate/images/anim/coin/dct_clubs_male_comp_sh2.png"
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh2.png"
         xcenter 0.5 ycenter 0.45
         pause 1
-        "mods/dublicate/images/anim/coin/dct_clubs_male_comp_sh3.png" with dissolve_fast
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh3.png" with dissolve_fast
         xcenter 0.5 ycenter 0.45
         pause 1
-        "mods/dublicate/images/anim/coin/dct_clubs_male_comp_sh4.png" with dissolve_fast
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh4.png" with dissolve_fast
         xcenter 0.5 ycenter 0.45
         pause 1
-        "mods/dublicate/images/anim/coin/dct_clubs_male_comp_sh5.png" with dissolve_fast
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh5.png" with dissolve_fast
         xcenter 0.5 ycenter 0.45
         pause 1
-        "mods/dublicate/images/anim/coin/dct_clubs_male_comp_sh6.png" with dissolve_fast
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh6.png" with dissolve_fast
         xcenter 0.5 ycenter 0.45
         pause 1
-        "mods/dublicate/images/anim/coin/dct_clubs_male_comp_sh7.png" with dissolve_fast
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh7.png" with dissolve_fast
         xcenter 0.5 ycenter 0.45
         pause 1
-        "mods/dublicate/images/anim/coin/dct_clubs_male_comp_sh8.png" with dissolve_fast
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh8.png" with dissolve_fast
         xcenter 0.5 ycenter 0.45
         pause 1
-        "mods/dublicate/images/anim/coin/dct_clubs_male_comp_sh9.png" with dissolve_fast
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh9.png" with dissolve_fast
         xcenter 0.5 ycenter 0.45
         pause 1
         "dct_clubs_male_comp_clear" with dissolve_fast
@@ -1020,13 +1020,13 @@ init :
     
                                 # Последовательность переходов "с шара на шар" на площади в 10 главе
         
-    image dct_ball_to_ball_1 = "mods/dublicate/images/anim/coin/dct_ball_to_ball_1.jpg"
-    image dct_ball_to_ball_2 = "mods/dublicate/images/anim/coin/dct_ball_to_ball_2.jpg"
-    image dct_ball_to_ball_3 = "mods/dublicate/images/anim/coin/dct_ball_to_ball_3.jpg"
-    image dct_ball_to_ball_4 = "mods/dublicate/images/anim/coin/dct_ball_to_ball_4.jpg"
-    image dct_ball_to_ball_5 = "mods/dublicate/images/anim/coin/dct_ball_to_ball_5.jpg"
-    image dct_ball_to_ball_6 = "mods/dublicate/images/anim/coin/dct_ball_to_ball_6.jpg"
-    image dct_ball_to_ball_7 = "mods/dublicate/images/anim/coin/dct_ball_to_ball_7.jpg"
+    image dct_ball_to_ball_1 = "mods/dublicate/images/anim/dct_ball_to_ball_1.jpg"
+    image dct_ball_to_ball_2 = "mods/dublicate/images/anim/dct_ball_to_ball_2.jpg"
+    image dct_ball_to_ball_3 = "mods/dublicate/images/anim/dct_ball_to_ball_3.jpg"
+    image dct_ball_to_ball_4 = "mods/dublicate/images/anim/dct_ball_to_ball_4.jpg"
+    image dct_ball_to_ball_5 = "mods/dublicate/images/anim/dct_ball_to_ball_5.jpg"
+    image dct_ball_to_ball_6 = "mods/dublicate/images/anim/dct_ball_to_ball_6.jpg"
+    image dct_ball_to_ball_7 = "mods/dublicate/images/anim/dct_ball_to_ball_7.jpg"
 
             
 
@@ -1326,25 +1326,25 @@ init :
                 # Анимация костра (выводить на экран в позиции xcenter 0.5 yanchor 0.0 ypos 0.55)
         
     image dct_bonfire_day_anim:
-        "mods/dublicate/images/anim/coin/dct_bonfire_day_01.jpg" with Dissolve(0.15)
+        "mods/dublicate/images/anim/dct_bonfire_day_01.jpg" with Dissolve(0.15)
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_bonfire_day_02.jpg" with Dissolve(0.15)
+        "mods/dublicate/images/anim/dct_bonfire_day_02.jpg" with Dissolve(0.15)
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_bonfire_day_03.jpg" with Dissolve(0.15)
+        "mods/dublicate/images/anim/dct_bonfire_day_03.jpg" with Dissolve(0.15)
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_bonfire_day_04.jpg" with Dissolve(0.15)
+        "mods/dublicate/images/anim/dct_bonfire_day_04.jpg" with Dissolve(0.15)
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_bonfire_day_05.jpg" with Dissolve(0.15)
+        "mods/dublicate/images/anim/dct_bonfire_day_05.jpg" with Dissolve(0.15)
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_bonfire_day_06.jpg" with Dissolve(0.15)
+        "mods/dublicate/images/anim/dct_bonfire_day_06.jpg" with Dissolve(0.15)
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_bonfire_day_07.jpg" with Dissolve(0.15)
+        "mods/dublicate/images/anim/dct_bonfire_day_07.jpg" with Dissolve(0.15)
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_bonfire_day_08.jpg" with Dissolve(0.15)
+        "mods/dublicate/images/anim/dct_bonfire_day_08.jpg" with Dissolve(0.15)
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_bonfire_day_09.jpg" with Dissolve(0.15)
+        "mods/dublicate/images/anim/dct_bonfire_day_09.jpg" with Dissolve(0.15)
         pause 0.2
-        "mods/dublicate/images/anim/coin/dct_bonfire_day_10.jpg" with Dissolve(0.15)
+        "mods/dublicate/images/anim/dct_bonfire_day_10.jpg" with Dissolve(0.15)
         pause 0.2
         repeat
         
@@ -1395,8 +1395,8 @@ init :
     
     ##### ambience (coin)
     
-    $ dct_ambience_volley_in_gym = "mods/dublicate/sounds/coin/ambience/dct_ambience_volley_in_gym.ogg"   # Игра в волейбол в зале
-    $ dct_ambience_rattle_in_library = "mods/dublicate/sounds/coin/ambience/dct_ambience_rattle_in_library.ogg" # Грохот в бибилиотеке, учинённый Максимом
+    $ dct_ambience_volley_in_gym = "mods/dublicate/sounds/ambience/dct_ambience_volley_in_gym.ogg"   # Игра в волейбол в зале
+    $ dct_ambience_rattle_in_library = "mods/dublicate/sounds/ambience/dct_ambience_rattle_in_library.ogg" # Грохот в бибилиотеке, учинённый Максимом
     
     
     #music
@@ -1433,7 +1433,7 @@ init :
     
     ##### music (coin)
     
-    $ Everlasting_Summer_guitar_cover = "mods/dublicate/sounds/coin/music/Everlasting_Summer[guitar_cover](youtu.be_z6sTDBAUTfg).ogg"
+    $ Everlasting_Summer_guitar_cover = "mods/dublicate/sounds/music/Everlasting_Summer[guitar_cover](youtu.be_z6sTDBAUTfg).ogg"
     
     
     #sfx
@@ -1536,18 +1536,18 @@ init :
     ##### sfx (coin)
     
     $ dct_sfx_bus_braking = "<from 8.1 to 12.5>mods/dublicate/sounds/sfx/dct_sfx_bus_arrival.ogg" #притормаживание автобуса
-    $ dct_sfx_loop_bus_moves_slow = "<from 18.27 to 51.79>mods/dublicate/sounds/coin/sfx/dct_sfx_bus_moves_between_stops.ogg" #звук автобуса, едущего медлено
-    $ dct_sfx_UAZ_engine = "mods/dublicate/sounds/coin/sfx/dct_sfx_UAZ_engine.ogg" # Заведённый УАЗ во сне Шурика
-    $ dct_sfx_horn_assembly_through_loudspeaker = "mods/dublicate/sounds/coin/sfx/dct_sfx_horn_assembly_through_loudspeaker.ogg" # Горн на линейку через репродуктор
-    $ dct_sfx_horn_dinner = "mods/dublicate/sounds/coin/sfx/dct_sfx_horn_dinner.ogg" # Горн на обед
-    $ dct_sfx_horn_dinner_through_loudspeaker = "mods/dublicate/sounds/coin/sfx/dct_sfx_horn_dinner_through_loudspeaker.ogg" # Горн на обед через репродуктор
-    $ dct_sfx_horn_rise = "mods/dublicate/sounds/coin/sfx/dct_sfx_horn_rise.ogg" # Горн-подъём
-    $ dct_sfx_horn_rise_through_loudspeaker = "mods/dublicate/sounds/coin/sfx/dct_sfx_horn_rise_through_loudspeaker.ogg" # Горн-подъём через репродктор
-    $ dct_sfx_horn_rebound_through_loudspeaker = "mods/dublicate/sounds/coin/sfx/dct_sfx_horn_rebound_through_loudspeaker.ogg" # Горн-отбой через репродктор
-    $ dct_sfx_robot_run_club_attic = "<to 2.6>mods/dublicate/sounds/coin/sfx/dct_sfx_robot_run_club_attic.ogg" # Яна пробегает по чердаку клуба
-    $ dct_sfx_record_crackling = "mods/dublicate/sounds/coin/sfx/dct_sfx_record_crackling.ogg" # Потрескивание старой пластинки
-    $ dct_sfx_sveta_falls_in_gym = "mods/dublicate/sounds/coin/sfx/dct_sfx_sveta_falls_in_gym.ogg" # Света падает в спортзале и вскрикивает
-    $ dct_sfx_uv_call = "mods/dublicate/sounds/coin/sfx/dct_sfx_uv_call.ogg" # Ты пойдёшь со мной? Пойдёшь? Пойдёшь? Ты со мной... Пойдёшь?
+    $ dct_sfx_loop_bus_moves_slow = "<from 18.27 to 51.79>mods/dublicate/sounds/sfx/dct_sfx_bus_moves_between_stops.ogg" #звук автобуса, едущего медлено
+    $ dct_sfx_UAZ_engine = "mods/dublicate/sounds/sfx/dct_sfx_UAZ_engine.ogg" # Заведённый УАЗ во сне Шурика
+    $ dct_sfx_horn_assembly_through_loudspeaker = "mods/dublicate/sounds/sfx/dct_sfx_horn_assembly_through_loudspeaker.ogg" # Горн на линейку через репродуктор
+    $ dct_sfx_horn_dinner = "mods/dublicate/sounds/sfx/dct_sfx_horn_dinner.ogg" # Горн на обед
+    $ dct_sfx_horn_dinner_through_loudspeaker = "mods/dublicate/sounds/sfx/dct_sfx_horn_dinner_through_loudspeaker.ogg" # Горн на обед через репродуктор
+    $ dct_sfx_horn_rise = "mods/dublicate/sounds/sfx/dct_sfx_horn_rise.ogg" # Горн-подъём
+    $ dct_sfx_horn_rise_through_loudspeaker = "mods/dublicate/sounds/sfx/dct_sfx_horn_rise_through_loudspeaker.ogg" # Горн-подъём через репродктор
+    $ dct_sfx_horn_rebound_through_loudspeaker = "mods/dublicate/sounds/sfx/dct_sfx_horn_rebound_through_loudspeaker.ogg" # Горн-отбой через репродктор
+    $ dct_sfx_robot_run_club_attic = "<to 2.6>mods/dublicate/sounds/sfx/dct_sfx_robot_run_club_attic.ogg" # Яна пробегает по чердаку клуба
+    $ dct_sfx_record_crackling = "mods/dublicate/sounds/sfx/dct_sfx_record_crackling.ogg" # Потрескивание старой пластинки
+    $ dct_sfx_sveta_falls_in_gym = "mods/dublicate/sounds/sfx/dct_sfx_sveta_falls_in_gym.ogg" # Света падает в спортзале и вскрикивает
+    $ dct_sfx_uv_call = "mods/dublicate/sounds/sfx/dct_sfx_uv_call.ogg" # Ты пойдёшь со мной? Пойдёшь? Пойдёшь? Ты со мной... Пойдёшь?
     
    
     
