@@ -496,18 +496,18 @@ label dct_olga_p2:
     "Солдату Ольгин чемодан не доверили, и офицер нёс его самолично, держа в левой руке."
     stop ambience
     
-    scene dct_ext_module_night with dissolve:
+    scene dct_ext_module_sunrise with dissolve:
         walking
     $ night_time ()
     $ persistent.sprite_time = "night"
     play ambience ambience_camp_center_night
-    "Ночные аллеи были пустынны, только один раз навстречу попались ещё трое военных — тот самый патруль, судя по повязкам, заступиться перед которым обещал ей Анатолий."
+    "Утренние аллеи были пустынны, только один раз навстречу попались ещё трое военных — тот самый патруль, судя по повязкам, заступиться перед которым обещал ей Анатолий."
     "Девушка ожидала, что они выйдут к площади, но провожатый свернул на узкую тропку и, обогнув с тыльной стороны административный модуль, вывел Ольгу к западным воротам и дальше на остановку."
     stop sound_loop
     stop ambience
     
     
-    scene ext_bus_night with dissolve
+    scene dct_ext_bus_sunrise with dissolve
     $ night_time ()
     $ persistent.sprite_time = "night"
     play ambience ambience_camp_entrance_night
@@ -521,7 +521,7 @@ label dct_olga_p2:
     ""
     stop ambience
     
-    scene int_bus_night with squares
+    scene dct_int_bus_sunrise with squares
     $ night_time ()
     $ persistent.sprite_time = "night"
     queue sound [ sfx_intro_bus_door_open , sfx_intro_bus_engine_start , sfx_intro_bus_engine_loop ] 

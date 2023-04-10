@@ -71,6 +71,7 @@ init :
     image dct_ext_boathouse_night_with_pass_train = "mods/dublicate/images/bg/dct_ext_boathouse_night_with_pass_train.jpg"
     image dct_ext_boathouse_sunset = "mods/dublicate/images/bg/dct_ext_boathouse_sunset.jpg"
     image dct_ext_bulletin_board = "mods/dublicate/images/bg/dct_ext_bulletin_board.jpg"
+    image dct_ext_bus_sunrise = "mods/dublicate/images/bg/dct_ext_bus_sunrise.jpg"              # Утренний Икарус снаружи
     image dct_ext_bus_road = "mods/dublicate/images/bg/dct_ext_bus_road.jpg"
     image dct_ext_buses = "mods/dublicate/images/bg/dct_ext_buses.jpg"    # Остановка с Икаркусом и ЛАЗом
     image dct_ext_buses_filled = "mods/dublicate/images/bg/dct_ext_buses_filled.jpg"       # Икарус и ЛАЗ на стоянке, в Икарусе сидят люди
@@ -137,6 +138,7 @@ init :
     image dct_ext_library_sunset = "mods/dublicate/images/bg/dct_ext_library_sunset.jpg"
     image dct_ext_module_day = "mods/dublicate/images/bg/dct_ext_module_day.jpg"
     image dct_ext_module_night = "mods/dublicate/images/bg/dct_ext_module_night.jpg"
+    image dct_ext_module_sunrise = "mods/dublicate/images/bg/dct_ext_module_sunrise.jpg"
     image dct_ext_module_smoking_place = "mods/dublicate/images/bg/dct_ext_module_smoking_place.jpg"
     image dct_ext_module_smoking_place2 = "mods/dublicate/images/bg/dct_ext_module_smoking_place2.jpg"
     image dct_ext_module_smoking_place2_sunset = "mods/dublicate/images/bg/dct_ext_module_smoking_place2_sunset.jpg"
@@ -221,7 +223,7 @@ init :
     image dct_int_bus_rain = "mods/dublicate/images/bg/dct_int_bus_rain.jpg"
     image dct_int_bus_rightwindow_day = "mods/dublicate/images/bg/dct_int_bus_rightwindow_day.jpg"
     image dct_int_bus_stern = "mods/dublicate/images/bg/dct_int_bus_stern.jpg"     # Салон автобуса, задняя площадка
-    image dct_int_bus_sunset1 = "mods/dublicate/images/bg/dct_int_bus_sunset1.jpg"
+    image dct_int_bus_sunrise = "mods/dublicate/images/bg/dct_int_bus_sunrise.jpg"              # Утренний Икарус внутри
     image dct_int_cabin = "mods/dublicate/images/bg/dct_int_cabin.jpg"
     image dct_int_cabinet_day = "mods/dublicate/images/bg/dct_int_cabinet_day.jpg"
     image dct_int_cafe = "mods/dublicate/images/bg/dct_int_cafe.jpg"
@@ -1551,7 +1553,7 @@ init :
     $ d_to = Character (u'Анатолий', color="#3BE620", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Толик
     $ d_t1 = Character (u'Толик', color="#3BE620", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
     $ d_t2 = Character (u'Незнакомец', color="#3BE620", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
-    $ d_t3 = Character (u'Анатолий Васильевич', color="#3BE620", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
+    $ d_t3 = Character (u'{size=-1}{k=-.6}Анатолий Васильевич{/k}{/size}', color="#3BE620", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
     
     $ d_u1 = Character (u'Рыжая девушка', color="#e91b1b", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Ульяна_взрослая
     $ us_old = Character (u'Ульяна-большая', color="#e91b1b", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
@@ -1573,7 +1575,7 @@ init :
     $ uv_cst = Character(u"Богиня", color="#4eff00", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Юля-Баст
     $ uv_cgl = Character(u"Девушка-кошка", color="#4eff00", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Юля-нека
     
-    $ adl_sh1 = Character(u"Александр Сергеевич", color="#faed25", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Шурик-оригинал
+    $ adl_sh1 = Character(u"{size=-1}{k=-.6}Александр Сергеевич{/k}{/size}", color="#faed25", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Шурик-оригинал
     $ adl_sh2 = Character(u"\"Шурик\"", color="#faed25", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Шурик-оригинал
     $ adl_sh3 = Character(u"Трофимов", color="#faed25", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") #Шурик-оригинал
     $ adl_sh4 = Character(u"Александр", color="#faed25", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") #Шурик-дубликат
