@@ -2869,7 +2869,7 @@ label dct_olga_p8:
     stop ambience
     play ambience ambience_int_cabin_night
     th "Кокоро но негаи, цутеки но мираи…"
-    play sound_loop "<from 25.0 loop 0.0>mods/dublicate/sounds/sfx/dct_sfx_mirabilis_futurum.ogg" fadein 0.5
+    play sound_loop "<from 25.0 loop 0.0>mods/dublicate/sounds/music/mirabilis_futurum.ogg" fadein 0.5
     "В голове пронеслись знакомые слова на незнакомом языке.{w} Голос Мику звучал как наяву."
     "Вожатая не смогла сдержать слёз."
     hide dct_mt_with_cassette_and_tie with squares
@@ -2881,6 +2881,7 @@ label dct_olga_p8:
         linear 0.2 alpha 1
     "Ольга последний раз щёлкнула выключателем, закрыла дверь и отправилась на остановку."
     stop sound_loop fadeout 3
+    window  hide
     show black with dissolve2
     $ renpy.pause (3)
     stop ambience
@@ -2900,6 +2901,7 @@ label dct_olga_p9:
     scene dct_int_bus_rain with squares
     $ prolog_time ()
     $ persistent.sprite_time = "night"
+    window auto
     play ambience dct_ambience_light_rain
     show d_to normal casual at center with dspr
     d_to "Уважаемые отъезжающие, просьба приготовить документы для проверки. Чтобы мне побыстрее разобраться, прошу документы подавать в раскрытом виде. Вам ехать, а мне ещё под дождём в модуль бежать."
