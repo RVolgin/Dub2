@@ -2600,7 +2600,7 @@ label dct_fluctuation_dyn:
     "Шурик посмотрел на туловище кошкоробота, на отдельно лежащую голову. Тут же в тетрадке набросал техзадание. Представил себе алгоритмы поведения робота. Потом взгляд его упал на кучку печатных плат — некондиционную продукцию предприятия-шефа."
     th "Да, чтобы из этого сделать что-то достойное, нужно быть гением."
     dreamgirl "Не обязательно. Но из этого действительно ничего сложнее ультразвуковой пугалки, мышей гонять, не спаяешь."
-    "И опять Шурик сначала мысленно согласился, а потом уже вздрогнул в испуге." with hpunch
+    "И опять Шурик сначала мысленно согласился, а потом уже вздрогнул в испуге."
     th "Надо, надо к доктору." 
     window hide
     stop ambience fadeout 1
@@ -2910,7 +2910,7 @@ label dct_fluctuation_dyn:
     "Женя всё никак не могла заставить себя разобраться в кривых невозможного почерка и прочитать, что же там понаписал физрук на целых полстраницы, когда в дверь библиотеки постучали.{nw}"
     play sound sfx_knock_door7_polite
     extend" Женя вздрогнула, закрыла папку и пошла к двери."
-    play sound sfx_door_squeak_light
+    play sound sfx_open_door_clubs_2
     show un shy pioneer with dissolve
     un "Женя..."
     "Лена быстро взглянула и опять опустила глаза."
@@ -3245,30 +3245,32 @@ label dct_disposition_dyn:
         alpha 0
         pause 0.5
         linear 0.5 alpha 1
+    play sound sfx_open_drapes
     "Лена погасила настольную лампу, отодвинула тяжёлую портьеру у себя за спиной и впустила в библиотеку солнечные лучи.{w} Взвесила в руке выбранную книжку: на пару дней чтения хватит. Бросила взгляд на библиотечные стеллажи."
     th "А ведь рано или поздно книги кончатся. Всё, что было здесь хорошего, я уже прочитала. Сейчас читаю средненькое. А потом?"
     extend " Может, Семён что-то принесёт?"
     "Семён с Ульяной ушли сегодня утром и клятвенно обещали вернуться завтра часам к десяти; оставалось надеяться, что они вернутся не с пустыми руками."
     "По крайней мере, та пьеса, что они принесли в прошлый раз, была проглочена Леной за сутки, потом ещё три раза перечитывалась и породила массу карандашных рисунков-иллюстраций, самый доведённый до ума из которых сейчас ехал обратно как подарок автору пьесы. Та, другая Мику — автор пьесы, обладала ещё и литературным талантом."
     "А ещё интересно было осознавать, что где-то есть очень похожие на тебя Лены, встретиться с которыми, по словам того же Семёна, почти невозможно."
+    th "Как там он сказал?"
     show dct_int_coaching_room2
     show dct_dream_veil at shiver
-    with dissolve_fast
-    th "Как там он сказал?"
-    show d_sf serious sport at center behind dct_dream_veil with dissolve_fast:
+    show d_sf serious sport at center behind dct_dream_veil:
         ypos 0.0
+    with dissolve_fast
     me "Останется только один!"
     hide dct_int_coaching_room2
     hide d_sf
     hide dct_dream_veil
     with dissolve_fast
-    "{cps=0}А ещё, интересно было осознавать, что где-то есть очень похожие на тебя Лены, встретиться с которыми, по словам того же Семёна, почти невозможно.{/cps} Можно, только во сне."
+    th "Можно, только во сне."
     "Лена вспомнила обрывки сна, которым завершилась их с Алисой спасательная экспедиция.{w} Сколько там Алис в одном месте оказалось? Три минимум.{w} Сон сном, но волдыри на ладонях потом сходили до самого конца цикла.{w} И это ощущение тепла от поддерживающих тебя дружеских рук на твоих плечах."
     th "Кажется, мальчики какую-то машину для чтения памяти придумывают, надо будет с ними поговорить."
     
     scene dct_int_library_standing_desk_back
     show dct_int_library_standing_desk_front
     with squares
+    play sound "<from 1.2 >mods/dublicate/sounds/sfx/dct_sfx_chair.ogg" 
     "Лена грустно вздохнула и уселась на Женино место. Какая бы средненькая книга ни была, но постепенно и она увлекла."
     play sound sfx_knock_door2
     play sound2 [ "<silence 1.1>", sfx_close_door_campus_1 ]
@@ -3350,7 +3352,7 @@ label dct_disposition_dyn:
     play ambience ambience_library_day fadein 2
     "Все было не так, но Лена не стала поправлять."
     show un normal pioneer with dspr
-    play sound sfx_open_door_1
+    play sound sfx_open_door_clubs_2
     show el laugh pioneer close with dissolve
     "Скрипнула дверь, и на пороге показался Сыроежкин."
     show d_ma normal pioneer
@@ -3398,11 +3400,13 @@ label dct_disposition_dyn:
     mip "Привет. А ты Сергея не видел?" with hpunch ### у Оксаны имя голубого цвета. Стоит ли вводить отдельный тег?
     show d_oz n pioneer behind dct_ext_glade_behind_clubs_day_barberry with dissolve:
         zoom 0.75 xcenter 0.77 yalign 0.1
+    play sound dct_sfx_slammed_book
     "Шурик вздрогнул и уронил карандаш."
     th "Сергея? А! Это Сыроежкина, что ли?"
     sh "Нет, занятия закончились, и он ушёл. Поищи его в библиотеке."
     mip "Понятно. Если увидишь, то передай, пожалуйста, что его Оксана Зайцева искала."
     hide d_oz with MoveTransition(1.2, leave=_moveright, leave_time_warp=_ease_time_warp)
+    play sound sfx_bush_leaves
     "И, не дожидаясь ответа, девочка исчезла, нырнув куда-то в кусты."
     "Шурик повертел в руках карандаш. Синий «Картограф» сломался после контакта с бетоном отмостки, и теперь, чтобы его очинить для продолжения записей, нужно было возвращаться в клуб."
     play sound dct_sfx_horn_dinner_through_loudspeaker
@@ -3411,15 +3415,16 @@ label dct_disposition_dyn:
     stop ambience fadeout 1
     window hide
     scene black with dissolve
-    stop sound_loop fadeout 1
     pause 2
 
     scene bg ext_houses_day at walking with dissolve
     play ambience ambience_camp_center_day fadein 1
+    play sound_loop dct_sfx_steps2
     window auto
     th "Почему Алиса куксилась, что всё из цикла в цикл одно и то же? Может, она просто видеть не умеет? Не знаю. И пионеры, и природа каждый цикл хоть чуть-чуть, но разные."
     th "Вон куст подсыхает — прошлый цикл зелёный стоял, а в этом листья теряет. А здесь за четыре дня новую тропинку протоптали — интересно, приживётся или нет? А уж люди как меняются... Это просто надо увидеть."
     "Лена шла из столовой к себе в домик и размышляла."
+    stop sound_loop
     
     scene bg ext_house_of_un_day with dissolve
     th "Я, наверное, порисую сейчас. Портрет Саши начну, а то сколько времени живём в одном домике, а так Саши у меня и нету."
@@ -3445,6 +3450,7 @@ label dct_disposition_dyn:
     
     scene bg int_library_day
     play ambience ambience_library_day fadein 2
+    play sound sfx_open_door_clubs_2
     show mz normal pioneer glasses at right
     with dissolve
     mz "А, это ты. Заходи."
@@ -3457,10 +3463,9 @@ label dct_disposition_dyn:
     show mz normal pioneer glasses with dspr
     mz "Читай."
     $ renpy.music.set_volume (0.5, delay=1.5)
-    stop ambience fadeout 1
     play music fm_freemusic_chillout_music fadein 3
     hide mz with dissolve
-    "Лена так и сделала — ну почти так. Выбрала книгу побольше форматом, устроилась за одним из читательских столов так, чтобы Женя оказалась в нужном ракурсе, и, спрятав в раскрытой книге лист бумаги, начала делать зарисовки, стараясь поймать эмоции." #цг-шку бы сюда
+    "Лена так и сделала — ну, почти так. Выбрала книгу побольше форматом, устроилась за одним из читательских столов так, чтобы Женя оказалась в нужном ракурсе, и, спрятав в раскрытой книге лист бумаги, начала делать зарисовки, стараясь поймать эмоции." #цг-шку бы сюда
     "Женя читала что-то своё, время от времени бросая взгляды за окно и на входную дверь, хмурилась, коротко поджимала губы и переворачивала страницу.{w} А после очередной страницы проскрипела, не глядя на Лену:"
     show d_mz shyangry pioneer glasses far as mz at right with dissolve
     mz "Между прочим, можешь не прятаться. А если бы спросила разрешения — то и совсем хорошо было бы."
@@ -3570,7 +3575,7 @@ label dct_disposition_dyn:
     scene bg int_library_day
     show d_mz smile2 pioneer glasses close
     with squares
-    mz "Любит ли читать — я ещё не знаю, но умеет — это точно."
+    mz "Любит ли читать, я ещё не знаю, но умеет — это точно."
     show d_mz normal pioneer glasses close with dissolve_fast
     "Теперь осталось только вернуть журналы на место, и можно запирать библиотеку на перерыв. Или не запирать — идти всё равно некуда."
     "Женя взяла журналы, подержала их в руках и положила обратно на полку."
@@ -3607,7 +3612,7 @@ label dct_disposition_dyn:
     th "Нет, в нём, конечно, живёт семнадцатилетний пионер, это невооружённым глазом видно, но и двадцатипятилетний заместитель начальника лагеря — тоже в нём."
     th "Как, когда Мику успела всё это сочинить? Она же сама говорила в день приезда, когда знакомились, что она впервые в СССР, а её папа с мамой сейчас едут на поезде из Владивостока в Москву с остановками в крупных городах."
     th "Но вот же автор: Мику Хацуне, а вот посвящение: „Сенечке, которому… и Ульянке…“, и подпись японскими закорючками. То есть Мику знала Семёна, когда тому было семнадцать? А самой Мику, получается, восемь-девять? Ничего не понимаю, надо будет спросить для начала у Лены."
-    "Саша посмотрела на стену над Лениной кроватью, всю увешанную картинами. Портреты и пейзажи. «И когда успела?» Три портрета особенно притягивали взгляд."
+    "Саша посмотрела на стену над Лениной кроватью, всю увешанную картинами. Портреты и пейзажи. «И когда успела?». Три портрета особенно притягивали взгляд."
     "Женщина, похожая на Лену как родная мама, протягивает руки открытыми ладонями к зрителю; губы плотно сжаты, глаза чуть прищурены, как будто какую-то работу делает или спорит с кем-то; а если присмотреться — то такая бездна боли в этих прищуренных глазах..."
     "Второй портрет: парень, похожий на Семёна — наверное, таким он и был в семнадцать лет; только глаза не семнадцатилетние, а взрослые и какие-то уставшие, что ли; но понимаешь, что он сейчас улыбнётся этими уставшими глазами и скажет: «Все ерунда, прорвёмся!»."
     "Третий портрет — тот очень позитивный: на нём Семён и Ульяна, сидящие рядышком, рука в руке, на крыльце этого самого домика — оба улыбаются, оба счастливы; как раз и видно, что подросток из заместителя начальника лагеря никуда не делся."
@@ -3793,7 +3798,7 @@ label dct_disposition_dyn:
     show mt normal panama pioneer behind dct_lineup_mi_not_us
     hide dct_lineup_mi_not_us with dissolve
     mt "Алиса, а ты не в курсе, где наши физруки? Они предупредили, что появятся завтра после завтрака, но о подробностях умолчали."
-    dv "Ольга Дмитриевна, помните — в первый день сестрёнка Ульянина отметилась, которая отдыхает тут недалеко? Вот, кажется, её навестить."
+    dv "Ольга Дмитриевна, помните, в первый день сестрёнка Ульянина отметилась, которая отдыхает тут недалеко? Вот, кажется, её навестить."
     show mt surprise panama pioneer with dspr
     mt "Недалеко? Странно. До ближайших людей здесь километров триста."
     show mt normal panama pioneer with dspr
@@ -3862,6 +3867,7 @@ label dct_disposition_dyn:
         pause 0.8
         linear 1 alpha 0
     with dspr
+    play sound sfx_bed_squeak2
     "Погасила свет и завернулась в простыню."
     $ night_time()                       # Прописано, чтобы при обратной перемотке цвета не сбивались.
     
@@ -4549,7 +4555,9 @@ label dct_debut_dyn:
     
     play ambience ambience_int_cabin_day fadein 3
     scene bg int_house_of_dv_day with blinds
+    play sound sfx_bed_squeak1
     "И только после обеда, когда Алиса завалилась в домике на койку и потянула к себе тетрадку, сложенный вчетверо листок напомнил о себе."
+    play sound sfx_paper_bag
     "Алиса потянула его из кармана, развернула и некоторое время просто разглядывала буквы собственного почерка."
     window hide
     pause 0.5
@@ -4574,8 +4582,8 @@ label dct_debut_dyn:
     window hide dissolve
     $ set_mode_adv()
     pause    
-    stop music fadeout 2.5
-    scene black with dissolve2
+    stop music fadeout 1
+    scene black with dissolve
     pause 1
     nvl hide
 
@@ -4601,6 +4609,7 @@ label dct_debut_dyn:
     show el serious pioneer behind dct_fog with dissolve
     el "Как ответственный за технику безопасности, объявляю пятнадцатиминутный перерыв на проветривание. Просьба всем выйти на улицу.{w} Шурик, тебя это тоже касается!"
     hide el with dissolve
+    play sound sfx_open_door_clubs
     stop ambience fadeout 1
     
     play music music_list['everyday_theme'] fadein 2
@@ -4684,7 +4693,7 @@ label dct_debut_dyn:
     th "Интересно, а к отношениям между людьми это можно применить?"
     stop music fadeout 1.5
     scene black with dissolve
-    pause 2
+    pause 1
 
     play ambience ambience_dining_hall_full fadein 1
     scene dct_int_dining_hall_table_sunset_back:
@@ -4826,6 +4835,7 @@ label dct_debut_dyn:
         linear 0.5 ycenter 0.23
         pause 0.15
         linear 0.6 xcenter 1.25
+    play sound "<from 1.0 >mods/dublicate/sounds/sfx/dct_sfx_chair.ogg"
     extend " Только кивнула, улыбнулась и молча ушла."
     show un smile2 pioneer close with dspr
     un "Зря от рыбы отказался. Кажется, повара научились готовить без указаний бабы Глаши."
@@ -4986,7 +4996,7 @@ label dct_d7_d5_dyn:
     scene dct_ext_house_of_el_night with pushdown
     "Шурику опять снились сны Александра — опять он видел во сне живых Яну и Яну."
     play ambience ambience_camp_center_night fadein 1
-    $ renpy.music.set_volume(1.0, delay=0)
+    $ renpy.music.set_volume(0.5, delay=0)
     stop music fadeout 4
     
     scene dct_ext_beach_night_view_from_gym with fade
@@ -5035,6 +5045,7 @@ label dct_d7_d5_dyn:
     $ night_time()
     $ persistent.sprite_time = "night"
     window auto
+    play sound sfx_bush_leaves
     "Громко хрустнула ветка за кустами на противоположной стороне главной аллеи."
     "Через минуту в просвете мелькнуло что-то металлическое."
     me "А вот и Яна."
@@ -5163,6 +5174,7 @@ label dct_d7_d5_dyn:
     mz "Мику, ты должна знать. Что это значит?"
     show mi upset pioneer close at right with dissolve
     th "Надо же, она имя моё запомнила. Ну-ка, посмотрим."
+    play sound sfx_wood_floor_squeak
     show mi normal pioneer far with dissolve:
         xanchor .0 xpos .45
     pause .4
@@ -5204,6 +5216,7 @@ label dct_d7_d5_dyn:
     hide dct_mi_3_binder_far
     show mi serious pioneer close at center
     with dissolve
+    play sound sfx_open_journal
     "Мику открыла папку на середине, прочитала полстранички текста."
     "Какая-то пьеса — судя по увиденному, довольно интересная."
     show mi normal pioneer close with dspr
@@ -5211,6 +5224,7 @@ label dct_d7_d5_dyn:
     hide mi with dissolve
     stop ambience fadeout 1
     
+    $ renpy.music.set_volume(1.0)    
     play music music_list['my_daily_life'] fadein 1
     scene bg ext_houses_day with dissolve
     show mz bukal glasses pioneer close at cright with dissolve
@@ -5465,6 +5479,7 @@ label dct_d7_d5_dyn:
     sa "Ребята, можно?"
     show el smile pioneer with dspr
     el "Заходи, Саша."
+    play sound sfx_open_door_clubs
     show sl normal pioneer with dissolve
     el "Глянь на красоту."
     "Электроник махнул рукой в сторону осциллографа."
