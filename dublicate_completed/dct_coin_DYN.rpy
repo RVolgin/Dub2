@@ -5577,7 +5577,7 @@ label dct_d7_d5_dyn:
     with pushleft
     "На аллеях и площади было малолюдно. В связи с открытием купального сезона и жаркой погодой жизнь лагеря переместилась на пляж или в тень от деревьев, да футболисты занимались на стадионе по своему графику. Поэтому вспыхнувшие уши Сергея видела только Саша."
     show sl smile pioneer with dspr
-    el "Хороший ты человек, Сашенька. Вот ответь — зачем мелькать перед глазами у человека, если он не хочет меня видеть?"
+    el "Хороший ты человек, Сашенька. Вот ответь, зачем мелькать перед глазами у человека, если он не хочет меня видеть?"
     show 3500_el shy3 pioneer briefcase with dspr
     "Сыроежкин вздохнул."
     show sl normal pioneer with dspr
@@ -5678,7 +5678,6 @@ label dct_d7_d5_dyn:
     show black with dissolve
     pause 2
     
-    $ renpy.music.set_volume(1.0)
     play ambience ambience_dining_hall_full fadein 1
     scene bg int_dining_hall_people_day with dissolve
     window auto
@@ -5817,6 +5816,7 @@ label dct_d7_d5_dyn:
     th "Если я сейчас сделаю запись, то на завтра останется меньше работы."
     show sh serious pioneer close:
         ease 1 xcenter 0.5
+    play sound sfx_paper_bag
     "Шурик раскрыл рабочую тетрадь:"
     "«Шестой день смены, 15-00, пробный запуск установки. Подопытный — Александр Трофимов, оператор — Александр Трофимов. Расчетное время эксперимента — десять минут. Описание эксперимента…»"
     show sh normal pioneer close with dspr
@@ -5837,6 +5837,7 @@ label dct_d7_d5_dyn:
     "Вскоре всё было готово."
     scene dct_sh_in_cage_with_pushbutton with squares
     stop ambience
+    $ renpy.music.set_volume(1.0)
     play music "<from 32.0 loop 0.0>mods/dublicate/Sounds/music/dreamers_of_the_day.ogg" fadein 3
     "Шурик сидел внутри каркаса, как в клетке; табурет под ним, приводимый во вращение мотором, вытащенным из механизма дворников «Волги», медленно, почти незаметно для глаза, вращался с частотой один оборот за десять минут."
     "Сменялись цифры на дисплее магнитофона, предназначенного для записи считываемой информации."
@@ -6136,7 +6137,7 @@ label dct_d7_d5_dyn:
     mt "Семён Семёнович, не изволите ли чаю?"
     "Пионеров в пределах слышимости нет, так что можно и подурачиться, но насчёт чаю я вполне серьёзна."
     me "Премного обяжете, Ольга Дмитриевна."
-    "Одна из проблем состоит в том, что мы знакомы уже чёрт знает сколько, и уже угадываем реплики друг друга до того, как кто-то из нас откроет рот."
+    "Одна из проблем состоит в том, что мы знакомы уже чёрт знает сколько и уже угадываем реплики друг друга до того, как кто-то из нас откроет рот."
     th "А кстати, сколько мы знакомы?"
     th "В прошлую смену — да, в позапрошлую — да. Дальше?"
     extend " А дальше — при попытке вспомнить у меня начинает болеть голова."
@@ -6269,7 +6270,7 @@ label dct_foreign_land_dyn:
     el "Не умную и симпатичную девочку, которая мне понравилась с первого дня, и не стервозную грымзу."
     mz "\~ Ну спасибо. \~"
     el "А перепуганную, не знающую что ей делать девушку, которая прячет свои испуг и растерянность под иронией.{w} Которая еле сдерживается, чтобы не дать себе разреветься в моём присутствии.{w} Которая действительно не умеет говорить о каких-то вещах."
-    el "Я сам не умею, а та девушка — ещё хуже. И я нарушил своё правило — рискнул и решил всё про нас двоих, самостоятельно и в одиночку."
+    el "Я сам не умею, а та девушка — ещё хуже. И я нарушил своё правило: рискнул и решил всё про нас двоих, самостоятельно и в одиночку."
     mz "А стервозная грымза вдруг увидела твою простоту, Серёжа."
     mz "Не примитивность, а простоту."
     el "\~ Как у отвёртки. \~"
@@ -6465,6 +6466,7 @@ label dct_foreign_land_dyn:
     show el laugh pioneer close at left with dissolve
     hide el with dissolve
     $ persistent.sprite_time = "day"                        # Прописано, чтобы при обратной перемотке цвета не сбивались.
+    play sound_loop dct_sfx_wood_floor_squeak
     "А Сыроежкин всё никак не хотел затихать."
     show dct_int_house_of_el_night with dissolve
     $ persistent.sprite_time = "night"
@@ -6474,6 +6476,8 @@ label dct_foreign_land_dyn:
     show d_el upset nude at cright with dissolve
     extend " И выяснял, не припрятан ли у Шурика в чемодане флакон с одеколоном."
     hide d_el with dissolve
+    stop sound_loop
+    play sound sfx_bed_squeak1
     "А потом, когда уже улёгся, всё мечтательно вздыхал и ворочался с боку на бок. И уснул далеко после отбоя."
     stop ambience fadeout 5
     play music music_list['you_lost_me'] fadein 5
@@ -6509,13 +6513,14 @@ label dct_foreign_land_dyn:
     "Это было… нелегко."
     "Паутина липла к лицу, ноги спотыкались о невидимые кочки, ветки норовили сбить очки с лица, и приходилось очки придерживать рукой, потому что со зрением минус шесть передвигаться без очков в ночном лесу остаётся только на ощупь."
     
-    scene bg ext_path2_night with squares
+    scene bg ext_path2_night at walking with squares
     "Так что когда впереди показался свет, Шурик обрадовался и зашагал энергичнее."
     th "Кажется, это фонарь, и я вышел к поперечной аллее."
     extend " Сейчас мне налево, и я окажусь на перекрёстке."
     stop music fadeout 1
     
     scene dct_ext_musclub_night_lantern_light with irisout
+    $ renpy.music.set_volume(0.5)
     play music music_list['timid_girl']
     show mi shocked pioneer with dissolve
     mi "Ой, Сашечка, а что ты здесь делаешь? Ты ко мне пришёл? Но уже поздно. Я вот задержалась у себя в кружке, играла и думала, думала и играла, пересела в кресло и задремала. А проснулась — уже поздно. На часы посмотрела — отбой давно был, а я и не слышала. А жалко, мне так нравится Максима слушать, ведь когда живой человек играет — это гораздо лучше, чем запись."
@@ -6776,8 +6781,10 @@ label dct_foreign_land_dyn:
     show dct_overcast_rain_2 at running:
         xzoom -1.0
     with squares
+    play sound_loop2 dct_sfx_steps_in_swamp
     "И уже под хорошим таким ливнем, оставив Ольгу с Ульяной управляться в столовой с пионерами, Семён побежал с Алисой к складу за плащами — прозрачными накидками из плёнки: красными для малышей, жёлтыми для среднего отряда, синими для старшего и бесцветными для персонала."
     stop sound_loop fadeout 1.5
+    stop sound_loop2
     scene black with dissolve    
     pause 1
         
@@ -6925,21 +6932,23 @@ label dct_foreign_land_dyn:
     play ambience ambience_int_cabin_day fadein 1
     play sound dct_sfx_horn_rise_through_loudspeaker
     scene dct_int_house_of_el_day with blinds
-    pause 0.5
+    pause 3
     show d_el laugh nude far at right with dissolve
     show d_el laugh shorts at cright with dissolve
     show el laugh pioneer close at center as d_el with dissolve
     hide d_el with dissolve
     window auto
+    play sound2 sfx_close_door_campus_1
     "Сыроежкин убежал, едва протрубили подъём."
     show sh normal_serious pioneer dct with dissolve
+    play sound2 sfx_bed_squeak2
     "Шурик встал, вспомнил о договорённости с Мику."
     show sh smile pioneer close with dissolve_fast
     "Порадовался тому, что не придётся ничего говорить соседу."
     hide sh with dissolve
     "И для начала отправился к умывальникам."
-    stop sound fadeout 1.5
     stop ambience fadeout 1
+    stop sound fadeout 1
     scene black with squares
     window hide
     pause .5
@@ -7035,6 +7044,7 @@ label dct_foreign_land_dyn:
     scene bg int_house_of_sl_day
     show mi upset pioneer close # with dissolve_fast
     with dissolve
+    play sound sfx_bed_squeak2
     "А потом всплыл в памяти недавний сон."
     stop ambience fadeout 1
     
@@ -7147,6 +7157,7 @@ label dct_foreign_land_dyn:
         ease 1.2 xcenter 0.65
         linear 0.5 ycenter 0.73
     hide sh with dissolve
+    play sound dct_sfx_chair
     "Мику уселась на ещё тёплый стул, занесла руку, зажмурилась и отчаянно нажала на клавишу «Ввод»."
     stop ambience fadeout 1
     window hide
@@ -7398,6 +7409,7 @@ label dct_foreign_land_dyn:
     
     $ persistent.sprite_time = "night"
     scene dct_int_clubs_male_rain with dissolve
+    $ renpy.music.set_volume(0.5)    
     play music music_list['afterword'] fadein 1
     pause 0.3
     show el serious pioneer close at right with dissolve
@@ -7413,6 +7425,7 @@ label dct_foreign_land_dyn:
     $ persistent.sprite_time = "day"
     el "Включаю. Отсчет по команде «ноль». Три, два, один. Ноль!"
     $ persistent.sprite_time = "day"                # Прописано, чтобы при обратной перемотке цвета не сбивались.
+    $ renpy.music.set_volume(1.0, delay=0.5)
     "А в лабораторном журнале кружка добавилась запись: «10-05, начало эксперимента. Первая в истории запись памяти человека! Испытуемый — Александр Трофимов, оператор — Сергей Сыроежкин»."
     
     $ persistent.sprite_time = "night"
@@ -7449,6 +7462,7 @@ label dct_foreign_land_dyn:
     scene dct_int_clubs_male_rain
     show sh cry pioneer close
     with dissolve
+    $ renpy.music.set_volume(0.5, delay=0.5)
     sh "Сергей, ты готов?"
     $ persistent.sprite_time = "night"                # Прописано, чтобы при обратной перемотке цвета не сбивались.
     "Что-то было не так в голосе партнёра."
@@ -7466,10 +7480,10 @@ label dct_foreign_land_dyn:
     sh "Три, два, один. Ноль!"
     
     scene dct_el_in_cage with squares
+    $ renpy.music.set_volume(1.0, delay=1)    
     "И стена с окном медленно поползла слева направо, а шкаф начал вплывать в поле зрения."
     "Предстояло самое трудное: усидеть десять минут, не думая о Жене. Вообще ни о чём не думая, но главное — о Жене."
     
-    $ renpy.music.set_volume(0.4, delay=1.0)
     scene white with dissolve
     "Электроник прикрыл глаза и представил перед собой белую, слабо светящуюся стену, за которой остался весь внешний мир."
     show mz normal pioneer close:
@@ -7484,7 +7498,6 @@ label dct_foreign_land_dyn:
         alpha 0
         linear 0.5 alpha 0.2
     extend " Женя…"
-    $ renpy.music.set_volume(1.0, delay=1.0)
     show black with dissolve
     hide mz
     pause 0.5
@@ -7505,6 +7518,7 @@ label dct_foreign_land_dyn:
         xcenter 0.7 ycenter 0.7
     with dissolve
     "Шурик уже отключал приборы и подключал видеомагнитофон к компьютеру."
+    $ renpy.music.set_volume(0.5, delay=0.5)
     show sh normal pioneer close with dspr
     sh "Ну, кого первого дешифруем?"
     show el normal pioneer close at left with dissolve
@@ -7532,6 +7546,7 @@ label dct_foreign_land_dyn:
     show d_el rain behind dct_overcast_rain_2 with dissolve:
         xcenter 0.6
     "После чего разулся, снял носки, засунув их поглубже в карман шорт, открыл дверь и, держа сандалии в одной руке, а другой придерживая накидку, сбежал с крыльца прямо в лужу."
+    play sound dct_sfx_steps_in_swamp
     hide d_el with MoveTransition(1.0, leave=_moveright, leave_time_warp=_ease_time_warp)
     $ day_time()                         # Прописано, чтобы при обратной перемотке цвета не сбивались.
     $ persistent.sprite_time = "night"
@@ -7632,7 +7647,7 @@ label dct_replacement_dyn:
     th "Я уже давно потерял право на участие в отрядной жизни — наверное, с тех пор, как заявил свои права на Ульяну."
     extend " Или с тех пор, как Рыжик заявила свои права на меня."
     show d_sf sad sport with dspr
-    th "Вот так — сохранил прекрасные отношения со всеми, даже со спящими ещё Мику и  Сашкой, даже с Женей, даже с кибернетиками. А из отряда, из компании, которая пусть изредка, но выделяет себя из общей лагерной массы, выпал."
+    th "Вот так: сохранил прекрасные отношения со всеми, даже со спящими ещё Мику и  Сашкой, даже с Женей, даже с кибернетиками. А из отряда, из компании, которая пусть изредка, но выделяет себя из общей лагерной массы, выпал."
     th "Понятно, что двадцатипятилетний заместитель руководителя лагеря по физическому воспитанию не может быть в пионерском отряде наравне с пионерами, но обидно."
     show d_sf normal sport with dspr
     th "Даже мелкие больше меня за октябрёнка держат, чем старшие — за пионера. Даже волейбол и посиделки наши с девочками теперь от случая к случаю проходят, а не каждый вечер, как раньше."
@@ -7647,6 +7662,7 @@ label dct_replacement_dyn:
         linear 0.5 alpha 0
     "Одна из девочек бросается за мячом, неловко наступает, подворачивает ногу и падает, пытается встать, вскрикивает и снова падает."
     
+    $ renpy.music.set_volume(0.5)
     play music music_list['afterword'] fadein 2.5
     scene dct_int_sporthall
     show d_va normal:
@@ -7717,6 +7733,7 @@ label dct_replacement_dyn:
     show black with dissolve_fast
 
     $ persistent.sprite_time = "night"
+    $ renpy.music.set_volume(1.0, delay=0.5)
     scene dct_ext_сentral_alley_from_dining_hall_to_west_after_rain
     show d_sf normal sport at left
     show d_sf_carrying_d_sv sad at left
@@ -7762,6 +7779,7 @@ label dct_replacement_dyn:
     "Вот и медпункт.{w} Осторожно толкаю дверь."
     
     $ persistent.sprite_time = "day"
+    $ renpy.music.set_volume(0.5, delay=0.5)
     scene bg int_aidpost_day
     show dct_int_aidpost_day_curtain
     show d_cs normal far
@@ -7814,7 +7832,7 @@ label dct_replacement_dyn:
     me "Я буду на крыльце, Мику."
     window hide
     hide  d_sf with dissolve
-    stop music fadeout 1.5
+    stop music fadeout 1
     
     play ambience ambience_camp_center_day fadein 1.5
     scene bg ext_aidpost_day:
@@ -7834,6 +7852,7 @@ label dct_replacement_dyn:
     "Они ещё постояли на крыльце, глядя на быстро высыхающий под солнцем лагерь."
     d_cs "Редко здесь такие дожди бывают."
     "Семён хотел ответить что-нибудь столь же нейтральное, но не успел."
+    play sound sfx_medpunkt_door_open
     show mi sad pioneer far behind d_sf with dissolve
     window show
     mi "Простите за задержку. Я ещё с девочкой поговорила, успокоила её."
@@ -7899,6 +7918,7 @@ label dct_replacement_dyn:
     
     play sound_loop ambience_int_cabin_day fadein 1
     scene dct_int_warehouse_day with slidedown
+    play sound sfx_open_door_2
     "Семён наконец потянул за ручку и, пропустив Мику на склад, зашёл сам."
     "Восемь пар глаз смотрели на них. Пахло пылью, свежим постельным бельем, крепко заваренным чаем и Сашкиной выпечкой."
     show dv angry pioneer2 far at left with dissolve
@@ -7944,7 +7964,7 @@ label dct_replacement_dyn:
     th "Александр — он бы обязательно сделал что-то подобное. Просто чтобы посмотреть, что получится."
     show dct_int_clubs_male_rain:
         linear 1 alpha 0.55
-    extend " Семён верно сказал в день приезда: «Какая великолепная физика!»"
+    extend " Семён верно сказал в день приезда: «Какая великолепная физика!»."
     show dct_int_clubs_male_rain:
         linear 1 alpha 0.5
     th "Прежний Шурик — тот бы проделал всё ради торжества прогресса, а вот нынешний я без сожаления взял и всё уничтожил, свою Нобелевскую премию, которой тут нет."
@@ -8268,7 +8288,7 @@ label dct_replacement_dyn:
     show sl shy pioneer close with dspr
     "Саша покачала головой, благодарно улыбаясь Семёну."
     hide sl with dissolve
-    "Что там было в памяти у этой девушки, появившейся на свет в результате сбоя вместо здешней Слави, знали только система и она сама."
+    "Что там было в памяти у этой девушки, появившейся на свет в результате сбоя вместо здешней Слави, знали только Система и она сама."
     stop ambience fadeout 1
     show black with dissolve
     hide d_sf
@@ -8303,6 +8323,7 @@ label dct_replacement_dyn:
     show d_ma serious pioneer with dissolve:
         xcenter 0.5 yalign 0.02
     stop ambience fadeout 1
+    $ renpy.music.set_volume(1.0, delay=1.5)
     play music "<from 32.5 loop 0.0>sound/music/farewell_to_the_past.ogg" fadein 1.5
     show black behind d_ma with squares
     "Вспомнились вдруг вчерашние слова Лены в пересказе Саши и сегодняшние — Алисы: «Ты думаешь, что в старшем отряде вся жизнь повидлом намазана? Ну-ну»."
