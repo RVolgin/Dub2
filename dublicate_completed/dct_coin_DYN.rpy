@@ -8544,6 +8544,7 @@ label dct_system_errors_dyn:
     "Шурику было неудобно перед товарищем, но он старался не показывать виду; сказывался опыт Александра, которому случалось представлять неудачи в экспериментах как запланированные результаты."
     stop ambience fadeout 1
     
+    $ renpy.music.set_volume(0.5)
     play music higekitekina fadein 1
     scene dct_ext_another_clubhouse_day with squares
     "В окно открывался вид на заброшенное здание напротив — логово Яны."
@@ -9144,7 +9145,7 @@ label dct_system_errors_dyn:
     me "А вожатая и Алиса живут по одной в домике. Вот, скорее всего, Максима и новенького в Алисином домике поселят, а Алиса будет жить с вожатой."
     show d_ka upset pioneer with dspr
     "Катя при упоминании о Максиме каждый раз вздрагивала, но терпела."
-    th "Ничего, через восемь дней всё забудешь, а там Максим окончательно пропишется в старшем отряде и для тебя, считай, что просто исчезнет."
+    th "Ничего, через восемь дней всё забудешь, а там Максим окончательно пропишется в старшем отряде и для тебя считай что просто исчезнет."
     stop sound_loop fadeout 1
     
     play ambience ambience_camp_center_night fadein 1
@@ -9269,7 +9270,7 @@ label dct_dreamreality_dyn:
     show 3500_dv sad night2 0pt with dissolve_fast
     th "Только флаг тогда сразу Ольга конфискует, выцарапывай его потом."
     show 3500_dv guilty night2 0pt with dspr
-    "Где-то в домике, в какой-то щели надрывался сверчок. Когда он уставал и делал перерыв, становилось слышно, как звенит спираль в лампочке."
+    "Где-то в домике в какой-то щели надрывался сверчок. Когда он уставал и делал перерыв, становилось слышно, как звенит спираль в лампочке."
     "Спать не хотелось: давили какие-то недодуманные мысли, несказанные слова, несовершённые поступки, которые надо было в своё время додумать, досказать, доделать, а сейчас уже поздно."
     th "Пойти погулять? Или поиграть на эстраде? Тут где-то Сенька с Рыжей шатались, пойти их поискать?"
     show 3500_dv sad night2 0pt with dspr
@@ -9278,6 +9279,7 @@ label dct_dreamreality_dyn:
     th "Но это можно и завтра."
     show 3500_dv grin night2 0pt with dissolve
     th "Пойду поиграю."
+    play sound sfx_wood_floor_squeak
     show 3500_dv grin night2 0pt:
         ease 1 xcenter .16
     th "Надену джинсы и футболку. А то всё в форме да в форме."
@@ -9314,8 +9316,9 @@ label dct_dreamreality_dyn:
     mt "Имеешь, имеешь."
     show 3500_dv normal casual 1pt with dissolve_fast
     show mt smile pioneer:
-        pause 2
+        pause 0.5
         linear 1 alpha .0
+    play sound sfx_door_squeak_light
     "Ольга кивнула ещё раз и, прикрыв дверь, пошла в сторону поперечной аллеи, чтобы там свернуть в сторону кружка кибернетики — по своему извечному маршруту вечернего обхода."
     show 3500_dv guilty casual 1pt with dissolve_fast
     th "Что это с нами?"
@@ -9333,6 +9336,7 @@ label dct_dreamreality_dyn:
         linear 1 alpha 1.0
     $ persistent.sprite_time = "day"    # Прописано, чтобы при обратной перемотке цвета не сбивались.
     "Чтобы куртка не сваливалась с плеча, подпёрла её гитарой и вышла, закрыв дверь не запирая."
+    play sound sfx_close_door_campus_1
     
     play ambience ambience_camp_center_night fadein 1
     scene bg ext_house_of_dv_night
@@ -9354,6 +9358,7 @@ label dct_dreamreality_dyn:
         zoom .75 xcenter 1.2
         easein 2  xcenter .62
     "Через десять минут после её ухода в домик заглянула Ульяна."
+    play sound sfx_door_squeak_light
     hide d_us with dissolve
     "Обнаружила отсутствие гитары, всё поняла, но чтобы не разминуться, не пошла на эстраду, а завалилась подремать, поджидая, и так и уснула."
     stop ambience fadeout 1
@@ -10086,6 +10091,7 @@ label dct_horizontal_transport_dyn:
     un "Но ты говорил про наш мир."
     show d_sf normal hike at right with dissolve:
         xzoom -1 ypos 0.12
+    play sound sfx_inhale
     "Семён тоскливо огляделся. Сел рядом. Вздохнул."
     show un normal pioneer with dspr
     me "Видишь, Лена. Сначала я думал, что все мы — всего лишь модель, которую обсчитывает какой-то супер-пупер компьютер. Но потом…{w} Слишком у нас всё нерационально. Люди — ладно, но даже лагеря не во всём одинаковые."
@@ -10106,6 +10112,7 @@ label dct_horizontal_transport_dyn:
     show d_sf normal hike
     show un normal pioneer
     with dspr
+    play sound sfx_open_journal
     "Семён начал листать:{w} Женя с разными выражениями лица;{w} Шурик, поправляющий очки;{w} Максим с горном, сидящий на скамье;{w} тот же Максим, спящий в тени берёзы;{w} две Ульяны, большая и маленькая, хлопающие друг друга пятернями;{w} Ольга Дмитриевна, читающая нотацию среднему отряду."
     show d_sf serious hike with dspr
     me "Когда успела, Лен?"
@@ -10114,6 +10121,7 @@ label dct_horizontal_transport_dyn:
     show d_sf normal hike with dspr
     me "Понятно."
     show un normal pioneer with dspr
+    play sound sfx_open_journal
     "Семён, прохаживающийся перед строем футболистов.{w} Семён, держащий за руку Ульяну.{w} Уже виденный Семён у школьной доски.{w} Саша, танцующая с Максимом.{w} Саша на площади, что-то доказывающая Сыроежкину.{w} Саша в спортивной форме на беговой дорожке.{w} Мику за роялем и Мику на собрании отряда — грустная-грустная."
     show d_sf serious hike with dspr
     me "Ты знаешь, что Мику и Шурик проснулись?"
@@ -10137,6 +10145,7 @@ label dct_horizontal_transport_dyn:
     show d_sf normal hike
     show un normal pioneer
     with dspr
+    play sound sfx_open_journal
     "А дальше... Дальше были две Алисы: одна здешняя, а другая из лагеря Виолы — тут ошибиться было невозможно."
     "Они о чём-то спорили яростно, схватив друг друга за пионерские галстуки. Почти на грани драки.{w} Почти — потому что уже ясно: сейчас они ещё поорут друг на друга, выпустят пар, потом одна из Алис хлопнет другую по плечу, и обе рассмеются."
     "А дальше шли уже совсем незнакомые люди. Мальчики, девочки, мужчины, женщины — все набросаны достаточно схематично, но всё же узнаваемо. Под некоторыми подписаны имена, некоторые безымянные."
@@ -10245,8 +10254,10 @@ label dct_horizontal_transport_dyn:
     "Шурик глянул на фосфоресцирующие стрелки часов: «вчера» уже закончилось, а «сегодня» потихоньку вступало в свои права."
     sh "Ян, давай днём."
     d_jn "Нет, сейчас."
+    play sound sfx_bed_squeak2
     "Пришлось вылезать из-под одеяла, натягивать шорты и идти на крыльцо, чтобы не разбудить Электроника."
     sh "Счастье твоё, Яна, что сегодня воскресенье и можно спать до девяти утра."
+    play sound sfx_door_squeak_light
     stop sound_loop fadeout 1
     
     play ambience ambience_camp_center_night fadein 1
@@ -10256,6 +10267,7 @@ label dct_horizontal_transport_dyn:
     show d_jn with dissolve_fast:
         xalign 0.5 yalign 0.3
     stop ambience fadeout 1
+    $ renpy.music.set_volume(0.5)
     play music fm_freemusic_chillout_music fadein 2
     d_jn "Па, а зачем я?"
     "Нужно было отвечать."
@@ -10405,7 +10417,7 @@ label dct_horizontal_transport_dyn:
         linear 2 alpha 0.4
     "Но дальше Сашка уже пронзительно кричала:"
     sa "Мику, останься!"
-    play music music_list['memories_piano_outdoors'] fadein 4
+    play music music_list['memories_piano_outdoors'] fadein 2
     show mi scared pioneer close with dspr:
         linear 8 alpha 1.0
     show sl tender sport close as sl2 at cright behind mi:
@@ -10446,6 +10458,7 @@ label dct_horizontal_transport_dyn:
         linear 0.9 xcenter 0.76
         pause 0.15
         linear 0.5 ycenter 0.47
+    play sound "<from 0.5 >mods/dublicate/sounds/sfx/dct_sfx_chair.ogg"     
     el "Вот и я, с добычей." 
     show mz smile pioneer close with dissolve_fast:
         xcenter 0.4
@@ -10556,7 +10569,7 @@ label dct_horizontal_transport_dyn:
     pause 0.2
     stop ambience fadeout 1
     show black with dissolve
-    pause 1.5
+    pause 1
     
     play music music_list['my_daily_life'] fadein 1
     play sound_loop ambience_int_cabin_day fadein 2
@@ -10665,6 +10678,7 @@ label dct_horizontal_transport_dyn:
     mt "А придётся."
     show mt smile pioneer close:
         linear 0.55 ycenter 0.23
+    play sound "<from 1.2 >mods/dublicate/sounds/sfx/dct_sfx_chair.ogg"     
     
     scene int_dining_hall_people_day
     show mt normal pioneer:
@@ -10719,6 +10733,7 @@ label dct_horizontal_transport_dyn:
     "Всё, последняя ходка была, дальше уж пусть сама вожатая разбирается, чего и куда повесить."
     
     scene dct_int_residential_block_day with dissolve
+    play sound sfx_drop_alisa_bag
     "Алиса и Максим скинули охапку платьев на незастеленный матрац и огляделись."
     th "А ведь неплохо можно устроиться."
     "Две кровати, шифоньер, книжный шкаф, стол обеденный и стол письменный. Какое-то подобие прихожей, кухонная ниша с плиткой и раковиной, и напротив — Алиса толкнула дверь — умывальник, унитаз и даже душ за прозрачной занавеской."
@@ -10726,7 +10741,7 @@ label dct_horizontal_transport_dyn:
     "Будильник, извлечённый из коробки, показывал без пятнадцати двенадцать. Пора, наверное."
     show dct_int_chief_corridor_day with dissolve
     "Алиса вышла в коридор и просунула голову в дверь Семёновой комнаты.{w} Тот сидел на кровати, утирая лоб, и тоже оглядывал помещение, прикидывая явно, как и куда сдвинуть вместе обе кровати."
-    $ renpy.music.set_volume(1.0, delay=2)
+    $ renpy.music.set_volume(1.0)
     play music dreamers_of_the_day fadein 2
     dv "Ну что, идём?"
     me "Идём, Алиса."
@@ -11326,7 +11341,7 @@ label dct_coin_final_dyn:
     show un surprise pioneer close with dissolve_fast
     my "Он зайдёт в лагерь, повернёт голову к клубам, увидит тебя и скажет одними губами: «Ленка! Я прорвался!», но ты его прекрасно услышишь и бросишься к нему на шею, завизжав так, что перепуганные кибернетики выскочат на крыльцо."
     show un cry_smile pioneer close with dspr
-    my "Тебя спасать, между прочим, выскочат. Вот только ты к концу этого цикла забудешь всё, а вспомнишь уже потом, когда всё произойдет."
+    my "Тебя спасать, между прочим, выскочат. Вот только ты к концу этого цикла забудешь всё, а вспомнишь уже потом, когда всё произойдёт."
     th "Что я там говорил Ульянке, что не выдумывал их мир? Что я только наблюдатель и регистратор? Но это правда, просто наблюдатель всегда влияет на наблюдаемый объект, и я пользуюсь этой возможностью."
     show un smile pioneer close with dissolve_fast
     th "И, кажется, Лена это знает, если задала такой вопрос. А если ещё не знает, то догадается."
@@ -11345,7 +11360,7 @@ label dct_coin_final_dyn:
         linear 1 alpha 1.0
     show sl shy dress far at cright with dissolve
     th "К Сашке, которая застенчиво мне улыбается, сидя между здешней Мику и вернувшейся к ним Леной? Проснулась? Нет, просто захотела компанию Лене составить."
-    th "Но уже скоро — чувствую, что от хорошего пинка она проснется прямо сейчас, и проснётся безболезненно. Обойдёмся без пинков, всё должно быть естественно."
+    th "Но уже скоро — чувствую, что от хорошего пинка она проснётся прямо сейчас, и проснётся безболезненно. Обойдёмся без пинков, всё должно быть естественно."
     "Поэтому я улыбаюсь этим троим девочкам, машу им рукой: «Я узнал вас, кто вы и откуда, и очень рад вас видеть» — Мику в ответ энергично машет мне рукой"
     show mi laugh pioneer far with dissolve_fast
     extend ", но я иду к своему протагонисту."
@@ -11540,7 +11555,7 @@ label dct_coin_final_dyn:
     
     
     stop ambience fadeout 5
-    $ renpy.music.set_volume(1.0)
+    $ renpy.music.set_volume(0.5)
     play music my_2nd_summer fadein 2
     show us normal sport at cleft with dissolve
     us "Я провожу тебя."

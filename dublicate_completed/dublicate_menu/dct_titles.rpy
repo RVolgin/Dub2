@@ -415,7 +415,7 @@ init 1:
 
         textbutton "Mo~" xcenter 0.5 ypos 0.23 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/mo_shy_arts")
         textbutton "mono" xcenter 0.5 ypos 0.29 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/club184214703")
-        textbutton "Narai" xcenter 0.5 ypos 0.35 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/naraii03")
+        textbutton "Naraii" xcenter 0.5 ypos 0.35 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/naraii03")
         textbutton "Orika" xcenter 0.5 ypos 0.41 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/orika_art")
         textbutton "polinaowl" xcenter 0.5 ypos 0.47 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/owlpolina")
         textbutton "Quandial" xcenter 0.5 ypos 0.53 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/quandyarts")
