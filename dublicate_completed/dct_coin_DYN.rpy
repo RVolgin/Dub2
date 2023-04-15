@@ -2922,7 +2922,7 @@ label dct_fluctuation_dyn:
     window hide
     scene black with dissolve
     $ renpy.pause(1.0)
-    $ renpy.music.set_volume(1.0, delay=0)
+    $ renpy.music.set_volume(0.5, delay=0)
     
     scene bg ext_square_night_party2    
     play ambience ambience_camp_center_night fadein 1
@@ -5285,6 +5285,7 @@ label dct_d7_d5_dyn:
     th "А то люди обижаются на мои реплики и шутки."
     show d_sf smile sport as d_sf2 behind dct_int_library_standing_desk_front with dissolve:
         zoom 0.95 xcenter 0.35 ypos -0.04
+    play sound sfx_medpunkt_door_open
     "Зашёл Семён за тренерскими методичками."
     stop music fadeout 3
     play ambience ambience_library_day fadein 3
@@ -5651,6 +5652,7 @@ label dct_d7_d5_dyn:
         xcenter .7
     with pushright
     "Саша без стука отворила дверь библиотеки и втащила за руку Сыроежкина."
+    play sound sfx_open_door_clubs_2
     stop ambience fadeout 1
     stop music fadeout 3
     hide 3500_el
@@ -7096,7 +7098,7 @@ label dct_foreign_land_dyn:
     scene dct_ext_musclub_night_lantern_light
     show sh upset pioneer
     with dissolve_fast
-    "И как-то интуитивно почувствовав, что завтра будет поздно, уговорить Шурика на эксперимент: «Сашечка, ну пожалуйста, пожалуйста, пожалуйста, мне это очень важно, и именно сегодня, сейчас!»"
+    "И как-то интуитивно почувствовав, что завтра будет поздно, уговорить Шурика на эксперимент: «Сашечка, ну пожалуйста, пожалуйста, пожалуйста, мне это очень важно, и именно сегодня, сейчас!»."
     scene black with dissolve
     stop music fadeout 1
     
@@ -8905,6 +8907,7 @@ label dct_system_errors_dyn:
     "И, написав что-то на конверте, но явно не адрес, сунул его в карман, попрощался и вышел, бросив напоследок:"
     show d_sf smile pioneer with dspr
     me "Пойду спасать спорткомплекс от малолетних варваров. Улька добрая, она мелких не тронет, она меня схарчит."
+    play sound sfx_open_cabinet_1
     hide d_sf with dissolve
     show d_mz sceptic glasses pioneer far with dspr
     th "Интересно, что такого физрук писал?"
