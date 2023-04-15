@@ -148,19 +148,7 @@ init 1:
             size 30
             outlines [(2, '#000', 0, 0)]
 
-
-    screen dct_titles_artists_list3:
-    
-        text 'Фон коридора административного корпуса\nпредоставлен Дмитрием Зотовым\n{vspace=30}За замечательную Юлю спасибо\nДине Ким и Lana Lupine\n{vspace=30}Авторы фонов с поездом и вагоном,\nк сожалению, пока не опознаны\n{vspace=90}Отдельная благодарность команде\nБесконечное лето 3D (Summer\'s Builders)':
-            xalign 0.5
-            ypos 0.2
-            text_align 0.5
-            color "#fff"
-            font "mods/dublicate/fonts/OpenSans-Bold.ttf"
-            size 30
-            outlines [(2, '#000', 0, 0)]
-              
-           
+        
     screen dct_titles_mods:
         
         text 'Моды':
@@ -236,7 +224,19 @@ init 1:
             font "mods/dublicate/fonts/OpenSans-Bold.ttf"
             size 30
             outlines [(2, '#000', 0, 0)]
-
+            
+            
+    screen dct_titles_another_artists:
+    
+        text "Фон коридора административного корпуса\nпредоставлен Дмитрием Зотовым\n{vspace=30}За замечательную Юлю спасибо\nДине Ким и Lana Lupine\n{vspace=90}Отдельная благодарность команде\nБесконечное лето 3D (Summer's Builders)\n{vspace=90}Также благодарим всех не упомянутых авторов,\nчьи произведения использованы в моде.\nЕсли вы не нашли себя в титрах, напишите нам в сообщество ВКонтакте,\nчтобы мы могли исправить это в будущих обновлениях.":
+            xalign 0.5
+            ypos 0.2
+            text_align 0.5
+            color "#fff"
+            font "mods/dublicate/fonts/OpenSans-Bold.ttf"
+            size 30
+            outlines [(2, '#000', 0, 0)]
+              
 
     screen dct_titles_sounds:
 
@@ -344,7 +344,7 @@ init 1:
             yalign 0.98
             style "dct_titles_button"
             text_style "dct_titles_button"
-            action [Hide("dct_titles_credits1", transition=Dissolve(0.4)), Return()]
+            action [Hide("dct_credits_authors", transition=Dissolve(0.4)), Return()]
             
     screen dct_credits_artists:
     
@@ -455,72 +455,6 @@ init 1:
             action [Hide("dct_credits_artists", transition=Dissolve(0.4)), Return()]
 
 
-    screen dct_credits_artists_other:
-    
-        text 'Благодарности':
-            xalign 0.5
-            yalign 0.02
-            color "#14ab14"
-            font "mods/dublicate/fonts/TrixieProHeavy_Regular.otf"
-            size 100
-            outlines [(2, '#000', 0, 0)]
-
-        text 'Художники':
-            xalign 0.5
-            yalign 0.14
-            color "#fff"
-            font "mods/dublicate/fonts/TrixieProHeavy_Regular.otf"
-            size 50
-            outlines [(2, '#000', 0, 0)]
-    
-    
-    ##
-    ##      Вариант с гиперссылками в самом тексте (пока отключён, т.к. не понятно, как нужно прописать стиль для гиперссылок)
-    ##
-    
-        # text "Фон коридора административного корпуса\nпредоставлен Дмитрием Зотовым\n{vspace=30}За замечательную Юлю спасибо\n{a=https://vk.com/shopolak}Дине Ким{/a} и Lana Lupine\n{vspace=30}Авторы двух фонов железной дороги,\nк сожалению, пока не опознаны\n{vspace=90}Отдельная благодарность команде\n{a=https://vk.com/everlastingsummer3d}Бесконечное лето 3D (Summer's Builders){/a}":
-            # xalign 0.5
-            # ypos 0.22
-            # text_align 0.5
-            # color "#fff"
-            # font "mods/dublicate/fonts/OpenSans-Bold.ttf"
-            # size 30
-            # outlines [(2, '#000', 0, 0)]
-            
-        ################################################    
-            
-        ### Гиперссылки через textbutton
-        
-        text "Фон коридора административного корпуса\nпредоставлен Дмитрием Зотовым\n{vspace=30}За замечательную Юлю спасибо\n{space=160} и Lana Lupine\n{vspace=30}Авторы фонов с поездом и вагоном,\nк сожалению, пока не опознаны\n{vspace=90}Отдельная благодарность команде":
-            xalign 0.5
-            ypos 0.22
-            text_align 0.5
-            color "#fff"
-            font "mods/dublicate/fonts/OpenSans-Bold.ttf"
-            size 30
-            outlines [(2, '#000', 0, 0)]
-            
-            
-        textbutton "Дине Ким" xcenter 0.444 ypos 0.365 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/shopolak")
-        textbutton "Бесконечное лето 3D (Summer's Builders)" xcenter 0.5 ypos 0.63 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/everlastingsummer3d")
-        
-        ################################################
-
-        textbutton 'Меню':
-            xalign 0.4
-            yalign 0.98
-            style "dct_titles_button"
-            text_style "dct_titles_button"
-            action [Hide("dct_credits_artists_other", transition=Dissolve(0.4)), Jump("dct_credits_closed")]
-            
-        textbutton 'Далее':
-            xalign 0.6
-            yalign 0.98
-            style "dct_titles_button"
-            text_style "dct_titles_button"
-            action [Hide("dct_credits_artists_other", transition=Dissolve(0.4)), Return()]
-
-
     screen dct_credits_mods:
         
         text 'Благодарности':
@@ -562,17 +496,139 @@ init 1:
             yalign 0.98
             style "dct_titles_button"
             text_style "dct_titles_button"
-            action [Hide("dct_credits_mods1", transition=Dissolve(0.4)), Jump("dct_credits_closed")]
+            action [Hide("dct_credits_mods", transition=Dissolve(0.4)), Jump("dct_credits_closed")]
             
         textbutton 'Далее':
             xalign 0.6
             yalign 0.98
             style "dct_titles_button"
             text_style "dct_titles_button"
-            action [Hide("dct_credits_mods1", transition=Dissolve(0.4)), Return()]
+            action [Hide("dct_credits_mods", transition=Dissolve(0.4)), Return()]
 
 
-    screen dct_credits_sounds_novel_anime:
+    screen dct_credits_novel_anime:
+
+        text 'Благодарности':
+            xalign 0.5
+            yalign 0.02
+            color "#14ab14"
+            font "mods/dublicate/fonts/TrixieProHeavy_Regular.otf"
+            size 100
+            outlines [(2, '#000', 0, 0)]
+
+
+        text 'Новеллы':
+            xalign 0.5
+            yalign 0.2
+            text_align 0.5
+            color "#fff"
+            font "mods/dublicate/fonts/TrixieProHeavy_Regular.otf"
+            size 50
+            outlines [(2, '#000', 0, 0)]
+            
+        text 'Конгломерат\n{vspace=15}Морозный поцелуй\n{vspace=15}Травница':
+            xalign 0.5
+            ypos 0.26
+            text_align 0.5
+            color "#fff"
+            font "mods/dublicate/fonts/OpenSans-Bold.ttf"
+            size 30
+            outlines [(2, '#000', 0, 0)]
+            
+        text 'Аниме':
+            xalign 0.5
+            yalign 0.56
+            text_align 0.5
+            color "#fff"
+            font "mods/dublicate/fonts/TrixieProHeavy_Regular.otf"
+            size 50
+            outlines [(2, '#000', 0, 0)]
+
+        text 'Врата\n{vspace=15}Повседневная жизнь старшеклассников':
+            xalign 0.5
+            ypos 0.6
+            text_align 0.5
+            color "#fff"
+            font "mods/dublicate/fonts/OpenSans-Bold.ttf"
+            size 30
+            outlines [(2, '#000', 0, 0)]
+
+        textbutton 'Меню':
+            xalign 0.4
+            yalign 0.98
+            style "dct_titles_button"
+            text_style "dct_titles_button"
+            action [Hide("dct_credits_novel_anime", transition=Dissolve(0.4)), Jump("dct_credits_closed")]
+            
+        textbutton 'Далее':
+            xalign 0.6
+            yalign 0.98
+            style "dct_titles_button"
+            text_style "dct_titles_button"
+            action [Hide("dct_credits_novel_anime", transition=Dissolve(0.4)), Return()]
+
+
+    screen dct_credits_artists_other:
+    
+        text 'Благодарности':
+            xalign 0.5
+            yalign 0.02
+            color "#14ab14"
+            font "mods/dublicate/fonts/TrixieProHeavy_Regular.otf"
+            size 100
+            outlines [(2, '#000', 0, 0)]
+    
+    
+    ##
+    ##      Вариант с гиперссылками в самом тексте (пока отключён, т.к. не понятно, как нужно прописать стиль для гиперссылок)
+    ##
+    
+        # text "Фон коридора административного корпуса\nпредоставлен Дмитрием Зотовым\n{vspace=30}За замечательную Юлю спасибо\n{a=https://vk.com/shopolak}Дине Ким{/a} и Lana Lupine\n{vspace=90}Отдельная благодарность команде:\n{a=https://vk.com/everlastingsummer3d}Бесконечное лето 3D (Summer's Builders){/a}\n{vspace=90}Также благодарим всех не упомянутых авторов,\nчьи произведения использованы в моде.\nЕсли вы не нашли себя в титрах, напишите нам в {a=https://vk.com/dublicatum}сообщество{/a},\nчтобы мы могли исправить это в будущих обновлениях.":
+            # xalign 0.5
+            # ypos 0.2
+            # text_align 0.5
+            # color "#fff"
+            # font "mods/dublicate/fonts/OpenSans-Bold.ttf"
+            # size 30
+            # outlines [(2, '#000', 0, 0)]
+            
+        ################################################    
+            
+        ### Гиперссылки через textbutton
+
+        
+        text "Фон коридора административного корпуса\nпредоставлен Дмитрием Зотовым\n{vspace=30}За замечательную Юлю спасибо\n{space=160} и Lana Lupine\n{vspace=90}Отдельная благодарность команде:\n\n{vspace=90}Также благодарим всех не упомянутых авторов,\nчьи произведения использованы в моде.\nЕсли вы не нашли себя в титрах, напишите нам в {space=195},\nчтобы мы могли исправить это в будущих обновлениях.":
+            xalign 0.5
+            ypos 0.2
+            text_align 0.5
+            color "#fff"
+            font "mods/dublicate/fonts/OpenSans-Bold.ttf"
+            size 30
+            outlines [(2, '#000', 0, 0)]
+            
+            
+        textbutton "Дине Ким" xcenter 0.444 ypos 0.345 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/shopolak")
+        textbutton "Бесконечное лето 3D (Summer's Builders)" xcenter 0.5 ypos 0.505 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/everlastingsummer3d")
+        textbutton "сообщество" xcenter 0.703 ypos 0.706 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/dublicatum")
+        
+        ################################################
+
+        textbutton 'Меню':
+            xalign 0.4
+            yalign 0.98
+            style "dct_titles_button"
+            text_style "dct_titles_button"
+            action [Hide("dct_credits_artists_other", transition=Dissolve(0.4)), Jump("dct_credits_closed")]
+            
+        textbutton 'Далее':
+            xalign 0.6
+            yalign 0.98
+            style "dct_titles_button"
+            text_style "dct_titles_button"
+            action [Hide("dct_credits_artists_other", transition=Dissolve(0.4)), Return()]
+            
+
+    screen dct_credits_sounds:
 
         text 'Благодарности':
             xalign 0.5
@@ -636,42 +692,6 @@ init 1:
         
         ################################################  
 
-        text 'Новеллы':
-            xcenter 0.25
-            yalign 0.6
-            text_align 0.5
-            color "#fff"
-            font "mods/dublicate/fonts/TrixieProHeavy_Regular.otf"
-            size 50
-            outlines [(2, '#000', 0, 0)]
-            
-        text 'Конгломерат\n{vspace=15}Морозный поцелуй\n{vspace=15}Травница':
-            xcenter 0.25
-            ypos 0.63
-            text_align 0.5
-            color "#fff"
-            font "mods/dublicate/fonts/OpenSans-Bold.ttf"
-            size 30
-            outlines [(2, '#000', 0, 0)]
-            
-        text 'Аниме':
-            xcenter 0.7
-            yalign 0.6
-            text_align 0.5
-            color "#fff"
-            font "mods/dublicate/fonts/TrixieProHeavy_Regular.otf"
-            size 50
-            outlines [(2, '#000', 0, 0)]
-
-        text 'Врата\n{vspace=15}Повседневная жизнь старшеклассников':
-            xcenter 0.7
-            ypos 0.63
-            text_align 0.5
-            color "#fff"
-            font "mods/dublicate/fonts/OpenSans-Bold.ttf"
-            size 30
-            outlines [(2, '#000', 0, 0)]
-
         textbutton 'Меню':
             xalign 0.5
             yalign 0.98
@@ -720,18 +740,11 @@ label dct_titles:
     # Страница третья, художники два
     show screen dct_titles_artists_list2 with dissolve
     $ renpy.pause(9,hard=True)
+    hide screen dct_titles_artists
     hide screen dct_titles_artists_list2 with dissolve
     $ renpy.pause(1,hard=True)
     
-    # Страница четвертая, художники три
-    show screen dct_titles_artists_list3 with dissolve
-    $ renpy.pause(9,hard=True)
-    hide screen dct_titles_artists
-    hide screen dct_titles_artists_list3
-    with dissolve
-    $ renpy.pause(1,hard=True)
-    
-    # Страница пятая, моды раз
+    # Страница четвёртая, моды раз
     show screen dct_titles_mods
     show screen dct_titles_mods_list1
     with dissolve
@@ -739,7 +752,7 @@ label dct_titles:
     hide screen dct_titles_mods_list1 with dissolve
     $ renpy.pause(1,hard=True)
     
-    # Страница шестая, моды два
+    # Страница пятая, моды два
     show screen dct_titles_mods_list2 with dissolve
     $ renpy.pause(9,hard=True)
     hide screen dct_titles_mods
@@ -747,7 +760,7 @@ label dct_titles:
     with dissolve
     $ renpy.pause(1,hard=True)
     
-    # Страница седьмая, новеллы и аниме
+    # Страница шестая, новеллы и аниме
     show screen dct_titles_novels_anime
     show screen dct_titles_novels_anime_list
     with dissolve
@@ -757,6 +770,13 @@ label dct_titles:
     with dissolve
     $ renpy.pause(1,hard=True)
     
+    # Страница седьмая, разные авторы
+    show screen dct_titles_another_artists with dissolve
+    $ renpy.pause(9,hard=True)
+    hide screen dct_titles_another_artists
+    with dissolve
+    $ renpy.pause(1,hard=True)
+
     # Страница восьмая, музыка
     show screen dct_titles_sounds
     show screen dct_titles_sounds_list
@@ -815,9 +835,11 @@ label dct_credits:
     $ renpy.block_rollback()    # Запрет отката истории (чтоб колёсиком случайно не накрутили)   
     call screen dct_credits_authors with dissolve
     call screen dct_credits_artists
-    call screen dct_credits_artists_other
     call screen dct_credits_mods
-    call screen dct_credits_sounds_novel_anime
+    call screen dct_credits_novel_anime
+    call screen dct_credits_artists_other
+    call screen dct_credits_sounds
+    
 
 
 label dct_credits_closed:
