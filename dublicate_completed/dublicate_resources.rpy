@@ -215,7 +215,7 @@ init :
     image dct_int_aidpost_sunset = "mods/dublicate/images/bg/dct_int_aidpost_sunset.jpg"
     image dct_int_barracks_night = "mods/dublicate/images/bg/dct_int_barracks_night.jpg"
     image dct_int_briefing_room = "mods/dublicate/images/bg/dct_int_briefing_room.jpg"
-    image dct_int_bus_another_middle = "mods/dublicate/images/bg/dct_int_bus_another_middle.jpg"   # Салон автобуса, правый борт
+    image dct_int_bus_another_middle = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/bg/dct_int_bus_another_middle.jpg', (0, 0), 'mods/dublicate/images/bg/dct_int_bus_another_middle_pioneers.png')   # Салон автобуса, правый борт со средним отрядом
     image dct_int_bus_leftwindow_day = "mods/dublicate/images/bg/dct_int_bus_leftwindow_day.jpg"
     image dct_int_bus_middle = "mods/dublicate/images/bg/dct_int_bus_middle.jpg"   # Салон автобуса, левый борт
     image dct_int_bus_people = "mods/dublicate/images/bg/dct_int_bus_people.jpg"   # Салон автобуса, видоизменённая передняя площадка
