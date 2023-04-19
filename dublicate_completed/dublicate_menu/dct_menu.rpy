@@ -26,6 +26,8 @@ init 1:
 screen dct_menu_flower:
     zorder 1
     add "mods/dublicate/images/gui/dct_menu_flower.png"
+    
+    
 screen dct_menu_olga_sep:
     add "mods/dublicate/images/gui/dct_menu_olga_sep.png"
 screen dct_menu_simon_sep:
@@ -46,9 +48,10 @@ screen dct_menu_4th_shift_sep:
     add "mods/dublicate/images/gui/dct_menu_4th_shift_sep.png"
 screen dct_menu_effector_sep:
     add "mods/dublicate/images/gui/dct_menu_effector_sep.png"
-
 screen dct_menu_coin_sep:
     add "mods/dublicate/images/gui/dct_menu_coin_sep.png"
+    
+    
 screen dct_menu:
     add "mods/dublicate/images/gui/dct_bg_table.jpg"
     add "mods/dublicate/images/gui/dct_bg_menu.png"
