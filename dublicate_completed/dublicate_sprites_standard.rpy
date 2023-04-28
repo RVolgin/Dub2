@@ -1459,7 +1459,7 @@ init :
     
     ##### Cпрайты персонажей неформатные
     # Алиса
-    image dv_4_casual_close = "mods/dublicate/images/sprites/d_unformat/dv_4_casual_close.png"  # Чёрная майка Close
+    image dv_4_laugh_casual_close = "mods/dublicate/images/sprites/d_unformat/dv_4_laugh_casual_close.png"  # Алиса, 4 поза в чёрной майка Close
     image dct_dv_in_christmas_ball = "mods/dublicate/images/sprites/d_unformat/dct_dv_in_christmas_ball.png"  # Алиса в ёлочном шаре
     image dct_dv_4_blink = "mods/dublicate/images/sprites/d_unformat/dct_dv_4_blink.png"  # Алиса моргает
     image dv_4_badge_mirror = "mods/dublicate/images/sprites/d_unformat/dct_dv_4_badge_mirror_normal.png"  # Значок на другой груди Алисы

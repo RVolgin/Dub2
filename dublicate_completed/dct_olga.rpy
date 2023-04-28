@@ -518,7 +518,6 @@ label dct_olga_p2:
     d_t3 "Совсем одну вас не оставим, не беспокойтесь, раза два-три в неделю кто-то будет к вам заглядывать, а пока желаю вам проявить себя."
     "Анатолий оглянулся на сопровождавших Олю военных и понизил голос."
     d_t3 "И если вам покажется знакомым кто-то из пионеров, не говорите никому об этом. А ему самому — тем более."
-    ""
     stop ambience
     
     scene dct_int_bus_sunrise with squares
@@ -741,7 +740,7 @@ label dct_olga_p3:
     with dissolve
     th "Оля, их же не больше, чем пассажиров в вагоне, а ты боишься!"
     hide el
-    show mz glasses normal pioneer far at left
+    show mz normal pioneer glasses far at left
     with dissolve
     th "Нет, это точно не роботы, роботов я бы так не боялась и от их взглядов вся не чесалась бы."
     hide mi
@@ -753,8 +752,8 @@ label dct_olga_p3:
     hide un
     with pixellate
     play music music_list["always_ready"]
-    show mt panama shocked pioneer with dissolve
-    show mt panama rage pioneer with dissolve_fast
+    show mt shocked panama pioneer with dissolve
+    show mt rage panama pioneer with dissolve_fast
     mt "Лагерь, по отрядам — становись!"
     stop sound_loop
     scene dct_lineup_mi_not_us with pixellate
@@ -879,7 +878,7 @@ label dct_olga_p3:
     show sl smile pioneer with dspr
     sl "Ольга Дмитриевна, а вы на обед разве не идёте? Давайте я вас подожду."
     show un normal pioneer far behind sl at right with moveinright
-    show mz glasses normal pioneer far behind sl at cright with moveinright
+    show mz normal pioneer glasses far behind sl at cright with moveinright
     hide un with dspr
     hide mz with dspr
     mt "Иду-иду, Славя. Сейчас дождусь всех опоздавших и подойду. Не жди меня."

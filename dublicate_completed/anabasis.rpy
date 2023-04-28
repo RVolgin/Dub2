@@ -5702,10 +5702,8 @@ label dct_center_line:
     with hpunch
     play music music_list["everlasting_summer"]
     show us laugh sport close at cright
-    show dv laugh body close:
+    show dv_4_laugh_casual_close:
         xpos .08
-    show dv_4_casual_close at cleft:
-        xanchor .0 xpos .08
     "И тут на мне виснут с визгом две рыжих девки, я делаю шаг назад, теряю равновесие, и мы все трое валимся на газон."
     show dct_anabasis_fin with vpunch
     "А я перед этим ещё успеваю заметить, как Ольга Дмитриевна улыбается в секундном проблеске человечности."
