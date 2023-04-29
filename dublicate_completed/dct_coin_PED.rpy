@@ -4987,7 +4987,7 @@ label dct_debut_ped:
     
     play music music_list['everyday_theme'] fadein 2
     scene bg ext_clubs_day with slideawayup:
-        zoom 3.0 xcenter 0.5 ycenter 0.6
+        zoom 2.8 xcenter 0.5 ycenter 0.62
     "Так и вышли на крыльцо все трое: Шурик с листом миллиметровки в руках, тут же убежавший на полюбившееся ему место за зданием клубов, и Сергей с Оксаной, которые никуда не пошли, а присели тут же на крылечке."
     show el normal pioneer far:
         zoom 0.8 xcenter 0.2 ycenter 0.87
@@ -5014,7 +5014,7 @@ label dct_debut_ped:
     "Пятнадцать минут истекли, и пунктуальный Шурик появился на крыльце клубов, а Оксана и Сергей всё ещё увлечённо беседовали."
     window hide
     scene dct_ext_clubs_sunset with dissolve2:
-        zoom 3.0 xcenter 0.5 ycenter 0.6
+        zoom 2.8 xcenter 0.5 ycenter 0.62
     $ sunset_time()
     $ persistent.sprite_time = "sunset"
     window auto
@@ -5022,11 +5022,11 @@ label dct_debut_ped:
     show dct_ext_clubs_sunset:
         ease 1.5 zoom 1.0 ycenter 0.5
     show d_oz n pioneer:
-        zoom .17 anchor (.5, 1.0) pos (.54, .72) alpha 0
+        zoom .18 anchor (.5, 1.0) pos (.54, .72) alpha 0
         pause 1.8
         linear 0.7 alpha 1
     show 3500_el normal pioneer:
-        zoom .17 anchor (.5, 1.0) pos (.46, .71) alpha 0
+        zoom .18 anchor (.5, 1.0) pos (.46, .707) alpha 0
         pause 3
         linear 0.7 alpha 1
     show ext_houses_sunset:
@@ -5962,10 +5962,10 @@ label dct_d7_d5_ped:
     play music music_list['two_glasses_of_melancholy'] fadein 2
     scene bg ext_clubs_day
     show 3500_sl serious pioneer:
-        zoom .17 anchor (.5, 1.0) pos (.46, .71)
+        zoom .18 anchor (.5, 1.0) pos (.46, .707)
     with slideawayup
     show 3500_el normal pioneer briefcase with dissolve:
-        zoom .17 anchor (.5, 1.0) pos (.54, .71)
+        zoom .18 anchor (.5, 1.0) pos (.54, .707)
     el "Меня ждёшь?"
     show 3500_sl scared pioneer with dissolve_fast
     show 3500_sl surprise pioneer with dissolve_fast
@@ -7870,7 +7870,7 @@ label dct_foreign_land_ped:
     $ persistent.sprite_time = "day"
     play ambience ambience_camp_center_day fadein 1
     scene bg ext_clubs_day:
-        zoom 3.0 xcenter 0.5 ycenter 0.6
+        zoom 2.8 xcenter 0.5 ycenter 0.62
     show sh serious pioneer far:
         zoom 0.8 xcenter 0.75 ycenter 0.87
     with squares
@@ -7908,9 +7908,9 @@ label dct_foreign_land_ped:
     show mi upset pioneer far with dissolve_fast
     sh "Ты тоже вспомнила то, что нельзя было вспоминать?"
     show sh normal pioneer far:
-        linear 0.5 xcenter 0.59 ycenter 0.87
+        linear 0.5 xcenter 0.6 ycenter 0.87
     show mi upset pioneer far:
-        linear 0.5 xcenter 0.49 ycenter 0.85
+        linear 0.5 xcenter 0.48 ycenter 0.85
     "Они осторожно присели на верхнюю ступеньку крыльца."
     mi "Сашечка, скажи. Серёжа — он уже записывал свою память на твоей машине?"
     "Мику не ответила прямо. Но и такого ответа было достаточно."
@@ -8568,7 +8568,7 @@ label dct_replacement_ped:
     play ambience ambience_camp_center_day fadein 1
     scene bg ext_clubs_day
     show 3500_sh normal_smile pioneer:
-        zoom .17 anchor (.5, 1.0) pos (.48, .72)
+        zoom .18 anchor (.5, 1.0) pos (.48, .72)
     with slideawayup
     "Шурик вышел на крыльцо. Дождь окончательно прекратился, лужа, разливавшаяся на всю ширину главной аллеи, уже стекла ручьём в реку, и сейчас асфальт быстро сох под летним солнцем."
     show 3500_sh smile pioneer with dissolve_fast
@@ -12249,9 +12249,9 @@ label dct_coin_final_ped:
     show mt angry panama pioneer far
     show d_mt2 angry sport far
     with dissolve_fast
-    show d_mt2:
+    show d_mt2 angry sport far:
         ease 1.5 xcenter 0.28
-    show mt:
+    show mt angry panama pioneer far:
         pause 0.5
         ease 0.6 xcenter 0.65
     "Ольги поднимаются, одна сразу уходит куда-то вбок, по тропинке, а две других начинают строить каждая своих подопечных."
