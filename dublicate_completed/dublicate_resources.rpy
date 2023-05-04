@@ -383,6 +383,8 @@ init :
     image dct_d1_uv_2 = "mods/dublicate/images/cg/dct_d1_uv_2.jpg"
     image dct_d2_lineup = "mods/dublicate/images/cg/dct_d2_lineup.jpg"
     image dct_d2_mirror = "mods/dublicate/images/cg/dct_d2_mirror.jpg"
+    image dct_d2_mt_undressed = "mods/dublicate/images/cg/dct_d2_mt_undressed.jpg"  # Ольга переодевается (включено для борьбы с цензурой Steam)
+    image dct_d2_mt_undressed_2 = "mods/dublicate/images/cg/dct_d2_mt_undressed_2.jpg"  # Ольга переодевается 2 (включено для борьбы с цензурой Steam)
     image dct_d3_disco = "mods/dublicate/images/cg/dct_d3_disco.jpg"
     image dct_d3_revelation = "mods/dublicate/images/cg/dct_d3_revelation.jpg" #Семен, Лена, вечер, скамейка
     image dct_d3_sl_dance = "mods/dublicate/images/cg/dct_d3_sl_dance.jpg"
