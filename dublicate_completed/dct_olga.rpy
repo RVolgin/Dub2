@@ -138,7 +138,7 @@ label dct_olga_p1:
     th "До ужина ещё часа четыре. Что там мне посоветовали? Погулять? Вот пойду и погуляю."
     stop ambience
     
-    scene ext_boathouse_day with squares
+    scene dct_ext_boathouse_day_with_pass_train with squares
     $ day_time ()
     $ persistent.sprite_time = "day"
     play ambience ambience_boat_station_day

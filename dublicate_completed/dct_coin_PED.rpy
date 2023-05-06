@@ -2744,7 +2744,7 @@ label dct_fluctuation_ped:
         align(0.0, 1.0) alpha 0
         linear 0.8 alpha 0.5
         easein 0.8 zoom 0.5 alpha 1.0
-    show ext_boathouse_day:
+    show dct_ext_boathouse_day_with_pass_train:
         align(1.0, 1.0) alpha 0
         pause 1
         linear 0.8 alpha 0.5
