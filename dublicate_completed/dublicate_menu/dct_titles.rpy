@@ -162,7 +162,7 @@ init 1:
         
     screen dct_titles_mods_list1:
     
-        text '1+1. Диана\n{vspace=15}7 дней лета: Lost Alpha\n{vspace=15}Second Chance\n{vspace=15}Sprites and CG by Orika\n{vspace=15}Бесконечное Лето [[Русская озвучка]\n{vspace=15}Булки, кефир и рок-н-ролл \n{vspace=15}Вспомнить всё\n{vspace=15}Гости из будущего\n{vspace=15}Двое\n{vspace=15}Другая история\n{vspace=15}История одного пионера\n{vspace=15}Лето в библиотеке\n{vspace=15}Настоящий лагерь...':
+        text '1+1. Диана\n{vspace=15}7 дней лета: Lost Alpha\n{vspace=15}Second Chance\n{vspace=15}Sprites and CG by Orika\n{vspace=15}Бесконечное Лето [[Русская озвучка]\n{vspace=15}Булки, кефир и рок-н-ролл \n{vspace=15}Вспомнить всё\n{vspace=15}Гости из будущего\n{vspace=15}Двое\n{vspace=15}Другая история\n{vspace=15}История одного пионера\n{vspace=15}Ламповое лето\n{vspace=15}Лето в библиотеке\n{vspace=15}Настоящий лагерь...':
             xalign 0.5
             ypos 0.2
             text_align 0.5
@@ -473,7 +473,7 @@ init 1:
             size 50
             outlines [(2, '#000', 0, 0)]
 
-        text '1+1. Диана\n{vspace=15}7 дней лета: Lost Alpha\n{vspace=15}Second Chance\n{vspace=15}Sprites and CG by Orika\n{vspace=15}Бесконечное Лето [[Русская озвучка]\n{vspace=15}Булки, кефир и рок-н-ролл \n{vspace=15}Вспомнить всё\n{vspace=15}Гости из будущего\n{vspace=15}Двое\n{vspace=15}Другая история\n{vspace=15}История одного пионера\n{vspace=15}Лето в библиотеке\n{vspace=15}Настоящий лагерь...':
+        text '1+1. Диана\n{vspace=15}7 дней лета: Lost Alpha\n{vspace=15}Second Chance\n{vspace=15}Sprites and CG by Orika\n{vspace=15}Бесконечное Лето [[Русская озвучка]\n{vspace=15}Булки, кефир и рок-н-ролл \n{vspace=15}Вспомнить всё\n{vspace=15}Гости из будущего\n{vspace=15}Двое\n{vspace=15}Другая история\n{vspace=15}История одного пионера\n{vspace=15}Ламповое лето\n{vspace=15}Лето в библиотеке\n{vspace=15}Настоящий лагерь...':
             xcenter 0.28
             ypos 0.21
             text_align 0.5
