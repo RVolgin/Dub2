@@ -10610,9 +10610,9 @@ label dct_dreamreality_ped:
     show black behind dv2 with Dissolve(1.8)
     "А потом уже смотрит только на двух других участников сна: на двух Алис."
     show 3500_dv grin pioneer3 as dv4:
-        linear 15 alpha 0.7
+        linear 15 alpha 0.5
     show 3500_dv normal casual 1pt as dv3:
-        linear 15 alpha 0.7
+        linear 15 alpha 0.5
     show black:
         linear 20 alpha 0
     "Они стоят, зеркальные отражения одна другой, и жадно разглядывают друг друга, а всей разницы между ними — что одна вся в чёрном, а другая в обычной пионерской форме с хулигански повязанным на запястье красным галстуком."
@@ -10620,21 +10620,21 @@ label dct_dreamreality_ped:
     show 3500_dv normal casual 1pt:
         zoom 0.91 xcenter 0.32 ycenter 0.8
     show 3500_dv normal casual 1pt as dv3:
-        zoom 0.91 xcenter 0.32 ycenter 0.8 alpha 0.85
+        zoom 0.91 xcenter 0.32 ycenter 0.8 alpha 0.6
     show 3500_dv grin pioneer3 as dv2:
         zoom 0.66 xcenter 0.74 ycenter 0.72
     show 3500_dv grin pioneer3 as dv4:
-        zoom 0.66 xcenter 0.74 ycenter 0.72 alpha 0.85
+        zoom 0.66 xcenter 0.74 ycenter 0.72 alpha 0.6
     with Dissolve(1.5)
     "Потом обе Алисы одновременно, как по команде, начинают медленно сходиться."
     show 3500_dv normal casual 1pt:
         zoom 0.825 xcenter 0.46 ycenter 0.78
     show 3500_dv normal casual 1pt as dv3:
-        zoom 0.825 xcenter 0.46 ycenter 0.78 alpha 1
+        zoom 0.825 xcenter 0.46 ycenter 0.78 alpha 0.7
     show 3500_dv grin pioneer3 as dv2:
         zoom 0.72 xcenter 0.64 ycenter 0.74
     show 3500_dv grin pioneer3 as dv4:
-        zoom 0.72 xcenter 0.64 ycenter 0.74 alpha 1
+        zoom 0.72 xcenter 0.64 ycenter 0.74 alpha 0.7
     with Dissolve(1.5)
     th "Как на дуэли."
     
