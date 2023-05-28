@@ -329,7 +329,7 @@ init :
     
         #cg
     
-    image arseniy_chebynkin_izbad = im.Scale("mods/dublicate/images/cg/arseniy_chebynkin_izbad.jpg",1920,1080) #Изба из Травницы (https://arsenixc.artstation.com/projects/PeEE1)
+    image arseniy_chebynkin_izbad = "mods/dublicate/images/cg/arseniy_chebynkin_izbad.jpg" #Изба из Травницы (https://arsenixc.artstation.com/projects/PeEE1)
     image d_to_and_uv_close = "mods/dublicate/images/cg/d_to_and_uv_close.jpg"
     image d_to_and_uv_far = "mods/dublicate/images/cg/d_to_and_uv_far.jpg"
     image d_us_and_uv_close = "mods/dublicate/images/cg/d_us_and_uv_close.jpg"

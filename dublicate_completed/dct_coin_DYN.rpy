@@ -2696,8 +2696,8 @@ label dct_fluctuation_dyn:
     "Какое-то время сон ещё сохраняется в памяти, но через несколько минут уже всё забывается."
     th "Ультразвуковая пугалка?"
     show el smile pioneer close with dissolve_fast
-    dreamgirl "А если не пугалка?"
-    th "Ай!" with hpunch #слегка дёрнуть экран
+    th "А если не пугалка?"
+    dreamgirl "Ай!" with hpunch #слегка дёрнуть экран
     sh "Сергей, a не замахнуться ли нам на тайны мозга? Что ты знаешь об ультразвуке?"
     show el surprise pioneer close with dissolve_fast
     stop ambience fadeout 1
@@ -3223,10 +3223,11 @@ label dct_disposition_dyn:
     window hide
     pause 2
     
-    scene bg int_library_day:
-        matrixcolor BrightnessMatrix(value=-0.25)
+    
     play ambience ambience_library_day fadein 1
     play music peritune_gentle_theme_piano fadein 1
+    scene bg int_library_day:
+        matrixcolor BrightnessMatrix(value=-0.25)
     show dct_int_library_rain:
         alpha 0.3
     show dct_int_library_rain_lamp
