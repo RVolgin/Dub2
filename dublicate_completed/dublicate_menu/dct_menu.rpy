@@ -27,7 +27,6 @@ screen dct_menu_flower:
     zorder 1
     add "mods/dublicate/images/gui/dct_menu_flower.png"
     
-    
 screen dct_menu_olga_sep:
     add "mods/dublicate/images/gui/dct_menu_olga_sep.png"
 screen dct_menu_simon_sep:
@@ -51,9 +50,57 @@ screen dct_menu_effector_sep:
 screen dct_menu_coin_sep:
     add "mods/dublicate/images/gui/dct_menu_coin_sep.png"
     
+
+        
+screen dct_menu_breaker:        # Экран сброса прогресса мода
+    zorder 2
+    
+    imagemap:                           # Полностью пустая картинка. Сделана, чтобы пустые зоны вокруг диалогового окна отключали экран dct_menu_breaker
+        ground im.Crop("mods/dublicate/Images/gui/reset/dct_menu_reset_empty.png",0,0,2,2)
+        idle "mods/dublicate/Images/gui/reset/dct_menu_reset_empty.png"
+        hover "mods/dublicate/Images/gui/reset/dct_menu_reset_empty.png"
+        alpha False  # Прозрачные области изображения НЕ исключаются из активных зон
+        hotspot(0,0,1920,1080) action Hide("dct_menu_breaker", transition=Dissolve(0.2))   # Возврат к оглавлению
+
+    imagemap:                           # Тетрадный лист с текстом. Вынесен в отдельный imagemap, чтобы нажатие на него ни к чему не приводило
+        ground im.Crop("mods/dublicate/Images/gui/reset/dct_menu_reset_empty.png",0,0,2,2)
+        idle "mods/dublicate/Images/gui/reset/dct_menu_reset_ground.png"
+        hover "mods/dublicate/Images/gui/reset/dct_menu_reset_ground.png"
+        alpha True  # Прозрачные области изображения исключаются из активных зон
+        hotspot(0,0,1920,1080) action Show("dct_menu_flower")   # Просто ссылаемся на веточку (которая и так есть на экране), чтобы ничего не происходило
+
+    imagemap:                           # Диалоговое окно
+        ground im.Crop("mods/dublicate/Images/gui/reset/dct_menu_reset_empty.png",0,0,2,2)
+        auto "mods/dublicate/Images/gui/reset/dct_menu_reset_%s.png"
+        alpha True  # Прозрачные области изображения исключаются из активных зон
+        hotspot(552,645,360,198) action [                    # СБРОС ПРОГРЕССА МОДА!!!
+            SetVariable("persistent.d_olga", 0),
+            SetVariable("persistent.d_sim", 0),
+            SetVariable("persistent.d_miuki", 0),
+            SetVariable("persistent.d_prolog", 0),
+            SetVariable("persistent.d_ana", 0),
+            SetVariable("persistent.d_lin", 0),
+            SetVariable("persistent.d_dra", 0),
+            SetVariable("persistent.d_nam", 0),
+            SetVariable("persistent.d_shif", 0),
+            SetVariable("persistent.d_eff", 0),
+            SetVariable("persistent.d_sim", 0),
+            SetVariable("persistent.d_coin", 0),
+            Hide("dct_menu_breaker", transition=Dissolve(0.2))
+            ]
+        hotspot(954,540,426,318) action Hide("dct_menu_breaker", transition=Dissolve(0.2))   # Возврат к оглавлению
+
+    
     
 screen dct_menu:
     add "mods/dublicate/images/gui/dct_bg_table.jpg"
+
+    if (persistent.d_nam > 0) or (persistent.d_sim > 0) or (persistent.d_ana > 0) or (persistent.d_dra > 0) or (persistent.d_shif > 0) or (persistent.d_lin > 0) or (persistent.d_miuki > 0) or (persistent.d_eff > 0) or (persistent.d_olga > 0) or (persistent.d_coin > 0):
+        imagemap:               # Кнопка "Выключатель"
+            ground "mods/dublicate/images/gui/reset/dct_menu_breaker_idle.png"
+            auto "mods/dublicate/images/gui/reset/dct_menu_breaker_%s.png"
+            hotspot(0,0,1920,1080) action Show("dct_menu_breaker", transition=Dissolve(0.2))
+    
     add "mods/dublicate/images/gui/dct_bg_menu.png"
     if persistent.d_olga > 0:
         add "mods/dublicate/images/gui/dct_menu_olga_v.png"
@@ -310,14 +357,6 @@ screen dct_menu:
                 text_style "dct_menu_button_pedantic"
                 action [SetVariable("dct_dynped", True)]
 
-
-    # textbutton "{space=65}Титры\n(финальные)":        #   Техническая кнопка, нужна для тестирования. В рабочем билде должна быть отключена
-        # xpos 0.37
-        # ypos 0.85
-        # style "dct_menu_button_exit"
-        # text_style "dct_menu_button_exit"
-        # action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_titles")]
-        
         
     textbutton "Титры":
         xpos 0.565
@@ -344,10 +383,45 @@ screen dct_menu:
         action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_exit")]
         
         
-        
-                    
-            
+  
     imagebutton:            # Кнопка-штамп "Об авторе"
         pos (0.14, 0.82)
         auto "mods/dublicate/images/gui/dct_stamp_author_%s.png"
         action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_epitaph")]
+
+
+
+
+##
+##
+##  Технические кнопки, нужны для тестирования. В рабочем билде должны быть отключены
+##
+##
+
+    # textbutton "{space=65}Титры\n(финальные)":
+        # xpos 0.37
+        # ypos 0.85
+        # style "dct_menu_button_exit"
+        # text_style "dct_menu_button_exit"
+        # action [Hide("dct_menu", transition=Dissolve(0.2)), Jump("dct_titles")]
+        
+
+    # if (persistent.d_ana == 0):
+        # imagebutton:            # Кнопка "Проснуться" (несколько красных точек в левом верхнем углу папки). Делает мод полностью прочитанным
+            # pos (0.19, 0.2)
+            # idle "mods/dublicate/images/sprites/oth/red_stars.png"
+            # hover "mods/dublicate/images/sprites/oth/red_stars.png"
+            # action [
+                # SetVariable("persistent.d_olga", 1),
+                # SetVariable("persistent.d_sim", 1),
+                # SetVariable("persistent.d_miuki", 1),
+                # SetVariable("persistent.d_prolog", 1),
+                # SetVariable("persistent.d_ana", 1),
+                # SetVariable("persistent.d_lin", 1),
+                # SetVariable("persistent.d_dra", 1),
+                # SetVariable("persistent.d_nam", 1),
+                # SetVariable("persistent.d_shif", 1),
+                # SetVariable("persistent.d_eff", 1),
+                # SetVariable("persistent.d_sim", 1),
+                # SetVariable("persistent.d_coin", 1),
+                # ]

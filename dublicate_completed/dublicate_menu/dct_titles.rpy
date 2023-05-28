@@ -228,7 +228,7 @@ init 1:
             
     screen dct_titles_another_artists:
     
-        text "Фон коридора административного корпуса\nпредоставлен Дмитрием Зотовым\n{vspace=30}За замечательную Юлю спасибо\nДине Ким и Lana Lupine\n{vspace=90}Отдельная благодарность команде\nБесконечное лето 3D (Summer's Builders)\n{vspace=90}Также благодарим всех не упомянутых авторов,\nчьи произведения использованы в моде.\nЕсли вы не нашли себя в титрах, напишите нам в сообщество ВКонтакте,\nчтобы мы могли исправить это в будущих обновлениях.":
+        text "Фон коридора административного корпуса\nпредоставлен Дмитрием Зотовым\n{vspace=30}За замечательную Юлю спасибо\nДине Ким и Lana Lupine\n{vspace=30}Портирование мода на Android выполнил Clown\n{vspace=90}Отдельная благодарность команде\nБесконечное лето 3D (Summer's Builders)\n{vspace=90}Также благодарим всех не упомянутых авторов,\nчьи произведения использованы в моде.\nЕсли вы не нашли себя в титрах, напишите нам в сообщество ВКонтакте,\nчтобы мы могли исправить это в будущих обновлениях.":
             xalign 0.5
             ypos 0.2
             text_align 0.5
@@ -583,7 +583,7 @@ init 1:
     ##      Вариант с гиперссылками в самом тексте (пока отключён, т.к. не понятно, как нужно прописать стиль для гиперссылок)
     ##
     
-        # text "Фон коридора административного корпуса\nпредоставлен Дмитрием Зотовым\n{vspace=30}За замечательную Юлю спасибо\n{a=https://vk.com/shopolak}Дине Ким{/a} и Lana Lupine\n{vspace=90}Отдельная благодарность команде:\n{a=https://vk.com/everlastingsummer3d}Бесконечное лето 3D (Summer's Builders){/a}\n{vspace=90}Также благодарим всех не упомянутых авторов,\nчьи произведения использованы в моде.\nЕсли вы не нашли себя в титрах, напишите нам в {a=https://vk.com/dublicatum}сообщество{/a},\nчтобы мы могли исправить это в будущих обновлениях.":
+        # text "Фон коридора административного корпуса\nпредоставлен Дмитрием Зотовым\n{vspace=30}За замечательную Юлю спасибо\n{a=https://vk.com/shopolak}Дине Ким{/a} и Lana Lupine\n{vspace=30}Портирование мода на Android выполнил {a=https://vk.com/wall-178732823_1003}Clown{/a}\n{vspace=90}Отдельная благодарность команде\n{a=https://vk.com/everlastingsummer3d}Бесконечное лето 3D (Summer's Builders){/a}\n{vspace=90}Также благодарим всех не упомянутых авторов,\nчьи произведения использованы в моде.\nЕсли вы не нашли себя в титрах, напишите нам в {a=https://vk.com/dublicatum}сообщество{/a},\nчтобы мы могли исправить это в будущих обновлениях.":
             # xalign 0.5
             # ypos 0.2
             # text_align 0.5
@@ -597,7 +597,7 @@ init 1:
         ### Гиперссылки через textbutton
 
         
-        text "Фон коридора административного корпуса\nпредоставлен Дмитрием Зотовым\n{vspace=30}За замечательную Юлю спасибо\n{space=160} и Lana Lupine\n{vspace=90}Отдельная благодарность команде:\n\n{vspace=90}Также благодарим всех не упомянутых авторов,\nчьи произведения использованы в моде.\nЕсли вы не нашли себя в титрах, напишите нам в {space=195},\nчтобы мы могли исправить это в будущих обновлениях.":
+        text "Фон коридора административного корпуса\nпредоставлен Дмитрием Зотовым\n{vspace=30}За замечательную Юлю спасибо\n{space=160} и Lana Lupine\n{vspace=30}Портирование мода на Android выполнил {space=90}\n{vspace=90}Отдельная благодарность команде\n\n{vspace=90}Также благодарим всех не упомянутых авторов,\nчьи произведения использованы в моде.\nЕсли вы не нашли себя в титрах, напишите нам в {space=195},\nчтобы мы могли исправить это в будущих обновлениях.":
             xalign 0.5
             ypos 0.2
             text_align 0.5
@@ -608,8 +608,9 @@ init 1:
             
             
         textbutton "Дине Ким" xcenter 0.444 ypos 0.345 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/shopolak")
-        textbutton "Бесконечное лето 3D (Summer's Builders)" xcenter 0.5 ypos 0.505 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/everlastingsummer3d")
-        textbutton "сообщество" xcenter 0.703 ypos 0.706 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/dublicatum")
+        textbutton "Clown" xcenter 0.674 ypos 0.412 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/wall-178732823_1003")
+        textbutton "Бесконечное лето 3D (Summer's Builders)" xcenter 0.5 ypos 0.573 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/everlastingsummer3d")
+        textbutton "сообщество" xcenter 0.703 ypos 0.773 style "dct_hyperlink_button" text_style "dct_hyperlink_button" action OpenURL("https://vk.com/dublicatum")
         
         ################################################
 
