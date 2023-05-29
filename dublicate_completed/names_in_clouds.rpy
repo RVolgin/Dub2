@@ -7509,13 +7509,10 @@ label my_generation:
     show us shy2 pioneer
     with dspr
     us "Поцелуй меня. Только в губы, по-взрослому."
-    show us shy2 pioneer close with dspr
-    $ renpy.pause (1)
-    show blink
-    "Я пытаюсь поцеловать её легко и коротко, просто по-дружески, но не выходит. И мы мягко и нежно пьём друг друга, пока хватает дыхания."
-    hide blink
-    show unblink
-    show us surp2 pioneer close with dspr
+    show dct_sf_and_us_kissing with fade
+    "Я пытаюсь поцеловать её легко и коротко, просто по-дружески, но не выходит.{w} И мы мягко и нежно пьём друг друга, пока хватает дыхания."
+    show us surp2 pioneer close    
+    hide dct_sf_and_us_kissing with fade
     "Наконец Ульяна отрывается от меня, смотрит с восторгом, а потом опускает взгляд и очень тихо шепчет. Настолько тихо, что я больше догадываюсь, чем слышу не предназначенное для моих ушей."
     show us sad close with dspr
     us "Ну когда же я вырасту!?"

@@ -460,6 +460,7 @@ init :
     image dct_prologue_monitor_3 = "mods/dublicate/images/cg/dct_prologue_monitor_3.jpg"
     image dct_prologue_monitor_4 = "mods/dublicate/images/cg/dct_prologue_monitor_4.jpg"
     image dct_road_bus_BTR = "mods/dublicate/images/cg/dct_road_bus_BTR.jpg" # Автобус в кювете и подбитый БТР
+    image dct_sf_and_us_kissing = "dublicate/images/cg/dct_sh_d_jn_reunion.jpg" # Семён с Ульяной целуются
     image dct_sh_d_jn_reunion = "mods/dublicate/images/cg/dct_sh_d_jn_reunion.jpg" # Воссоединение Шурика с Яной возле клубов
     image dct_sh_in_cage = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate/images/cg/dct_sh_in_cage.png') # Шурик в клетке для чтения воспоминаний
     image dct_sh_in_cage_with_pushbutton = im.Composite((1920, 1080), (0, 0), 'mods/dublicate/images/cg/dct_int_clubs_male2_for_cage.jpg', (0, 0), 'mods/dublicate/images/cg/dct_sh_in_cage_with_pushbutton.png') # Шурик в клетке для чтения воспоминаний (с кнопкой и проводом)
