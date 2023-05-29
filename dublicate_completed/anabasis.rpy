@@ -5051,9 +5051,9 @@ label dct_center_line:
     play sound2 dct_sfx_discharge
     hide d3_dv_guitar with flash
     "Вспышка! Алиса играет на гитаре."
-    show d5_dv_us_wash_3 with flash
+    show dct_d5_dv_us_wash_3 with flash
     play sound dct_sfx_discharge
-    hide d5_dv_us_wash_3 with flash
+    hide dct_d5_dv_us_wash_3 with flash
     "Вспышка! Ульяна убегает от Алисы."
     $ set_mode_nvl()
     "Вспышка!.."

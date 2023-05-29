@@ -389,6 +389,7 @@ init :
     image dct_d3_revelation = "mods/dublicate/images/cg/dct_d3_revelation.jpg" #Семен, Лена, вечер, скамейка
     image dct_d3_sl_dance = "mods/dublicate/images/cg/dct_d3_sl_dance.jpg"
     image dct_d3_soccer_sport = "mods/dublicate/images/cg/dct_d3_soccer_sport.jpg"    # Ульяна в спортивной форме пинает мяч
+    image dct_d5_dv_us_wash_3 = "mods/dublicate/images/cg/dct_d5_dv_us_wash_3.jpg"    # Алиса гонится за Ульяной (включено для борьбы с цензурой Steam)
     image dct_d5_sl_square_me_lead_7dl = "mods/dublicate/images/cg/dct_d5_sl_square_me_lead_7dl.jpg"
     image dct_dancing_uv = "mods/dublicate/images/cg/dct_dancing_uv.jpg"
     image dct_day_sky = "mods/dublicate/images/cg/dct_day_sky.jpg"
