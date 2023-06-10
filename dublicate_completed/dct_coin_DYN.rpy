@@ -3416,8 +3416,8 @@ label dct_disposition_dyn:
     th "Сергея? А! Это Сыроежкина, что ли?"
     sh "Нет, занятия закончились, и он ушёл. Поищи его в библиотеке."
     mip "Понятно. Если увидишь, то передай, пожалуйста, что его Оксана Зайцева искала."
-    hide d_oz with MoveTransition(1.2, leave=_moveright, leave_time_warp=_ease_time_warp)
     play sound sfx_bush_leaves
+    hide d_oz with MoveTransition(1.2, leave=_moveright, leave_time_warp=_ease_time_warp)
     "И, не дожидаясь ответа, девочка исчезла, нырнув куда-то в кусты."
     "Шурик повертел в руках карандаш. Синий «Картограф» сломался после контакта с бетоном отмостки, и теперь, чтобы его очинить для продолжения записей, нужно было возвращаться в клуб."
     play sound dct_sfx_horn_dinner_through_loudspeaker
