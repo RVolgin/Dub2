@@ -6737,6 +6737,7 @@ label dct_foreign_land_ped:
     
     scene dct_int_bus_window_view
     show dct_int_bus_window_view_el_mz
+    show dct_dream_veil at shiver
     with blinds
     "Это потом, уже в автобусе, когда они сядут рядом и Женя склонит голову на его плечо, Электроник признается:"
     play sound_loop sfx_bus_interior_moving fadein 3
