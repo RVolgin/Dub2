@@ -461,6 +461,7 @@ init :
     image dct_prologue_monitor_3 = "mods/dublicate/images/cg/dct_prologue_monitor_3.jpg"
     image dct_prologue_monitor_4 = "mods/dublicate/images/cg/dct_prologue_monitor_4.jpg"
     image dct_road_bus_BTR = "mods/dublicate/images/cg/dct_road_bus_BTR.jpg" # Автобус в кювете и подбитый БТР
+    image dct_sa_cry_forest = "mods/dublicate/images/cg/dct_sa_cry_forest.jpg" # Саша плачет в лесу, сидя на земле
     image dct_sa_iron_in_sportshall = "mods/dublicate/images/cg/dct_sa_iron_in_sportshall.jpg" # Саша гладит вещи в спортзале
     image dct_semen_us_thunderstorm = "mods/dublicate/images/cg/dct_semen_us_thunderstorm.png" # Семен и Ульяна под плащом в грозу
     image dct_sf_and_us_kissing = "mods/dublicate/images/cg/dct_sf_and_us_kissing.jpg" # Семён и Ульяна целуются
