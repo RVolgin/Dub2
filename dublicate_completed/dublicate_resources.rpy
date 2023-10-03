@@ -1519,8 +1519,12 @@ init :
     #Персонажи#
     ###########
     
+    $ d_prlg_voice1 = Character(u"Голос 1", color="#fff", what_color="#fff", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
+    $ d_prlg_voice2 = Character(u"Голос 2", color="#fff", what_color="#fff", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
+    $ d_prlg_voice3 = Character(u"Голос 3", color="#fff", what_color="#fff", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
+    $ d_prlg_voice4 = Character(u"Голос 4", color="#fff", what_color="#fff", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
+    
     $ d_sl = Character(u"Славяна", color="#d3a900", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
-    #$ d_sa = Character(u"Девушка", color="#d3a900", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Саша на остановке   !!!  Не требуется, так как есть дефолтный персонаж "slg", указывающий в качестве имени "Девушка" цветом Слави
     
     $ d_sm = Character(u"Двойник", color="#e1dd7d", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Сёмкины клоны
     $ d_s2 = Character(u"Второй", color="#e1dd7d", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
@@ -1559,10 +1563,10 @@ init :
     
     $ d_mp = Character (u'Мария Петровна', color="#76ac86", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Соседка Алисы kind = nvl
     
-    $ d_to = Character (u'Анатолий', color="#3BE620", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Толик
-    $ d_t1 = Character (u'Толик', color="#3BE620", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
-    $ d_t2 = Character (u'Незнакомец', color="#3BE620", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
-    $ d_t3 = Character (u'{size=-1}{k=-.6}Анатолий Васильевич{/k}{/size}', color="#3BE620", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
+    $ d_to = Character (u'Анатолий', color="#69b567", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Толик
+    $ d_t1 = Character (u'Толик', color="#69b567", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
+    $ d_t2 = Character (u'Незнакомец', color="#69b567", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
+    $ d_t3 = Character (u'{size=-1}{k=-.6}Анатолий Васильевич{/k}{/size}', color="#69b567", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
     
     $ d_u1 = Character (u'Рыжая девушка', color="#e91b1b", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Ульяна_взрослая
     $ us_old = Character (u'Ульяна-большая', color="#e91b1b", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000")
@@ -1589,10 +1593,7 @@ init :
     $ adl_sh3 = Character(u"Трофимов", color="#faed25", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") #Шурик-оригинал
     $ adl_sh4 = Character(u"Александр", color="#faed25", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") #Шурик-дубликат
     
-    $ d_el = Character(u"Лохматый", color="#faed25", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") #Электроник
-    
-    
-    $ d_libr = Character(u"Библиотекарь", color="#4a86ff", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") # Библиотекарь
+    $ d_libr = Character(u"Библиотекарь", color="#4a86ff", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") # Библиотекарь из арки Ольги
     $ d_ol = Character(u"Олеся", color="#d3a900", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000") #Олеся из арки Ольги
     
 
