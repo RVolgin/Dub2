@@ -201,7 +201,7 @@ init 1:
 
     screen dct_titles_novels_anime_list:
     
-        text 'Конгломерат\n{vspace=15}Морозный поцелуй\n{vspace=15}Травница':
+        text 'Конгломерат\n{vspace=15}Травница':
             xalign 0.5
             ypos 0.26
             text_align 0.5
@@ -442,7 +442,7 @@ init 1:
             size 50
             outlines [(2, '#000', 0, 0)]
             
-        text 'Конгломерат\n{vspace=15}Морозный поцелуй\n{vspace=15}Травница':
+        text 'Конгломерат\n{vspace=15}Травница':
             xalign 0.5
             ypos 0.26
             text_align 0.5
