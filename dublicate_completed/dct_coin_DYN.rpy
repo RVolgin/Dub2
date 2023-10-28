@@ -1635,21 +1635,22 @@ label dct_transitions_dyn:
     with blinds
     # "И вот «после обеда» наступило, Максим дожидался Алису, сидя на лавочке У КРЫЛЬЦА СТОЛОВОЙ и отклоняя приглашения пойти на пляж, на стадион, погулять, поиграть в карты…"   # По канону
     "И вот «после обеда» наступило, Максим дожидался Алису, сидя на лавочке у входа в столовую и отклоняя приглашения пойти на пляж, на стадион, погулять, поиграть в карты…"
-    show d_ka normal pioneer with dissolve:
+    show d_ka p4 normal pioneer with dissolve:
         zoom 1.1 xcenter 1.2 ycenter 0.87
         easein 1.5 xcenter 0.6
     pause 1.2
-    show d_ka normal pioneer with dissolve_fast:
+    show d_ka p4 normal pioneer with dissolve_fast:
         zoom 0.935 xcenter 0.6 ycenter 0.97
     "Катя вышла из столовой и присела рядом."
     show d_ma shy pioneer with dspr
     "У Максима вздрогнуло сердце."
     show d_ma normal
-    show d_ka smile pioneer
+    show d_ka p4 smile pioneer
     with dspr
     d_ka "У тебя здорово получается. Ты долго учился?"
     show d_ma smile pioneer with dspr
     d_ma "Нет, мне только Мику показала чуть-чуть, а дальше само получилось."
+    show d_ka p1 smile pioneer with dissolve_fast
     d_ka "Это значит, что у тебя талант."
     show d_ma shy pioneer with dspr
     d_ka "А я вот сколько на гитаре ни учусь — не получается. Как ты думаешь, может, у меня на горне получится?"
@@ -1663,16 +1664,16 @@ label dct_transitions_dyn:
     scene dct_ext_dining_bench_day
     show d_ma normal pioneer:
         zoom 0.85 xcenter 0.4 ycenter 0.75
-    show d_ka surprise pioneer:
+    show d_ka p3 surprise pioneer:
         zoom 0.935 xcenter 0.6 ycenter 0.97
     show dv grin pioneer close:
         xcenter 0.88
     with dissolve_fast
     "Двусмысленная фраза оказалась понята даже более красноречиво, чем была высказана."
-    show d_ka angry pioneer with dissolve_fast:
+    show d_ka p2 angry pioneer with dissolve_fast:
         zoom 1.1 xcenter 0.6 ycenter 0.87
     "Катя поднялась, сверкнула глазами в сторону Алисы, посмотрела на Максима, словно ждала от него какой-то реакции."
-    show d_ka angry pioneer with Dissolve(0.0):
+    show d_ka p2 angry pioneer with Dissolve(0.0):
         easeout 1.5 xcenter 1.2
     show d_ma surprise
     show dv surprise pioneer close
@@ -1682,7 +1683,7 @@ label dct_transitions_dyn:
         anchor(0.52, 0.51) pos(0.5, 0.5) alpha 0
         pause 0.5
         linear 0.5 alpha 1
-    show d_ka normal pioneer as d_ka2:
+    show d_ka p3 normal pioneer as d_ka2:
         zoom 0.75 xcenter 0.45 ycenter 0.7 alpha 0
         pause 0.5
         linear 0.2 alpha 0.4
@@ -1706,7 +1707,7 @@ label dct_transitions_dyn:
     stop music fadeout 1.5
     
     scene dct_ext_dining_bench_day
-    show d_ka angry pioneer:
+    show d_ka p3 angry pioneer:
         zoom 0.2 xcenter 0.575 ycenter 0.68
         pause 0.2
         linear 1.0 xcenter 0.7
@@ -2369,13 +2370,13 @@ label dct_fluctuation_dyn:
     play ambience ambience_camp_center_day fadein 1
     show d_vi smile pioneer:
         xcenter 0.39
-    show d_ka smile pioneer2:
+    show d_ka p3 smile pioneer2:
         zoom 1.1 xcenter 0.2 ycenter 0.87
     with dissolve
     "Со стороны клубов на площадь вышли Катерина и Витька, сосед по домику. Почти рядом, почти держась за руки. Катерина опять мазнула глазами по Максиму и повернулась к Витьке, о чём-то его спрашивая."
-    show d_ka smile pioneer2:
+    show d_ka p3 smile pioneer2:
         ease 0.4 xcenter 0.24
-    show d_ka laugh pioneer2 with dspr:
+    show d_ka p3 laugh pioneer2 with dspr:
         ease 0.4 xcenter 0.24
     "Витька ответил, глупо улыбаясь, а Катя засмеялась, прикрывая рот тремя пальцами, а другой рукой взяла Витьку под локоть."
     
@@ -2383,16 +2384,16 @@ label dct_fluctuation_dyn:
     show d_vi smile pioneer:
         zoom 0.75 xcenter -0.15 ycenter 0.642
         easein 2.2 xcenter 0.68
-    show d_ka laugh pioneer2:
+    show d_ka p3 laugh pioneer2:
         zoom 0.825  xcenter -0.26 ycenter 0.76
         easein 2.2 xcenter 0.57
     "Сердце дёрнулось, когда Максим перехватил взгляд Кати, но тут же и успокоилось, никак не реагируя на её спутника."
-    show d_ka artificial_smile pioneer2 with dspr
+    show d_ka p3 artificial_smile pioneer2 with dspr
     "А Катя, внезапно перестав смеяться и только продолжая растягивать губы в улыбке, смотрела холодными глазами куда-то в сторону столовой."
-    show d_ka smile pioneer2 with dspr
+    show d_ka p2 smile pioneer2 with dissolve_fast
     pause 0.2
     show d_vi shock pioneer with dspr
-    show d_ka smile pioneer2:
+    show d_ka p2 smile pioneer2:
         easeout 1.8 zoom 1.1 xcenter 1.2 ycenter 0.87
     show d_vi shock pioneer:
         pause 1.2
@@ -3860,30 +3861,10 @@ label dct_disposition_dyn:
         ycenter 0.83
     with dissolve_fast
     th "А эта «сестрёнка» Ульянкина тоску разбередила."
-    th "Уговорить бы её здесь остаться — так в её лагере своя Алиса есть, той тогда совсем плохо будет. Хуже, чем мне в прошлом цикле."
-    show 3500_dv normal night2 0pt with dissolve_fast
-    th "А у меня уже какие-то просветы появились. Вроде Макса того же."
-    show 3500_dv laugh night2 0pt with dspr
-    extend " Правильно Мику про него сказала, что он тычется всюду с любопытством и дружелюбием, как молодой пёс."
-    show 3500_dv smile night2 0pt with dspr
-    th "Было бы ему хоть на пару лет побольше."
-    show 3500_dv normal night2 0pt with dspr
-    "Алиса посмотрела на гитару, но нет — настроения не было."
-    th "Ну значит спать."
-    play sound sfx_click_1
-    pause 0.2
-    show d_int_house_of_dv_night_without_light
-    show 3500_dv normal night2 0pt as dv at left:
-        ycenter 0.83 alpha 1 matrixcolor TintMatrix("#A1C9D0")  # Перекраска спрайта через преобразование matrixcolor. Свойство TintMatrix с цветом "#A1C9D0" даёт результат почти идентичный ночным спрайтам
-        pause 0.8
-        linear 1 alpha 0
-    with dspr
-    play sound sfx_bed_squeak2
-    "Погасила свет и завернулась в простыню.{nw}"
-    $ night_time()                       # Прописано, чтобы при обратной перемотке цвета не сбивались.
+    th "Уговорить бы её здесь остаться — так в её лагере своя Алиса есть, той тогда совсем плохо будет. Хуже, чем мне в прошлом цикле.{nw}" # Тег {nw} автоматически подтягивает следующую текстовую строку
     
     
-    ########## Предварительная подгрузка шаров ##########
+    ########## Предварительная подгрузка первой половины шаров ##########
     
     show dct_multiverse_ball_to_dv_01:
         xcenter 2.0 ycenter -2.5
@@ -3905,6 +3886,20 @@ label dct_disposition_dyn:
         xcenter 2.0 ycenter 1.5
     show dct_multiverse_ball_to_dv_10:
         xcenter 2.0 ycenter 2.0
+    
+    #####################################################
+    
+    extend ""  # Тег {nw} из предыдущей строки с текстом автоматически подтягивает эту строку, и пока читатель дочитывает предыдущую, происходит предварительная прогрузка шаров, прописанных между этими двумя строками
+    
+    
+    show 3500_dv normal night2 0pt with dissolve_fast
+    th "А у меня уже какие-то просветы появились. Вроде Макса того же."
+    show 3500_dv laugh night2 0pt with dspr
+    extend " Правильно Мику про него сказала, что он тычется всюду с любопытством и дружелюбием, как молодой пёс.{nw}" # Тег {nw} автоматически подтягивает следующую текстовую строку
+    
+    
+    ########## Предварительная подгрузка второй половины шаров ##########
+    
     show dct_multiverse_ball_to_dv_11:
         xcenter -1.0 ycenter -2.5
     show dct_multiverse_ball_to_dv_12:
@@ -3928,7 +3923,35 @@ label dct_disposition_dyn:
     
     #####################################################
     
-    extend " "  # Это такая пауза в виде пробела, чтобы текст не пропадал, пока идёт предварительная прогрузка шаров
+    extend ""  # Тег {nw} из предыдущей строки с текстом автоматически подтягивает эту строку, и пока читатель дочитывает предыдущую, происходит предварительная прогрузка шаров, прописанных между этими двумя строками
+    
+    
+    show 3500_dv smile night2 0pt with dspr
+    th "Было бы ему хоть на пару лет побольше."
+    show 3500_dv normal night2 0pt with dspr
+    "Алиса посмотрела на гитару, но нет — настроения не было."
+    show d_int_house_of_dv_night_without_light behind bg
+    show 3500_dv normal night2 0pt as dv at left behind bg:
+        ycenter 0.83 alpha 1 matrixcolor TintMatrix("#A1C9D0")  # Перекраска спрайта через преобразование matrixcolor. Свойство TintMatrix с цветом "#A1C9D0" даёт результат почти идентичный ночным спрайтам
+        
+    show dct_cg_christmas_balls_composite behind d_int_house_of_dv_night_without_light:     # КОМПОЗИТНЫЙ АРТ: еловый фон; площадь в форме шара; Алиса в шаре; матовое полупрозрачное напыление поверх шара
+        zoom 1.0 anchor (1.0, 0.5) pos (1.0, 0.5)
+    
+
+    
+    th "Ну значит спать."
+    play sound sfx_click_1
+    pause 0.2
+    hide bg
+    hide 3500_dv smile night2 0pt
+    show 3500_dv normal night2 0pt as dv at left:
+        ycenter 0.83 alpha 1 matrixcolor TintMatrix("#A1C9D0")  # Перекраска спрайта через преобразование matrixcolor. Свойство TintMatrix с цветом "#A1C9D0" даёт результат почти идентичный ночным спрайтам
+        pause 0.8
+        linear 1 alpha 0
+    with dspr
+    play sound sfx_bed_squeak2
+    "Погасила свет и завернулась в простыню."
+    $ night_time()                       # Прописано, чтобы при обратной перемотке цвета не сбивались.
     extend " Она уже знала, что ей приснится."
     window hide
     
@@ -3941,10 +3964,11 @@ label dct_disposition_dyn:
     stop ambience fadeout 3
     play music music_list['tried_to_bring_it_back'] fadein 3
 
-    show d_int_house_of_dv_night_without_light as d_int_house_of_dv2 at shiver
+    show d_int_house_of_dv_night_without_light as d_int_house_of_dv2 at shiver with Dissolve (0.0)
+    hide d_int_house_of_dv_night_without_light
+    hide d_int_house_of_dv2
+    with Dissolve (3.5)
     
-    scene dct_cg_christmas_balls_composite with Dissolve(3.0):     # КОМПОЗИТНЫЙ АРТ: еловый фон; площадь в форме шара; Алиса в шаре; матовое полупрозрачное напыление поверх шара
-        zoom 1.0 anchor (1.0, 0.5) pos (1.0, 0.5)
     
     window auto
     "Каждую ночь с середины прошлого цикла Алисе обязательно снился один и тот же сон.{nw}"
@@ -4800,7 +4824,7 @@ label dct_debut_dyn:
         xcenter 0.34 ycenter 0.74
     with dissolve
     "Ещё одна драма: Максим за одним столом с Сашей и Мику, и от их стола тоже доносится смех и оживлённый разговор."
-    show d_ka angry2 pioneer:                     
+    show d_ka p2 angry2 pioneer:                     
         zoom 0.825 xcenter 0.955 ycenter 0.95 alpha 0
         pause 0.5
         linear 0.7 alpha 1
@@ -6022,7 +6046,7 @@ label dct_d7_d5_dyn:
     "Кивнули Шурику, скинули форму, устроившись рядом с физруками, и побежали к воде."
     
     scene dct_ext_beach_barhan
-    show d_ka angry2 pioneer2swim:
+    show d_ka p4 angry2 pioneer2swim:
         zoom 0.825 xcenter 0.65 ycenter 0.9
     with dissolve
     "Катя неприязненно покосилась на Алису, но так и осталась сидеть на песке, обхватив ноги руками."
@@ -9126,19 +9150,19 @@ label dct_system_errors_dyn:
     $ renpy.music.set_volume(1.0, delay=0, channel='sound_loop')
     
     scene dct_ext_pier_night
-    show d_ka cry pioneer:                     
+    show d_ka p4 cry pioneer:                     
         zoom 1.1 xcenter 0.42 ycenter 0.87
     show d_us normal sport_windbreaker:
         xcenter 0.5 ypos -0.05
     with dissolve
     us "Вот, Катя с нами погуляет, Сём."
     "Катя пряталась за Ульяну, стесняясь."
-    show d_ka sad pioneer with dspr
+    show d_ka p4 sad pioneer with dspr
     me "Почему нет? Пойдём, Кать. Ты до домика с нами?"
-    show d_ka sad pioneer with MoveTransition(0.8, time_warp=_ease_time_warp):
+    show d_ka p4 sad pioneer with MoveTransition(0.8, time_warp=_ease_time_warp):
         xcenter 0.35
     d_ka "Нет, я тоже по лагерю."
-    show d_ka upset pioneer with dspr
+    show d_ka p4 upset pioneer with dspr
     extend " Ольга Дмитриевна ругается, когда мы поздно гуляем, а сейчас, с вами, можно."
 
     scene dct_ext_shore_behind_boathouse_night_1
@@ -9146,7 +9170,7 @@ label dct_system_errors_dyn:
         xcenter 0.4
     show d_us normal sport_windbreaker:
         xzoom -1.0 xcenter 0.25 ypos -0.1
-    show d_ka normal pioneer at right:                     
+    show d_ka p3 normal pioneer at right:                     
         zoom 1.1 ycenter 0.9
     with dissolve
     play music music_list['farewell_to_the_past_edit'] fadein 2
@@ -9159,7 +9183,7 @@ label dct_system_errors_dyn:
     th "Интересно, когда-нибудь Алиса решится показать содержимое своей тетрадки?"
     
     scene dct_ext_shore_behind_boathouse_night_2
-    show d_ka surprise pioneer:                     
+    show d_ka p3 surprise pioneer:                     
         zoom 0.825 xcenter 0.39 ycenter 0.71
     show d_us normal sport_windbreaker:
         xcenter 0.55 ypos -0.05
@@ -9168,16 +9192,16 @@ label dct_system_errors_dyn:
     with squares
     d_ka "Почему последнюю?"
     me "Кать, завтра опоздавший пионер приезжает, его надо где-то разместить. И Максим с сегодняшнего дня официально в старшем отряде, его тоже переселять из старого домика нужно."
-    show d_ka sad pioneer with dspr
+    show d_ka p4 sad pioneer with dissolve_fast
     me "А вожатая и Алиса живут по одной в домике. Вот, скорее всего, Максима и новенького в Алисином домике поселят, а Алиса будет жить с вожатой."
-    show d_ka upset pioneer with dspr
+    show d_ka p4 upset pioneer with dspr
     "Катя при упоминании о Максиме каждый раз вздрагивала, но терпела."
     th "Ничего, через восемь дней всё забудешь, а там Максим окончательно пропишется в старшем отряде и для тебя считай что просто исчезнет."
     stop sound_loop fadeout 1
     
     play ambience ambience_camp_center_night fadein 1
     scene dct_ext_alley_from_shore_to_clubs_night
-    show d_ka normal pioneer:                     
+    show d_ka p3 normal pioneer:                     
         zoom 1.1 xcenter 0.48 ycenter 0.87
     show d_sf normal hike:
         xzoom -1.0 xcenter 0.9
@@ -9185,29 +9209,31 @@ label dct_system_errors_dyn:
         xcenter 0.75 ypos -0.05
     with dissolve
     "В самом узком месте лесного перешейка они вышли по тропке на поперечную аллею, ведущую к клубам."
-    show d_ka smile pioneer with dspr
+    show d_ka p1 smile pioneer with dissolve_fast
     d_ka "Здесь, оказывается, столько тропинок. Я и не знала."
     "Катя начала потихоньку оживать."
     show d_sf smile hike with dspr
     me "Узнаешь ещё, какие твои годы."
-    show d_ka normal pioneer with dspr
+    show d_ka p1 normal pioneer with dspr
     th "Интересно, какая она будет, когда попадет в старший отряд? Макс начал меняться буквально на глазах и из клоуна и шалопая превращаться в Славю мужского пола."
-    show d_sf serious hike with dspr
+    show d_sf serious hike
+    show d_ka p3 normal pioneer
+    with dissolve_fast
     th "Что-то там переключает Система в их поведении. Гадко это, но чтобы проснуться, им, наверное, придётся пройти и через это."
     "Ульяна и Катя говорили о чём-то, а Семён всё думал.{w} Как раз то обстоятельство, за которое Ульяна и обзывала его тормозом."
-    show d_ka smile pioneer with dspr
+    show d_ka p2 smile pioneer with dissolve_fast
     d_ka "Знаете, я, наверное, не пойду дальше с вами. Спасибо за компанию."
     show d_sf normal hike
-    show d_ka normal pioneer
+    show d_ka p2 normal pioneer
     with dspr
     d_ka "Правда спасибо. И можно, я..."
-    show d_ka shy pioneer with dspr
+    show d_ka p4 shy pioneer with dissolve_fast
     extend " Можно, я буду к вам в гости заходить?"
     show d_us smile sport_windbreaker
     show d_sf smile hike
     with dspr
     us "Конечно, можно, Катя."
-    show d_ka smile pioneer with dspr
+    show d_ka p3 smile pioneer with dissolve_fast
     hide d_ka with MoveTransition(1.5, leave=_moveleft, leave_time_warp=_ease_time_warp)
     "И, дождавшись кивка от Семёна, Катя забежала на крыльцо своего домика. Помахала рукой с крыльца и скрылась за дверью."
     show d_sf normal hike
@@ -9753,7 +9779,9 @@ label dct_dreamreality_dyn:
     show anim prolog_1
     hide dct_dsl_in_shop
     with dissolve
+    $ persistent.sprite_time = "night"          # Прописано, чтобы при обратной перемотке цвета не сбивались.
     extend " Но она не хочет; я не знаю как, но я чувствую, что она этого не хочет. Да и я сама не хочу, потому что я — Славя! Такая, какая есть — та помощница вожатой, которая провожала нашего Семёна, стоя на берегу."
+    $ persistent.sprite_time = "day"          # В сцене на берегу перекраска спрайтов будет осуществрена матрицами по месту
     hide anim prolog_1
     show dct_bank_from_water_side
     show 3500_mz normal pioneer glasses:
@@ -9793,13 +9821,13 @@ label dct_dreamreality_dyn:
         ease 3 xalign 0.0
     show 3500_sl scared sport binoculars as sl2:
         linear 0.7 alpha 0
-    show 3500_sl sad sport binoculars:
+    show 3500_sl sad sport binoculars behind black3:
         zoom 0.75 xcenter 0.65 ypos 0.15 alpha 0
         linear 0.7 alpha 1
         ease 3 xcenter 1.65
     show 3500_mt rage pioneer panama megaphone as mt2:
         linear 0.7 alpha 0
-    show 3500_mt scared pioneer panama megaphone:
+    show 3500_mt scared pioneer panama megaphone behind black3:
         zoom 0.75 xcenter 0.35 ypos 0.165 alpha 0
         linear 0.7 alpha 1
         ease 3 xcenter 1.35
@@ -9833,6 +9861,7 @@ label dct_dreamreality_dyn:
         alpha 0 yalign 0.0
         easein 2.5 yalign 0.5 alpha 1
     pause 1
+    $ persistent.sprite_time = "day"          # Прописано, чтобы при обратной перемотке цвета не сбивались.
     extend " Я уверена, что и Славяна это понимает, и сейчас согласна со мной. Значит, буду просто жить здесь, у себя дома — в лагере «Совёнок»."
     show anim prolog_1:
         pause 1
@@ -9840,6 +9869,7 @@ label dct_dreamreality_dyn:
     show dct_sl_clean_square_5:
         easeout 2.5 yalign 1.0 alpha 0
     pause 1
+    $ persistent.sprite_time = "night"          # Cцена на берегу закончилась, спрайты возвращаются к ночному режиму
     extend " Делать добро из зла, потому что ничего больше под руками у меня нет. Делать лагерь лучше, помогать другим его обитателям осознать себя; делать так, чтобы когда они проснутся, они проснулись в самом лучшем лагере."
     hide anim prolog_1
     show dct_sl_clean_square_6:
