@@ -603,6 +603,40 @@ init :
         repeat
         
         
+        
+        
+        
+    image dct_clubs_male_comp_sh_crumble:                  # Шурик фрагментируется на экране монитора (выводить на экран в позиции xcenter 0.5 ycenter 0.45)
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh2.png"
+        xcenter 0.5 ycenter 0.45
+        pause 1
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh3.png" with dissolve_fast
+        xcenter 0.5 ycenter 0.45
+        pause 1
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh4.png" with dissolve_fast
+        xcenter 0.5 ycenter 0.45
+        pause 1
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh5.png" with dissolve_fast
+        xcenter 0.5 ycenter 0.45
+        pause 1
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh6.png" with dissolve_fast
+        xcenter 0.5 ycenter 0.45
+        pause 1
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh7.png" with dissolve_fast
+        xcenter 0.5 ycenter 0.45
+        pause 1
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh8.png" with dissolve_fast
+        xcenter 0.5 ycenter 0.45
+        pause 1
+        "mods/dublicate/images/anim/dct_clubs_male_comp_sh9.png" with dissolve_fast
+        xcenter 0.5 ycenter 0.45
+        pause 1
+        "dct_clubs_male_comp_clear" with dissolve_fast
+        xcenter 0.5 ycenter 0.45
+
+
+
+        
     ############################################
     ############################################        Смена локаций лагеря (из четвёртой главы Монетки)
  
@@ -920,6 +954,19 @@ init :
     ############################################
     ############################################
     
+    
+    
+    
+    
+    
+    image d_ka_p3_to_d_ka_p4:                  # Катя опускает руки (используется в 6 главе педантичной монетки, когда Катя садится под зонтик на пляже)
+        "d_ka p3 serious pioneer2swim"
+        pause 3.5
+        "d_ka p4 upset pioneer2swim" with dissolve_fast
+
+
+
+
 
     image dct_sl_sport_running_serious:                  # Славя (Саша) с эмоцией serious развёрнута зеркально. Это нужно, чтобы следом идущая трансформация 'dct_sl_sport_running_surprise' в момент применения перехода 'dissolve_fast' не вращала изображение туда-сюда
         "3500_sl serious sport"
@@ -929,36 +976,6 @@ init :
         "dct_sl_sport_running_serious"
         pause 1.5
         "3500_sl surprise sport" with dissolve_fast
-    
-    
-    
-    image dct_clubs_male_comp_sh_crumble:                  # Шурик фрагментируется на экране монитора (выводить на экран в позиции xcenter 0.5 ycenter 0.45)
-        "mods/dublicate/images/anim/dct_clubs_male_comp_sh2.png"
-        xcenter 0.5 ycenter 0.45
-        pause 1
-        "mods/dublicate/images/anim/dct_clubs_male_comp_sh3.png" with dissolve_fast
-        xcenter 0.5 ycenter 0.45
-        pause 1
-        "mods/dublicate/images/anim/dct_clubs_male_comp_sh4.png" with dissolve_fast
-        xcenter 0.5 ycenter 0.45
-        pause 1
-        "mods/dublicate/images/anim/dct_clubs_male_comp_sh5.png" with dissolve_fast
-        xcenter 0.5 ycenter 0.45
-        pause 1
-        "mods/dublicate/images/anim/dct_clubs_male_comp_sh6.png" with dissolve_fast
-        xcenter 0.5 ycenter 0.45
-        pause 1
-        "mods/dublicate/images/anim/dct_clubs_male_comp_sh7.png" with dissolve_fast
-        xcenter 0.5 ycenter 0.45
-        pause 1
-        "mods/dublicate/images/anim/dct_clubs_male_comp_sh8.png" with dissolve_fast
-        xcenter 0.5 ycenter 0.45
-        pause 1
-        "mods/dublicate/images/anim/dct_clubs_male_comp_sh9.png" with dissolve_fast
-        xcenter 0.5 ycenter 0.45
-        pause 1
-        "dct_clubs_male_comp_clear" with dissolve_fast
-        xcenter 0.5 ycenter 0.45
 
         
         
@@ -1602,7 +1619,7 @@ init :
     $ d_gm = Character(u"Малявка", color="#f3974d", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Глафира: мелкая
     $ d_ma_dv = Character(u"{color=#79cdf7}Максим{/color} | {color=#ffaa00}Алиса{/color}",what_color = "#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Максим | Алиса
     $ d_ma = Character(u"Максим", color="#79cdf7", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Максим
-    $ d_ka = Character(u"Катя", color="#894f91", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Катя
+    $ d_ka = Character(u"Катя", color="#bea5d5", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Катя
     $ d_vi = Character(u"Витька", color="#b7b7b7", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Витька
     $ d_sv = Character(u"Света", color="#55a022", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Света
     $ d_civ = Character(u"Тип в штатском", color="#e2c6a5", what_color="#ffdd7d", drop_shadow = [(2,2)], drop_shadow_color = "#000", what_drop_shadow = [(2,2)], what_drop_shadow_color = "#000") #Гражданский из первого сна Шурика
