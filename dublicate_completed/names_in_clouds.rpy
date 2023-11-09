@@ -617,7 +617,7 @@ label chatter:
     stop music fadeout 2
     stop ambience
     
-    scene dct_int_house_of_un_sunset with squares
+    scene dct_int_house_of_sa_sunset with squares
     play ambience ambience_int_cabin_evening
     "Против моих опасений, а я опасался очередного выплеска эмоций, чаепитие у Лены и Саши оказалось просто чаепитием."
     show sl shy pioneer close at right

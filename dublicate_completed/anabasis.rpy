@@ -3907,7 +3907,7 @@ label dct_test:
     $ set_mode_adv()
     stop ambience
     
-    scene dct_int_house_of_un_sunset with squares
+    scene dct_int_house_of_sa_sunset with squares
     $ sunset_time()
     $ persistent.sprite_time = "sunset"
     play ambience ambience_int_cabin_evening

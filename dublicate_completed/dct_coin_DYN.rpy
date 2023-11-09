@@ -502,9 +502,9 @@ label dct_sixhour_dyn:
     scene bg ext_playground_day
     show int_house_of_dv_day:
         xcenter 0.5 ycenter 0.5     # это чтоб потом зумировать красиво
-    show int_house_of_sl_day
+    show dct_int_house_of_mi_day
     show dct_int_house_of_el_day
-    show int_house_of_un_day
+    show dct_int_house_of_sa_day
     show dct_lineup_mi_not_us
     show int_dining_hall_people_day:
         alpha 1
@@ -514,13 +514,13 @@ label dct_sixhour_dyn:
     extend " Ужин и вечерняя линейка, на которой вожатая зачитала правила внутреннего распорядка и познакомила пионеров с персоналом лагеря."
     show dct_lineup_mi_not_us:
         easeout 1 ycenter 1.5
-    show int_house_of_un_day:
+    show dct_int_house_of_sa_day:
         pause 2
         easeout 1 xcenter -0.5
     show dct_int_house_of_el_day:
         pause 4
         easeout 1 ycenter -0.5
-    show int_house_of_sl_day:
+    show dct_int_house_of_mi_day:
         pause 6
         easeout 1 xcenter 1.5
     extend "\nА после линейки наступило некоторое затишье: пионеры распаковывали чемоданы; Алиса с Ульяной, умаявшиеся на складе, валялись у Алисы в домике и неспешно беседовали"
@@ -612,7 +612,7 @@ label dct_sixhour_dyn:
     with fade
     "А Женя, наблюдавшая за всеми этими танцами через окно и прождавшая Сыроежкина ещё двадцать минут после закрытия, расстроенная засядет в своём домике и будет грустить."
     
-    scene dct_int_house_of_sl_night
+    scene dct_int_house_of_mi_night
     show mz normal pioneer close
     with dissolve
     th "Вот, в общем-то, неплохой и, кажется, серьёзный и интеллигентный парень так и не решился зайти. Я бы извинилась перед ним."
@@ -1006,7 +1006,7 @@ label dct_transitions_dyn:
     pause 0.5
 
     play ambience ambience_int_cabin_day fadein 1
-    scene bg int_house_of_sl_day
+    scene dct_int_house_of_mi_day
     show black
     hide black with dissolve
     "Женя проснулась от голоса Мику."
@@ -2293,7 +2293,7 @@ label dct_fluctuation_dyn:
     hide headline_text2 with dissolve
     $ renpy.pause(0.2)
     
-    scene int_house_of_sl_day with blinds
+    scene dct_int_house_of_mi_day with blinds
     $ day_time()
     $ persistent.sprite_time = "day"
     play sound dct_sfx_horn_rise_through_loudspeaker fadein 1.5 #по-моему, длится слишком долго
@@ -2453,12 +2453,9 @@ label dct_fluctuation_dyn:
     "Идти в столовую и встречаться там с Женей не хотелось. Слишком больно."
     "Никогда раньше, в прошлых циклах, ни Женя так себя не вела, ни Электроник так не переживал. Что-то сместилось в них, когда Рыжие в автобусе пересадили полусонного Электроника на освободившееся место рядом с Женей, а те проснулись на плечах друг у друга."
     
-    #scene int_house_of_sl_day
-    scene int_house_of_un_day   # В этом лагере девочка Саша живёт с Леной
-    show un grin pioneer far:   # Добавляем Лену, чтоб прикрыть немного кровать с чулком Мику
-        xcenter 0.75
-    show 3500_sl smile3 pioneer:    # Двигаем Сашу, чтоб разнести их с Леной
-        xcenter 0.35 ycenter 0.833
+    scene dct_int_house_of_sa_day   # В этом лагере девочка Саша живёт с Леной
+    show 3500_sl smile3 pioneer:
+        xcenter 0.4 ycenter 0.833
     show dct_dream_veil at shiver
     with dissolve
     "Саша однажды, в один из циклов, похвалила его, когда он помогал с какой-то мелочью девочкам в домике."
@@ -3444,7 +3441,7 @@ label dct_disposition_dyn:
     play sound_loop ambience_int_cabin_day fadein 1
     play sound sfx_open_door_1
     
-    scene bg int_house_of_un_day with slidedown
+    scene bg dct_int_house_of_sa_day with slidedown
     "Саши дома не оказалось."
     th "Или возится с мелкими, или ещё где-то — хоть у Мику в кружке, в этом цикле они сблизились раньше обычного."
     "Купальный сезон официально открывался в четверг, а в следовании инструкциям Саша была похожа на Серёжу Сыроежкина, так что на пляже её точно не было."
@@ -3614,7 +3611,7 @@ label dct_disposition_dyn:
     scene black with dissolve
     pause 2
 
-    scene bg int_house_of_un_day with dissolve
+    scene bg dct_int_house_of_sa_day with dissolve
     play ambience ambience_int_cabin_day fadein 1
     window show
     "Саша, чуть-чуть разминувшаяся с Леной, сейчас сидела у себя в домике и с огромным удовольствием читала ту самую пионерскую сказку. Читала, возвращалась к началу, закрывала глаза и как живых представляла себе героинь: Анфису, Ларису, Жанну, Машу. Тем более что и представлять особо не нужно."
@@ -5211,7 +5208,7 @@ label dct_d7_d5_dyn:
     "В кои-то веки у неё попросили помощи, пусть даже и нужно было всего лишь играть на фортепиано для Саши и Максима."
     "А параллельно можно было разговаривать и общаться, и никто от неё не отмахивался."
     
-    scene bg int_house_of_sl_day with squares
+    scene dct_int_house_of_mi_day with squares
     "Вот и сегодня утром можно было встать, открыть форточку, не обращая внимания на бурчащую соседку, пожелать той доброго, наидобрейшего утра и побежать к умывальникам."
     stop music fadeout 2
     play ambience ambience_int_cabin_day fadein 1
@@ -6841,19 +6838,19 @@ label dct_foreign_land_dyn:
     "Женя в хорошем настроении и Женя в настроении обычном — это два разных человека."
     show ext_house_of_sl_day
     show el laugh pioneer close at right
-    show int_house_of_sl_day
+    show dct_int_house_of_mi_day
     show mi upset pioneer far at cright
     show mz laugh glasses pioneer close at left
     with dissolve
     "Начиная с самого утра, когда поздоровалась с куда-то торопящейся соседкой и выбежала навстречу Сергею — нет, Серёже."
-    show int_house_of_sl_day:
+    show dct_int_house_of_mi_day:
         linear 1 ycenter -0.5
     show mi upset pioneer far at cright:
         linear 1 ycenter -0.5
     show mz shy glasses pioneer close at left with dissolve_fast
     mz "Доброе утро, я рада тебя видеть."
     el "А как я рад, Женя."
-    hide int_house_of_sl_day
+    hide dct_int_house_of_mi_day
     hide mi
     "И вот это «как я рад» ещё добавило градус счастья. Даже торчащие у Сергея из кармана шорт полотенце и зубная щётка вызвали только умиление."
     show mz shy pioneer close at left as mz2:
@@ -6873,7 +6870,7 @@ label dct_foreign_land_dyn:
     show ext_washstand_day:
         xcenter 0.5
         linear 1 xcenter -0.5
-    show int_house_of_sl_day behind el:
+    show dct_int_house_of_mi_day behind el:
         xcenter 1.5
         linear 1 xcenter 0.5
     hide ext_house_of_sl_day
@@ -6881,9 +6878,9 @@ label dct_foreign_land_dyn:
     show mi upset pioneer behind el with dissolve
     "Зашла Мику, отчего-то грустная и серьёзная, кивнула Сергею."
     mi "Женя, Серёжа, не опоздайте на линейку."
-    show ext_house_of_sl_day behind int_house_of_sl_day
+    show ext_house_of_sl_day behind dct_int_house_of_mi_day
     hide mi with dissolve
-    show int_house_of_sl_day:
+    show dct_int_house_of_mi_day:
         pause 1.5
         linear 1 ycenter -0.5
     "Кажется, Мику едва сдерживала слёзы, но это парочку сейчас не интересовало, парочка сейчас была самодостаточна."
@@ -7089,8 +7086,8 @@ label dct_foreign_land_dyn:
     stop ambience fadeout 1
     
     play ambience ambience_int_cabin_day fadein 1
-    scene bg int_house_of_sl_day
-    show mi upset pioneer close # with dissolve_fast
+    scene dct_int_house_of_mi_day
+    show mi upset pioneer close
     with dissolve
     play sound sfx_bed_squeak2
     "А потом всплыл в памяти недавний сон."

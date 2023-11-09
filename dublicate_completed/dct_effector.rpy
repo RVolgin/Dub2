@@ -22,7 +22,7 @@ label uncomfortable_morning:
     show promo_text_un u"Пятница. 07-10. Елена Тихонова, домик." at truecenter with dspr
     pause
     
-    scene int_house_of_un_day with blinds
+    scene dct_int_house_of_sa_day with blinds
     $ day_time ()
     $ persistent.sprite_time = "day"
     play ambience ambience_int_cabin_day 
@@ -367,7 +367,7 @@ label missing_expedition:
     stop sound_loop
     stop ambience
     
-    scene int_house_of_un_day with pixellate
+    scene dct_int_house_of_sa_day with pixellate
     $ prolog_time ()
     play ambience ambience_forest_day
     play sound sfx_close_door_1
@@ -943,7 +943,7 @@ label other_peoples_letters:
     show promo_text_un u"Суббота. 09-00. Елена Тихонова. Домик стрелочника." at truecenter with dspr
     pause
 
-    scene int_house_of_un_day with pixellate
+    scene dct_int_house_of_sa_day with pixellate
     play ambience ambience_int_cabin_day
     $ prolog_time ()
     $ persistent.sprite_time = "day"
