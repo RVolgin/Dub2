@@ -2871,20 +2871,20 @@ label dct_fluctuation_dyn:
     
     scene bg int_library_night with dissolve #приглушённый звук дискотеки   
     $ night_time()
-    $ persistent.sprite_time = "night"
+    $ persistent.sprite_time = "day"
     play ambience ambience_library_day fadein 1
     window show
-    $ renpy.music.set_volume(0.08, delay=0)
+    $ renpy.music.set_volume(0.09, delay=0)
     play music music_list["lightness_radio_bus"] fadein 3
     "На дискотеку Женя, конечно же, не пошла. Она никогда не ходила на первую дискотеку цикла, всегда оправдываясь тем, что не успела ещё навести порядок в библиотеке, а на самом деле стесняясь своей внешности, неуклюжести, неумения танцевать и, главное, чувствуя себя крайне неуютно в такой толпе." 
     th "Зря я сюда приехала. Дома, по крайней мере, никто не требует \"обязательно участвовать в общелагерных мероприятиях\", и можно не чувствовать себя клоуном. Завтра начнут подкладывать кнопки на стул, начнут мазать край стола мелом. И всем будет смешно."
     th "Одни будут травить активно, другие следить с интересом за происходящим, третьи просто не будут вмешиваться, предоставляя возможность выпутываться самой. Это одно."
     th "А другое — как дать понять нравящемуся самой мальчику, что он зря теряет время? А из лагеря просто так не уедешь, эти две недели надо просто пережить."
     "Женя втянула воздух через сжатые зубы и щёлкнула выключателем."
-    play sound sfx_clench2  #play sound #выключатель fadein 1.5
+    play sound sfx_clench2 #выключатель
     pause 0.2
     
-    scene bg int_library_night2 with dspr
+    scene dct_int_library_night_full_light with dspr
     pause 0.2
     un "Ой!"
     mz "Кто здесь?"
@@ -2924,13 +2924,18 @@ label dct_fluctuation_dyn:
     "Лена быстро взглянула и опять опустила глаза."
     un "Я забыла у тебя одну вещь."
     mz "Да, конечно. Забирай."
+    
+    $ persistent.sprite_time = "day"        # Прописано, чтобы при обратной перемотке цвета не сбивались.
+    
     "Очень хотелось спросить: «А что это? Можно почитать?». Но Женя пока не настолько доверяла окружающим, чтобы вот так вот взять и показать свою слабость."
     stop music fadeout 1
     stop ambience fadeout 1
     window hide
     scene black with dissolve
+    
     $ renpy.pause(1.0)
     $ renpy.music.set_volume(0.5, delay=0)
+    $ persistent.sprite_time = "night"
     
     scene bg ext_square_night_party2    
     play ambience ambience_camp_center_night fadein 1

@@ -276,6 +276,7 @@ init :
     image dct_int_laboratory_mt = im.Composite((3840,2160), (0,0), 'mods/dublicate/images/bg/dct_int_laboratory.jpg', (0, 0), 'mods/dublicate/images/bg/dct_int_laboratory_mt.png') # Лаборатория с Ольгой на экране
     image dct_int_liaz_day_rain = "mods/dublicate/images/bg/dct_int_liaz_day_rain.jpg"
     image dct_int_library_cellar = "mods/dublicate/images/bg/dct_int_library_cellar.jpg"
+    image dct_int_library_night_full_light = "mods/dublicate/images/bg/dct_int_library_night_full_light.jpg" # Бибилиотека внутри ночью с верхним светом и лампой
     image dct_int_library_rain = "mods/dublicate/images/bg/dct_int_library_rain.jpg" # Бибилиотека внутри днём в дождь
     image dct_int_library_rain_lamp = "mods/dublicate/images/bg/dct_int_library_rain_lamp.png" # Бибилиотека: включённая лампа
     image dct_int_library_standing_desk_back = "mods/dublicate/images/bg/dct_int_library_standing_desk_back.jpg"   # Бибилотека, вид из-за Жениного стола
