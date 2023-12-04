@@ -12,7 +12,7 @@ label dct_exit:
         $ renpy.pause (3)
         d_rb "Эта история о людях."
         d_rb "О людях настоящих и не совсем настоящих."
-        d_rb "Но всё равно...{w} О людях."
+        d_rb "Но всё равно…{w} О людях."
         d_rb "О людях{w} и человечности."
         hide d_jn with pixellate
         $ renpy.pause (1)
