@@ -712,41 +712,49 @@ init :
             "dct_ext_square_profile_view_day"
     
     
-    image dct_camp_hustle_to_the_left1:                      # Смена случайных локаций   
-        "dct_camp_hustle_to_the_left_locA"
-        xcenter -0.5
-        linear 1 xcenter 0.5
-        pause 0.5
-        linear 1 xcenter -0.5
-        pause 3.46
-        repeat
 
-    image dct_camp_hustle_to_the_left2:                      # Смена случайных путей
-        "dct_camp_hustle_to_the_left_wayA"
-        xcenter 1.5
-        linear 1 xcenter 0.5
-        pause 0.5
-        linear 1 xcenter 1.5
-        pause 3.46
-        repeat
-    
-    image dct_camp_hustle_to_the_left3:                      # Смена случайных локаций   
-        "dct_camp_hustle_to_the_left_locB"
-        xcenter -0.5
-        linear 1 xcenter 0.5
-        pause 0.5
-        linear 1 xcenter -0.5
-        pause 3.46
-        repeat
-        
-    image dct_camp_hustle_to_the_left4:                      # Смена случайных путей
-        "dct_camp_hustle_to_the_left_wayB"
-        xcenter 1.5
-        linear 1 xcenter 0.5
-        pause 0.5
-        linear 1 xcenter 1.5
-        pause 3.46
-        repeat
+    image dct_camp_hustle_to_the_left:                 # Смена случайных локаций и путей
+        contains:
+            "dct_camp_hustle_to_the_left_locA"
+            xcenter -0.5
+            linear 1 xcenter 0.5
+            pause 1.5
+            linear 1 xcenter -0.5
+            pause 6.5
+            repeat
+        contains:
+            pause 2.5
+            contains:
+                "dct_camp_hustle_to_the_left_wayA"
+                xcenter 1.5
+                linear 1 xcenter 0.5
+                pause 1.5
+                linear 1 xcenter 1.5
+                pause 6.5
+                repeat
+        contains:
+            pause 5
+            contains:
+                "dct_camp_hustle_to_the_left_locB"
+                xcenter -0.5
+                linear 1 xcenter 0.5
+                pause 1.5
+                linear 1 xcenter -0.5
+                pause 6.5
+                repeat
+        contains:
+            pause 7.5
+            contains:
+                "dct_camp_hustle_to_the_left_wayB"
+                xcenter 1.5
+                linear 1 xcenter 0.5
+                pause 1.5
+                linear 1 xcenter 1.5
+                pause 6.5
+                repeat
+
+
+
 
     ############################################
     ############################################
