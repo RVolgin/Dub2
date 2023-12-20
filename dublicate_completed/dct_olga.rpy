@@ -3112,11 +3112,12 @@ label dct_olga_p9:
     "Вожатая дописывает нужные строчки, прячет ежедневник и укладывается спать."
     $ renpy.pause (1)
     nvl clear
-    $ set_mode_adv ()
+    window hide
     stop music fadeout 3
     stop ambience
     
     scene black with blinds
+    $ set_mode_adv ()
     $ persistent.d_olga = d_olga + 1
     
 menu:
@@ -3126,4 +3127,4 @@ menu:
         "Продолжить в расширенной версии" if (persistent.d_coin > 0):
             jump dct_coin_ped
         "В меню":
-            jump dct_mnu2 
+            jump dct_mnu2
