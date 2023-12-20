@@ -3,6 +3,7 @@ label dct_mnu2:
     scene black
     show image("mods/dublicate/images/gui/dct_bg_table.jpg")
     show image("mods/dublicate/images/gui/dct_bg_menu.png")
+    $ renpy.block_rollback()    # Запрет отката истории (чтоб колёсиком случайно не накрутили)
     call screen dct_menu
 #Техническое меню
 #Пока так, но однозначно в переделку.
