@@ -3486,7 +3486,7 @@ label dct_disposition_dyn:
     "Женя не договорила и, всё так же не глядя на Лену, пожала плечами."
     show mz smile pioneer glasses with dissolve_fast
     mz "И спасибо, что посидела тут вместо меня."
-    show d_mz confused pioneer glasses far at right with dspr
+    show d_mz confused pioneer glasses far at right with dspr:
         alpha 0
         pause 0.5
         linear 1 alpha 1
