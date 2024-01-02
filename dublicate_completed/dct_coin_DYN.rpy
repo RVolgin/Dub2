@@ -1789,7 +1789,7 @@ label dct_transitions_dyn:
     #stop music fadeout 1.5
     window hide
     show black with dissolve
-    pause 2
+    pause 1
     
     play sound sfx_knock_door7_polite
     play music music_list['your_bright_side'] fadein 2.5
@@ -2128,7 +2128,7 @@ label dct_transitions_dyn:
     
     # $ persistent.sprite_time = "day"
     # scene dct_int_coaching_room2 with wipeleft
-    stop music fadeout 2.5
+    stop music fadeout 1
     # play ambience ambience_int_cabin_evening fadein 2.5
     # show us smile sport with dissolve
     # us "А вы неплохо устроились! Я ещё немного побегаю сама по себе и тоже пойду в физруки!"
@@ -2140,7 +2140,7 @@ label dct_transitions_dyn:
     # stop ambience fadeout 1
     window hide
     show black with dissolve
-    pause 2
+    pause 1
     $ night_time()
     $ persistent.sprite_time = "night"
     window auto
@@ -3216,7 +3216,7 @@ label dct_disposition_dyn:
     stop ambience fadeout 1
     "Сергей пробормотал что-то невнятное и выскочил вслед за горнистом."
     window hide
-    pause 2
+    pause 1
     
     
     play ambience ambience_library_day fadein 1
@@ -3373,7 +3373,7 @@ label dct_disposition_dyn:
     stop ambience fadeout 1
     scene black with dissolve
     $ renpy.music.set_volume (1.0)
-    pause 2
+    pause 1
 
     scene bg int_clubs_male_day with dissolve:
         zoom 1.2 align (0.0, 0.5)
@@ -3408,8 +3408,9 @@ label dct_disposition_dyn:
     mip "Привет. А ты Сергея не видел?"
     $ set_mode_adv()
     stop music
-    show d_oz n pioneer behind dct_ext_glade_behind_clubs_day_barberry with dissolve:
-        zoom 0.75 xcenter 0.77 yalign 0.1
+    show d_oz n pioneer behind dct_ext_glade_behind_clubs_day_barberry:
+        zoom 0.75 xcenter 0.77 yalign 0.1 alpha 0
+        linear 0.5 alpha 1
     play sound dct_sfx_slammed_book
     "Шурик вздрогнул и уронил карандаш." with hpunch
     th "Сергея? А! Это Сыроежкина, что ли?"
@@ -3425,7 +3426,7 @@ label dct_disposition_dyn:
     stop ambience fadeout 1
     window hide
     scene black with dissolve
-    pause 2
+    pause 1
 
     scene bg ext_houses_day at walking with dissolve
     play ambience ambience_camp_center_day fadein 1
@@ -3601,7 +3602,7 @@ label dct_disposition_dyn:
     # hide d_mz with dissolve_fast
     # pause 0.5
     show d_mz normal pioneer glasses close with dissolve_fast
-    # "Женя вернулась к журналам, взяла с полки самый верхний, посмотрела на первую страницу обложки, потом перевернула и посмотрела на типографские данные.{w}\n{i}"
+    "Женя вернулась к журналам, взяла с полки самый верхний, посмотрела на первую страницу обложки, потом перевернула и посмотрела на типографские данные.{w}\n{i}"
     "«Сдано в набор 06.09.1991.»"
     show d_mz smile2 pioneer glasses close with dissolve_fast
     "Женя глянула на календарик, притаившийся под оргстеклом, покрывающим её стол. Согласно календарику, на дворе стоял июнь 1987 года."
@@ -3612,7 +3613,7 @@ label dct_disposition_dyn:
     stop ambience fadeout 1
     stop music fadeout 1
     scene black with dissolve
-    pause 2
+    pause 1
 
     scene dct_int_house_of_sa_day with dissolve
     play ambience ambience_int_cabin_day fadein 1
@@ -4457,7 +4458,7 @@ label dct_debut_dyn:
     show dct_ext_beach_day_with_pass_train:
         linear 1 alpha 0
     # extend "{w=1} Перепелиха, кажется."
-    "Женя сидела на опушке рощицы, отделяющей пляж от лодочной станции, и страдальчески морщилась."
+    # "Женя сидела на опушке рощицы, отделяющей пляж от лодочной станции, и страдальчески морщилась."
     th "Зачем звали, спрашивается?"
     extend " Слушать эти вопли?"
     show d_mz hope glasses pioneer far as mz
@@ -4584,7 +4585,7 @@ label dct_debut_dyn:
     "Даже Катька забыла, что считает себя взрослой, и тоже бежит в воду с визгом и хохотом."
     "Алиса на секунду ощутила острую зависть к малолетке — самой так же с хохотом пробежать хочется, а стеснительно, а даже вспомнить, каково это, не получается, потому что сохранённых воспоминаний у копии — кот наплакал."
     th "Ну и чёрт с ним!"
-    extend " Зато я живу, а она ещё нет!"
+    extend " Зато я по-настоящему живу, а она ещё нет!"
     # th "Катька, я против тебя ничего не имею, ты тоже обязательно проснёшься и начнёшь жить, но я уже сейчас живу, а ты ещё нет!"
     
     scene dct_ext_water_islands_buoys_day with squares
@@ -4630,7 +4631,7 @@ label dct_debut_dyn:
     pause    
     stop music fadeout 1
     scene black with dissolve
-    pause 2
+    pause 1
     nvl hide
 
     play ambience ambience_clubs_inside_day fadein 1
@@ -4885,7 +4886,7 @@ label dct_debut_dyn:
     extend " Только кивнула, улыбнулась и молча ушла."
     show un smile2 pioneer close with dspr
     un "Зря от рыбы отказался. Кажется, повара научились готовить без указаний бабы Глаши."
-    show un smile pioneer close with dspr
+    # show un smile pioneer close with dspr
     # "Лена разделалась с одной рыбиной и приступила ко второй."
     stop ambience fadeout 1
     scene black with dissolve
@@ -4946,10 +4947,10 @@ label dct_debut_dyn:
     show un normal pioneer
     with dissolve_fast
     "Семён глянул в глаза Лене, хотел что-то сказать, но только кивнул, дёрнулся, чтобы пожать предплечье, но не стал, а снова кивнул."
-    show d_us normal dress behind un:
-        zoom 0.5 xcenter 1.1 ycenter 0.66
-        xzoom -1.0 xcenter -0.1 ycenter 0.66
-        easein 2.8 xcenter 1.1
+    # show d_us normal dress behind un:
+        # zoom 0.5 xcenter 1.1 ycenter 0.66
+        # xzoom -1.0 xcenter -0.1 ycenter 0.66
+        # easein 2.8 xcenter 1.1
     show d_sf normal pioneer:
         linear 0.4 ypos 0.0
         pause 0.15
@@ -5409,10 +5410,10 @@ label dct_d7_d5_dyn:
     mz "Как там у классика: «Полюбите нас чёрненькими!». Так честнее будет, чем я начну фальшиво всем улыбаться."
     stop ambience fadeout 1
     show black with dissolve
-    window hide
+    # window hide
     pause 1
     
-    $ set_mode_nvl()
+    # $ set_mode_nvl()
     $ renpy.music.set_volume(0.5)
     play music "<from 6.5 loop 0.0>sound/music/blow_with_the_fires.ogg" fadein 2
     scene dct_ext_stage_close_day
@@ -5420,14 +5421,13 @@ label dct_d7_d5_dyn:
         zoom .37 xcenter .6 ycenter .4
     show black
     hide black with dissolve
-    window show
-    "\nКонцертную площадку оккупировала Алиса."
-    "Мрачная и задумчивая."
+    # window show
+    "Концертную площадку оккупировала Алиса.{w} Мрачная и задумчивая."
     "И музыка у неё выходила такая же — мрачная и задумчивая."
     "Усилитель, выкрученный на половинную мощность, электрогитара…{w} Можно, практически свесившись с края сцены, упиваться своим плохим настроением, машинально перебирая струны, и пытаться размышлять под случайные аккорды."
     show 3500_dv sadness pioneer2 guitar playing with dspr
     "Вчерашнее письмо от Алисы-двойника не шло из памяти: «Я хочу рискнуть и увидеться… Мы должны сравнить наши детские воспоминания»."
-    $ set_mode_adv()
+    # $ set_mode_adv()
     show 3500_dv dontlike pioneer2 guitar playing with dspr
     th "Сравнить и дополнить!"
     show 3500_dv normal pioneer2 guitar playing with dspr
@@ -5725,7 +5725,7 @@ label dct_d7_d5_dyn:
     stop ambience fadeout 1
     window hide
     show black with dissolve
-    pause 2
+    pause 1
     
     play ambience ambience_dining_hall_full fadein 1
     scene bg int_dining_hall_people_day with dissolve
@@ -5860,7 +5860,7 @@ label dct_d7_d5_dyn:
     # th "Изобретение почти целиком моё, а программа-дешифратор моя полностью."
     # show sh normal pioneer close with dissolve_fast
     # th "Я не спорю, Сергей здорово помог с излучателями и каркасом, но я бы и без него справился."
-    show sh serious pioneer close with dspr
+    show sh serious pioneer close with dissolve_fast
     "Шурик уговаривал сам себя как мог."
     th "Если я сейчас сделаю запись, то на завтра останется меньше работы."
     show sh serious pioneer close:
@@ -5915,16 +5915,15 @@ label dct_d7_d5_dyn:
     play sound2 [ "<silence 1.5>", sfx_open_window ]
     "После этого восстановил в кружке всё как было, вылез в окно и отправился на пляж."
     "Хоть раз за смену, но нужно было выбраться на свежий воздух."
-    stop ambience fadeout 3
-    show black:
-        alpha 0
-        pause 1.3
-        linear 1 alpha 1
+    stop ambience fadeout 2
+    # show black:
+        # alpha 0
+        # pause 1.3
+        # linear 1 alpha 1
     # "До расшифровки результатов делать Шурику было совершенно нечего, а работать компьютеру предстояло ещё несколько часов."
     window hide
-    show black as black2 with dspr
-    
-    pause 2
+    show black with dissolve    
+    pause 1
     
     play ambience ambience_lake_shore_day fadein 1
     play sound_loop dct_ambience_beach fadein 1
@@ -6031,7 +6030,7 @@ label dct_d7_d5_dyn:
     show d_ka p4 angry2 pioneer2swim:
         zoom 0.825 xcenter 0.65 ycenter 0.9
     with dissolve
-    "Катя неприязненно покосилась на Алису, но так и осталась сидеть на песке, обхватив ноги руками."
+    "Катя, сидящая неподалёку под грибком, неприязненно покосилась на Алису."
     
     scene dct_ext_beach_day_with_pass_train
     show d_sf normal swim:
@@ -6052,11 +6051,11 @@ label dct_d7_d5_dyn:
     show d_us smile swim
     with dspr
     us "И знаешь, Сём, мне сейчас кажется, что мне внутри всегда было девятнадцать, пока я тебя ждала. А когда встретила тебя — всё на свои места встало."
-    show d_sf normal swim:
-        xcenter 0.35 ypos 0.2
+    show d_sf normal swim
+    show d_us normal swim
+    with dspr
     show d_us normal swim:
-        xcenter 0.65 ypos -0.05
-    with dissolve
+        linear 0.5 ypos -0.05    
     us "Сёмк, последишь за средним отрядом?{w=0.5} А я пока за мячиком сбегаю. Давно не играли."
     show d_sf normal swim:
         linear 0.5 ypos 0.0
@@ -6067,7 +6066,7 @@ label dct_d7_d5_dyn:
     stop sound_loop fadeout 1
     stop ambience fadeout 1
     show black with dissolve
-    pause 2
+    pause 1
     
     play ambience ambience_camp_center_day fadein 1
     scene dct_sky_over_flowerbed_behind_library with dissolve:
@@ -6104,7 +6103,7 @@ label dct_d7_d5_dyn:
     stop music fadeout 1.5
     show black with dissolve
     window hide
-    pause 2.0
+    pause 1
     $ sunset_time()
     $ persistent.sprite_time = "night"
     window auto
@@ -6167,9 +6166,9 @@ label dct_d7_d5_dyn:
     show d_sf smile pioneer with dspr
     th "Время-то к отбою, оказывается. Скоро темнеть начнёт."
     "Оглядываюсь: всё тихо и спокойно. Никто не убился, никто не подрался, никто, кажется, не убежал."
+    show d_sf normal pioneer with dspr
     "Вон идёт один из Семёновых футболистов с подружкой. Несёт в руках кораблик, вырезанный из коры."
     th "Просто галеон испанский какой-то, даже поразглядывать хочется. Надо будет потом попросить."
-    show d_sf normal pioneer with dspr
     "А вон Лена с этюдником — сидит на лавочке напротив своего домика, а на крыльце ей Сашенька позирует."
     # th "Да, в таком образе дореволюционной барышни — это именно Сашенька."
     # th "Вот интересно, где они взяли это платье, эту шляпку и этот зонтик? Разве что на складе у Алисы, в мешках с театральным реквизитом?"
@@ -6924,21 +6923,22 @@ label dct_foreign_land_dyn:
     hide d_mz
     hide d_el
     with dissolve
-    show dct_int_dining_hall_people_rain:
-        linear 1 ycenter -0.5
-    show dct_ext_dining_hall_near_rain:
-        pause 1.7
-        linear 1 xcenter 1.5
-    show dct_ext_houses_rain:
-        xcenter -0.5
-        pause 1.7
-        linear 1 xcenter 0.5
-        pause 0.7
-        linear 1 xcenter -0.5
-    show dct_ext_library_rain:
-        xcenter 1.5
-        pause 3.4
-        linear 1 xcenter 0.5
+    show dct_int_dining_hall_people_rain
+        # linear 1 ycenter -0.5
+    # show dct_ext_dining_hall_near_rain:
+        # pause 1.7
+        # linear 1 xcenter 1.5
+    # show dct_ext_houses_rain:
+        # xcenter -0.5
+        # pause 1.7
+        # linear 1 xcenter 0.5
+        # pause 0.7
+        # linear 1 xcenter -0.5
+    show dct_ext_library_rain
+    with slideup
+        # xcenter 1.5
+        # pause 3.4
+        # linear 1 xcenter 0.5
     "Они забрали у Семёна накидки и, стараясь передвигаться по поребрику, чтобы не намочить ноги, побежали под дождём в библиотеку."
     # "И вот, после того, как Сергей убежал наконец в свой кружок…"
     
@@ -6947,7 +6947,7 @@ label dct_foreign_land_dyn:
         xcenter 0.6
     show mz shy pioneer:
         xcenter 0.4
-    with blinds
+    with irisin
     el "Женя, у меня в кружке сегодня опыт важный, я побежал!"
     hide d_el with dissolve
     "После этого Женя десять раз поправила на нём капюшон накидки, прежде чем выпустить из помещения библиотеки."
@@ -6959,12 +6959,12 @@ label dct_foreign_land_dyn:
         linear 0.25 alpha 1
     "И вот, после того, как Сергей убежал наконец в свой кружок, Женя включила настольную лампу и, выбрав книжку, соответствующую настроению — романтическую и тёплую, устроилась за столом, забравшись с ногами на стул."
     "Пролистала пару страниц, подняла глаза на зеркало, но под этим углом отражения своего не увидела."
-    show dct_int_mirror_in_library with squares
+    # show dct_int_mirror_in_library with squares
     # "Поэтому произнесла просто, обращаясь в пустоту:"
     mz "Я хочу сказать, Евгения, что вы определённо влюблены.{w} Это замечательно, но если бы не ваша мнительность, вы бы не потеряли целую неделю так бездарно."
-    hide dct_int_mirror_in_library with squares
-    "Улыбнулась своим мыслям и продолжила чтение под шум дождя."
+    # hide dct_int_mirror_in_library with squares
     $ persistent.sprite_time = "night"# Прописано, чтобы при обратной перемотке цвета не сбивались.
+    "Улыбнулась своим мыслям и продолжила чтение под шум дождя."
     # "Почти невероятно, что кто-то из пионеров собёрется в такой ливень в библиотеку."
     $ persistent.sprite_time = "day"
     show d_mz hope pioneer close at fleft with dissolve
@@ -6976,7 +6976,7 @@ label dct_foreign_land_dyn:
     window hide
     stop music fadeout 1
     show black with dissolve
-    pause 2
+    pause 1
         
     play ambience ambience_int_cabin_day fadein 1
     play sound dct_sfx_horn_rise_through_loudspeaker
@@ -7457,7 +7457,7 @@ label dct_foreign_land_dyn:
     stop ambience fadeout 1
     window hide
     show black with dissolve
-    pause 1.0
+    pause 1
     
     $ persistent.sprite_time = "night"
     scene dct_int_clubs_male_rain with dissolve
@@ -7526,7 +7526,7 @@ label dct_foreign_land_dyn:
     th "Он даже на наши отношения с Женей смотрел с той точки зрения, чтобы они не мешали занятиям в кружке."
     extend " И всё же что-то не так."
     show sh serious pioneer with dissolve
-    # "Эта мысль мелькнула и исчезла, Электроник принял устойчивую позу — так, чтобы голова оказалась на продолжении оси вращения табурета."
+    "Эта мысль мелькнула и исчезла, Электроник принял устойчивую позу на табурете."
     el "Готов!"
     show sh normal pioneer with dspr
     sh "Три, два, один. Ноль!"
@@ -7732,14 +7732,14 @@ label dct_replacement_dyn:
     show d_gr:
         zoom 0.81 xcenter 0.81 yalign 1.0
     show d_ge:
-        zoom 0.88 xcenter 0.65 yalign 1.01
+        zoom 0.88 xcenter 0.67 yalign 1.01
     with pixellate
     me "Больно? Давай гляну."
     "Эта мелочь развернулась в мою сторону и протягивает правую ногу, положив лодыжку мне на колени."
     # d_sv "На, глянь."
     th "А вот не нравится мне эта лодыжка. Растяжение — даже доктором быть для этого не обязательно, чтобы понять."
     show d_sv upset with dspr
-    # "Знаю, что завтра отроковица будет в полном здравии, но сейчас ей больно и она еле сдерживается, чтоб не заплакать, только тихо поскуливает, когда я очень осторожно проверяю подвижность сустава."
+    "Знаю, что завтра отроковица будет в полном здравии, но сейчас ей больно и она еле сдерживается, чтоб не заплакать."
     show d_sf serious sport:
         pause 0.6
         linear 1 alpha 0
@@ -7765,9 +7765,9 @@ label dct_replacement_dyn:
     show d_sv surprise:
         pause 0.55
         alpha 0
-    show d_ge:
-        pause 0.5
-        easeout 0.8 xcenter 1.15
+    # show d_ge:
+        # pause 0.5
+        # easeout 0.8 xcenter 1.15
     pause 1
     show d_sf sad sport
     show d_oz n pioneer
@@ -8113,7 +8113,7 @@ label dct_replacement_dyn:
     stop music fadeout 1.7
     stop ambience fadeout 1.2
     show black with dissolve
-    pause 2
+    pause 1
     
     play music music_list['farewell_to_the_past_full'] fadein 1
     scene dct_int_warehouse_day
