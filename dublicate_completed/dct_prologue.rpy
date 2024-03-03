@@ -237,12 +237,12 @@ label morning_zero:
     play music music_list["eat_some_trouble"]
     play ambience ambience_boat_station_day
     "Вот так, пока размышлял, и добрался до пристани. Вот и сарай с вёслами. Тот ли я ключ украл со связки вожатой? Тот."
-    play sound "<from 2.6>sound/sfx/slavya_run.ogg" fadein 1.5
+    play sound "<from 2.6>" + sfx_slavya_run fadein 1.5
     $ renpy.pause (2)
     show 3500_sl smile3 sport at left with moveinleft:
         ycenter 0.83
     "Захожу в сарай, и вовремя. Славя. Ранняя пташка. Уже проснулась и отправилась на пробежку."
-    play sound "<from 2>sound/sfx/slavya_run.ogg"
+    play sound "<from 2>" + sfx_slavya_run
     $ renpy.pause (0.2)
     hide 3500_sl with moveoutright
     $ renpy.pause (0.8)

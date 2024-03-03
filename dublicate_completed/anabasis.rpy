@@ -1260,14 +1260,14 @@ label dct_inversion:
     
     scene ext_path2_day with slideright:
         running
-    play ambience "<loop 1.5 to 20.0>mods/dublicate/sounds/ambience/dct_ambience_run.ogg"
+    play ambience "<loop 1.5 to 20.0>" + dct_ambience_run
     "Бегу вдоль забора до тропинки в старый лагерь, чтобы пройти на территорию там. Мне сейчас нужно оказаться на пристани до того, как там окажется Славя."
     "Уже почти подбегаю к калитке — это даже не калитка, а просто разрыв в заборе, через который проходит тропинка, и тут меня убивают."
     
     play sound dct_sfx_dart
     pause 0.5
     stop ambience
-    play sound2 "<from 21.0 to 22.5>mods/dublicate/sounds/ambience/dct_ambience_run.ogg"
+    play sound2 "<from 21.0 to 22.5>" + dct_ambience_run
     
     pause 1
     scene dct_shot_by_arrow with vpunch
@@ -5660,7 +5660,7 @@ label dct_center_line:
         running
     "Я едва успеваю. На площади мне навстречу попадаются доктор и обе работницы столовой, они спешат к себе, а я бегу к остановке."
     "На бегу киваем друг другу, как будто так и надо."
-    scene ext_clubs_day with slideright:
+    scene dct_ext_camp_entrance_day with slideright:
         running
     $ renpy.pause (1)
     stop sound_loop
@@ -5676,7 +5676,7 @@ label dct_center_line:
     "Последние старшие как раз выгружаются, обвешанные чемоданами, рюкзаками и спортивными сумками."
     "Лена смотрит на меня так, словно хочет вспомнить, где она меня видела, а сама делает вид, что внимательно слушает Мику."
     show mi laugh pioneer far:
-        xalign .01
+        xalign -0.03
     show un serious pioneer far:
         xalign .14
     with dissolve
@@ -5685,11 +5685,11 @@ label dct_center_line:
         xalign .34
     "Шурик и Электроник о чём-то беседуют между собой, при этом Электроник периодически поглядывает в сторону Жени."
     show el serious pioneer far:
-        xalign .70
+        xalign .75
     show sh normal pioneer far:
         xalign .58
     show mz normal pioneer far:
-        xalign .85
+        xalign .95
     with dissolve
     "Женя делает вид, что не замечает Электроника, но при этом стоит так, чтобы тому не приходилось сильно выворачивать шею."
     hide un

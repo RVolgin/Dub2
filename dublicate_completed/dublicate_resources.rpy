@@ -2,7 +2,8 @@ init :
 
     $ mods ["dublicate"]=u"Дубликат"
     
-        
+    define dct_fade = Fade(0.5, 0.5, 0.5)     # Переход fade с паузой 0.5 с
+    
         #Заголовки частей и глав.
     image headline_text = ParameterizedText(color="#14ab14", font="mods/dublicate/fonts/TrixieProHeavy_Regular.otf", size=192)
     image headline_text2 = ParameterizedText(color="#14ab14", font="mods/dublicate/fonts/TrixieProHeavy_Regular.otf", size=96)
@@ -996,16 +997,7 @@ init :
         
         
     
-    image d_sf_grabs_d_sv:          # Проявление Светы в руках Семёна, когда тот её подхватывает
-        "d_sf_carrying_d_sv smile"
-        alpha 0
-        pause 0.55
-        alpha 1
-        
-        
-    
-    
-    
+
                                 # Последовательность переходов "с шара на шар" на площади в 10 главе
         
     image dct_ball_to_ball_1 = "mods/dublicate/images/anim/dct_ball_to_ball_1.jpg"

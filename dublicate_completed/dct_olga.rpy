@@ -634,7 +634,7 @@ label dct_olga_p3:
     $ persistent.sprite_time = "day"
     play ambience ambience_camp_center_day
     th "Ну и который ключ? Кажется, вот этот."
-    play sound "<from 1>sound/sfx/lock_open.ogg"
+    play sound "<from 1>" + sfx_lock_open
     stop ambience
     pause 1.5
     
@@ -1483,7 +1483,7 @@ label dct_olga_p4:
     show dv scared pioneer:
         xcenter 0.37
     show sl scared pioneer at cright
-    show d_sm surprise pioneer:
+    show d_sm scared pioneer:
         xcenter 0.92
     with dspr
     th "Что те двое с ними сделали?!"
@@ -1520,7 +1520,7 @@ label dct_olga_p4:
     show dv scared pioneer:
         xcenter 0.37
     show sl scared pioneer at cright
-    show d_sm surprise pioneer:
+    show d_sm scared pioneer:
         xcenter 0.92
     with dspr
     mt "Теперь вы!"
@@ -1556,7 +1556,7 @@ label dct_olga_p4:
     show dv scared pioneer:
         xcenter 0.37
     show sl scared pioneer at cright
-    show d_sm surprise pioneer:
+    show d_sm scared pioneer:
         xcenter 0.92
     with dspr
     $ renpy.pause (0.5)
@@ -2108,7 +2108,7 @@ label dct_olga_p6:
     th "Всё равно. Хорошо, что у себя ждать не стала. Солдатик, правда, робкий какой-то. Только подметает вокруг меня да на пакет с конфетами смотрит. Как дворняга на колбасу." 
     th "Хватит с тебя одной конфеты, у меня и без тебя есть с кем поделиться."
     "Солдатик никак не решался подойти поближе и заговорить с девушкой. А Ольга не знала, радоваться этому или сожалеть, потому что говорить не хотелось, но разговор отвлек бы её от длящегося неприятного ощущения чужого и чуждого взгляда из темноты."
-    th "Интересно, это нервы, или это оттого, что я смотрела туда — на клетку и туман за ней? Как там сказала Олеся: «обратила внимание Системы на себя». И что теперь будет? Нет, Олеся сказала «Система» с большой буквы. Что бы это ни значило, но Система с большой буквы интересуется мной."
+    th "Интересно, это нервы, или это оттого, что я смотрела туда — на клетку и туман за ней? Как там сказала Олеся: «обратила внимание системы на себя». И что теперь будет? Нет, Олеся сказала «Система» с большой буквы. Что бы это ни значило, но Система с большой буквы интересуется мной."
     play sound sfx_ikarus_arrive
     th "Ой, кажется, автобус едет. Всё, в лагерь! Наконец-то."
     $ renpy.pause (3)
@@ -2205,7 +2205,7 @@ label dct_olga_p7:
     th "Неужели не забыл ничего? Но они же всё забывают. И начальство говорило, и Олеся подтвердила."
     th "Да я и сама убедилась: Славя ничего не помнит и встречала меня почти теми же словами, что и в прошлый раз. А может, всё проще?"
     mt "Да, это я. Тебе Славя сказала?"
-    show d_sm scared pioneer with dspr
+    show d_sm surprise2 pioneer with dissolve
     me "Славя? Да, Славя сказала."
     hide d_sm with moveoutright
     th "И что он хотел сказать?"
@@ -2299,10 +2299,11 @@ label dct_olga_p7:
     show d_sm normal pioneer at right with moveinright
     mt "Да, Семён. У тебя ко мне дело? Давай побыстрее тогда. Мне ещё «План мероприятий» нужно напечатать и вывесить."
     mt "А может, ты мне поможешь в этом? На машинке печатать умеешь?"
+    show d_sm serious pioneer with dspr
     me "Но ведь это же неправильно, Ольга Дмитриевна."
     play music music_list["awakening_power"] fadein 2
     mt "Ну-ка, ну-ка. Что именно неправильно?"
-    show d_sm serious pioneer with dspr
+    show d_sm angry pioneer with dspr
     me "Всё! Вы не должны печатать этот план, вы не должны его вывешивать. Мы должны были сегодня утром уехать по домам на автобусах."
     show d_sm scared pioneer with dspr
     me "А вместо этого остались ещё на смену! И все, все уверяют меня, что мы только сюда приехали! Даже Славя ведёт себя так, будто только познакомилась со мной! Скажите мне, что это сон, пожалуйста!"
@@ -2322,7 +2323,7 @@ label dct_olga_p7:
     scene ext_dining_hall_away_day with hpunch
     $ day_time ()
     $ persistent.sprite_time = "day"
-    show d_sm normal pioneer at right
+    show d_sm surprise pioneer at right
     play ambience ambience_camp_center_day
     d_to "Нет, Семён, это не сон, поздравляю тебя."
     show d_to normal casual at left with moveinleft
@@ -2333,15 +2334,15 @@ label dct_olga_p7:
     $ day_time ()
     $ persistent.sprite_time = "day"
     play ambience ambience_camp_entrance_day
-    show d_sm normal pioneer at cleft
     show d_to normal casual at fleft
+    show d_sm surprise2 pioneer at cleft
     with dspr
     d_to "Чтобы у вас не было сомнений, Ольга Дмитриевна, вот предписание. Распишитесь, пожалуйста, что ознакомлены."
     d_to "А вас, Семён, я забираю. Что тут вам делать, раз к вам память вернулась? Всё, санаторный курс закончен."
-    show d_sm smile pioneer with dspr
+    show d_sm sad_smile2 pioneer with dspr
     me "Правда? Значит, всё так и есть, и я не сумасшедший?"
     d_to "Правда, правда. Ты разумнее всех нас, вместе взятых."
-    show d_sm normal pioneer with dspr
+    show d_sm normal2 pioneer with dspr
     me "А вещи?"
     d_to "У тебя есть что-то, чего не жалко бросить? Дуй в автобус! А то передумаю."
     hide d_sm with dspr
@@ -2556,8 +2557,9 @@ label dct_olga_p7:
     play ambience ambience_dining_hall_empty
     th "Ну что — всё чисто, все столы протёрты, пол в зале вымыт и стулья расставлены. Осталось только похвалить."
     mt "Семён, молодец…"
-    show d_sm scared pioneer at center with dissolve
+    show d_sm surprise2 pioneer at center with dissolve
     mt "Что-то случилось, Сём?"
+    show d_sm upset2 pioneer with dspr
     me "Понимаете, Ольга Дмитриевна. Такое чувство, что я потерял или забыл что-то очень важное. А не могу вспомнить — что."
     stop ambience
 
@@ -2868,7 +2870,7 @@ label dct_olga_p8:
     stop ambience
     play ambience ambience_int_cabin_night
     th "Кокоро но негаи, цутеки но мираи…"
-    play sound_loop "<from 25.0 loop 0.0>mods/dublicate/sounds/music/mirabilis_futurum.ogg" fadein 0.5
+    play sound_loop "<from 25.0 loop 0.0>" + mirabilis_futurum fadein 0.5
     "В голове пронеслись знакомые слова на незнакомом языке.{w} Голос Мику звучал как наяву."
     "Вожатая не смогла сдержать слёз."
     hide dct_mt_with_cassette_and_tie with squares
@@ -2951,7 +2953,7 @@ label dct_olga_p9:
         alpha 0.45
     th "Серёжа или у себя в кружке, или в библиотеке."
     hide el
-    show d_sm scared pioneer at center with pixellate:
+    show d_sm sad pioneer at center with pixellate:
         alpha 0.45
     th "Семён… Семён безучастно уставился в стену. Что же с ним здесь сделали? А я себе не прощу теперь, что струсила и отдала его этим."
     hide d_sm
@@ -2993,8 +2995,8 @@ label dct_olga_p9:
     show dct_dream_veil:
         shiver
     me "Ольга Дмитриевна."
-    show d_sm normal pioneer behind dct_dream_veil with dissolve2:
-        xcenter 0.33
+    show d_sm normal2 pioneer behind dct_dream_veil with dissolve2:
+        xcenter 0.33 ypos 0.01
     th "Это сон, да? Я же в автобусе сейчас?"
     mt "Семён?"
     hide d_sm
@@ -3124,7 +3126,7 @@ menu:
         "Конец книги «О — значит Ольга»"
         "Продолжить":
             jump dct_coin_dyn
-        "Продолжить в расширенной версии" if (persistent.d_coin > 0):
+        "Продолжить в расширенной версии\n(полный литературный текст)" if (persistent.d_coin > 0):
             jump dct_coin_ped
         "В меню":
             jump dct_mnu2
