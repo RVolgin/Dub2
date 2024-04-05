@@ -3,6 +3,7 @@ init 1:
     $ style.dct_coin_choosing.color = "#ffdd7d"
     $ style.dct_coin_choosing.hover_color = "#fffbb4"
     $ style.dct_coin_choosing.underline = False
+    $ style.dct_coin_choosing.text_align = 0.5
 
 screen dct_coin_choosing:
     textbutton "{size=56}{i}Монетка в фонтане{/i}{/size}":
@@ -12,7 +13,7 @@ screen dct_coin_choosing:
         text_style "dct_coin_choosing"
         action Jump("dct_coin_dyn")
     
-    textbutton "{size=56}{i}Монетка в фонтане (расширенная версия){/i}{/size}":
+    textbutton "{i}{size=56}Монетка в фонтане: расширенная версия{/size}\n{size=30}Содержит дословный текст исходного фанфика со всеми подробностями{/size}{/i}":
         xcenter 0.5
         ycenter 0.55
         style "dct_coin_choosing"
