@@ -3129,5 +3129,5 @@ menu:
             jump dct_coin_dyn
         "\nПродолжить в расширенной версии\n{size=28}Содержит дословный текст исходного фанфика\nсо всеми подробностями{/size}\n" if (persistent.d_coin > 0):
             jump dct_coin_ped
-        "В меню":
+        "К оглавлению":
             jump dct_mnu2
